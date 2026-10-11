@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "failed_hfd_level_blocks_formal": true,
+    "formal_budget_is_full": true,
+    "missing_hfd_switch_rejected": true,
+    "missing_pba_rejected": true,
+    "passing_smoke_releases_formal": true,
+    "positive_metric_contract_passes": true,
+    "queue_is_smoke_then_formal": true,
+    "queue_preserves_user_max_concurrency": true,
+    "reduced_formal_rejected": true,
+    "same_frozen_protocol": true,
+    "smoke_budget_is_isolated": true,
+    "teacher_feature_gradient_rejected": true,
+    "test_access_rejected": true,
+    "two_configs_validate": true,
+    "wrong_layers_rejected": true,
+    "wrong_loss_rejected": true,
+    "wrong_scale_rejected": true,
+    "zero_layer_gradient_rejected": true
+  },
+  "status": "PASS",
+  "step": "22.32"
+}

@@ -1,0 +1,15 @@
+{
+  "formal": {
+    "mcpr_mse": {
+      "attempt_count": 2,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_mcpr_valcache_mcpr_mse__electricity__validation__seed2023__20260813_191651",
+      "state": "SUCCESS"
+    },
+    "mcpr_pcd": {
+      "attempt_count": 2,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_mcpr_valcache_mcpr_pcd__electricity__validation__seed2023__20260813_191839",
+      "state": "SUCCESS"
+    }
+  },
+  "queue_state": "SUCCESS"
+}

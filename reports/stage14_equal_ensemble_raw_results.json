@@ -1,0 +1,50 @@
+{
+  "queue_state": "SUCCESS",
+  "records": [
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.36418035789124004,
+      "complete_target_mae_nested": 0.36983809490638303,
+      "complete_target_mae_on": 0.3674395413233306,
+      "complete_target_mse_ensemble": 0.5094765485112184,
+      "complete_target_mse_nested": 0.5188319075224154,
+      "complete_target_mse_on": 0.5218403043105588,
+      "evaluation_seed": 2024,
+      "job_id": "weather_pg95_seed2024_equal_ensemble_formal",
+      "peak_gpu_memory_mb": 1051.498046875,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_equal_ensemble_pg95__weather__validation__seed2024__20260723_153121",
+      "sample_count": 5168,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.3943555865968977,
+      "complete_target_mae_nested": 0.3978031116818625,
+      "complete_target_mae_on": 0.4024489872039311,
+      "complete_target_mse_ensemble": 0.3016133128650605,
+      "complete_target_mse_nested": 0.3107080317678906,
+      "complete_target_mse_on": 0.31782327379499165,
+      "evaluation_seed": 2024,
+      "job_id": "weather_pg95_seed2024_equal_ensemble_smoke",
+      "peak_gpu_memory_mb": 1051.498046875,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_equal_ensemble_pg95__weather__validation__seed2024__smoke__20260723_153106",
+      "sample_count": 32,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.36190915662062845,
+      "complete_target_mae_nested": 0.36602636468610256,
+      "complete_target_mae_on": 0.3667240057731355,
+      "complete_target_mse_ensemble": 0.519410617335041,
+      "complete_target_mse_nested": 0.5280725110216605,
+      "complete_target_mse_on": 0.5303185744375566,
+      "evaluation_seed": 2025,
+      "job_id": "weather_pg95_seed2025_equal_ensemble_formal",
+      "peak_gpu_memory_mb": 1051.498046875,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_equal_ensemble_pg95__weather__validation__seed2025__20260723_153121",
+      "sample_count": 5168,
+      "state": "SUCCESS"
+    }
+  ]
+}

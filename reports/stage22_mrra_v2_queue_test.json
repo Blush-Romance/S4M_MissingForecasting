@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "baseline_has_no_dependency": true,
+    "configs_exist": true,
+    "formal_depends_on_stability_smoke": true,
+    "memory_estimates_preserve_formal_shape": true,
+    "queue_runtime_isolated": true,
+    "queue_uses_v2_aggregator": true,
+    "stability_smoke_depends_on_default_off_regression": true,
+    "three_job_queue": true
+  },
+  "status": "PASS",
+  "step": 22
+}

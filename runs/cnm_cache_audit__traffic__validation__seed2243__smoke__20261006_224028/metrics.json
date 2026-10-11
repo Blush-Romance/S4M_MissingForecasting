@@ -1,0 +1,243 @@
+{
+  "stage": "22.43",
+  "status": "SUCCESS",
+  "experiment_id": "cnm_cache_audit__traffic__validation__seed2243__smoke__20261006_224028",
+  "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_cache_audit__traffic__validation__seed2243__smoke__20261006_224028",
+  "smoke_test": true,
+  "dataset": "traffic",
+  "evaluation_split": "validation",
+  "uses_test_split": false,
+  "no_new_training": true,
+  "no_model_forward": true,
+  "new_predictive_experiment": false,
+  "source_unchanged_after_analysis": true,
+  "source_manifest_sha256": "40dab1c97fccd26dee71aef8afa7beb0e8670d4927b8b0ede08afb96b0695e93",
+  "records": [
+    {
+      "seed": 2028,
+      "sources": {
+        "seed": 2028,
+        "original": {
+          "eval_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20260919_204034",
+          "train_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946",
+          "cache": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20260919_204034/validation_equal_rate_multiscale_samples.npz",
+          "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth"
+        },
+        "fixed": {
+          "eval_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20261004_235635",
+          "train_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2028__20261004_231820",
+          "cache": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20261004_235635/validation_equal_rate_multiscale_samples.npz",
+          "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2028__20261004_231820/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT2241FIXED2028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth"
+        }
+      },
+      "original": {
+        "sample_count": 1648,
+        "target_elements": 136375296.0,
+        "baseline": {
+          "mse": 0.5157885276869995,
+          "mae": 0.3146687898905184
+        },
+        "cnm": {
+          "mse": 0.5111358006036197,
+          "mae": 0.3124219797895297
+        },
+        "absolute_change": {
+          "mse": -0.004652727083379715,
+          "mae": -0.0022468101009887054
+        },
+        "relative_gain_percent": {
+          "mse": 0.9020609869405958,
+          "mae": 0.714023815889218
+        },
+        "worse_window_fraction": {
+          "mse": 0.23604368932038836,
+          "mae": 0.24514563106796117
+        },
+        "dual_win": true,
+        "checks": "PASS",
+        "checkpoint_sha256": "384bbb9bed0b2e75e5b1a479e95b785f7e2af0dd962ab028fb30c0845722e068",
+        "training_parser_evidence": "legacy_official_args_and_checkpoint_not_full_parser",
+        "parameter_count": 28371290,
+        "additional_parameters": 0,
+        "forward_calls_baseline": 1,
+        "forward_calls_cnm": 3,
+        "nominal_missing_rate": 0.06,
+        "realized_missing_rate": 0.2599749202006384,
+        "timing_is_isolated_benchmark": false,
+        "existing_component_timing_reference_only": {
+          "mean_ms": 1008.5534266025951,
+          "measured_multiplier_vs_original": 2.890428324587108,
+          "p50_ms": 990.5142011120915,
+          "p95_ms": 1655.4843027144666,
+          "std_ms": 400.7248869281288,
+          "total_seconds": 93.79546867404133
+        },
+        "isolated_latency_seconds": null,
+        "route_specific_peak_gpu_memory_mb": null
+      },
+      "fixed": {
+        "sample_count": 1648,
+        "target_elements": 136375296.0,
+        "baseline": {
+          "mse": 0.5167650684180275,
+          "mae": 0.3166543751345689
+        },
+        "cnm": {
+          "mse": 0.510395580366765,
+          "mae": 0.31394073515773524
+        },
+        "absolute_change": {
+          "mse": -0.006369488051262473,
+          "mae": -0.0027136399768336594
+        },
+        "relative_gain_percent": {
+          "mse": 1.2325693899476182,
+          "mae": 0.8569722037412056
+        },
+        "worse_window_fraction": {
+          "mse": 0.19174757281553398,
+          "mae": 0.21419902912621358
+        },
+        "dual_win": true,
+        "checks": "PASS",
+        "checkpoint_sha256": "678925390ee897e9dedfbcc411cc913628e228f56c53a174001b42fa70229e45",
+        "training_parser_evidence": "full_effective_parser",
+        "parameter_count": 28371290,
+        "additional_parameters": 0,
+        "forward_calls_baseline": 1,
+        "forward_calls_cnm": 3,
+        "nominal_missing_rate": 0.06,
+        "realized_missing_rate": 0.2599749202006384,
+        "timing_is_isolated_benchmark": false,
+        "existing_component_timing_reference_only": {
+          "mean_ms": 418.1681385198708,
+          "measured_multiplier_vs_original": 3.154921055573197,
+          "p50_ms": 420.3027350595221,
+          "p95_ms": 426.1974539142102,
+          "std_ms": 6.6657169683081365,
+          "total_seconds": 38.889636882347986
+        },
+        "isolated_latency_seconds": null,
+        "route_specific_peak_gpu_memory_mb": null
+      }
+    }
+  ],
+  "summary": {
+    "original": {
+      "seed_count": 1,
+      "dual_win_count": 1,
+      "baseline": {
+        "mse": {
+          "values": [
+            0.5157885276869995
+          ],
+          "mean": 0.5157885276869995,
+          "sample_std": null
+        },
+        "mae": {
+          "values": [
+            0.3146687898905184
+          ],
+          "mean": 0.3146687898905184,
+          "sample_std": null
+        }
+      },
+      "cnm": {
+        "mse": {
+          "values": [
+            0.5111358006036197
+          ],
+          "mean": 0.5111358006036197,
+          "sample_std": null
+        },
+        "mae": {
+          "values": [
+            0.3124219797895297
+          ],
+          "mean": 0.3124219797895297,
+          "sample_std": null
+        }
+      },
+      "relative_gain_percent": {
+        "mse": {
+          "values": [
+            0.9020609869405958
+          ],
+          "mean": 0.9020609869405958,
+          "sample_std": null
+        },
+        "mae": {
+          "values": [
+            0.714023815889218
+          ],
+          "mean": 0.714023815889218,
+          "sample_std": null
+        }
+      },
+      "relative_gain_between_metric_means_percent": {
+        "mse": 0.9020609869405958,
+        "mae": 0.714023815889218
+      }
+    },
+    "fixed": {
+      "seed_count": 1,
+      "dual_win_count": 1,
+      "baseline": {
+        "mse": {
+          "values": [
+            0.5167650684180275
+          ],
+          "mean": 0.5167650684180275,
+          "sample_std": null
+        },
+        "mae": {
+          "values": [
+            0.3166543751345689
+          ],
+          "mean": 0.3166543751345689,
+          "sample_std": null
+        }
+      },
+      "cnm": {
+        "mse": {
+          "values": [
+            0.510395580366765
+          ],
+          "mean": 0.510395580366765,
+          "sample_std": null
+        },
+        "mae": {
+          "values": [
+            0.31394073515773524
+          ],
+          "mean": 0.31394073515773524,
+          "sample_std": null
+        }
+      },
+      "relative_gain_percent": {
+        "mse": {
+          "values": [
+            1.2325693899476182
+          ],
+          "mean": 1.2325693899476182,
+          "sample_std": null
+        },
+        "mae": {
+          "values": [
+            0.8569722037412056
+          ],
+          "mean": 0.8569722037412056,
+          "sample_std": null
+        }
+      },
+      "relative_gain_between_metric_means_percent": {
+        "mse": 1.2325693899476182,
+        "mae": 0.8569722037412056
+      }
+    }
+  },
+  "prior_distance_fix_decision_unchanged": "BUG_FIX_NOT_THREE_SEED_DUAL_GAIN_ANALYZE_NO_AUTO_EXPANSION",
+  "formula_cross_diagnostic": "DEFERRED_NOT_STARTED",
+  "decision": "SMOKE_EXECUTION_ONLY",
+  "original_paper_same_protocol_metrics": null
+}

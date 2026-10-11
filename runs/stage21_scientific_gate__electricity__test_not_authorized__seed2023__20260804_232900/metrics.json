@@ -1,0 +1,11 @@
+{
+  "artifact_status": "SKIPPED_BY_VALIDATION_GATE",
+  "dataset": "electricity",
+  "experiment_id": "stage21_scientific_gate__electricity__test_not_authorized__seed2023__20260804_232900",
+  "method": "cnm_se_equal_rate_multiscale_pg95",
+  "scientific_decision": "PROTOCOL_FAIL_TEST_FORBIDDEN",
+  "scope": "test_skipped_by_frozen_validation_gate",
+  "test_accessed": false,
+  "test_authorized": false,
+  "validation_gate_report": "/mnt/data/zza/code/S4M_MissingForecasting/reports/stage21_electricity_validation_gate.json"
+}

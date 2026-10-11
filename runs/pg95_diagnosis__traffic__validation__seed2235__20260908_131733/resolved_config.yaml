@@ -1,0 +1,13 @@
+analysis_seeds:
+- 2026
+- 2027
+- 2028
+device: cpu
+experiment:
+  dataset: traffic
+  id: pg95_diagnosis__traffic__validation__seed2235__20260908_131733
+  method: pg95_diagnosis
+  seed: 2235
+  smoke_test: false
+protocol: /mnt/data/zza/code/S4M_MissingForecasting/docs/STAGE22_35_DIAGNOSTIC_PROTOCOL_ZH.md
+protocol_sha256: a046cf1a181fc83a307dc4eed1571ec608fc0d6574a96304162769038c93e89b

@@ -1,0 +1,20 @@
+{
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_size_bytes": 497620,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/baseline/s4m_weather_point_r006_smoke.yaml",
+  "device": "cpu",
+  "experiment_id": "s4m_public_sgd__weather__point__mr0.06__seed2023__smoke__20260714_154705",
+  "finished_at": "2026-07-14T07:47:51.449040+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_public_sgd__weather__point__mr0.06__seed2023__smoke__20260714_154705/metrics.json",
+  "pid": 46,
+  "return_code": 0,
+  "started_at": "2026-07-14T07:47:05.127320+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

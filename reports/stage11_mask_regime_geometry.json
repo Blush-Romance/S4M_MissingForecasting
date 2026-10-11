@@ -1,0 +1,101 @@
+{
+  "artifact_status": "PASS",
+  "checks": {
+    "seed2024_binary_mask": true,
+    "seed2024_block_length": true,
+    "seed2024_candidate_width": true,
+    "seed2024_identity": true,
+    "seed2024_row_count": true,
+    "seed2025_binary_mask": true,
+    "seed2025_block_length": true,
+    "seed2025_candidate_width": true,
+    "seed2025_identity": true,
+    "seed2025_row_count": true
+  },
+  "interpretation_boundary": "Non-collapsed mask geometry supports testing a mask-space admission rule; it does not by itself establish forecasting improvement.",
+  "protocol": {
+    "blocks_per_history": 6,
+    "pred_len": 96,
+    "rows": 52696,
+    "seq_len": 192,
+    "short_len": 32,
+    "split": [
+      0.7,
+      0.1,
+      0.2
+    ]
+  },
+  "records": {
+    "2024": {
+      "global_missing_rate": 0.2469637164111128,
+      "mask_asset": "/mnt/data/zza/code/S4M_MissingForecasting/artifacts/masks/weather/point/rate_0.06/seed_2024.npz",
+      "mask_asset_sha256": "45d3f53394a559e8101556c9ba5535c2ae82ca4ddc9dca9f63de01f391c61ed5",
+      "train": {
+        "candidate_count": 219600,
+        "effective_rank_ratio": 0.7606633924403157,
+        "missing_count_mean": 7.836393442622951,
+        "missing_count_std": 5.236424874156913,
+        "pairwise_hamming_mean": 0.369440625,
+        "pairwise_hamming_p90": 0.59375,
+        "pattern_entropy_normalized": 0.7502414360016912,
+        "unique_pattern_count": 7946,
+        "unique_pattern_fraction": 0.036183970856102005,
+        "zero_missing_fraction": 0.1387249544626594
+      },
+      "validation": {
+        "candidate_count": 31050,
+        "effective_rank_ratio": 0.7631216562496432,
+        "missing_count_mean": 8.345829307568438,
+        "missing_count_std": 4.995239230755059,
+        "pairwise_hamming_mean": 0.384253125,
+        "pairwise_hamming_p90": 0.59375,
+        "pattern_entropy_normalized": 0.8515527183408135,
+        "unique_pattern_count": 2127,
+        "unique_pattern_fraction": 0.0685024154589372,
+        "zero_missing_fraction": 0.0866988727858293
+      },
+      "validation_to_train_nearest_hamming": {
+        "max": 0.21875,
+        "mean": 0.022875,
+        "p90": 0.09375
+      }
+    },
+    "2025": {
+      "global_missing_rate": 0.24698269318354335,
+      "mask_asset": "/mnt/data/zza/code/S4M_MissingForecasting/artifacts/masks/weather/point/rate_0.06/seed_2025.npz",
+      "mask_asset_sha256": "5b5f683b077cc4bf5ce47bf1adaa31e1bb532c34b81fcbab8025390fea0b724f",
+      "train": {
+        "candidate_count": 219600,
+        "effective_rank_ratio": 0.7608754326175788,
+        "missing_count_mean": 8.026967213114753,
+        "missing_count_std": 5.319183029976797,
+        "pairwise_hamming_mean": 0.3777890625,
+        "pairwise_hamming_p90": 0.59375,
+        "pattern_entropy_normalized": 0.7567785410691749,
+        "unique_pattern_count": 8201,
+        "unique_pattern_fraction": 0.03734517304189435,
+        "zero_missing_fraction": 0.12950364298724953
+      },
+      "validation": {
+        "candidate_count": 31050,
+        "effective_rank_ratio": 0.7578730848751574,
+        "missing_count_mean": 7.913365539452496,
+        "missing_count_std": 4.813577660844034,
+        "pairwise_hamming_mean": 0.37071875,
+        "pairwise_hamming_p90": 0.59375,
+        "pattern_entropy_normalized": 0.8363145479670973,
+        "unique_pattern_count": 1961,
+        "unique_pattern_fraction": 0.06315619967793881,
+        "zero_missing_fraction": 0.10396135265700483
+      },
+      "validation_to_train_nearest_hamming": {
+        "max": 0.1875,
+        "mean": 0.01965625,
+        "p90": 0.0625
+      }
+    }
+  },
+  "schema_version": 1,
+  "scope": "Weather input masks; train and validation histories only; no values or targets loaded",
+  "step": 11
+}

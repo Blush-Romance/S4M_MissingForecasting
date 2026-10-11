@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "balanced_rank_loss_backpropagates": true,
+    "balanced_rank_loss_generates_pairs": true,
+    "balanced_rank_loss_is_finite": true,
+    "calibration_improves_over_always_on": true,
+    "calibration_selects_expected_gate": true,
+    "calibration_threshold_is_finite": true,
+    "chronological_blocks_are_ordered": true,
+    "requested_embargo_is_preserved": true,
+    "router_score_is_target_free_tensor": true,
+    "split_has_no_overlap": true
+  },
+  "evidence": {
+    "always_on_risk": 0.6,
+    "calibrated_threshold": 0.0,
+    "calibration_gate_rate": 0.5,
+    "calibration_risk": 0.19999999999999998,
+    "effective_embargo_windows": 80,
+    "gradient_norm": 2.2149386405944824,
+    "rank_pairs": 32
+  },
+  "passed": 10,
+  "status": "PASS",
+  "total": 10
+}

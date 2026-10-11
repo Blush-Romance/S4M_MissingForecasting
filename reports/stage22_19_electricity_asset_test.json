@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "all_missing_runs_at_least_l5": true,
+    "block_length_is_5": true,
+    "columns_match": true,
+    "complete_has_no_nan": true,
+    "dates_match_exactly": true,
+    "fixed_generator_is_exactly_reproducible": true,
+    "full_mask_differs_from_seed2023": true,
+    "full_mask_differs_from_seed2024": true,
+    "manifest_mask_hash_matches": true,
+    "manifest_output_hash_matches": true,
+    "manifest_protocol_is_approximate": true,
+    "mask_hash_matches_metadata": true,
+    "mask_rebuilds_from_persisted_starts": true,
+    "mask_shape_matches_rows": true,
+    "missing_shape_matches_complete": true,
+    "nominal_rate_is_0_06": true,
+    "observed_values_preserved_with_csv_tolerance": true,
+    "output_hash_matches_metadata": true,
+    "paper_rate_is_0_260": true,
+    "protocol_frozen_before_asset": true,
+    "realized_rate_matches_metadata": true,
+    "realized_rate_nearest_row_tolerance": true,
+    "row_shared_missing_mask": true,
+    "seed_is_2025": true,
+    "shape_26304_by_322": true,
+    "source_hash_matches_metadata": true,
+    "split_counts_cover_all_rows": true,
+    "target_rows_match_generator": true,
+    "train_mask_differs_from_seed2023": true,
+    "train_mask_differs_from_seed2024": true,
+    "validation_mask_differs_from_seed2023": true,
+    "validation_mask_differs_from_seed2024": true,
+    "value_columns_321": true
+  },
+  "contiguous_run_count": 1134,
+  "contiguous_run_max": 20,
+  "contiguous_run_min": 5,
+  "cross_seed_mask_disagreement": {
+    "2023": {
+      "full_fraction": 0.3806265206812652,
+      "full_rows": 10012,
+      "train_rows": 7066,
+      "validation_rows": 1048
+    },
+    "2024": {
+      "full_fraction": 0.38644312652068125,
+      "full_rows": 10165,
+      "train_rows": 7136,
+      "validation_rows": 1022
+    }
+  },
+  "failures": [],
+  "mask_sha256": "db955a0f7e44b498d6be95d83d1ae9f41f0f87138f3ff6ccf8cfeacdbec7c45e",
+  "observed_max_abs_error": 0.0,
+  "output_sha256": "095de96734aa4e583331c6e4b61f675d8babcc3918d067b6f4414886c59775f9",
+  "realized_missing_rate": 0.2599984793187348,
+  "realized_missing_rows": 6839,
+  "shape": [
+    26304,
+    322
+  ],
+  "source_sha256": "7e45845d54c5219bad0ae6bc1b5316cf8ff9cead5d33fa998a5a51c2e4a497ad",
+  "split_counts": {
+    "test": 5260,
+    "train": 18412,
+    "validation": 2632
+  },
+  "status": "PASS",
+  "step": "22.19.4_asset",
+  "test_metrics_or_model_outputs_accessed": false
+}

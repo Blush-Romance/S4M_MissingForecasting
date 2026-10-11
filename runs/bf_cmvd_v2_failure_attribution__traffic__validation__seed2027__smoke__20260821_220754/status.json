@@ -1,0 +1,12 @@
+{
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_27_bf_cmvd_diagnostic/bf_cmvd_v2_seed2027_smoke.yaml",
+  "device": "cuda",
+  "evaluation_seed": 2027,
+  "experiment_id": "bf_cmvd_v2_failure_attribution__traffic__validation__seed2027__smoke__20260821_220754",
+  "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+  "pid": 3996002,
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/bf_cmvd_v2_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_212927/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE2226BFCMVDV2F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "169e19dd6d77edd60ccb08f9b71905c94bd09df2ee3898e773fbf6d15805aca8",
+  "started_at": "2026-08-21T14:07:54.931625+00:00",
+  "state": "RUNNING"
+}

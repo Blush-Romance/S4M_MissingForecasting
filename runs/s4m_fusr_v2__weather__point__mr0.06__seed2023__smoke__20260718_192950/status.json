@@ -1,0 +1,35 @@
+{
+  "checkpoint_fusr_state_keys": [
+    "mem_net.fusr.backbone.0.bias",
+    "mem_net.fusr.backbone.0.weight",
+    "mem_net.fusr.backbone.2.bias",
+    "mem_net.fusr.backbone.2.weight",
+    "mem_net.fusr.calibrated_threshold",
+    "mem_net.fusr.calibration_ready",
+    "mem_net.fusr.feature_center",
+    "mem_net.fusr.feature_scale",
+    "mem_net.fusr.normalization_ready",
+    "mem_net.fusr.utility_head.bias",
+    "mem_net.fusr.utility_head.weight"
+  ],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 325,
+  "checkpoint_size_bytes": 23438280,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/fusr/s4m_weather_fusr_v2_frozen_router_seed2023_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_fusr_v2__weather__point__mr0.06__seed2023__smoke__20260718_192950",
+  "finished_at": "2026-07-18T11:31:02.827068+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v2__weather__point__mr0.06__seed2023__smoke__20260718_192950/metrics.json",
+  "pid": 875546,
+  "return_code": 0,
+  "started_at": "2026-07-18T11:29:50.947977+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

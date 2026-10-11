@@ -1,0 +1,252 @@
+{
+  "decision": "ARD_ROUTE_STOP_NO_CAPACITY_EXPANSION",
+  "feature_bottleneck_conditions": {
+    "development_and_audit_balanced_accuracy_gain_ge_0.05": false,
+    "development_and_audit_counterfactual_mse_nonworse": false,
+    "development_and_audit_spearman_gain_ge_0.10": false
+  },
+  "feature_information_bottleneck": "FEATURE_INFORMATION_BOTTLENECK_NOT_CONFIRMED",
+  "fixed_splits": {
+    "audit": [
+      2080,
+      2528
+    ],
+    "development": [
+      1456,
+      1888
+    ],
+    "embargo_1": [
+      1264,
+      1456
+    ],
+    "embargo_2": [
+      1888,
+      2080
+    ],
+    "fit": [
+      0,
+      1264
+    ]
+  },
+  "interpretation_boundary": "validation-only failure attribution; any ARD-v2 must be frozen before and confirmed on the new seed2026 asset",
+  "mixture_cancellation": "MIXTURE_CANCELLATION_NOT_CONFIRMED",
+  "mixture_conditions": {
+    "contribution_pearson_le_minus_0.5": true,
+    "gate_std_le_0.01": true,
+    "one_contribution_std_ge_0.01": false
+  },
+  "mixture_diagnostic": {
+    "contribution_pearson": -0.9977461821029894,
+    "full_contribution_mean": 0.47074144620071107,
+    "full_contribution_std": 0.003245050379790388,
+    "gate_mean": 0.5316958346793169,
+    "gate_reconstruction_max_abs": 3.351796706851928e-08,
+    "gate_std": 0.001237061921476473,
+    "partial_contribution_mean": 0.06095438864968226,
+    "partial_contribution_std": 0.004455483949341384
+  },
+  "probe_hyperparameters": {
+    "classification": {
+      "C": 1.0,
+      "class_weight": null,
+      "max_iter": 2000,
+      "model": "multinomial_logistic_regression",
+      "random_state": 2220,
+      "standard_scaler": true
+    },
+    "regression": {
+      "alpha": 1.0,
+      "model": "ridge",
+      "prediction_clip": [
+        0.0,
+        1.0
+      ],
+      "standard_scaler": true
+    }
+  },
+  "probe_results": {
+    "global8": {
+      "audit": {
+        "action": {
+          "accuracy": 0.3325892857142857,
+          "balanced_accuracy": 0.34251700680272107,
+          "confusion_matrix": [
+            [
+              131,
+              0,
+              9
+            ],
+            [
+              92,
+              0,
+              20
+            ],
+            [
+              178,
+              0,
+              18
+            ]
+          ],
+          "cross_entropy": 2.9899742859146516,
+          "valid_samples": 448
+        },
+        "alpha": {
+          "counterfactual_mse": 0.8380706982601951,
+          "mae": 0.5162859038981727,
+          "predicted_alpha_mean": 0.09229242464858471,
+          "predicted_alpha_std": 0.15129916836595894,
+          "spearman": 0.19608622669501452,
+          "valid_samples": 448
+        }
+      },
+      "development": {
+        "action": {
+          "accuracy": 0.8240740740740741,
+          "balanced_accuracy": 0.6590621039290241,
+          "confusion_matrix": [
+            [
+              257,
+              0,
+              6
+            ],
+            [
+              30,
+              0,
+              40
+            ],
+            [
+              0,
+              0,
+              99
+            ]
+          ],
+          "cross_entropy": 0.6190698422880707,
+          "valid_samples": 432
+        },
+        "alpha": {
+          "counterfactual_mse": 0.8170087377727603,
+          "mae": 0.1518418866530204,
+          "predicted_alpha_mean": 0.4151063581534834,
+          "predicted_alpha_std": 0.3551574542132752,
+          "spearman": 0.8563646441395406,
+          "valid_samples": 432
+        }
+      }
+    },
+    "structured108": {
+      "audit": {
+        "action": {
+          "accuracy": 0.3013392857142857,
+          "balanced_accuracy": 0.32142857142857145,
+          "confusion_matrix": [
+            [
+              135,
+              5,
+              0
+            ],
+            [
+              110,
+              0,
+              2
+            ],
+            [
+              188,
+              8,
+              0
+            ]
+          ],
+          "cross_entropy": 9.890779644105223,
+          "valid_samples": 448
+        },
+        "alpha": {
+          "counterfactual_mse": 0.8382970367544466,
+          "mae": 0.5430199421765326,
+          "predicted_alpha_mean": 0.15214285528401636,
+          "predicted_alpha_std": 0.13502539943101374,
+          "spearman": -0.1790925589318274,
+          "valid_samples": 448
+        }
+      },
+      "development": {
+        "action": {
+          "accuracy": 0.7175925925925926,
+          "balanced_accuracy": 0.6496831432192649,
+          "confusion_matrix": [
+            [
+              197,
+              60,
+              6
+            ],
+            [
+              2,
+              14,
+              54
+            ],
+            [
+              0,
+              0,
+              99
+            ]
+          ],
+          "cross_entropy": 1.7783377016468056,
+          "valid_samples": 432
+        },
+        "alpha": {
+          "counterfactual_mse": 0.8170948295830525,
+          "mae": 0.17471258860445027,
+          "predicted_alpha_mean": 0.4495590275077127,
+          "predicted_alpha_std": 0.42087437548755996,
+          "spearman": 0.8403795963093276,
+          "valid_samples": 432
+        }
+      }
+    }
+  },
+  "protocol_checks": {
+    "artifact_status_pass": true,
+    "chronological_indices": true,
+    "chronological_loader": true,
+    "complete_158_batches": true,
+    "complete_2528_samples": true,
+    "feature_dimensions": true,
+    "fixed_split_coverage": true,
+    "formal_run_success": true,
+    "model_and_memory_frozen": true,
+    "structured_prefix_exact": true,
+    "validation_only": true
+  },
+  "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_20_ard_information__electricity__validation__seed2025__20260816_173640",
+  "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_20_ard_information__electricity__validation__seed2025__20260816_173640/ard_information_samples.npz",
+  "status": "PASS",
+  "structured_minus_global": {
+    "audit": {
+      "alpha_spearman": -0.3751787856268419,
+      "balanced_accuracy": -0.021088435374149617,
+      "counterfactual_mse": 0.00022633849425146568
+    },
+    "development": {
+      "alpha_spearman": -0.01598504783021304,
+      "balanced_accuracy": -0.009378960709759188,
+      "counterfactual_mse": 8.609181029217705e-05
+    }
+  },
+  "student_vs_complete_teacher": {
+    "action_accuracy": 0.26542721518987344,
+    "action_balanced_accuracy": 0.3333333333333333,
+    "gate_alpha_mae": 0.47409433468603795,
+    "gate_alpha_spearman": 0.5331791318235589
+  },
+  "teacher_comparison": {
+    "action_agreement": 0.7986550632911392,
+    "alpha_mae": 0.12680786059501792,
+    "alpha_spearman": 0.8477030499895888,
+    "complete_valid_samples": 2528,
+    "observed_valid_samples": 2528,
+    "shared_valid_samples": 2528
+  },
+  "test_accessed": false,
+  "validation_metrics": {
+    "mae": 0.7560852790403575,
+    "mse": 0.880757115769622
+  }
+}

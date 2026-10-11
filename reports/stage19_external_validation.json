@@ -1,0 +1,111 @@
+{
+  "decision": "EXTERNAL_TRANSFER_FAIL",
+  "external_gate_by_metric": {
+    "mae": false,
+    "mse": false
+  },
+  "external_gate_pass": false,
+  "gains": {
+    "multiscale_vs_l5_pair_pct": {
+      "mae": -8.498298605217423e-08,
+      "mse": 1.6703448990356412e-08
+    },
+    "multiscale_vs_original_pct": {
+      "mae": -1.1224163965735325e-08,
+      "mse": -2.3384817567085337e-08
+    }
+  },
+  "incremental_gate_by_metric": {
+    "mae": false,
+    "mse": true
+  },
+  "incremental_gate_pass": false,
+  "multiscale_multiplier_vs_original": 3.122957127031492,
+  "parameter_count": 5767343,
+  "peak_gpu_memory_mb": 1036.11376953125,
+  "pre_registered_design": {
+    "block_lengths": [
+      1,
+      5,
+      20
+    ],
+    "dataset": "etth1",
+    "external_gate": "multiscale MSE and MAE both strictly beat original",
+    "incremental_gate": "multiscale MSE and MAE both strictly beat the L5 equal pair",
+    "multiscale_weights": {
+      "l20": 0.25,
+      "l5": 0.25,
+      "original": 0.5
+    },
+    "seed": 2023,
+    "split": "test",
+    "target_rate": 0.15
+  },
+  "protocol_checks": {
+    "artifact_status_pass": true,
+    "complete_test_budget": true,
+    "equal_count_protocol": true,
+    "external_etth1_test_only": true,
+    "fixed_multiscale_weights": true,
+    "matched_historical_source": true,
+    "seed_is_2023": true,
+    "serial_timing_recorded": true,
+    "source_is_frozen_s4m": true,
+    "strict_equal_realized_rate_across_scales": true
+  },
+  "protocol_limitations": [
+    "source checkpoint is original S4M, not PG95",
+    "official ETTh1 mask seed is unavailable",
+    "single seed is directional evidence, not statistical stability",
+    "historical ETTh1 reproduction differs materially from the paper value"
+  ],
+  "realized_additional_missing_rates": {
+    "l1": 0.1497454893338313,
+    "l20": 0.1497454893338313,
+    "l5": 0.1497454893338313
+  },
+  "routes": {
+    "ensemble_l1": {
+      "mae": 0.8389232625436148,
+      "mse": 1.207990944977405
+    },
+    "ensemble_l20": {
+      "mae": 0.8389232627319391,
+      "mse": 1.2079909453675053
+    },
+    "ensemble_l5": {
+      "mae": 0.8389232620055453,
+      "mse": 1.2079909452195363
+    },
+    "l1": {
+      "mae": 0.8389232632700085,
+      "mse": 1.2079909453271502
+    },
+    "l20": {
+      "mae": 0.8389232629740704,
+      "mse": 1.2079909455692814
+    },
+    "l5": {
+      "mae": 0.8389232624090974,
+      "mse": 1.2079909449370498
+    },
+    "multiscale": {
+      "mae": 0.8389232627184874,
+      "mse": 1.2079909450177602
+    },
+    "on": {
+      "mae": 0.8389232626243253,
+      "mse": 1.2079909447352737
+    }
+  },
+  "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__etth1__test__seed2023__20260723_213731",
+  "scope": "single-seed ETTh1 external test of a Weather-validation-frozen CNM-SE inference protocol on the original S4M checkpoint",
+  "serial_latency_mean_ms": {
+    "ensemble_l1": 87.10266197267086,
+    "ensemble_l20": 83.69481220461465,
+    "ensemble_l5": 84.5692500713008,
+    "multiscale": 127.13487363137787,
+    "original": 40.70977232794264
+  },
+  "status": "PASS"
+}

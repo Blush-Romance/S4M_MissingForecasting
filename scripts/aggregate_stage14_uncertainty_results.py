@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+"""Aggregate Stage-14 cache jobs and run the frozen cross-seed gate."""
+
+from __future__ import annotations
+
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+STATE = ROOT / "runtime" / "stage14_uncertainty_queue" / "state.json"
+REPORT_JSON = ROOT / "reports" / "stage14_uncertainty_raw_results.json"
+REPORT_MD = ROOT / "reports" / "stage14_uncertainty_raw_results.md"
+
+
+def atomic_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(f".{path.name}.tmp")
+    temporary.write_text(content, encoding="utf-8")
+    os.replace(temporary, path)
+
+
+def main() -> int:
+    if not STATE.is_file():
+        return 0
+    state = json.loads(STATE.read_text(encoding="utf-8"))
+    records = []
+    for job_id, job in sorted(state.get("jobs", {}).items()):
+        record = {"job_id": job_id, "state": job.get("state"), "run_dir": job.get("run_dir")}
+        if job.get("run_dir"):
+            metrics_path = Path(job["run_dir"]) / "metrics.json"
+            if metrics_path.is_file():
+                metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
+                for key in (
+                    "evaluation_seed", "sample_count", "complete_target_mse_on",
+                    "complete_target_mae_on", "complete_target_mse_off",
+                    "complete_target_mse_nested", "mask_disagreement_mse_mean",
+                    "realized_additional_missing_rate", "artifact_status",
+                    "peak_gpu_memory_mb",
+                ):
+                    record[key] = metrics.get(key)
+        records.append(record)
+    payload = {"queue_state": state.get("queue_state"), "records": records}
+    atomic_text(REPORT_JSON, json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    lines = [
+        "# 步骤14：validation不确定性缓存原始结果", "",
+        "| job | 状态 | samples | on MSE | off MSE | nested MSE | disagreement | run |",
+        "|---|---|---:|---:|---:|---:|---:|---|",
+    ]
+    for record in records:
+        lines.append(
+            f"| {record['job_id']} | {record.get('state')} | {record.get('sample_count', 'NA')} | "
+            f"{record.get('complete_target_mse_on', 'NA')} | {record.get('complete_target_mse_off', 'NA')} | "
+            f"{record.get('complete_target_mse_nested', 'NA')} | {record.get('mask_disagreement_mse_mean', 'NA')} | "
+            f"`{record.get('run_dir') or ''}` |"
+        )
+    atomic_text(REPORT_MD, "\n".join(lines) + "\n")
+    jobs = state.get("jobs", {})
+    ready = all(
+        jobs.get(f"weather_pg95_seed{seed}_uncertainty_formal", {}).get("state") == "SUCCESS"
+        for seed in (2024, 2025)
+    )
+    if ready:
+        subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "analyze_stage14_uncertainty.py")],
+            cwd=ROOT,
+            check=True,
+        )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "combined_gradients_finite": true,
+    "common_mae_descent": true,
+    "common_mse_descent": true,
+    "configs_validate": true,
+    "disabled_identity_rejected": true,
+    "formal_depends_on_matching_smoke": true,
+    "four_configs": true,
+    "mask_response_after_update": true,
+    "objectives_exact": true,
+    "output_projection_receives_gradient": true,
+    "queue_has_four_jobs": true,
+    "queue_runtime_isolated": true,
+    "same_fixed_assets": true,
+    "zero_initialized_baseline_equivalence": true
+  },
+  "pareto_diagnostics": {
+    "common_mae_dot": 0.13412983615612992,
+    "common_mse_dot": 0.2062441003264136,
+    "gradient_cosine": 0.892391355639689,
+    "mae_gradient_norm": 0.14175697553858524,
+    "mse_gradient_norm": 0.217971935393979
+  },
+  "status": "PASS",
+  "step": "22.16"
+}

@@ -1,0 +1,20 @@
+{
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_size_bytes": 23583485,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/baseline/s4m_weather_point_r006_paper_adam_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_paper_adam_reprofix__weather__point__mr0.06__seed2023__smoke__20260717_200945",
+  "finished_at": "2026-07-17T12:10:02.558356+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_reprofix__weather__point__mr0.06__seed2023__smoke__20260717_200945/metrics.json",
+  "pid": 1809929,
+  "return_code": 0,
+  "started_at": "2026-07-17T12:09:45.579647+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

@@ -1,0 +1,33 @@
+{
+  "configs": {
+    "eval_formal": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage20_etth1_pg95/s4m_etth1_pg95_multiscale_seed2023.yaml",
+    "eval_smoke": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage20_etth1_pg95/s4m_etth1_pg95_multiscale_seed2023_smoke.yaml",
+    "train_formal": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage20_etth1_pg95/s4m_etth1_pg95_seed2023.yaml",
+    "train_smoke": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage20_etth1_pg95/s4m_etth1_pg95_seed2023_smoke.yaml"
+  },
+  "frozen_pg95": {
+    "mipp_cov_weight": 0.0,
+    "mipp_dec_weight": 0.0,
+    "mipp_inv_weight": 0.05,
+    "mipp_mask_weight": 0.0,
+    "mipp_pair_block_lengths": [
+      1,
+      5,
+      20
+    ],
+    "mipp_pair_rate_max": 0.5,
+    "mipp_pair_rate_min": 0.15,
+    "mipp_stability_threshold": 0.95,
+    "mipp_var_weight": 0.0,
+    "mipp_write_gate_mode": "absolute",
+    "use_cfr": false,
+    "use_content_mask_factorization": false,
+    "use_fusr": false,
+    "use_mask_intervention_pair": true,
+    "use_mipp": true,
+    "use_stability_write_gate": true
+  },
+  "negative_cases": 4,
+  "status": "PASS",
+  "unexpected_baseline_changes": {}
+}

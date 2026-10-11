@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "both_anchor_dual_wins_unlock_seed2023": true,
+    "failed_mechanism_checks_are_reportable": true,
+    "mechanism_failure_stops_accuracy_winner": true,
+    "metric_change_uses_lower_is_better": true,
+    "single_metric_failure_stops_candidate": true,
+    "single_seed_failure_stops_candidate": true,
+    "valid_protocol_checks_remain_pass": true
+  },
+  "mechanism_failure_decision": [
+    false,
+    "MRBA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "MRBA未同时通过双锚点精度门与mask覆盖机制门；保留结果并停止该候选，不扩seed或数据集。"
+  ],
+  "mixed_decision": [
+    false,
+    "MRBA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "MRBA未同时通过双锚点精度门与mask覆盖机制门；保留结果并停止该候选，不扩seed或数据集。"
+  ],
+  "negative_decision": [
+    false,
+    "MRBA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "MRBA未同时通过双锚点精度门与mask覆盖机制门；保留结果并停止该候选，不扩seed或数据集。"
+  ],
+  "positive_decision": [
+    true,
+    "MRBA_TWO_ANCHOR_DUAL_WIN_AND_COVERAGE_RUN_SEED2023",
+    "MRBA在两个锚点均双指标优于PG95且mask覆盖机制成立；按预注册规则补跑seed2023。"
+  ],
+  "status": "PASS"
+}

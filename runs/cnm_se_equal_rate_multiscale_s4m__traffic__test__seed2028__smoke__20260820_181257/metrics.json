@@ -1,0 +1,261 @@
+{
+  "artifact_checks": {
+    "additional_rates_roundtrip": true,
+    "all_scales_remove_rows": true,
+    "all_vectors_match": true,
+    "chronological_indices": true,
+    "expected_external_test_split": true,
+    "finite_vectors": true,
+    "fixed_multiscale_weights": true,
+    "frozen": true,
+    "frozen_equal_rate_protocol": true,
+    "metric_roundtrip": true,
+    "nested_masks_are_subsets": true,
+    "packed_shapes_match": true,
+    "positive_counts": true,
+    "prediction_difference_roundtrip": true,
+    "sample_count_positive": true,
+    "scales_change_mask_organization": true,
+    "serial_timing_protocol": true,
+    "source_is_validation_only": true,
+    "strict_equal_removed_count_per_sample": true,
+    "target_count_roundtrip": true,
+    "timing_arrays_match": true,
+    "timing_finite_positive": true
+  },
+  "artifact_status": "PASS",
+  "block_lengths": [
+    1,
+    5,
+    20
+  ],
+  "buffer_bytes": 160,
+  "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_ard_state_keys": [],
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [],
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 314,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 113878995,
+  "checkpoint_ttrr_state_keys": [],
+  "chronological_loader": true,
+  "complete_target_mae_ensemble_l1": 0.33867532022529795,
+  "complete_target_mae_ensemble_l20": 0.33886353408408304,
+  "complete_target_mae_ensemble_l5": 0.3387218715296974,
+  "complete_target_mae_l1": 0.34308228144850983,
+  "complete_target_mae_l20": 0.34661211602372527,
+  "complete_target_mae_l5": 0.3459072806350224,
+  "complete_target_mae_multiscale": 0.33655981932696866,
+  "complete_target_mae_on": 0.3429794316440552,
+  "complete_target_mse_ensemble_l1": 0.6130336683784203,
+  "complete_target_mse_ensemble_l20": 0.6127131000625992,
+  "complete_target_mse_ensemble_l5": 0.6129441080587554,
+  "complete_target_mse_l1": 0.6187422295826309,
+  "complete_target_mse_l20": 0.623172225027731,
+  "complete_target_mse_l5": 0.6224679762507628,
+  "complete_target_mse_multiscale": 0.6097545894220583,
+  "complete_target_mse_on": 0.6192718342611181,
+  "dataset": "traffic",
+  "estimated_serial_latency": {
+    "ensemble_l1": {
+      "mean_ms": 224.2476725950837,
+      "p50_ms": 224.2476725950837,
+      "p95_ms": 261.7927541024983,
+      "std_ms": 41.716757230460644,
+      "total_seconds": 0.4484953451901674
+    },
+    "ensemble_l20": {
+      "mean_ms": 202.06188829615712,
+      "p50_ms": 202.06188829615712,
+      "p95_ms": 225.1557343173772,
+      "std_ms": 25.659828912466764,
+      "total_seconds": 0.40412377659231424
+    },
+    "ensemble_l5": {
+      "mean_ms": 216.27284865826368,
+      "p50_ms": 216.27284865826368,
+      "p95_ms": 249.44288013502955,
+      "std_ms": 36.85559052973986,
+      "total_seconds": 0.43254569731652737
+    },
+    "multiscale": {
+      "mean_ms": 304.5206442475319,
+      "measured_multiplier_vs_original": 2.676357171333041,
+      "p50_ms": 304.5206442475319,
+      "p95_ms": 337.3693881556392,
+      "std_ms": 36.49860434234142,
+      "total_seconds": 0.6090412884950638
+    },
+    "original": {
+      "mean_ms": 113.78176556900144,
+      "p50_ms": 113.78176556900144,
+      "p95_ms": 137.1968983206898,
+      "std_ms": 26.016814168542624,
+      "total_seconds": 0.22756353113800287
+    }
+  },
+  "evaluation_elapsed_seconds": 6.00682048778981,
+  "evaluation_samples_sha256": "d5407837d22659d50fdc102cfe1e6bdf035fa8618b9c1e14271f7f8d7f42c117",
+  "evaluation_seed": 2028,
+  "experiment_id": "cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__smoke__20260820_181257",
+  "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+  "mae": 0.33655981932696866,
+  "mask_asset": "/mnt/data/zza/code/S4M_MissingForecasting/artifacts/masks/traffic/point/rate_0.06/seed_2028.npz",
+  "mask_asset_sha256": "b39ea670e364598e6d4e23693908152b94aa8581337543991397ceee18c0b22e",
+  "method": "cnm_se_equal_rate_multiscale_pg95",
+  "mse": 0.6097545894220583,
+  "multiscale_weights": {
+    "l20": 0.25,
+    "l5": 0.25,
+    "original": 0.5
+  },
+  "nested_seed": 2028,
+  "parameter_bytes": 113485160,
+  "parameter_count": 28371290,
+  "peak_gpu_memory_mb": 3077.37158203125,
+  "peak_gpu_reserved_mb": 3928.0,
+  "prediction_difference_mse_l1_mean": 0.023893471574410796,
+  "prediction_difference_mse_l20_mean": 0.03403567534405738,
+  "prediction_difference_mse_l5_mean": 0.031703206982153155,
+  "prediction_difference_to_original_mse_ratio_l1": 0.03858317180357347,
+  "prediction_difference_to_original_mse_ratio_l20": 0.05496079986370916,
+  "prediction_difference_to_original_mse_ratio_l5": 0.05119433054787599,
+  "realized_additional_missing_rate_l1": 0.15057820981989303,
+  "realized_additional_missing_rate_l20": 0.15057820981989303,
+  "realized_additional_missing_rate_l5": 0.15057820981989303,
+  "sample_count": 48,
+  "scope": "smoke_test_not_formal_result",
+  "setting": "S4M_custom4_stage21_equal_rate_multiscale_test_cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__smoke__20260820_181257",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "c53ba27fb39a7b228c82333d46fcf8039c862e551e85779566ccb036a7be6b66",
+  "source_formal_test_mae_reference_only": 0.3145440285607153,
+  "source_formal_test_mse_reference_only": 0.515329780200807,
+  "source_split": "test",
+  "source_validation_mae_reference_only": 0.3145440285607153,
+  "source_validation_mse_reference_only": 0.515329780200807,
+  "target_additional_missing_rate": 0.15,
+  "target_count_rounding": "numpy_rint_ties_to_even",
+  "test_batches_processed": 3,
+  "timing_batch_size": 16,
+  "timing_components": {
+    "l1_forward_seconds": {
+      "mean_ms": 104.39377371221781,
+      "p50_ms": 104.39377371221781,
+      "p95_ms": 119.43081831559539,
+      "std_ms": 16.7078273370862,
+      "total_seconds": 0.20878754742443562
+    },
+    "l1_fusion_seconds": {
+      "mean_ms": 0.09569292888045311,
+      "p50_ms": 0.09569292888045311,
+      "p95_ms": 0.10278862901031971,
+      "std_ms": 0.007884111255407333,
+      "total_seconds": 0.00019138585776090622
+    },
+    "l1_mask_seconds": {
+      "mean_ms": 5.56036364287138,
+      "p50_ms": 5.56036364287138,
+      "p95_ms": 6.435989215970039,
+      "std_ms": 0.972917303442955,
+      "total_seconds": 0.01112072728574276
+    },
+    "l1_preprocess_seconds": {
+      "mean_ms": 0.41607674211263657,
+      "p50_ms": 0.41607674211263657,
+      "p95_ms": 0.45464271679520607,
+      "std_ms": 0.04285108298063278,
+      "total_seconds": 0.0008321534842252731
+    },
+    "l20_forward_seconds": {
+      "mean_ms": 85.88582277297974,
+      "p50_ms": 85.88582277297974,
+      "p95_ms": 85.98515670746565,
+      "std_ms": 0.11037103831768036,
+      "total_seconds": 0.17177164554595947
+    },
+    "l20_fusion_seconds": {
+      "mean_ms": 0.07000239565968513,
+      "p50_ms": 0.07000239565968513,
+      "p95_ms": 0.07015201263129711,
+      "std_ms": 0.00016624107956886292,
+      "total_seconds": 0.00014000479131937027
+    },
+    "l20_mask_seconds": {
+      "mean_ms": 1.9300570711493492,
+      "p50_ms": 1.9300570711493492,
+      "p95_ms": 2.0945879630744457,
+      "std_ms": 0.18281210213899612,
+      "total_seconds": 0.0038601141422986984
+    },
+    "l20_preprocess_seconds": {
+      "mean_ms": 0.39424048736691475,
+      "p50_ms": 0.39424048736691475,
+      "p95_ms": 0.4515127744525671,
+      "std_ms": 0.06363587453961372,
+      "total_seconds": 0.0007884809747338295
+    },
+    "l5_forward_seconds": {
+      "mean_ms": 98.81911426782608,
+      "p50_ms": 98.81911426782608,
+      "p95_ms": 108.91313096508384,
+      "std_ms": 11.215574108064175,
+      "total_seconds": 0.19763822853565216
+    },
+    "l5_fusion_seconds": {
+      "mean_ms": 0.07261522114276886,
+      "p50_ms": 0.07261522114276886,
+      "p95_ms": 0.07402338087558746,
+      "std_ms": 0.001564621925354004,
+      "total_seconds": 0.00014523044228553772
+    },
+    "l5_mask_seconds": {
+      "mean_ms": 3.1427298672497272,
+      "p50_ms": 3.1427298672497272,
+      "p95_ms": 3.4083578269928694,
+      "std_ms": 0.29514217749238014,
+      "total_seconds": 0.0062854597344994545
+    },
+    "l5_preprocess_seconds": {
+      "mean_ms": 0.45662373304367065,
+      "p50_ms": 0.45662373304367065,
+      "p95_ms": 0.5315219052135944,
+      "std_ms": 0.08322019129991531,
+      "total_seconds": 0.0009132474660873413
+    },
+    "multiscale_fusion_seconds": {
+      "mean_ms": 0.11029047891497612,
+      "p50_ms": 0.11029047891497612,
+      "p95_ms": 0.11154818348586559,
+      "std_ms": 0.0013974495232105255,
+      "total_seconds": 0.00022058095782995224
+    },
+    "original_forward_seconds": {
+      "mean_ms": 113.78176556900144,
+      "p50_ms": 113.78176556900144,
+      "p95_ms": 137.1968983206898,
+      "std_ms": 26.016814168542624,
+      "total_seconds": 0.22756353113800287
+    }
+  },
+  "timing_device_serial": true,
+  "timing_fixed_forward_order": [
+    "original",
+    "l1",
+    "l5",
+    "l20"
+  ],
+  "timing_measured_batches": 2,
+  "timing_scope": "batch latency excluding dataloader/host-to-device; nested routes include mask construction, extrema preprocessing and model forward",
+  "timing_warmup_batches": 1,
+  "updates_model_or_memory": false,
+  "uses_test_split": true
+}

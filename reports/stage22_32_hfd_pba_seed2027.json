@@ -1,0 +1,80 @@
+{
+  "comparison": {
+    "accuracy_gate_pass": false,
+    "bf_cmvd_v2_validation": {
+      "mae": 0.31763805278010177,
+      "mse": 0.520750270727185
+    },
+    "cnm_se_teacher_validation": {
+      "mae": 0.316191883227654,
+      "mse": 0.517810115072775
+    },
+    "hfd_gain_vs_bf_percent": {
+      "mae": -0.49005108964303046,
+      "mse": -0.2540400803849162
+    },
+    "hfd_gain_vs_pba_percent": {
+      "mae": -0.5187940126965339,
+      "mse": -0.10415258049764875
+    },
+    "hfd_gain_vs_pg95_percent": {
+      "mae": -0.1295673611308004,
+      "mse": 0.2672193447461272
+    },
+    "hfd_pba_validation": {
+      "mae": 0.31919464151887156,
+      "mse": 0.5220731851335451
+    },
+    "pba_cmvd_validation": {
+      "mae": 0.317547225525362,
+      "mse": 0.5215299981823688
+    },
+    "pg95_validation": {
+      "mae": 0.3187816046060131,
+      "mse": 0.5234720035914716
+    },
+    "protocol_gate_pass": true,
+    "teacher_gain_retention_fraction": {
+      "mae": -0.15949086890580486,
+      "mse": 0.24705863658519345
+    },
+    "validation_development_gate_pass": false
+  },
+  "costs": {
+    "checkpoint_size_bytes": 16530978,
+    "deployment_student_forward_count": 1,
+    "elapsed_seconds": 2744.366855783388,
+    "peak_gpu_memory_mb": 3464.83154296875,
+    "total_deployment_parameters": 30663702,
+    "trainable_parameters": 4127582,
+    "training_teacher_forward_count": 8988,
+    "validation_elapsed_seconds": 26.510844358243048,
+    "validation_ms_per_batch": 257.3868384295442
+  },
+  "decision": "HFD_PBA_SEED2027_STOP",
+  "formal_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/hfd_pba_cmvd_pg95_traffic__traffic__point__mr0.06__seed2027__20260830_201313",
+  "queue_state": "SUCCESS",
+  "scientific_dependency": {
+    "checks": {
+      "all_tail_groups_active": true,
+      "both_hfd_levels_active": true,
+      "delta_checkpoint_verified": true,
+      "exact_hfd_protocol": true,
+      "exact_tail_scope": true,
+      "feature_gradient_isolation": true,
+      "hfd_enabled": true,
+      "single_view_validation": true,
+      "student_teacher_memory_isolated": true,
+      "token_filter_active": true,
+      "validation_only": true
+    },
+    "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/hfd_pba_cmvd_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260830_200955/metrics.json",
+    "passed": true,
+    "reason": "HFD-PBA smoke PASS",
+    "source_job": "hfd_pba_traffic_validation_seed2027_smoke"
+  },
+  "seed2027_is_development_not_confirmation": true,
+  "smoke_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/hfd_pba_cmvd_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260830_200955",
+  "step": "22.32",
+  "test_sources_accessed": false
+}

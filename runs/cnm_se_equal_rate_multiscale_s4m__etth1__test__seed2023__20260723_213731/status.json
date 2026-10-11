@@ -1,0 +1,26 @@
+{
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 314,
+  "checkpoint_size_bytes": 23207100,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage19_external_validation/s4m_etth1_seed2023.yaml",
+  "evaluation_seed": 2023,
+  "experiment_id": "cnm_se_equal_rate_multiscale_s4m__etth1__test__seed2023__20260723_213731",
+  "finished_at": "2026-07-23T13:38:20.003199+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__etth1__test__seed2023__20260723_213731/metrics.json",
+  "pid": 3328924,
+  "return_code": 0,
+  "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__etth1__test__seed2023__20260723_213731/test_equal_rate_multiscale_samples.npz",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_reprofix__etth1__point__mr0.06__seed2023__20260717_195944/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebPaperAdamFormal_dtprojection_0_data_ETTh1_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "d4f3dad689d9ef046a8582adb2afb4d60f4a23ac5a5db30879270e26dbe38926",
+  "started_at": "2026-07-23T13:37:31.730462+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

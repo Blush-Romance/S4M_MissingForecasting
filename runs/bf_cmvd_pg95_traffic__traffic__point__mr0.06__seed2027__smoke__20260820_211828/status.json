@@ -1,0 +1,44 @@
+{
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_ard_state_keys": [],
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [
+    "mcpr.hidden_projection.weight",
+    "mcpr.mask_projection.bias",
+    "mcpr.mask_projection.weight",
+    "mcpr.output_projection.bias",
+    "mcpr.output_projection.weight",
+    "mcpr.temporal_filter.bias",
+    "mcpr.temporal_filter.weight"
+  ],
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 328,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 123345699,
+  "checkpoint_ttrr_state_keys": [],
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_26_traffic/bf_cmvd_traffic_seed2027_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "bf_cmvd_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260820_211828",
+  "finished_at": "2026-08-20T13:19:52.726316+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/bf_cmvd_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260820_211828/metrics.json",
+  "pid": 1761651,
+  "return_code": 0,
+  "started_at": "2026-08-20T13:18:28.916532+00:00",
+  "state": "CODE_ERROR",
+  "verification_error": "RuntimeError: MCPR mechanism verification failed: {'enabled': True, 'steps': True, 'backbone_frozen': True, 'backbone_hash_equal': True, 'memory_frozen': True, 'memory_hash_equal': True, 'trainable_parameters': True, 'finite_positive_residual': True, 'finite_positive_gradient': True, 'source_mipp_frozen': True, 'bf_cmvd_enabled': True, 'bf_cmvd_steps': True, 'bf_cmvd_beneficial_samples': False, 'bf_cmvd_non_beneficial_samples': True, 'bf_cmvd_fraction_open_interval': False, 'bf_cmvd_target_rate': True, 'bf_cmvd_block_lengths': True, 'bf_cmvd_nested_seed': True, 'bf_cmvd_teacher_weights': True, 'bf_cmvd_distill_positive': False, 'bf_cmvd_teacher_delta_positive': True}"
+}

@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "candidate_fraction_bounded": true,
+    "constant_feature_excluded": true,
+    "one_frozen_rule_reaches_audit": true,
+    "useful_feature_selected": true
+  },
+  "status": "PASS",
+  "step": "22.15"
+}

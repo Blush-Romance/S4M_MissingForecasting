@@ -1,0 +1,92 @@
+{
+  "anchor": {
+    "mae": 0.7545076541200394,
+    "mse": 0.8728095906711909,
+    "parameter_count": 24118143,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346"
+  },
+  "candidates": {
+    "mrra_v3": {
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mrra_v3_pg95_electricity__electricity__point__mr0.06__seed2023__20260810_173201/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE22M3F_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "gate": {
+        "has_strict_improvement": true,
+        "mae_gain_percent": 0.11408112023843239,
+        "mae_non_degrade": true,
+        "mse_gain_percent": -0.6460121045750851,
+        "mse_non_degrade": false,
+        "pass": false
+      },
+      "mae": 0.7536469033359345,
+      "mse": 0.878448046276819,
+      "parameter_count": 24166400,
+      "peak_gpu_memory_mb": 11575.65234375,
+      "protocol_checks": {
+        "checkpoint_reload_verified": true,
+        "full_validation_budget": true,
+        "mechanism_executed": true,
+        "run_success": true,
+        "same_fixed_data": true,
+        "same_training_budget": true,
+        "validation_only": true
+      },
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mrra_v3_pg95_electricity__electricity__point__mr0.06__seed2023__20260810_173201"
+    },
+    "radr": {
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/radr_pg95_electricity__electricity__point__mr0.06__seed2023__20260805_215330/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE22RAF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "gate": {
+        "has_strict_improvement": true,
+        "mae_gain_percent": 0.8857251204201045,
+        "mae_non_degrade": true,
+        "mse_gain_percent": -2.250056711051534,
+        "mse_non_degrade": false,
+        "pass": false
+      },
+      "mae": 0.7478247902920058,
+      "mse": 0.8924483014407895,
+      "parameter_count": 24118143,
+      "peak_gpu_memory_mb": 11540.7373046875,
+      "protocol_checks": {
+        "checkpoint_reload_verified": false,
+        "full_validation_budget": true,
+        "mechanism_executed": true,
+        "run_success": true,
+        "same_fixed_data": true,
+        "same_training_budget": true,
+        "validation_only": true
+      },
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/radr_pg95_electricity__electricity__point__mr0.06__seed2023__20260805_215330"
+    }
+  },
+  "decision": "PROTOCOL_FAIL_NO_SCIENTIFIC_DECISION",
+  "gate_definition": "Relative to the frozen PG95 anchor, validation MSE and MAE must both be non-degrading and at least one must be strictly lower; no numerical gain threshold.",
+  "limitations": [
+    "single seed is directional evidence, not statistical stability",
+    "Electricity official missing-mask seed and selected layer count are unpublished",
+    "no Electricity test split is accessed or authorized by this report"
+  ],
+  "passed_candidates": [],
+  "protocol_checks": {
+    "anchor_complete_validation": true,
+    "anchor_success": true,
+    "anchor_validation_only": true,
+    "mrra_v3_checkpoint_reload_verified": true,
+    "mrra_v3_full_validation_budget": true,
+    "mrra_v3_mechanism_executed": true,
+    "mrra_v3_run_success": true,
+    "mrra_v3_same_fixed_data": true,
+    "mrra_v3_same_training_budget": true,
+    "mrra_v3_validation_only": true,
+    "radr_checkpoint_reload_verified": false,
+    "radr_full_validation_budget": true,
+    "radr_mechanism_executed": true,
+    "radr_run_success": true,
+    "radr_same_fixed_data": true,
+    "radr_same_training_budget": true,
+    "radr_validation_only": true
+  },
+  "protocol_pass": false,
+  "scope": "Electricity seed2023 validation-only rapid innovation screen",
+  "status": "FAIL",
+  "step": 22,
+  "test_accessed": false
+}

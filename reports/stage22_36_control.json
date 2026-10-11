@@ -1,0 +1,119 @@
+{
+  "stage": "22.36",
+  "queue_state": "SUCCESS",
+  "decision": "PAIRED_SINGLE_SEED_COMPLETE_NO_AUTO_EXPANSION",
+  "test_accessed": false,
+  "new_method": false,
+  "jobs": [
+    {
+      "id": "legacy_s4m_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__smoke__20260908_143341",
+      "failure_summary": null
+    },
+    {
+      "id": "pg95_eval_formal",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2027__20260908_195821",
+      "failure_summary": null
+    },
+    {
+      "id": "pg95_eval_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2027__smoke__20260908_191816",
+      "failure_summary": null
+    },
+    {
+      "id": "pg95_train_formal",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2027__20260908_191934",
+      "failure_summary": null
+    },
+    {
+      "id": "pg95_train_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2027__smoke__20260908_191449",
+      "failure_summary": null
+    },
+    {
+      "id": "s4m_eval_formal",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__20260908_151505",
+      "failure_summary": null
+    },
+    {
+      "id": "s4m_eval_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__smoke__20260908_144118",
+      "failure_summary": null
+    },
+    {
+      "id": "s4m_train_formal",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2027__20260908_144251",
+      "failure_summary": null
+    },
+    {
+      "id": "s4m_train_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2027__smoke__20260908_143725",
+      "failure_summary": null
+    }
+  ],
+  "pairing_check": "PASS",
+  "four_cells": {
+    "seed": 2027,
+    "sources": {
+      "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__20260908_151505",
+      "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2027__20260908_195821"
+    },
+    "cells": {
+      "A_s4m": {
+        "mse": 0.5347613803970451,
+        "mae": 0.32664500314070355
+      },
+      "B_pg95": {
+        "mse": 0.5335844910518334,
+        "mae": 0.3218767654092067
+      },
+      "C_s4m_cnm": {
+        "mse": 0.5274178883158254,
+        "mae": 0.32265877134535237
+      },
+      "D_pg95_cnm": {
+        "mse": 0.5256434049709368,
+        "mae": 0.3183358659710535
+      }
+    },
+    "pg95_gain_without_cnm_percent": [
+      0.22007747536629432,
+      1.4597614185584022
+    ],
+    "cnm_gain_on_s4m_percent": [
+      1.3732278265433877,
+      1.2203559696378077
+    ],
+    "cnm_gain_on_pg95_percent": [
+      1.488252791088937,
+      1.1000792286611831
+    ],
+    "pg95_gain_with_cnm_percent": [
+      0.33644731894759417,
+      1.3397761840702942
+    ],
+    "interaction_absolute": [
+      0.0005975939996768487,
+      -0.0004453323571980139
+    ],
+    "interaction_percent_of_s4m": [
+      0.11174965537585234,
+      -0.13633527313019553
+    ],
+    "fixed_assets_check": "PASS",
+    "new_test_inference": false
+  },
+  "actual_epochs": [
+    4,
+    4
+  ]
+}

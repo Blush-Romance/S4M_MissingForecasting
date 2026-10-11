@@ -1,0 +1,1448 @@
+{
+  "aggregation_count_per_lag": 7,
+  "claim_boundary": "single-seed validation screen; test remains untouched",
+  "cross_run_current_output_max_errors": {
+    "lag16_current_mae_off": 0.0,
+    "lag16_current_mae_on": 0.0,
+    "lag16_current_mse_off": 0.0,
+    "lag16_current_mse_on": 0.0,
+    "lag4_current_mae_off": 2.682209014892578e-06,
+    "lag4_current_mae_on": 1.8477439880371094e-06,
+    "lag4_current_mse_off": 6.198883056640625e-06,
+    "lag4_current_mse_on": 3.5762786865234375e-06,
+    "lag8_current_mae_off": 0.0,
+    "lag8_current_mae_on": 0.0,
+    "lag8_current_mse_off": 0.0,
+    "lag8_current_mse_on": 0.0
+  },
+  "cross_run_current_output_tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-06
+  },
+  "cross_run_current_outputs_identical": false,
+  "cross_run_current_outputs_numerically_consistent": true,
+  "decision": {
+    "best_exploratory": {
+      "aggregation": "rolling_mean_32",
+      "lag": 1
+    },
+    "code": "SHORT_HCUP_VALIDATION_NEGATIVE_STOP_FEEDBACK_BRANCH",
+    "locked_threshold": null,
+    "selected_aggregation": null,
+    "selected_lag": null,
+    "selected_probe_horizon": null,
+    "summary_zh": "\u9884\u58f0\u660e\u76841/4/8/16\u6b65\u89c2\u6d4b\u5386\u53f2\u63a2\u9488\u5747\u672a\u901a\u8fc7\u540e\u6bb5validation\u95e8\u7981\uff1b\u5e94\u505c\u6b62\u5386\u53f2\u53cd\u9988\u5f0fFUSR\uff0c\u4e0d\u80fd\u7528test\u7ee7\u7eed\u641c\u7d22\u3002"
+  },
+  "lags": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "records": [
+    {
+      "aggregation": "direct_last_probe",
+      "audit": {
+        "abstention_rate": 0.18339100346020765,
+        "auprc": 0.8704990503605023,
+        "auroc": 0.6523402616050009,
+        "gate_rate": 0.8166089965397924,
+        "mae_relative_gain": -0.010422981522814907,
+        "mse_relative_gain": -0.008222923202189682,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.41373415832701027,
+        "routed_mse": 0.592080592418212,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.0036666875678053367,
+        "absolute_gain_ci95_low": -0.006072191636635565,
+        "absolute_gain_mean": -0.004828925358589133,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.18260493292946778,
+        "auprc": 0.738838124947997,
+        "auroc": 0.6341142244679222,
+        "gate_rate": 0.8173950670705322,
+        "mae_relative_gain": 0.0009407461768381042,
+        "mse_relative_gain": 0.0038046071889852296,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.3516150311518933,
+        "routed_mse": 0.6421313649329567,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.19486458599567413,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "ewma_alpha_0.50",
+      "audit": {
+        "abstention_rate": 0.16608996539792387,
+        "auprc": 0.8791830326429796,
+        "auroc": 0.6720160861977388,
+        "gate_rate": 0.8339100346020761,
+        "mae_relative_gain": -0.010794340528099676,
+        "mse_relative_gain": -0.008420173390070685,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.41388621732437897,
+        "routed_mse": 0.5921964279198729,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.003851833590096875,
+        "absolute_gain_ci95_low": -0.006110901117556854,
+        "absolute_gain_mean": -0.00494476086025007,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.15750757247944613,
+        "auprc": 0.7383463770886127,
+        "auroc": 0.6432680038789363,
+        "gate_rate": 0.8424924275205539,
+        "mae_relative_gain": 0.0024641065797336,
+        "mse_relative_gain": 0.004392491049395579,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.35107889036397716,
+        "routed_mse": 0.6417524245479364,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.19430904003400024,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "ewma_alpha_0.25",
+      "audit": {
+        "abstention_rate": 0.27474048442906573,
+        "auprc": 0.8739026602767874,
+        "auroc": 0.6678953113052817,
+        "gate_rate": 0.7252595155709343,
+        "mae_relative_gain": -0.016044760349762037,
+        "mse_relative_gain": -0.012845427732479509,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.4160360872951758,
+        "routed_mse": 0.5947951659096153,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.006120595073514331,
+        "absolute_gain_ci95_low": -0.009087264917945573,
+        "absolute_gain_mean": -0.007543498849992521,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.22760709649502375,
+        "auprc": 0.7315687493997775,
+        "auroc": 0.6382900355569165,
+        "gate_rate": 0.7723929035049762,
+        "mae_relative_gain": -3.456380209480804e-06,
+        "mse_relative_gain": 0.0035084772944850456,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.35194733958128777,
+        "routed_mse": 0.6423222454517035,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.0723211237169217,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "ewma_alpha_0.10",
+      "audit": {
+        "abstention_rate": 0.12941176470588234,
+        "auprc": 0.8484685228147415,
+        "auroc": 0.6182446432844794,
+        "gate_rate": 0.8705882352941177,
+        "mae_relative_gain": -0.011008076444567246,
+        "mse_relative_gain": -0.008783321810452141,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.41397373497898604,
+        "routed_mse": 0.592409687435132,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.0039667790737583156,
+        "absolute_gain_ci95_low": -0.006409932092399333,
+        "absolute_gain_mean": -0.005158020375509163,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.12808308091735177,
+        "auprc": 0.7072768389436387,
+        "auroc": 0.6116895489885844,
+        "gate_rate": 0.8719169190826482,
+        "mae_relative_gain": -0.0007757872027636545,
+        "mse_relative_gain": 0.0012269210737336895,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.3522191584200531,
+        "routed_mse": 0.6437928995229578,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.19227052981748213,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "rolling_mean_32",
+      "audit": {
+        "abstention_rate": 0.0,
+        "auprc": 0.8123376707788769,
+        "auroc": 0.5394362826641452,
+        "gate_rate": 1.0,
+        "mae_relative_gain": 0.0,
+        "mse_relative_gain": 0.0,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.4094662986618425,
+        "routed_mse": 0.5872516670596228,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0,
+        "absolute_gain_ci95_low": 0.0,
+        "absolute_gain_mean": 0.0,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.006490696668109086,
+        "auprc": 0.6798603317454676,
+        "auroc": 0.5688238996920669,
+        "gate_rate": 0.9935093033318909,
+        "mae_relative_gain": 9.240760066658168e-05,
+        "mse_relative_gain": 8.814209393696161e-05,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.3519136006248714,
+        "routed_mse": 0.6445269379514939,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.7247725288907532,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "rolling_mean_96",
+      "audit": {
+        "abstention_rate": 0.0,
+        "auprc": 0.7612992418230132,
+        "auroc": 0.34391543656283013,
+        "gate_rate": 1.0,
+        "mae_relative_gain": 0.0,
+        "mse_relative_gain": 0.0,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.4094662986618425,
+        "routed_mse": 0.5872516670596228,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0,
+        "absolute_gain_ci95_low": 0.0,
+        "absolute_gain_mean": 0.0,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.0,
+        "auprc": 0.6547624468526595,
+        "auroc": 0.5293370081151432,
+        "gate_rate": 1.0,
+        "mae_relative_gain": 0.0,
+        "mse_relative_gain": 0.0,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.351946123121673,
+        "routed_mse": 0.6445837529131934,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.3993245921155904,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "rolling_median_32",
+      "audit": {
+        "abstention_rate": 0.03183391003460212,
+        "auprc": 0.802113941083161,
+        "auroc": 0.5352571398553643,
+        "gate_rate": 0.9681660899653979,
+        "mae_relative_gain": -0.005132938378555456,
+        "mse_relative_gain": -0.0038920490705130154,
+        "prototype_on_mae": 0.4094662986618425,
+        "prototype_on_mse": 0.5872516670596228,
+        "routed_mae": 0.4115680639409689,
+        "routed_mse": 0.5895372793645595,
+        "sample_count": 1445
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.0015252307197884704,
+        "absolute_gain_ci95_low": -0.003083843051820065,
+        "absolute_gain_mean": -0.0022856123049366434,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3212,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.05538727823453049,
+        "auprc": 0.6733329638371345,
+        "auroc": 0.5558996410282584,
+        "gate_rate": 0.9446127217654695,
+        "mae_relative_gain": -0.001852477403143961,
+        "mse_relative_gain": 8.183449913865395e-05,
+        "prototype_on_mae": 0.351946123121673,
+        "prototype_on_mse": 0.6445837529131934,
+        "routed_mae": 0.35259809536188,
+        "routed_mse": 0.6445310037246208,
+        "sample_count": 2311
+      },
+      "calibration_range": [
+        1,
+        3101
+      ],
+      "lag": 1,
+      "passes_offline_gate": false,
+      "probe_horizon": 1,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h1__seed2023__20260719_103325",
+      "threshold": -0.3714088872075081,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 3852
+    },
+    {
+      "aggregation": "direct_last_probe",
+      "audit": {
+        "abstention_rate": 0.24796274738067525,
+        "auprc": 0.8744440952506956,
+        "auroc": 0.6597993130571034,
+        "gate_rate": 0.7520372526193247,
+        "mae_relative_gain": -0.015617059895337492,
+        "mse_relative_gain": -0.01355543789185865,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.4125114049983663,
+        "routed_mse": 0.5840542175014513,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.006450914998123547,
+        "absolute_gain_ci95_low": -0.00921569693729507,
+        "absolute_gain_mean": -0.007811226080821196,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.2250827510114013,
+        "auprc": 0.7334656502439703,
+        "auroc": 0.6374277426668798,
+        "gate_rate": 0.7749172489885987,
+        "mae_relative_gain": -7.330700301186271e-05,
+        "mse_relative_gain": 0.004234988618721878,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.3488198155184448,
+        "routed_mse": 0.6261733814761585,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.0972280353307724,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "ewma_alpha_0.50",
+      "audit": {
+        "abstention_rate": 0.3044237485448196,
+        "auprc": 0.8718548477494321,
+        "auroc": 0.6599736429764759,
+        "gate_rate": 0.6955762514551804,
+        "mae_relative_gain": -0.018763850959648165,
+        "mse_relative_gain": -0.016196265944910318,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.4137895316215139,
+        "routed_mse": 0.5855759761585693,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.007886868418325541,
+        "absolute_gain_ci95_low": -0.010888933423230027,
+        "absolute_gain_mean": -0.009332984737939136,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.2596542846634792,
+        "auprc": 0.7306201064051105,
+        "auroc": 0.6356271820585819,
+        "gate_rate": 0.7403457153365208,
+        "mae_relative_gain": -0.0006810984720880319,
+        "mse_relative_gain": 0.003886037579916517,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.3490318096859046,
+        "routed_mse": 0.6263928146249848,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.05286343353816587,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "ewma_alpha_0.25",
+      "audit": {
+        "abstention_rate": 0.22002328288707795,
+        "auprc": 0.863002505270528,
+        "auroc": 0.64777262397659,
+        "gate_rate": 0.779976717112922,
+        "mae_relative_gain": -0.014414347762084355,
+        "mse_relative_gain": -0.011469152686309428,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.412022901514634,
+        "routed_mse": 0.582852010273649,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.005353496743017013,
+        "absolute_gain_ci95_low": -0.007821238200734255,
+        "absolute_gain_mean": -0.006609018853018809,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.19786686281721222,
+        "auprc": 0.7241338481919448,
+        "auroc": 0.6280167474712222,
+        "gate_rate": 0.8021331371827878,
+        "mae_relative_gain": -0.0006241365565621082,
+        "mse_relative_gain": 0.0033868266966824087,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.34901194169750194,
+        "routed_mse": 0.6267067366480038,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.11525823971073205,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "ewma_alpha_0.10",
+      "audit": {
+        "abstention_rate": 0.07101280558789291,
+        "auprc": 0.8409947497401555,
+        "auroc": 0.604242028038062,
+        "gate_rate": 0.9289871944121071,
+        "mae_relative_gain": -0.00619537447742698,
+        "mse_relative_gain": -0.004197651405537972,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.4086846155098209,
+        "routed_mse": 0.5786618586234983,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.001612443528306151,
+        "absolute_gain_ci95_low": -0.0033459674748044558,
+        "absolute_gain_mean": -0.0024188672028681454,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.08091210003677818,
+        "auprc": 0.705147239226648,
+        "auroc": 0.6081001431418227,
+        "gate_rate": 0.9190878999632218,
+        "mae_relative_gain": -0.0010178771094819445,
+        "mse_relative_gain": 0.000711416250468154,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.3491492761369574,
+        "routed_mse": 0.6283891323807267,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.3281969265983856,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "rolling_mean_32",
+      "audit": {
+        "abstention_rate": 0.005820721769499437,
+        "auprc": 0.8058823502524264,
+        "auroc": 0.5339642416129669,
+        "gate_rate": 0.9941792782305006,
+        "mae_relative_gain": -0.0008893213463381149,
+        "mse_relative_gain": -0.0002499830833682387,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.40652946518935756,
+        "routed_mse": 0.5763870424203947,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -5.993095960585151e-05,
+        "absolute_gain_ci95_low": -0.00023809512632620348,
+        "absolute_gain_mean": -0.00014405099976465228,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.006252298639205622,
+        "auprc": 0.6799397315888069,
+        "auroc": 0.5745814047423509,
+        "gate_rate": 0.9937477013607944,
+        "mae_relative_gain": 8.80064715351537e-05,
+        "mse_relative_gain": 8.634187302486004e-05,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.34876355030664674,
+        "routed_mse": 0.6287822019625298,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.7025315007194877,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "rolling_mean_96",
+      "audit": {
+        "abstention_rate": 0.0,
+        "auprc": 0.7685015648503182,
+        "auroc": 0.3561581006340213,
+        "gate_rate": 1.0,
+        "mae_relative_gain": 0.0,
+        "mse_relative_gain": 0.0,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.40616825109345533,
+        "routed_mse": 0.5762429914206301,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0,
+        "absolute_gain_ci95_low": 0.0,
+        "absolute_gain_mean": 0.0,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.00993012136815008,
+        "auprc": 0.6481713913957388,
+        "auroc": 0.5259211170187451,
+        "gate_rate": 0.9900698786318499,
+        "mae_relative_gain": -0.0003420879716355152,
+        "mse_relative_gain": 8.053352718226253e-05,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.34891356477385804,
+        "routed_mse": 0.6287858544623821,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.3978725772067264,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "rolling_median_32",
+      "audit": {
+        "abstention_rate": 0.10710128055878931,
+        "auprc": 0.79558002783942,
+        "auroc": 0.5223007398644792,
+        "gate_rate": 0.8928987194412107,
+        "mae_relative_gain": -0.011658983730245376,
+        "mse_relative_gain": -0.009046682901548898,
+        "prototype_on_mae": 0.40616825109345533,
+        "prototype_on_mse": 0.5762429914206301,
+        "routed_mae": 0.41090376012469615,
+        "routed_mse": 0.5814560790382525,
+        "sample_count": 1718
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.004086289140889128,
+        "absolute_gain_ci95_low": -0.00640239410961049,
+        "absolute_gain_mean": -0.0052130876176224045,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3203,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.12247149687385073,
+        "auprc": 0.6760105405250769,
+        "auroc": 0.5753718575610732,
+        "gate_rate": 0.8775285031261493,
+        "mae_relative_gain": -0.0021836625468666902,
+        "mse_relative_gain": 0.00023363676095677083,
+        "prototype_on_mae": 0.34879424645756923,
+        "prototype_on_mse": 0.6288364968834971,
+        "routed_mae": 0.3495558953901212,
+        "routed_mse": 0.6286895775611938,
+        "sample_count": 2719
+      },
+      "calibration_range": [
+        4,
+        3101
+      ],
+      "lag": 4,
+      "passes_offline_gate": false,
+      "probe_horizon": 4,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h4__seed2023__20260720_003234",
+      "threshold": -0.2001313716173172,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 4533
+    },
+    {
+      "aggregation": "direct_last_probe",
+      "audit": {
+        "abstention_rate": 0.29715762273901813,
+        "auprc": 0.8673454484189592,
+        "auroc": 0.6532511390696806,
+        "gate_rate": 0.7028423772609819,
+        "mae_relative_gain": -0.019102734141211743,
+        "mse_relative_gain": -0.016291679846744313,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.4111082788046632,
+        "routed_mse": 0.5775789867422377,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.007988879756390743,
+        "absolute_gain_ci95_low": -0.01065103829696351,
+        "absolute_gain_mean": -0.009258889081558207,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.2627257799671593,
+        "auprc": 0.7301649280097708,
+        "auroc": 0.6353185915784525,
+        "gate_rate": 0.7372742200328407,
+        "mae_relative_gain": -0.00023832459516902647,
+        "mse_relative_gain": 0.004228037761143598,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.34670800016137765,
+        "routed_mse": 0.6125723394780911,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.05288633145391941,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "ewma_alpha_0.50",
+      "audit": {
+        "abstention_rate": 0.2987080103359173,
+        "auprc": 0.8623504032810628,
+        "auroc": 0.6467590151100746,
+        "gate_rate": 0.7012919896640827,
+        "mae_relative_gain": -0.01938460122925683,
+        "mse_relative_gain": -0.01605155177577303,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.4112219846063806,
+        "routed_mse": 0.5774425171334923,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.007735449613988862,
+        "absolute_gain_ci95_low": -0.010490088807346747,
+        "absolute_gain_mean": -0.009122419472812683,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.26206896551724135,
+        "auprc": 0.7264546194457586,
+        "auroc": 0.6307725346383517,
+        "gate_rate": 0.7379310344827587,
+        "mae_relative_gain": -0.0004528571534105147,
+        "mse_relative_gain": 0.004182006680366912,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.3467823625932186,
+        "routed_mse": 0.6126006565706679,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.05127686892860314,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "ewma_alpha_0.25",
+      "audit": {
+        "abstention_rate": 0.2687338501291989,
+        "auprc": 0.853478188403136,
+        "auroc": 0.6322909467298627,
+        "gate_rate": 0.7312661498708011,
+        "mae_relative_gain": -0.01883464382172904,
+        "mse_relative_gain": -0.014906286765610063,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.41100013058160934,
+        "routed_mse": 0.5767916400110691,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.00716743666274372,
+        "absolute_gain_ci95_low": -0.009737601494777572,
+        "absolute_gain_mean": -0.008471542350389544,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.24072249589490968,
+        "auprc": 0.7203142294457653,
+        "auroc": 0.6223493426379415,
+        "gate_rate": 0.7592775041050903,
+        "mae_relative_gain": -0.000716026873583432,
+        "mse_relative_gain": 0.003767670580898849,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.3468735839003217,
+        "routed_mse": 0.612855545082703,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.06442848789660727,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "ewma_alpha_0.10",
+      "audit": {
+        "abstention_rate": 0.2842377260981912,
+        "auprc": 0.8348953582520517,
+        "auroc": 0.595978289708575,
+        "gate_rate": 0.7157622739018088,
+        "mae_relative_gain": -0.021616556952028926,
+        "mse_relative_gain": -0.01819498820179662,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.41212236044172784,
+        "routed_mse": 0.5786606751324594,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.008915032546880634,
+        "absolute_gain_ci95_low": -0.011722945469198148,
+        "absolute_gain_mean": -0.010340577471779914,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.24532019704433494,
+        "auprc": 0.7027234764928586,
+        "auroc": 0.6053941318670901,
+        "gate_rate": 0.7546798029556651,
+        "mae_relative_gain": -0.0027108606328515522,
+        "mse_relative_gain": 0.0018701339803848817,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.3475650439317199,
+        "routed_mse": 0.6140228589644965,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.042891953795257634,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "rolling_mean_32",
+      "audit": {
+        "abstention_rate": 0.0051679586563307955,
+        "auprc": 0.80759579293525,
+        "auroc": 0.5374083257722909,
+        "gate_rate": 0.9948320413436692,
+        "mae_relative_gain": -0.0008120223438874693,
+        "mse_relative_gain": -0.0002360085351495333,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.40372976553686524,
+        "routed_mse": 0.5684542260544244,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -5.411427150401034e-05,
+        "absolute_gain_ci95_low": -0.00022423531869739216,
+        "absolute_gain_mean": -0.0001341283937449295,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.0,
+        "auprc": 0.6808043872376234,
+        "auroc": 0.581811612638609,
+        "gate_rate": 1.0,
+        "mae_relative_gain": 0.0,
+        "mse_relative_gain": 0.0,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.34662539080543864,
+        "routed_mse": 0.6151733154856122,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.7503045275807382,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "rolling_mean_96",
+      "audit": {
+        "abstention_rate": 0.0031007751937984773,
+        "auprc": 0.762354553249515,
+        "auroc": 0.35721257939094575,
+        "gate_rate": 0.9968992248062015,
+        "mae_relative_gain": -0.0005420036322576441,
+        "mse_relative_gain": -0.00020494929197522905,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.4036208393961884,
+        "routed_mse": 0.5684365744623103,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -3.724169053464589e-05,
+        "absolute_gain_ci95_low": -0.00021429927254370016,
+        "absolute_gain_mean": -0.0001164768016307545,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.017077175697865377,
+        "auprc": 0.6454886345396816,
+        "auroc": 0.5274930278316,
+        "gate_rate": 0.9829228243021346,
+        "mae_relative_gain": -0.0006725575968174346,
+        "mse_relative_gain": 9.625310301901274e-05,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.34685851634527465,
+        "routed_mse": 0.6151141031451022,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.3588646752044345,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "rolling_median_32",
+      "audit": {
+        "abstention_rate": 0.3023255813953488,
+        "auprc": 0.7923533550810216,
+        "auroc": 0.5296027095282237,
+        "gate_rate": 0.6976744186046512,
+        "mae_relative_gain": -0.02519037449141612,
+        "mse_relative_gain": -0.02260600170485117,
+        "prototype_on_mae": 0.40340219394181126,
+        "prototype_on_mse": 0.5683200976606795,
+        "routed_mae": 0.41356404627786436,
+        "routed_mse": 0.581167542757298,
+        "sample_count": 1935
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.011262213196653577,
+        "absolute_gain_ci95_low": -0.014470004505388805,
+        "absolute_gain_mean": -0.012847445096618445,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3195,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.2394088669950739,
+        "auprc": 0.6816904196741828,
+        "auroc": 0.5907900630034447,
+        "gate_rate": 0.7605911330049261,
+        "mae_relative_gain": -0.0015610934749869122,
+        "mse_relative_gain": 0.0022013904566752173,
+        "prototype_on_mae": 0.34662539080543864,
+        "prototype_on_mse": 0.6151733154856122,
+        "routed_mae": 0.3471665054412898,
+        "routed_mse": 0.6138190788197009,
+        "sample_count": 3045
+      },
+      "calibration_range": [
+        8,
+        3099
+      ],
+      "lag": 8,
+      "passes_offline_gate": false,
+      "probe_horizon": 8,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h8__seed2023__20260719_103256",
+      "threshold": -0.028348265681415796,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5076
+    },
+    {
+      "aggregation": "direct_last_probe",
+      "audit": {
+        "abstention_rate": 0.16293279022403262,
+        "auprc": 0.8437555464033375,
+        "auroc": 0.6232680415607245,
+        "gate_rate": 0.8370672097759674,
+        "mae_relative_gain": -0.012194724167880366,
+        "mse_relative_gain": -0.008895978065298753,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.4074383379622171,
+        "routed_mse": 0.5713453878309054,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.004071096413391368,
+        "absolute_gain_ci95_low": -0.006012201502297051,
+        "absolute_gain_mean": -0.005037859351565785,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.19747491097442538,
+        "auprc": 0.7178124158342102,
+        "auroc": 0.620665493692444,
+        "gate_rate": 0.8025250890255746,
+        "mae_relative_gain": 0.00036374921903360046,
+        "mse_relative_gain": 0.004553907427508027,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.34548487722892984,
+        "routed_mse": 0.6073624792102665,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.14133413136005402,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    },
+    {
+      "aggregation": "ewma_alpha_0.50",
+      "audit": {
+        "abstention_rate": 0.16089613034623218,
+        "auprc": 0.8395977905330634,
+        "auroc": 0.6161330319866906,
+        "gate_rate": 0.8391038696537678,
+        "mae_relative_gain": -0.01228176406552993,
+        "mse_relative_gain": -0.008665906656587825,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.4074733740974468,
+        "routed_mse": 0.5712150966600645,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.003971886718474983,
+        "absolute_gain_ci95_low": -0.005891543512314163,
+        "absolute_gain_mean": -0.004907568180724948,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.1955325348009065,
+        "auprc": 0.7133367201828622,
+        "auroc": 0.6155219829279617,
+        "gate_rate": 0.8044674651990935,
+        "mae_relative_gain": -0.0002468811867062186,
+        "mse_relative_gain": 0.004196099315809574,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.3456959175654467,
+        "routed_mse": 0.6075807926110868,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.1408922656429153,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    },
+    {
+      "aggregation": "ewma_alpha_0.25",
+      "audit": {
+        "abstention_rate": 0.19602851323828918,
+        "auprc": 0.8328339383636969,
+        "auroc": 0.6041340992560504,
+        "gate_rate": 0.8039714867617108,
+        "mae_relative_gain": -0.015608340502145972,
+        "mse_relative_gain": -0.01175198835359212,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.40881241958155895,
+        "routed_mse": 0.5729627679585804,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.005538085476417559,
+        "absolute_gain_ci95_low": -0.007815390721896697,
+        "absolute_gain_mean": -0.00665523947924072,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.21366137908708316,
+        "auprc": 0.7047940442496545,
+        "auroc": 0.6071438641605621,
+        "gate_rate": 0.7863386209129168,
+        "mae_relative_gain": -0.0016611380665626434,
+        "mse_relative_gain": 0.0037454185909409953,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.34618469972408256,
+        "routed_mse": 0.607855771401431,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.10293434661330746,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    },
+    {
+      "aggregation": "ewma_alpha_0.10",
+      "audit": {
+        "abstention_rate": 0.20621181262729127,
+        "auprc": 0.8161504002455539,
+        "auroc": 0.5696267696267696,
+        "gate_rate": 0.7937881873727087,
+        "mae_relative_gain": -0.01835737320561316,
+        "mse_relative_gain": -0.01397584149364958,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.409918986617487,
+        "routed_mse": 0.5742221527340273,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.006700038844852305,
+        "absolute_gain_ci95_low": -0.009205219244144388,
+        "absolute_gain_mean": -0.00791462425468774,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.22175461314341216,
+        "auprc": 0.6873971659432683,
+        "auroc": 0.588257381372643,
+        "gate_rate": 0.7782453868565878,
+        "mae_relative_gain": -0.0022363101692593774,
+        "mse_relative_gain": 0.0026469706697535796,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.3463834852954646,
+        "routed_mse": 0.6085259795198552,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.07441761957492586,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    },
+    {
+      "aggregation": "rolling_mean_32",
+      "audit": {
+        "abstention_rate": 0.01069246435845217,
+        "auprc": 0.7957041390918606,
+        "auroc": 0.5160655428948112,
+        "gate_rate": 0.9893075356415478,
+        "mae_relative_gain": -0.001759746242404559,
+        "mse_relative_gain": -0.0005733241630065847,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.40323795046649735,
+        "routed_mse": 0.5666322062691094,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.00019462572983532483,
+        "absolute_gain_ci95_low": -0.0004712657598956903,
+        "absolute_gain_mean": -0.00032467778976968736,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.002913564260278445,
+        "auprc": 0.6689063297293673,
+        "auroc": 0.5667199580436143,
+        "gate_rate": 0.9970864357397216,
+        "mae_relative_gain": 3.6453043384097264e-05,
+        "mse_relative_gain": 4.2247029666340765e-05,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.3455979942542212,
+        "routed_mse": 0.6101152282190114,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.6678604716435075,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    },
+    {
+      "aggregation": "rolling_mean_96",
+      "audit": {
+        "abstention_rate": 0.008146639511201648,
+        "auprc": 0.7576497772299169,
+        "auroc": 0.3607747119942242,
+        "gate_rate": 0.9918533604887984,
+        "mae_relative_gain": -0.0014185469582632083,
+        "mse_relative_gain": -0.0005424386728559283,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.4031006076549561,
+        "routed_mse": 0.5666147155835163,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.00016592989643455283,
+        "absolute_gain_ci95_low": -0.0004651727374878289,
+        "absolute_gain_mean": -0.00030718710417660094,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.01618646811265778,
+        "auprc": 0.6391532256735731,
+        "auroc": 0.5191675078621228,
+        "gate_rate": 0.9838135318873422,
+        "mae_relative_gain": -0.0006900238136046776,
+        "mse_relative_gain": 8.377032669985557e-05,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.3458490723514294,
+        "routed_mse": 0.6100898931528341,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.3469058974502938,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    },
+    {
+      "aggregation": "rolling_median_32",
+      "audit": {
+        "abstention_rate": 0.1731160896130346,
+        "auprc": 0.7944396069641195,
+        "auroc": 0.515956461688169,
+        "gate_rate": 0.8268839103869654,
+        "mae_relative_gain": -0.019141504533488677,
+        "mse_relative_gain": -0.01379104303983737,
+        "prototype_on_mae": 0.4025296005145353,
+        "prototype_on_mse": 0.5663075284793396,
+        "routed_mae": 0.41023462268764765,
+        "routed_mse": 0.5741174999783821,
+        "sample_count": 1964
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -0.006569815111818844,
+        "absolute_gain_ci95_low": -0.009120960981640093,
+        "absolute_gain_mean": -0.007809971499042453,
+        "bootstrap_draws": 2000
+      },
+      "audit_range": [
+        3202,
+        5168
+      ],
+      "calibration": {
+        "abstention_rate": 0.17578504370346393,
+        "auprc": 0.6664023425941678,
+        "auroc": 0.5649868134388258,
+        "gate_rate": 0.8242149562965361,
+        "mae_relative_gain": -0.003021896359832431,
+        "mse_relative_gain": 0.0008050259863447556,
+        "prototype_on_mae": 0.345610592812155,
+        "prototype_on_mse": 0.6101410048641446,
+        "routed_mae": 0.3466549922044936,
+        "routed_mse": 0.6096498254998944,
+        "sample_count": 3089
+      },
+      "calibration_range": [
+        16,
+        3106
+      ],
+      "lag": 16,
+      "passes_offline_gate": false,
+      "probe_horizon": 16,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup_short__weather__validation_point_r006_h16__seed2023__20260719_121729",
+      "threshold": -0.11091613164171576,
+      "threshold_source": "early_validation_calibration_only",
+      "valid_probe_count": 5149
+    }
+  ],
+  "schema_version": 1,
+  "source_split": "val",
+  "step": 8,
+  "test_used_for_selection": false
+}

@@ -1,0 +1,47 @@
+{
+  "checks": {
+    "all_missing_runs_at_least_l5": true,
+    "block_length_is_5": true,
+    "columns_match": true,
+    "complete_has_no_nan": true,
+    "dates_match_exactly": true,
+    "manifest_mask_hash_matches": true,
+    "manifest_output_hash_matches": true,
+    "manifest_protocol_is_approximate": true,
+    "mask_hash_matches_metadata": true,
+    "mask_shape_matches_rows": true,
+    "missing_shape_matches_complete": true,
+    "observed_values_preserved_with_csv_tolerance": true,
+    "output_hash_matches_metadata": true,
+    "paper_rate_is_0_260": true,
+    "realized_rate_matches_metadata": true,
+    "realized_rate_nearest_whole_block_tolerance": true,
+    "row_shared_missing_mask": true,
+    "seed_is_2023": true,
+    "shape_26304_by_322": true,
+    "source_hash_matches_metadata": true,
+    "split_counts_cover_all_rows": true,
+    "value_columns_321": true
+  },
+  "contiguous_run_count": 1130,
+  "contiguous_run_max": 22,
+  "contiguous_run_min": 5,
+  "failures": [],
+  "mask_sha256": "bacce0909f6c1740de6cb245b23c63481ec36d8d820043da147c00695d438406",
+  "observed_max_abs_error": 0.0,
+  "output_sha256": "c4fc8e9a53a3d8f39a87dacfc4dc0d155a074d32e6071977bd83274a9fbd3934",
+  "paper_reported_realized_rate": 0.26,
+  "realized_missing_rate": 0.2599224452554745,
+  "realized_missing_rows": 6837,
+  "shape": [
+    26304,
+    322
+  ],
+  "source_sha256": "7e45845d54c5219bad0ae6bc1b5316cf8ff9cead5d33fa998a5a51c2e4a497ad",
+  "split_counts": {
+    "test": 5260,
+    "train": 18412,
+    "validation": 2632
+  },
+  "status": "PASS"
+}

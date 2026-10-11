@@ -1,0 +1,9 @@
+{
+  "experiment_id": "s4m_fusion_diagnostic_v2__traffic__point__mr0.06__seed2027__20261004_214457",
+  "state": "SUCCESS",
+  "started_at": "2026-10-04T13:44:57.688992+00:00",
+  "pid": 2663411,
+  "return_code": 0,
+  "finished_at": "2026-10-04T13:45:58.937566+00:00",
+  "verification_error": null
+}

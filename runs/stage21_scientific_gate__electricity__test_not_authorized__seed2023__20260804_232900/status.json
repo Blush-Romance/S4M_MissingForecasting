@@ -1,0 +1,10 @@
+{
+  "experiment_id": "stage21_scientific_gate__electricity__test_not_authorized__seed2023__20260804_232900",
+  "finished_at": "2026-08-04T15:29:00.297388+00:00",
+  "result": "SKIPPED_BY_VALIDATION_GATE",
+  "return_code": 0,
+  "scientific_decision": "PROTOCOL_FAIL_TEST_FORBIDDEN",
+  "state": "SUCCESS",
+  "test_accessed": false,
+  "test_authorized": false
+}

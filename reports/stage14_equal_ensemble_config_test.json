@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "all_assets_exist": true,
+    "all_configs_valid": true,
+    "fixed_equal_weight": true,
+    "formal_budgets_complete": true,
+    "non_ensemble_variant_not_accepted_as_equal_ensemble": true,
+    "smoke_only_reduces_eval_batches": true,
+    "wrong_weight_rejected": true
+  },
+  "configs": [
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage14_equal_ensemble/s4m_weather_pg95_equal_ensemble_seed2024_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage14_equal_ensemble/s4m_weather_pg95_equal_ensemble_seed2024.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage14_equal_ensemble/s4m_weather_pg95_equal_ensemble_seed2025.yaml"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,105 @@
+experiment:
+  model: mipp_pg95_electricity
+  dataset: electricity
+  mask_type: point
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2599224452554745
+  block_length: 5
+  seed: 2023
+  smoke_test: true
+  required_memory_bank_warmups: 2
+  protocol_scope: stage21_electricity_pg95_validation_only_training_smoke
+  protocol_match: approximate_missing_mask_and_architecture_seed_unavailable
+  purpose: validate_full_electricity_pg95_train_save_reload_and_validation_without_test
+  paper_reference_mae: 0.367
+  paper_reference_mse: 0.274
+
+data:
+  missing_csv: data/electricity/electricity_point_paper_r0.06_l5_seed2023.csv
+  complete_csv: data/electricity/electricity.csv
+  mask_asset: artifacts/masks/electricity/point/rate_0.06/seed_2023.npz
+  mask_metadata: artifacts/masks/electricity/point/rate_0.06/seed_2023.json
+  source_manifest: artifacts/manifests/s4m_data_assets.yaml
+  official_mask_seed: unpublished
+  generation_seed: 2023
+  split: [0.7, 0.1, 0.2]
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+  gpu_name: NVIDIA GeForce RTX 4090
+  user_mapping_note: scheduler_uuid_is_preserved_and_exposed_as_local_cuda0
+  max_train_batches: 2
+  max_eval_batches: 3
+
+official_args:
+  is_training: 1
+  seed: 2023
+  model_id: e21_p95_s
+  model: S4M
+  data: custom4
+  features: M
+  target: OT
+  freq: h
+  seq_len: 192
+  pred_len: 96
+  label_len: 48
+  enc_in: 321
+  dec_in: 321
+  c_out: 321
+  per_mem_size: 5
+  en_conv_hidden_size: 512
+  topK: 20
+  topM: 100
+  thres1: 0.95
+  thres2: 0.6
+  M: 50
+  K: 10
+  memory_size: 200
+  momentum: 0.99
+  short_len: 32
+  W: 6
+  e_layers: 8
+  d_model: 512
+  d_ff: 512
+  n_heads: 8
+  num_pattn: 30
+  num_dG: 1
+  encoder_type: 3
+  memnet: 13
+  mem_type: 3
+  batch_size: 16
+  learning_rate: 0.01
+  optimizer: adam
+  train_epochs: 2
+  patience: 3
+  lradj: type1
+  num_workers: 10
+  itr: 1
+  des: E21P95S
+  mean_type: global_mean
+  fillna: mean
+  plot: 0
+  max_train_batches: 2
+  max_eval_batches: 3
+  post_train_evaluation: validation
+  wandb_mode: disabled
+  deterministic_cluster: true
+  use_mipp: true
+  use_content_mask_factorization: false
+  use_mask_intervention_pair: true
+  use_stability_write_gate: true
+  mipp_write_gate_mode: absolute
+  mipp_inv_weight: 0.05
+  mipp_var_weight: 0.0
+  mipp_cov_weight: 0.0
+  mipp_dec_weight: 0.0
+  mipp_mask_weight: 0.0
+  mipp_variance_target: 1.0
+  mipp_stability_threshold: 0.95
+  mipp_pair_rate_min: 0.15
+  mipp_pair_rate_max: 0.50
+  mipp_pair_block_lengths: [1, 5, 20]
+  use_fusr: false
+  use_cfr: false
+  gpu: 0

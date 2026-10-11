@@ -1,0 +1,9 @@
+{
+  "elapsed_seconds": 8.630716864950955,
+  "return_code": 1,
+  "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+  "peak_gpu_memory_mb": null,
+  "peak_gpu_reserved_mb": null,
+  "pre_run_snapshot": "command=nvidia-smi --query-gpu=index,uuid,name,memory.total,memory.used,memory.free --format=csv exit=0\nindex, uuid, name, memory.total [MiB], memory.used [MiB], memory.free [MiB]\n0, GPU-c88b779d-77c7-92b9-e031-943bae990121, NVIDIA GeForce RTX 4080, 16376 MiB, 4518 MiB, 11560 MiB\n1, GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb, NVIDIA GeForce RTX 4090, 24564 MiB, 15425 MiB, 8783 MiB\n",
+  "post_run_snapshot": "command=nvidia-smi --query-gpu=index,uuid,name,memory.total,memory.used,memory.free --format=csv exit=0\nindex, uuid, name, memory.total [MiB], memory.used [MiB], memory.free [MiB]\n0, GPU-c88b779d-77c7-92b9-e031-943bae990121, NVIDIA GeForce RTX 4080, 16376 MiB, 4518 MiB, 11560 MiB\n1, GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb, NVIDIA GeForce RTX 4090, 24564 MiB, 15425 MiB, 8783 MiB\n"
+}

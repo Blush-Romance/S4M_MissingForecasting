@@ -1,0 +1,85 @@
+{
+  "cross_seed_checks": {
+    "all_masks_pairwise_distinct": true,
+    "seed2023_csv_unchanged": true,
+    "seed2023_mask_unchanged": true,
+    "seed2023_metadata_unchanged": true
+  },
+  "pre_registered_seeds": [
+    2023,
+    2024,
+    2025
+  ],
+  "seed_reports": {
+    "2023": {
+      "checks": {
+        "all_variables_share_row_mask": true,
+        "block_length_is_five": true,
+        "dates_match_complete": true,
+        "files_exist": true,
+        "manifest_entry_matches": true,
+        "mask_rebuilds_from_starts": true,
+        "metadata_hashes_match": true,
+        "metadata_paths_match": true,
+        "metadata_seed_matches": true,
+        "observed_values_match_complete": true,
+        "realized_rate_matches_metadata": true,
+        "realized_rate_near_paper": true,
+        "shape_matches_complete": true,
+        "stored_seed_matches": true
+      },
+      "csv_sha256": "9b83f16d0ba08495a3433735cee206cf2e9dc25cab5f97ca122f3cd534e0bc5c",
+      "mask_sha256": "46c9ad3f18e164e3dd0b9efbfed44090918c9338201ce22e64eef6f8bd3415a4",
+      "metadata_sha256": "d94c5d1791475751f0b88f3871501829e92c10342580354292274303fd6dbb8f",
+      "realized_missing_rate": 0.24698269318354335,
+      "status": "PASS"
+    },
+    "2024": {
+      "checks": {
+        "all_variables_share_row_mask": true,
+        "block_length_is_five": true,
+        "dates_match_complete": true,
+        "files_exist": true,
+        "manifest_entry_matches": true,
+        "mask_rebuilds_from_starts": true,
+        "metadata_hashes_match": true,
+        "metadata_paths_match": true,
+        "metadata_seed_matches": true,
+        "observed_values_match_complete": true,
+        "realized_rate_matches_metadata": true,
+        "realized_rate_near_paper": true,
+        "shape_matches_complete": true,
+        "stored_seed_matches": true
+      },
+      "csv_sha256": "425c007157b3ab39cddee97f09a920264eec512347543da27fa4a96e1fe1edd2",
+      "mask_sha256": "45d3f53394a559e8101556c9ba5535c2ae82ca4ddc9dca9f63de01f391c61ed5",
+      "metadata_sha256": "91b0f8de1709490b9a7bfc9a22600278f994882cd296d0824d7036e109c11952",
+      "realized_missing_rate": 0.2469637164111128,
+      "status": "PASS"
+    },
+    "2025": {
+      "checks": {
+        "all_variables_share_row_mask": true,
+        "block_length_is_five": true,
+        "dates_match_complete": true,
+        "files_exist": true,
+        "manifest_entry_matches": true,
+        "mask_rebuilds_from_starts": true,
+        "metadata_hashes_match": true,
+        "metadata_paths_match": true,
+        "metadata_seed_matches": true,
+        "observed_values_match_complete": true,
+        "realized_rate_matches_metadata": true,
+        "realized_rate_near_paper": true,
+        "shape_matches_complete": true,
+        "stored_seed_matches": true
+      },
+      "csv_sha256": "5c3b4873f98292458051ee08dc6ef62937e93b2eab93e77b4f3565c14d8dc082",
+      "mask_sha256": "5b5f683b077cc4bf5ce47bf1adaa31e1bb532c34b81fcbab8025390fea0b724f",
+      "metadata_sha256": "f70dbfec4c42c918a56b9bb2bec7ef25e3f2b81e425ff5f8a2b432e8addb70fc",
+      "realized_missing_rate": 0.24698269318354335,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

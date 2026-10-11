@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "conflict_maps_to_router": true,
+    "dmrb_branch_keys_are_verified_without_runner_side_metrics": true,
+    "dual_underfit_stops_low_rank": true,
+    "formal_budget_full": true,
+    "formal_smoke_budget_is_rejected": true,
+    "mixed_stops": true,
+    "passed_smoke_releases_formal": true,
+    "protocol_failure_has_priority": true,
+    "queue_is_smoke_then_formal": true,
+    "queue_preserves_max_concurrency_five": true,
+    "self_mismatch_identity": true,
+    "smoke_budget_three_batches": true,
+    "student_factorization": true,
+    "supervision_maps_to_branch_masks": true,
+    "teacher_benefit_roundtrip": true,
+    "test_split_is_rejected": true,
+    "token_shapes": true,
+    "two_configs_validate": true,
+    "wrong_dmrb_identity_is_rejected": true,
+    "wrong_rate_is_rejected": true,
+    "wrong_weight_is_rejected": true
+  },
+  "status": "PASS",
+  "step": "22.29",
+  "synthetic_decisions": {
+    "conflict": "BRANCH_SUM_CONFLICT_FREEZE_CAUSAL_SCALE_ROUTER",
+    "mixed": "MIXED_OR_INDETERMINATE_STOP",
+    "supervision": "SCALE_SUPERVISION_MISMATCH_FREEZE_BRANCH_PARETO_MASKS",
+    "underfit": "DUAL_BRANCH_EXPRESSION_UNDERFIT_STOP_LOW_RANK_ROUTE"
+  }
+}

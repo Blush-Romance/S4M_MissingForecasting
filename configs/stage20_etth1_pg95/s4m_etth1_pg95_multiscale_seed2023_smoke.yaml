@@ -1,0 +1,34 @@
+experiment:
+  model: cnm_se_equal_rate_multiscale
+  method: pg95
+  dataset: etth1
+  domain: external_point_r006
+  seed: 2023
+  smoke_test: true
+  purpose: stage20_pg95_multiscale_external_test_pipeline_smoke_only
+  protocol_match: approximate_missing_mask_seed_unavailable
+
+source:
+  job_id: etth1_pg95_seed2023_formal
+
+data:
+  missing_csv: data/ETT-small/ETTh1_point_paper_r0.06_l5_seed2023.csv
+  complete_csv: data/ETT-small/ETTh1.csv
+  mask_asset: artifacts/masks/etth1/point/rate_0.06/seed_2023.npz
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+
+diagnostic:
+  variant: stage20_pg95_external_test
+  split: test
+  max_eval_batches: 3
+  target_rate: 0.15
+  block_lengths: [1, 5, 20]
+  nested_seed: 2023
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 1

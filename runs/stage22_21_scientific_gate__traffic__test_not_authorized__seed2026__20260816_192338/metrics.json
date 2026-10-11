@@ -1,0 +1,11 @@
+{
+  "artifact_status": "SKIPPED_BY_VALIDATION_GATE",
+  "dataset": "traffic",
+  "experiment_id": "stage22_21_scientific_gate__traffic__test_not_authorized__seed2026__20260816_192338",
+  "method": "cnm_se_equal_rate_multiscale_pg95",
+  "scientific_decision": "TRAFFIC_PROTOCOL_FAIL_TEST_FORBIDDEN",
+  "scope": "test_skipped_by_frozen_validation_gate",
+  "test_accessed": false,
+  "test_authorized": false,
+  "validation_gate_report": "/mnt/data/zza/code/S4M_MissingForecasting/reports/stage22_21_traffic_validation_gate.json"
+}

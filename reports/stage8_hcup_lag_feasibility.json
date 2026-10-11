@@ -1,0 +1,304 @@
+{
+  "claim_boundary": "complete historical utility is an optimistic validation-only rejection proxy, not a deployable input or positive HCUP result",
+  "decision": {
+    "code": "SHORT_LAG_HAS_OPTIMISTIC_SIGNAL_BUILD_OBSERVED_SMOKE",
+    "selected_lag": 1,
+    "summary_zh": "\u5b8c\u6574\u5386\u53f2\u6548\u7528\u4e0a\u754c\u5728\u77ed\u6ede\u540e\u540e\u6bb5\u5ba1\u8ba1\u540c\u65f6\u6539\u5584MSE\u548cMAE\uff0c\u4e14\u7f6e\u4fe1\u533a\u95f4\u4e0b\u754c\u4e3a\u6b63\uff1b\u53ef\u5b9e\u73b0\u76f8\u540clag\u3001\u53ea\u7528\u5b9e\u9645\u89c2\u6d4b\u5386\u53f2\u524dh\u6b65\u8bef\u5dee\u7684HCUP smoke\u3002"
+  },
+  "observed_probe_vs_complete_lag96": {
+    "pearson": 0.979359521093435,
+    "sample_count": 5072,
+    "sign_agreement": 0.9576104100946372
+  },
+  "protocol": {
+    "audit_range": [
+      3235,
+      5168
+    ],
+    "calibration_range": [
+      96,
+      3139
+    ],
+    "embargo_windows": 96,
+    "lags": [
+      1,
+      4,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ]
+  },
+  "records": [
+    {
+      "audit": {
+        "auroc": 0.9991624361417613,
+        "gate_rate": 0.785307811691671,
+        "mae_relative_gain": 0.005774274096992382,
+        "mse_relative_gain": 0.007656042283020536,
+        "routed_mae": 0.40191480600642715,
+        "routed_mse": 0.567517584618576,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0048779521520990075,
+        "absolute_gain_ci95_low": 0.003874878207027943,
+        "absolute_gain_mean": 0.004378460301399477,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.9991624361417613,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": 0.00579329081015551,
+        "mse_relative_gain": 0.0076586671841535735,
+        "routed_mae": 0.40190711851818106,
+        "routed_mse": 0.5675160834479998,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.6828787380874137,
+      "calibration_mse_relative_gain": 0.027253522897700215,
+      "lag": 1,
+      "passes_optimistic_upper_bound": true,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": 0.0009743056900990036,
+      "utility_autocorrelation_audit": 0.9976639785687709
+    },
+    {
+      "audit": {
+        "auroc": 0.9935829476482552,
+        "gate_rate": 0.7796171753750647,
+        "mae_relative_gain": 0.0052593553484062945,
+        "mse_relative_gain": 0.0072860270821545215,
+        "routed_mae": 0.4021229614217973,
+        "routed_mse": 0.5677291948485116,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.004697943211808238,
+        "absolute_gain_ci95_low": 0.0036533055372200847,
+        "absolute_gain_mean": 0.004166850071464002,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.9935829476482552,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": 0.005288557309035288,
+        "mse_relative_gain": 0.007315709031854691,
+        "routed_mae": 0.4021111565569307,
+        "routed_mse": 0.5677122198588725,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.6779493920473217,
+      "calibration_mse_relative_gain": 0.02692262678649581,
+      "lag": 4,
+      "passes_optimistic_upper_bound": true,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": 0.0029029215981450354,
+      "utility_autocorrelation_audit": 0.9816762637657174
+    },
+    {
+      "audit": {
+        "auroc": 0.978705379305927,
+        "gate_rate": 0.7796171753750647,
+        "mae_relative_gain": 0.004357295040815624,
+        "mse_relative_gain": 0.006546993732809366,
+        "routed_mae": 0.4024876184449317,
+        "routed_mse": 0.568151845098066,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.004292650343402179,
+        "absolute_gain_ci95_low": 0.003232585311040043,
+        "absolute_gain_mean": 0.003744199821909536,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.978705379305927,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": 0.004380505899266073,
+        "mse_relative_gain": 0.006578734178466091,
+        "routed_mae": 0.40247823547743417,
+        "routed_mse": 0.568133692862731,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.6763062767006244,
+      "calibration_mse_relative_gain": 0.02600831204505095,
+      "lag": 8,
+      "passes_optimistic_upper_bound": true,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": 0.0029925995025664124,
+      "utility_autocorrelation_audit": 0.9468352267931534
+    },
+    {
+      "audit": {
+        "auroc": 0.9307816728856717,
+        "gate_rate": 0.7744438696326953,
+        "mae_relative_gain": 0.0019378333956342785,
+        "mse_relative_gain": 0.0043218093359750215,
+        "routed_mae": 0.4034656835185143,
+        "routed_mse": 0.5694244192538332,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0030891384695262963,
+        "absolute_gain_ci95_low": 0.0018555801390707338,
+        "absolute_gain_mean": 0.00247162566614225,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.9307816728856717,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": 0.0020914555896383645,
+        "mse_relative_gain": 0.004618110616720724,
+        "routed_mae": 0.40340358189240183,
+        "routed_mse": 0.5692549657232701,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.6690765691751561,
+      "calibration_mse_relative_gain": 0.023194041446961845,
+      "lag": 16,
+      "passes_optimistic_upper_bound": true,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": 0.0047507752290100735,
+      "utility_autocorrelation_audit": 0.8488073968194209
+    },
+    {
+      "audit": {
+        "auroc": 0.8195634418589753,
+        "gate_rate": 0.9239524055871702,
+        "mae_relative_gain": -0.0006974402702935563,
+        "mse_relative_gain": 0.001556518964750859,
+        "routed_mae": 0.40453099039664125,
+        "routed_mse": 0.5710058778801916,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.001218448658037759,
+        "absolute_gain_ci95_low": 0.0005627486100290269,
+        "absolute_gain_mean": 0.0008901670397838902,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.8195634418589753,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": -0.0038185634478811125,
+        "mse_relative_gain": -0.0011881971630445423,
+        "routed_mae": 0.40579270147870256,
+        "routed_mse": 0.5725755701781059,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.8192573118632928,
+      "calibration_mse_relative_gain": 0.01707685331414547,
+      "lag": 32,
+      "passes_optimistic_upper_bound": false,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": -0.10723345125232427,
+      "utility_autocorrelation_audit": 0.6228770015066691
+    },
+    {
+      "audit": {
+        "auroc": 0.7140480117867495,
+        "gate_rate": 0.9286083807553026,
+        "mae_relative_gain": -0.0022273207061389204,
+        "mse_relative_gain": 0.0006129074052567905,
+        "routed_mae": 0.40514944311071416,
+        "routed_mse": 0.5715455255990071,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0007139943261614929,
+        "absolute_gain_ci95_low": -2.6164484483493897e-05,
+        "absolute_gain_mean": 0.00035051932096851347,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.7140480117867495,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": -0.009732521671505926,
+        "mse_relative_gain": -0.006598905346835322,
+        "routed_mae": 0.4081834134772474,
+        "routed_mse": 0.575669932788632,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.8304304962208348,
+      "calibration_mse_relative_gain": 0.011799186455227328,
+      "lag": 48,
+      "passes_optimistic_upper_bound": false,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": -0.12276432317514155,
+      "utility_autocorrelation_audit": 0.40193624792435423
+    },
+    {
+      "audit": {
+        "auroc": 0.6223259612766844,
+        "gate_rate": 0.9529229177444387,
+        "mae_relative_gain": -0.0033332711088001933,
+        "mse_relative_gain": -0.0005634767456506097,
+        "routed_mae": 0.40559652251125433,
+        "routed_mse": 0.5722182950422176,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": -5.767986725724804e-05,
+        "absolute_gain_ci95_low": -0.0005964545667001885,
+        "absolute_gain_mean": -0.00032225012224200347,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.6223259612766844,
+        "gate_rate": 0.7878944645628556,
+        "mae_relative_gain": -0.01609799727458793,
+        "mse_relative_gain": -0.012685497319510946,
+        "routed_mae": 0.4107566509478708,
+        "routed_mse": 0.5791508306648468,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.8859677949392047,
+      "calibration_mse_relative_gain": 0.005901278868297995,
+      "lag": 64,
+      "passes_optimistic_upper_bound": false,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": -0.19790967125738806,
+      "utility_autocorrelation_audit": 0.17358246030262794
+    },
+    {
+      "audit": {
+        "auroc": 0.44810467146037186,
+        "gate_rate": 0.9989653388515262,
+        "mae_relative_gain": -0.00018574888160864967,
+        "mse_relative_gain": -9.316324539578731e-05,
+        "routed_mae": 0.4043241396384478,
+        "routed_mse": 0.5719493246115493,
+        "sample_count": 1933
+      },
+      "audit_mse_bootstrap": {
+        "absolute_gain_ci95_high": 0.0,
+        "absolute_gain_ci95_low": -0.0001332206980157133,
+        "absolute_gain_mean": -5.32796915738125e-05,
+        "bootstrap_draws": 2000
+      },
+      "audit_threshold_zero": {
+        "auroc": 0.44810467146037186,
+        "gate_rate": 0.7977237454733574,
+        "mae_relative_gain": -0.02429656806879158,
+        "mse_relative_gain": -0.021763733753252877,
+        "routed_mae": 0.41407091540958496,
+        "routed_mse": 0.5843426381761523,
+        "sample_count": 1933
+      },
+      "calibration_gate_rate": 0.97535326979954,
+      "calibration_mse_relative_gain": 0.00021188737704009032,
+      "lag": 96,
+      "passes_optimistic_upper_bound": false,
+      "proxy": "shifted_complete_historical_full_horizon_utility",
+      "threshold": -0.3875986851536672,
+      "utility_autocorrelation_audit": -0.1944598360056265
+    }
+  ],
+  "samples": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup__weather__validation_point_r006__seed2023__20260718_202756/hcup_samples.npz",
+  "schema_version": 1,
+  "step": 8,
+  "test_used": false
+}

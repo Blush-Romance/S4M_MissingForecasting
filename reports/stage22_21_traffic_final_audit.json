@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "aggregated_final_decision_matches": true,
+    "authorization_is_persisted_in_attempt_log": true,
+    "complete_test_budget": true,
+    "exact_pg95_checkpoint_handoff": true,
+    "exactly_one_real_test_run": true,
+    "frozen_test_protocol": true,
+    "multiscale_strictly_improves_original_on_test": true,
+    "multiscale_strictly_improves_original_plus_l5_on_test": true,
+    "previous_safe_skip_is_preserved": true,
+    "queue_and_required_jobs_success": true,
+    "test_artifacts_all_pass": true,
+    "test_status_and_checkpoint_verified": true,
+    "validation_gate_passed_before_test": true
+  },
+  "decision": "TRAFFIC_TEST_MULTISCALE_CONFIRMED",
+  "failures": [],
+  "gains_percent": {
+    "multiscale_vs_original": {
+      "mae": 0.8835222741942986,
+      "mse": 0.9154990050004622
+    },
+    "multiscale_vs_original_plus_l5": {
+      "mae": 0.4449909699663534,
+      "mse": 0.3505098677051813
+    }
+  },
+  "multiscale": {
+    "mae": 0.35818668122517666,
+    "mse": 0.665930768052514
+  },
+  "original": {
+    "mae": 0.3613795500442003,
+    "mse": 0.6720836875245719
+  },
+  "original_plus_l5": {
+    "mae": 0.359787704019111,
+    "mse": 0.6682731313210166
+  },
+  "status": "PASS",
+  "test_batches": 213,
+  "test_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2026__20260816_194746",
+  "test_samples": 3408
+}

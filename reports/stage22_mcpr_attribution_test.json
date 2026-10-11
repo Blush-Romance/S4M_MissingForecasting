@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "all_configs_validate": true,
+    "configs_exist": true,
+    "direction_failure_rule": true,
+    "exact_decomposition": true,
+    "formals_depend_on_matching_smoke": true,
+    "four_configs": true,
+    "four_jobs": true,
+    "isolated_runtime": true,
+    "memory_estimates": true,
+    "overshoot_rule": true,
+    "reduction_tolerance_accepts_measured_float32_gap": true,
+    "reduction_tolerance_rejects_material_gap": true,
+    "smokes_independent": true,
+    "uses_attribution_aggregator": true,
+    "uses_cache_runner": true,
+    "wrong_objective_rejected": true
+  },
+  "status": "PASS",
+  "step": "22.17"
+}

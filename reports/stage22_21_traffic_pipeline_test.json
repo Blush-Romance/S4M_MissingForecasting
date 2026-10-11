@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "all_eval_sources_are_pg95_formal": true,
+    "analyzer_accepts_authorized_formal_budget": true,
+    "analyzer_rejects_stale_lr_and_budget_drift": true,
+    "budget_drift_is_detected": true,
+    "decision_precedence_and_authorization": true,
+    "exact_checkpoint_handoff": true,
+    "extended_stability_smokes_and_complete_formals": true,
+    "formal_assets_identical": true,
+    "formal_difference_is_only_pg95": true,
+    "formal_setting_names_below_filesystem_limit": true,
+    "frozen_multiscale_protocol": true,
+    "negative_protocol_cases_rejected": true,
+    "queue_dependencies_freeze_test_order": true,
+    "shared_authorized_lr_amendment": true,
+    "test_accessed_source_rejected": true,
+    "test_variant_is_unique_and_gated": true,
+    "training_dataset_seed_target_width": true,
+    "validation_only_training": true,
+    "validation_variants_use_val": true
+  },
+  "failures": [],
+  "formal_method_differences": [
+    "des",
+    "mipp_cov_weight",
+    "mipp_dec_weight",
+    "mipp_inv_weight",
+    "mipp_mask_weight",
+    "mipp_pair_block_lengths",
+    "mipp_pair_rate_max",
+    "mipp_pair_rate_min",
+    "mipp_stability_threshold",
+    "mipp_var_weight",
+    "mipp_variance_target",
+    "mipp_write_gate_mode",
+    "model_id",
+    "use_content_mask_factorization",
+    "use_mask_intervention_pair",
+    "use_mipp",
+    "use_stability_write_gate"
+  ],
+  "negative_cases": 8,
+  "setting_name_bytes": {
+    "pg95_formal": 243,
+    "s4m_formal": 242
+  },
+  "status": "PASS"
+}

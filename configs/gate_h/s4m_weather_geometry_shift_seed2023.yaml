@@ -1,0 +1,29 @@
+experiment:
+  model: s4m_gate_h
+  dataset: weather
+  domain: geometry_shift_idrate_l20
+  domain_role: ood
+  mask_type: long_block_shift
+  nominal_missing_rate: 0.24698269318354335
+  realized_missing_rate: 0.24778678594725562
+  seed: 2023
+  smoke_test: false
+  purpose: full_geometry_shift_paired_prototype_diagnostic
+
+source:
+  baseline_config: configs/baseline/s4m_weather_point_r006_paper_adam_seed2023.yaml
+  baseline_metrics: runs/s4m_paper_adam_reprofix__weather__point__mr0.06__seed2023__20260717_201045/metrics.json
+  checkpoint: runs/s4m_paper_adam_reprofix__weather__point__mr0.06__seed2023__20260717_201045/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebPaperAdamFormal_dtprojection_0_data_weather_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+
+data:
+  missing_csv: data/weather/gate_h/weather_geometry_shift_idrate_l20_r0p247_seed2023.csv
+  complete_csv: data/weather/weather.csv
+  mask_asset: artifacts/masks/weather/gate_h/geometry_shift_idrate_l20_r0p247/seed_2023.npz
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+
+diagnostic:
+  max_eval_batches: -1
+  hrr_delta: 0.0

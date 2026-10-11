@@ -1,0 +1,196 @@
+%0 Conference Paper
+%A Peng, Jing
+%A Yang, Meiqi
+%A Zhang, Qiong
+%A Li, Xiaoxiao
+%D 2025
+%T S4M: S4 for Multivariate Time Series Forecasting with Missing Values
+%B International Conference on Learning Representations
+%U https://proceedings.iclr.cc/paper_files/paper/2025/hash/7b2f0758334389b8ad0665a9bd165463-Abstract-Conference.html
+
+%0 Conference Paper
+%A Zhu, Yichen
+%A Yuan, Jian
+%A Jiang, Bo
+%A Lin, Tao
+%A Jin, Haiming
+%A Wang, Xinbing
+%A Zhou, Chenghu
+%D 2023
+%T Prediction with Incomplete Data under Agnostic Mask Distribution Shift
+%B Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence
+%P 4720-4728
+%R 10.24963/ijcai.2023/525
+%U https://www.ijcai.org/proceedings/2023/525
+
+%0 Conference Paper
+%A Zhu, Yichen
+%A Jiang, Bo
+%D 2024
+%T StableMiss+: Prediction with Incomplete Data under Agnostic Mask Distribution Shift
+%B IEEE International Conference on Acoustics, Speech and Signal Processing
+%P 7190-7194
+%R 10.1109/ICASSP48485.2024.10446980
+%U https://doi.org/10.1109/ICASSP48485.2024.10446980
+
+%0 Conference Paper
+%A Han, Sungwon
+%A Lee, Seungeon
+%A Cha, Meeyoung
+%A Arik, Sercan O.
+%A Yoon, Jinsung
+%D 2025
+%T Retrieval Augmented Time Series Forecasting
+%B International Conference on Machine Learning
+%U https://openreview.net/forum?id=GUDnecJdJU
+
+%0 Conference Paper
+%A Jang, Jinkwan
+%A Park, Hyungjin
+%A Choi, Jinmyeong
+%A Kim, Taesup
+%D 2026
+%T Towards Robust Real-World Multivariate Time Series Forecasting: A Unified Framework for Dependency, Asynchrony, and Missingness
+%B International Conference on Learning Representations
+%U https://iclr.cc/virtual/2026/poster/10007178
+
+%0 Generic
+%A Yang, Jie
+%A Hu, Yifan
+%A Zhang, Kexin
+%A Niu, Luyang
+%A Dong, Yushun
+%A Yu, Philip S.
+%A Ding, Kaize
+%D 2025
+%T Revisiting Multivariate Time Series Forecasting with Missing Values
+%U https://arxiv.org/abs/2509.23494
+
+%0 Generic
+%A Tang, Kai
+%A Zhang, Ji
+%A Meng, Hua
+%A Ma, Minbo
+%A Xiong, Qi
+%A Xu, Jie
+%A Li, Tianrui
+%D 2025
+%T CoIFNet: A Unified Framework for Multivariate Time Series Forecasting with Missing Values
+%U https://arxiv.org/abs/2506.13064
+
+%0 Conference Paper
+%A Xu, Longlong
+%A Li, Zeyan
+%A He, Xiao
+%A Yu, Zhaoyang
+%A Pei, Changhua
+%A Xie, Zhe
+%A Dou, Zijun
+%A Zhang, Tieying
+%A Pei, Dan
+%D 2026
+%T Taming the Recent-Data Bias: Towards Robust Time Series Forecasting with Global Context
+%B International Conference on Machine Learning
+%U https://openreview.net/forum?id=gDA03Yn3fi
+
+%0 Conference Paper
+%A Liu, Zhiding
+%A Cheng, Mingyue
+%A Zhao, Guanhao
+%A Yang, Jiqian
+%A Liu, Qi
+%A Chen, Enhong
+%D 2025
+%T Improving Time Series Forecasting via Instance-aware Post-hoc Revision
+%B Advances in Neural Information Processing Systems
+%U https://openreview.net/forum?id=H7e5RpeIi4
+
+%0 Generic
+%A Lee, Seunghan
+%A Lee, Jaehoon
+%A Seo, Jun
+%A Yoo, Sungdong
+%A Kim, Minjae
+%A Lim, Tae Yoon
+%A Kang, Dongwan
+%A Choi, Hwanil
+%A Lee, SoonYoung
+%A Ahn, Wonbin
+%D 2026
+%T Cross-RAG: Zero-Shot Retrieval-Augmented Time Series Forecasting via Cross-Attention
+%U https://arxiv.org/abs/2603.14709
+
+%0 Conference Paper
+%A Zhou, Shiqiao
+%A Schöner, Holger
+%A Wu, Zipeng
+%A Fouché, Edouard
+%A Wilson, IAG
+%A Wang, Shuo
+%D 2026
+%T Stationarity-Aware Retrieval-Augmented Time Series Forecasting
+%B ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+%R 10.1145/3770855.3817813
+%U https://arxiv.org/abs/2606.04135
+
+%0 Generic
+%A Chi, Jinjin
+%A Feng, Lei
+%A Zhang, Lulu
+%A Jing, Yongcheng
+%A Wang, Yiming
+%A Li, Ximing
+%A Shen, Jialie
+%A Rutkowski, Leszek
+%A Tao, Dacheng
+%D 2026
+%T Factorize to Generalize: Retrieval-Guided Invariant-Dynamic Decomposition for Time Series Forecasting
+%U https://arxiv.org/abs/2605.24911
+
+%0 Generic
+%A Yang, Haonan
+%A Tang, Jianchao
+%A Li, Zhuo
+%D 2026
+%T Dual-Prototype Disentanglement: A Context-Aware Enhancement Framework for Time Series Forecasting
+%U https://arxiv.org/abs/2601.16632
+
+%0 Generic
+%A Jiang, Yue
+%A Liu, Chenxi
+%A Chen, Yile
+%A Chao, Qin
+%A Liu, Shuai
+%A Cong, Gao
+%D 2025
+%T STRATA-TS: Selective Knowledge Transfer for Urban Time Series Forecasting with Retrieval-Guided Reasoning
+%U https://arxiv.org/abs/2508.18635
+
+%0 Conference Paper
+%A Wang, Hao
+%A Li, Zhengnan
+%A Li, Haoxuan
+%A Chen, Xu
+%A Gong, Mingming
+%A Chen, Bin
+%A Chen, Zhichao
+%D 2025
+%T Optimal Transport for Time Series Imputation
+%B International Conference on Learning Representations
+%U https://proceedings.iclr.cc/paper_files/paper/2025/hash/033394ac055e3c47bfc3c967ffcfee74-Abstract-Conference.html
+
+%0 Conference Paper
+%A Hu, Zhangyi
+%A Wu, Jiemin
+%A Xu, Hua
+%A Liao, Mingqian
+%A Feng, Ninghui
+%A Gao, Bo
+%A Lai, Songning
+%A Yue, Yutao
+%D 2025
+%T IMTS is Worth Time × Channel Patches: Visual Masked Autoencoders for Irregular Multivariate Time Series Prediction
+%B Proceedings of the 42nd International Conference on Machine Learning
+%P 24805-24822
+%V 267
+%U https://proceedings.mlr.press/v267/hu25y.html

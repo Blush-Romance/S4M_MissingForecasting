@@ -1,0 +1,28 @@
+{
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_ard_state_keys": [],
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [],
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 314,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 113667465,
+  "checkpoint_ttrr_state_keys": [],
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_22_traffic/s4m_traffic_seed2028_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_traffic__traffic__point__mr0.06__seed2028__smoke__20260820_171729",
+  "finished_at": "2026-08-20T09:19:32.669612+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__smoke__20260820_171729/metrics.json",
+  "pid": 157074,
+  "return_code": 0,
+  "started_at": "2026-08-20T09:17:30.053574+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

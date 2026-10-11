@@ -1,0 +1,32 @@
+experiment:
+  id: s4m_distance_diagnostic__traffic__validation__seed2242__20261005_182906
+  model: s4m_distance_diagnostic
+  dataset: traffic
+  mask_type: point
+  seed: 2242
+  smoke_test: false
+  protocol_match: offline_same_fixed_validation_assets
+  protocol_scope: descriptive_analysis_not_new_predictive_result
+analysis_seeds:
+- 2027
+- 2028
+- 2029
+device: cpu
+manifest: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_42_diagnostic/source_manifest.json
+manifest_sha256: 68f730f7cad69ad02059b25b8994c26980c64d9c12e969ee31405a7e9360ba77
+rules:
+  quarters: 4
+  missing_rate_edges:
+  - 0
+  - 0.2
+  - 0.3
+  - 1
+  missing_length_groups:
+  - '0'
+  - 1to5
+  - 6to20
+  - gt20
+no_model_forward: true
+no_new_training: true
+uses_test_split: false
+checkpoint_saved: false

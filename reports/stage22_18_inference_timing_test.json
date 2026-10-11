@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "all_source_assets_exist": true,
+    "chronological_loader_hardcoded": true,
+    "cuda_event_timing_present": true,
+    "diagnostic_default_off": true,
+    "diagnostic_exclusive": true,
+    "formal_assets_identical": true,
+    "formal_budget_identical": true,
+    "launcher_max_jobs_one": true,
+    "launcher_single_uuid_guard": true,
+    "queue_dependency_chain_serial": true,
+    "six_configs_loaded": true,
+    "smoke_budget_identical": true,
+    "timing_excludes_transfer": true,
+    "validation_only_evidence_present": true
+  },
+  "status": "PASS",
+  "step": "22.18.7"
+}

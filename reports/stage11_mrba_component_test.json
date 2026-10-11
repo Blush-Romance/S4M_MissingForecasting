@@ -1,0 +1,56 @@
+{
+  "checks": {
+    "all_diagnostics_finite": true,
+    "descriptor_fixed_width": true,
+    "descriptor_temporal_part_exact": true,
+    "deterministic_diagnostics": true,
+    "deterministic_selection": true,
+    "different_mask_regime_selected": true,
+    "duplicate_second_candidate_replaced": true,
+    "fixed_budget": true,
+    "highest_stability_anchor_kept": true,
+    "legacy_topk_unchanged": true,
+    "missing_mask_rejected": true,
+    "positive_coverage_gain_vs_topk": true
+  },
+  "descriptor_shape": [
+    1,
+    4,
+    13
+  ],
+  "diagnostics": {
+    "write_mask_candidate_missing_rate": 0.5,
+    "write_mask_candidate_pairwise_distance": 0.3919413983821869,
+    "write_mask_coverage_distance": 0.09340659528970718,
+    "write_mask_coverage_gain_vs_topk": 0.15384617447853088,
+    "write_mask_selected_missing_rate": 0.5,
+    "write_mask_selected_pairwise_distance": 0.6153846383094788,
+    "write_mask_topk_coverage_distance": 0.24725276231765747,
+    "write_selected_stability": 0.9800000190734863
+  },
+  "legacy_topk": [
+    [
+      true,
+      true,
+      false,
+      false
+    ]
+  ],
+  "mrba_selection": [
+    [
+      true,
+      false,
+      true,
+      false
+    ]
+  ],
+  "stability": [
+    [
+      0.9900000095367432,
+      0.9800000190734863,
+      0.9700000286102295,
+      0.5
+    ]
+  ],
+  "status": "PASS"
+}

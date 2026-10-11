@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "all_data_assets_exist": true,
+    "cfr_is_single_new_scientific_switch": true,
+    "cfr_with_fusr_rejected": true,
+    "cfr_without_mipp_rejected": true,
+    "false_cfr_identity_rejected": true,
+    "formal_budget_not_reduced": true,
+    "formal_config_valid": true,
+    "formal_data_assets_exactly_match_pg95": true,
+    "historical_pg95_config_still_valid": true,
+    "only_identity_and_cfr_switch_differ_from_pg95": true,
+    "pg95_default_off_regression_smoke_valid": true,
+    "pg95_regression_smoke_data_assets_match_formal": true,
+    "pg95_regression_smoke_keeps_cfr_disabled": true,
+    "smoke_changes_only_engineering_budget_and_identity": true,
+    "smoke_config_valid": true,
+    "smoke_data_assets_exactly_match_formal": true
+  },
+  "configs": [
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_pair_gate_only_t095_seed2023.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage13_cfr/s4m_weather_pg95_seed2023_regression_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage13_cfr/s4m_weather_pg95_cfr_seed2023_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage13_cfr/s4m_weather_pg95_cfr_seed2023.yaml"
+  ],
+  "pg95_to_cfr_official_arg_differences": {
+    "des": {
+      "cfr": "CFR13F",
+      "pg95": "PG95F"
+    },
+    "model_id": {
+      "cfr": "w_pg95_cfr_s2023",
+      "pg95": "w_mipp_pg95_s2023"
+    },
+    "use_cfr": {
+      "cfr": true,
+      "pg95": "<missing>"
+    }
+  },
+  "smoke_to_formal_official_arg_differences": [
+    "des",
+    "max_eval_batches",
+    "max_train_batches",
+    "model_id",
+    "num_workers",
+    "train_epochs"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "checkpoint_fusr_state_keys": [
+    "mem_net.fusr.backbone.0.bias",
+    "mem_net.fusr.backbone.0.weight",
+    "mem_net.fusr.backbone.2.bias",
+    "mem_net.fusr.backbone.2.weight",
+    "mem_net.fusr.gate_prior_logit",
+    "mem_net.fusr.utility_head.bias",
+    "mem_net.fusr.utility_head.weight"
+  ],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 321,
+  "checkpoint_size_bytes": 23488131,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/fusr/s4m_weather_fusr_seed2023_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_fusr__weather__point__mr0.06__seed2023__smoke__20260718_143548",
+  "finished_at": "2026-07-18T06:36:42.795300+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr__weather__point__mr0.06__seed2023__smoke__20260718_143548/metrics.json",
+  "pid": 2320181,
+  "return_code": 0,
+  "started_at": "2026-07-18T06:35:49.068646+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

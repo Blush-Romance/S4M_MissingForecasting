@@ -1,0 +1,79 @@
+{
+  "step": "22.21.4",
+  "diagnosis_time": "2026-08-16T18:43:57+08:00",
+  "queue_state": "FAILED",
+  "queue_finished_at": "2026-08-16T18:30:39.544425+08:00",
+  "running_experiments": 0,
+  "formal_failures": {
+    "s4m": {
+      "run_dir": "runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_182923",
+      "state": "NAN_OR_DIVERGENCE",
+      "epoch": 1,
+      "batch": 27,
+      "forecast_loss": "nan"
+    },
+    "pg95": {
+      "run_dir": "runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_182923",
+      "state": "NAN_OR_DIVERGENCE",
+      "epoch": 1,
+      "batch": 33,
+      "forecast_loss": "nan"
+    }
+  },
+  "data_audit": {
+    "shape": [17544, 862],
+    "raw_missing_values": 3929858,
+    "raw_observed_nonfinite": 0,
+    "complete_nonfinite": 0,
+    "train_windows": 11993,
+    "zero_observed_target_windows": 0,
+    "minimum_observed_target_elements_per_window": 34480,
+    "normalized_arrays_all_finite": true,
+    "normalized_max_abs": 26.537603393996985,
+    "scaler_scale_min": 0.010673842553697738,
+    "scaler_zero_scales": 0,
+    "complete_asset_sha256": "cb06463d56fa17d87f47027cd9389ceae82a69eddee51cdb61480e120dab0b16"
+  },
+  "shared_training_configuration": {
+    "optimizer": "adam",
+    "learning_rate": 0.01,
+    "variables": 862,
+    "model_width": 512,
+    "encoder_layers": 8,
+    "batch_size": 16
+  },
+  "upstream_evidence": {
+    "public_traffic_specific_hyperparameters_available": false,
+    "public_weather_readme_learning_rate": 0.005,
+    "upstream_parser_default_learning_rate": 0.001
+  },
+  "conclusion": "The failure is consistent with shared optimizer instability, not invalid Traffic data, an empty masked target, OOM, or scheduler loss.",
+  "recommended_protocol_amendment": {
+    "old_learning_rate": 0.01,
+    "new_learning_rate": 0.001,
+    "optimizer_unchanged": "adam",
+    "apply_identically_to": ["s4m", "pg95"],
+    "first_action": "Run a separate one-epoch 64-train-batch stability smoke before restarting formal jobs.",
+    "authorization_required": false,
+    "authorized_by_user": true,
+    "authorization_date": "2026-08-16"
+  },
+  "amendment_execution": {
+    "extended_stability_smoke_status": "PASS",
+    "s4m_smoke_run": "runs/s4m_traffic__traffic__point__mr0.06__seed2026__smoke__20260816_184813",
+    "pg95_smoke_run": "runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__smoke__20260816_184813",
+    "s4m_optimizer_steps": 63,
+    "pg95_optimizer_steps": 63,
+    "s4m_validation_mse": 0.5713774289443155,
+    "s4m_validation_mae": 0.3733457647423426,
+    "pg95_validation_mse": 0.55747733690223,
+    "pg95_validation_mae": 0.37543907077019284,
+    "smoke_results_are_scientific_results": false,
+    "formal_runs_started": {
+      "s4m": "runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930",
+      "pg95": "runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_184930"
+    },
+    "formal_learning_rate_verified": 0.001,
+    "formal_old_failure_batches_crossed": true
+  }
+}

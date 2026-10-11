@@ -1,0 +1,177 @@
+{
+  "artifact_status": "PASS",
+  "claim_boundary": "Weather point-r0.06 seeds2024/2025 frozen anchor screen",
+  "decision": {
+    "code": "MRBA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "run_seed2023": false,
+    "summary_zh": "MRBA\u672a\u540c\u65f6\u901a\u8fc7\u53cc\u951a\u70b9\u7cbe\u5ea6\u95e8\u4e0emask\u8986\u76d6\u673a\u5236\u95e8\uff1b\u4fdd\u7559\u7ed3\u679c\u5e76\u505c\u6b62\u8be5\u5019\u9009\uff0c\u4e0d\u6269seed\u6216\u6570\u636e\u96c6\u3002"
+  },
+  "execution_checks": {
+    "seed2024_budget_correct": true,
+    "seed2024_eligible_within_budget": true,
+    "seed2024_mode_correct": true,
+    "seed2024_sampled_within_budget": true,
+    "seed2025_budget_correct": true,
+    "seed2025_eligible_within_budget": true,
+    "seed2025_mode_correct": true,
+    "seed2025_sampled_within_budget": true
+  },
+  "execution_status": "PASS",
+  "mechanism_checks": {
+    "seed2024_coverage_distance_below_topk": true,
+    "seed2024_positive_coverage_gain_vs_topk": true,
+    "seed2025_coverage_distance_below_topk": true,
+    "seed2025_positive_coverage_gain_vs_topk": true
+  },
+  "mechanism_status": "PASS",
+  "per_seed": {
+    "2024": {
+      "mrba_mechanism": {
+        "mipp_stable_write_acceptance_rate_mean": 0.5208333730697632,
+        "mipp_write_budget": 50,
+        "mipp_write_eligible_count_mean": 50.0,
+        "mipp_write_gate_mode": "mask_regime_balanced_rank",
+        "mipp_write_mask_candidate_missing_rate_mean": 0.24488855269071147,
+        "mipp_write_mask_candidate_pairwise_distance_mean": 0.33783007430189954,
+        "mipp_write_mask_coverage_distance_mean": 0.025992603884671624,
+        "mipp_write_mask_coverage_gain_vs_topk_mean": 0.021153715963293473,
+        "mipp_write_mask_selected_missing_rate_mean": 0.29805809090680113,
+        "mipp_write_mask_selected_pairwise_distance_mean": 0.3753331334847776,
+        "mipp_write_mask_topk_coverage_distance_mean": 0.047146319863679204,
+        "mipp_write_sampled_count_mean": 50.0,
+        "mipp_write_selected_stability_mean": 0.9998737171230846,
+        "mipp_write_updated_count_mean": 49.98006499187601
+      },
+      "mrba_vs_bmsa50": {
+        "dual_metric_win": false,
+        "mae_delta": 9.446163758908277e-05,
+        "mae_relative_gain": -0.00031498967039320645,
+        "mse_delta": -1.9293044196677656e-05,
+        "mse_relative_gain": 7.168118723480063e-05
+      },
+      "mrba_vs_pg95": {
+        "dual_metric_win": true,
+        "mae_delta": -0.0008677913938746062,
+        "mae_relative_gain": 0.0028844624356912743,
+        "mse_delta": -0.0020631996834753474,
+        "mse_relative_gain": 0.0076078187774362895
+      },
+      "runs": {
+        "bmsa50": {
+          "elapsed_seconds": 8259.19039827399,
+          "mae": 0.29988804861811774,
+          "mse": 0.2691507345362584,
+          "optimizer_steps": 16002,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.7451171875,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2024__20260721_143610"
+        },
+        "mrba50": {
+          "elapsed_seconds": 14017.552376954816,
+          "mae": 0.2999825102557068,
+          "mse": 0.2691314414920617,
+          "optimizer_steps": 16002,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.7490234375,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_mrba50__weather__point__mr0.06__seed2024__20260722_143257"
+        },
+        "pg95": {
+          "elapsed_seconds": 3926.0854011410847,
+          "mae": 0.30085030164958143,
+          "mse": 0.27119464117553704,
+          "optimizer_steps": 18288,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74365234375,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2024__20260721_165520"
+        }
+      }
+    },
+    "2025": {
+      "mrba_mechanism": {
+        "mipp_stable_write_acceptance_rate_mean": 0.5208333730697632,
+        "mipp_write_budget": 50,
+        "mipp_write_eligible_count_mean": 50.0,
+        "mipp_write_gate_mode": "mask_regime_balanced_rank",
+        "mipp_write_mask_candidate_missing_rate_mean": 0.25083681474529157,
+        "mipp_write_mask_candidate_pairwise_distance_mean": 0.34279000605506776,
+        "mipp_write_mask_coverage_distance_mean": 0.02781788273290784,
+        "mipp_write_mask_coverage_gain_vs_topk_mean": 0.02115008479480453,
+        "mipp_write_mask_selected_missing_rate_mean": 0.3008813122501958,
+        "mipp_write_mask_selected_pairwise_distance_mean": 0.37721971544980587,
+        "mipp_write_mask_topk_coverage_distance_mean": 0.04896796754455168,
+        "mipp_write_sampled_count_mean": 50.0,
+        "mipp_write_selected_stability_mean": 0.9999177482844999,
+        "mipp_write_updated_count_mean": 49.99409448818898
+      },
+      "mrba_vs_bmsa50": {
+        "dual_metric_win": false,
+        "mae_delta": 0.0018839227504159894,
+        "mae_relative_gain": -0.006298150232206688,
+        "mse_delta": -7.643252953976054e-05,
+        "mse_relative_gain": 0.0002937340564557852
+      },
+      "mrba_vs_pg95": {
+        "dual_metric_win": false,
+        "mae_delta": 0.0058958462548036605,
+        "mae_relative_gain": -0.01997838457949301,
+        "mse_delta": 0.0036834636474588622,
+        "mse_relative_gain": -0.014363277872959676
+      },
+      "runs": {
+        "bmsa50": {
+          "elapsed_seconds": 8252.723497010767,
+          "mae": 0.2991231839441083,
+          "mse": 0.26020996837071114,
+          "optimizer_steps": 13716,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74365234375,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2025__20260721_143638"
+        },
+        "mrba50": {
+          "elapsed_seconds": 5919.158988224808,
+          "mae": 0.3010071066945243,
+          "mse": 0.2601335358411714,
+          "optimizer_steps": 13716,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74755859375,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_mrba50__weather__point__mr0.06__seed2025__20260722_143257"
+        },
+        "pg95": {
+          "elapsed_seconds": 7745.13819304714,
+          "mae": 0.29511126043972064,
+          "mse": 0.2564500721937125,
+          "optimizer_steps": 13716,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74462890625,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2025__20260721_143638"
+        }
+      }
+    }
+  },
+  "pre_registered_gate": "Both seeds must improve MSE and MAE versus PG95 and both must reduce mask coverage distance versus stability Top-M.",
+  "protocol_checks": {
+    "seed2024_bmsa50_same_data": true,
+    "seed2024_bmsa50_same_effective_write_budget": true,
+    "seed2024_bmsa50_same_mipp_shared": true,
+    "seed2024_bmsa50_same_parameter_count": true,
+    "seed2024_bmsa50_same_protocol": true,
+    "seed2024_pg95_same_data": true,
+    "seed2024_pg95_same_effective_write_budget": true,
+    "seed2024_pg95_same_mipp_shared": true,
+    "seed2024_pg95_same_parameter_count": true,
+    "seed2024_pg95_same_protocol": true,
+    "seed2025_bmsa50_same_data": true,
+    "seed2025_bmsa50_same_effective_write_budget": true,
+    "seed2025_bmsa50_same_mipp_shared": true,
+    "seed2025_bmsa50_same_parameter_count": true,
+    "seed2025_bmsa50_same_protocol": true,
+    "seed2025_pg95_same_data": true,
+    "seed2025_pg95_same_effective_write_budget": true,
+    "seed2025_pg95_same_mipp_shared": true,
+    "seed2025_pg95_same_parameter_count": true,
+    "seed2025_pg95_same_protocol": true
+  },
+  "protocol_status": "PASS",
+  "schema_version": 2,
+  "step": 11
+}

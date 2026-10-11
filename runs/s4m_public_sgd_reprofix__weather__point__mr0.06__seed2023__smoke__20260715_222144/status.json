@@ -1,0 +1,12 @@
+{
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/baseline/s4m_weather_point_r006_fullarch_gpu_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_public_sgd_reprofix__weather__point__mr0.06__seed2023__smoke__20260715_222144",
+  "finished_at": "2026-07-15T14:22:36.560961+00:00",
+  "metrics_path": null,
+  "pid": 3398683,
+  "return_code": 1,
+  "started_at": "2026-07-15T14:21:44.540971+00:00",
+  "state": "OOM",
+  "verification_error": null
+}

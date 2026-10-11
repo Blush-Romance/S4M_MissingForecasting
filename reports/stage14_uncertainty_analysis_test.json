@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "positive_case_all_checks_pass": true,
+    "positive_case_passes": true,
+    "quartiles_are_equal_size": true,
+    "weak_ratio_case_fails": true
+  },
+  "negative": {
+    "checks": {
+      "q4_q1_mae_ratio_at_least_1_10": false,
+      "q4_q1_mse_ratio_at_least_1_25": false,
+      "spearman_at_least_0_15": true
+    },
+    "gate_pass": false,
+    "mask_disagreement_error_spearman": 1.0,
+    "q1": {
+      "harmful_retrieval_rate": 0.0,
+      "mae": 0.5045858330024932,
+      "mse": 0.2546153846153846,
+      "prototype_disagreement_mean": 0.07211538461538462,
+      "sample_count": 10,
+      "uncertainty_mean": 0.12423076923076923
+    },
+    "q4": {
+      "harmful_retrieval_rate": 0.0,
+      "mae": 0.5342069004844697,
+      "mse": 0.28538461538461535,
+      "prototype_disagreement_mean": 0.45288461538461544,
+      "sample_count": 10,
+      "uncertainty_mean": 0.8857692307692308
+    },
+    "q4_q1_mae_ratio": 1.0587037240140473,
+    "q4_q1_mse_ratio": 1.1208459214501512,
+    "sample_count": 40,
+    "secondary": {
+      "mask_disagreement_mae_spearman": 1.0,
+      "nested_mse": 0.29700000000000004,
+      "overall_harmful_retrieval_rate": 0.0,
+      "prototype_disagreement_error_spearman": 1.0,
+      "prototype_off_mse": 0.28350000000000003,
+      "prototype_on_mse": 0.27
+    }
+  },
+  "positive": {
+    "checks": {
+      "q4_q1_mae_ratio_at_least_1_10": true,
+      "q4_q1_mse_ratio_at_least_1_25": true,
+      "spearman_at_least_0_15": true
+    },
+    "gate_pass": true,
+    "mask_disagreement_error_spearman": 1.0,
+    "q1": {
+      "harmful_retrieval_rate": 0.0,
+      "mae": 0.4451280179526293,
+      "mse": 0.20384615384615384,
+      "prototype_disagreement_mean": 0.07211538461538462,
+      "sample_count": 10,
+      "uncertainty_mean": 0.12423076923076923
+    },
+    "q4": {
+      "harmful_retrieval_rate": 0.0,
+      "mae": 0.946004689428116,
+      "mse": 0.8961538461538463,
+      "prototype_disagreement_mean": 0.45288461538461544,
+      "sample_count": 10,
+      "uncertainty_mean": 0.8857692307692308
+    },
+    "q4_q1_mae_ratio": 2.125241843412315,
+    "q4_q1_mse_ratio": 4.396226415094341,
+    "sample_count": 40,
+    "secondary": {
+      "mask_disagreement_mae_spearman": 1.0,
+      "nested_mse": 0.605,
+      "overall_harmful_retrieval_rate": 0.0,
+      "prototype_disagreement_error_spearman": 1.0,
+      "prototype_off_mse": 0.5775000000000001,
+      "prototype_on_mse": 0.55
+    }
+  },
+  "status": "PASS"
+}

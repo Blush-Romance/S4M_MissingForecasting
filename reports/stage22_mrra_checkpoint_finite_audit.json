@@ -1,0 +1,2468 @@
+{
+  "checkpoints": [
+    {
+      "all_model_tensors": {
+        "elements": 24166420,
+        "nonfinite_elements": 0,
+        "nonfinite_tensor_count": 0,
+        "tensor_count": 329
+      },
+      "auxiliary_tensors": [
+        {
+          "elements": 1536,
+          "finite_abs_max": 0.14232027530670166,
+          "name": "repre",
+          "nonfinite_elements": 0,
+          "shape": [
+            3,
+            512
+          ]
+        }
+      ],
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mrra_pg95_electricity__electricity__point__mr0.06__seed2023__smoke__20260805_212444/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE22MRS_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "mrra_model_tensors": {
+        "elements": 48257,
+        "nonfinite_elements": 0,
+        "nonfinite_tensor_count": 0,
+        "tensor_count": 8
+      },
+      "mrra_tensor_statistics": [
+        {
+          "elements": 20544,
+          "finite_abs_max": 0.10433772206306458,
+          "name": "mrra.input_projection.weight",
+          "nonfinite_elements": 0,
+          "shape": [
+            32,
+            642
+          ]
+        },
+        {
+          "elements": 32,
+          "finite_abs_max": 0.009999936446547508,
+          "name": "mrra.input_projection.bias",
+          "nonfinite_elements": 0,
+          "shape": [
+            32
+          ]
+        },
+        {
+          "elements": 160,
+          "finite_abs_max": 0.782413899898529,
+          "name": "mrra.temporal_filter.weight",
+          "nonfinite_elements": 0,
+          "shape": [
+            32,
+            1,
+            5
+          ]
+        },
+        {
+          "elements": 32,
+          "finite_abs_max": 0.009999926201999187,
+          "name": "mrra.temporal_filter.bias",
+          "nonfinite_elements": 0,
+          "shape": [
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": 0.009999814443290234,
+          "name": "mrra.context_projection.weight",
+          "nonfinite_elements": 0,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": 0.009999586269259453,
+          "name": "mrra.context_projection.bias",
+          "nonfinite_elements": 0,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 10272,
+          "finite_abs_max": 0.14032700657844543,
+          "name": "mrra.reconstruction_projection.weight",
+          "nonfinite_elements": 0,
+          "shape": [
+            321,
+            32
+          ]
+        },
+        {
+          "elements": 321,
+          "finite_abs_max": 0.009999929927289486,
+          "name": "mrra.reconstruction_projection.bias",
+          "nonfinite_elements": 0,
+          "shape": [
+            321
+          ]
+        }
+      ],
+      "non_mrra_model_tensors": {
+        "elements": 24118163,
+        "nonfinite_elements": 0,
+        "nonfinite_tensor_count": 0,
+        "tensor_count": 321
+      },
+      "nonfinite_model_tensors": []
+    },
+    {
+      "all_model_tensors": {
+        "elements": 24166420,
+        "nonfinite_elements": 17853822,
+        "nonfinite_tensor_count": 224,
+        "tensor_count": 329
+      },
+      "auxiliary_tensors": [
+        {
+          "elements": 1536,
+          "finite_abs_max": 0.05845142528414726,
+          "name": "repre",
+          "nonfinite_elements": 0,
+          "shape": [
+            3,
+            512
+          ]
+        }
+      ],
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mrra_pg95_electricity__electricity__point__mr0.06__seed2023__20260805_212515/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE22MRF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "mrra_model_tensors": {
+        "elements": 48257,
+        "nonfinite_elements": 48257,
+        "nonfinite_tensor_count": 8,
+        "tensor_count": 8
+      },
+      "mrra_tensor_statistics": [
+        {
+          "elements": 20544,
+          "finite_abs_max": null,
+          "name": "mrra.input_projection.weight",
+          "nonfinite_elements": 20544,
+          "shape": [
+            32,
+            642
+          ]
+        },
+        {
+          "elements": 32,
+          "finite_abs_max": null,
+          "name": "mrra.input_projection.bias",
+          "nonfinite_elements": 32,
+          "shape": [
+            32
+          ]
+        },
+        {
+          "elements": 160,
+          "finite_abs_max": null,
+          "name": "mrra.temporal_filter.weight",
+          "nonfinite_elements": 160,
+          "shape": [
+            32,
+            1,
+            5
+          ]
+        },
+        {
+          "elements": 32,
+          "finite_abs_max": null,
+          "name": "mrra.temporal_filter.bias",
+          "nonfinite_elements": 32,
+          "shape": [
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "mrra.context_projection.weight",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mrra.context_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 10272,
+          "finite_abs_max": null,
+          "name": "mrra.reconstruction_projection.weight",
+          "nonfinite_elements": 10272,
+          "shape": [
+            321,
+            32
+          ]
+        },
+        {
+          "elements": 321,
+          "finite_abs_max": null,
+          "name": "mrra.reconstruction_projection.bias",
+          "nonfinite_elements": 321,
+          "shape": [
+            321
+          ]
+        }
+      ],
+      "non_mrra_model_tensors": {
+        "elements": 24118163,
+        "nonfinite_elements": 17805565,
+        "nonfinite_tensor_count": 216,
+        "tensor_count": 321
+      },
+      "nonfinite_model_tensors": [
+        {
+          "elements": 103041,
+          "finite_abs_max": null,
+          "name": "decay1.weight",
+          "nonfinite_elements": 103041,
+          "shape": [
+            321,
+            321
+          ]
+        },
+        {
+          "elements": 321,
+          "finite_abs_max": null,
+          "name": "decay1.bias",
+          "nonfinite_elements": 321,
+          "shape": [
+            321
+          ]
+        },
+        {
+          "elements": 103041,
+          "finite_abs_max": null,
+          "name": "decay2.weight",
+          "nonfinite_elements": 103041,
+          "shape": [
+            321,
+            321
+          ]
+        },
+        {
+          "elements": 321,
+          "finite_abs_max": null,
+          "name": "decay2.bias",
+          "nonfinite_elements": 321,
+          "shape": [
+            321
+          ]
+        },
+        {
+          "elements": 20544,
+          "finite_abs_max": null,
+          "name": "mrra.input_projection.weight",
+          "nonfinite_elements": 20544,
+          "shape": [
+            32,
+            642
+          ]
+        },
+        {
+          "elements": 32,
+          "finite_abs_max": null,
+          "name": "mrra.input_projection.bias",
+          "nonfinite_elements": 32,
+          "shape": [
+            32
+          ]
+        },
+        {
+          "elements": 160,
+          "finite_abs_max": null,
+          "name": "mrra.temporal_filter.weight",
+          "nonfinite_elements": 160,
+          "shape": [
+            32,
+            1,
+            5
+          ]
+        },
+        {
+          "elements": 32,
+          "finite_abs_max": null,
+          "name": "mrra.temporal_filter.bias",
+          "nonfinite_elements": 32,
+          "shape": [
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "mrra.context_projection.weight",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mrra.context_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 10272,
+          "finite_abs_max": null,
+          "name": "mrra.reconstruction_projection.weight",
+          "nonfinite_elements": 10272,
+          "shape": [
+            321,
+            32
+          ]
+        },
+        {
+          "elements": 321,
+          "finite_abs_max": null,
+          "name": "mrra.reconstruction_projection.bias",
+          "nonfinite_elements": 321,
+          "shape": [
+            321
+          ]
+        },
+        {
+          "elements": 688640,
+          "finite_abs_max": null,
+          "name": "mem_net.pred_w",
+          "nonfinite_elements": 688640,
+          "shape": [
+            1345,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.pred_b",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 986112,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.conv1.weight",
+          "nonfinite_elements": 986112,
+          "shape": [
+            512,
+            1,
+            6,
+            321
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.s4.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.query_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.query_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.key_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.key_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.value_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.value_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.out_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.attention_layer.out_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 27,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.linear.weight",
+          "nonfinite_elements": 27,
+          "shape": [
+            1,
+            27
+          ]
+        },
+        {
+          "elements": 1,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_m.linear.bias",
+          "nonfinite_elements": 1,
+          "shape": [
+            1
+          ]
+        },
+        {
+          "elements": 986112,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.conv1.weight",
+          "nonfinite_elements": 986112,
+          "shape": [
+            512,
+            1,
+            6,
+            321
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.s4.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.query_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.query_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.key_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.key_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.value_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.value_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.out_projection.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.attention_layer.out_projection.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 27,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.linear.weight",
+          "nonfinite_elements": 27,
+          "shape": [
+            1,
+            27
+          ]
+        },
+        {
+          "elements": 1,
+          "finite_abs_max": null,
+          "name": "mem_net.encoder_u.linear.bias",
+          "nonfinite_elements": 1,
+          "shape": [
+            1
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "mem_net.mipp.content_adapter.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "linear1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "linear1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "norm.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "norm.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.F",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel1.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel1.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel1.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel1.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel1.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel1.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel2.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel2.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel2.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel2.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel2.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.layer.kernel2.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.0.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.1.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.2.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.3.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.4.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.5.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.6.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.D",
+          "nonfinite_elements": 512,
+          "shape": [
+            1,
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.kernel.inv_dt",
+          "nonfinite_elements": 512,
+          "shape": [
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.kernel.C",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.kernel.B",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.kernel.A_real",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 16384,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.kernel.A_imag",
+          "nonfinite_elements": 16384,
+          "shape": [
+            512,
+            32
+          ]
+        },
+        {
+          "elements": 32768,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.layer.kernel.P",
+          "nonfinite_elements": 32768,
+          "shape": [
+            1,
+            512,
+            32,
+            2
+          ]
+        },
+        {
+          "elements": 524288,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.output_linear.0.weight",
+          "nonfinite_elements": 524288,
+          "shape": [
+            1024,
+            512
+          ]
+        },
+        {
+          "elements": 1024,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.s4_1.output_linear.0.bias",
+          "nonfinite_elements": 1024,
+          "shape": [
+            1024
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.norm1.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.norm1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.norm2.weight",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.norm2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.conv1.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.conv1.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 262144,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.conv2.weight",
+          "nonfinite_elements": 262144,
+          "shape": [
+            512,
+            512,
+            1
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "s4_layers.7.conv2.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 164352,
+          "finite_abs_max": null,
+          "name": "mask_trans.weight",
+          "nonfinite_elements": 164352,
+          "shape": [
+            512,
+            321
+          ]
+        },
+        {
+          "elements": 512,
+          "finite_abs_max": null,
+          "name": "mask_trans.bias",
+          "nonfinite_elements": 512,
+          "shape": [
+            512
+          ]
+        },
+        {
+          "elements": 164352,
+          "finite_abs_max": null,
+          "name": "out_proj.weight",
+          "nonfinite_elements": 164352,
+          "shape": [
+            321,
+            512
+          ]
+        },
+        {
+          "elements": 321,
+          "finite_abs_max": null,
+          "name": "out_proj.bias",
+          "nonfinite_elements": 321,
+          "shape": [
+            321
+          ]
+        }
+      ]
+    }
+  ]
+}

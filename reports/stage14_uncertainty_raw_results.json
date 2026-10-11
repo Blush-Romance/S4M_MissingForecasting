@@ -1,0 +1,50 @@
+{
+  "queue_state": "SUCCESS",
+  "records": [
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_on": 0.36743953564376863,
+      "complete_target_mse_nested": 0.5188319103775741,
+      "complete_target_mse_off": 0.5403675847167412,
+      "complete_target_mse_on": 0.5218402913594586,
+      "evaluation_seed": 2024,
+      "job_id": "weather_pg95_seed2024_uncertainty_formal",
+      "mask_disagreement_mse_mean": 0.04343823879008419,
+      "peak_gpu_memory_mb": 1051.375,
+      "realized_additional_missing_rate": 0.14861956519603112,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_uncertainty_pg95__weather__validation__seed2024__20260723_152143",
+      "sample_count": 5168,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_on": 0.4024490193715171,
+      "complete_target_mse_nested": 0.3107079475645035,
+      "complete_target_mse_off": 0.35026982000895907,
+      "complete_target_mse_on": 0.31782335894448416,
+      "evaluation_seed": 2024,
+      "job_id": "weather_pg95_seed2024_uncertainty_smoke",
+      "mask_disagreement_mse_mean": 0.05060935398796573,
+      "peak_gpu_memory_mb": 1051.375,
+      "realized_additional_missing_rate": 0.16412743367254734,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_uncertainty_pg95__weather__validation__seed2024__smoke__20260723_152128",
+      "sample_count": 32,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_on": 0.3667240129436191,
+      "complete_target_mse_nested": 0.5280725081877379,
+      "complete_target_mse_off": 0.5570244844059165,
+      "complete_target_mse_on": 0.5303185818211336,
+      "evaluation_seed": 2025,
+      "job_id": "weather_pg95_seed2025_uncertainty_formal",
+      "mask_disagreement_mse_mean": 0.03913970663537045,
+      "peak_gpu_memory_mb": 1051.375,
+      "realized_additional_missing_rate": 0.14841459696417192,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_uncertainty_pg95__weather__validation__seed2025__20260723_152143",
+      "sample_count": 5168,
+      "state": "SUCCESS"
+    }
+  ]
+}

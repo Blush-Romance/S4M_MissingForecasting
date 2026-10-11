@@ -1,0 +1,31 @@
+{
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_ard_state_keys": [],
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [],
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 314,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 113878995,
+  "checkpoint_ttrr_state_keys": [],
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_22_traffic_pipeline/materialized/s4m_traffic_multiscale_test_seed2028_smoke__attempt01.yaml",
+  "evaluation_seed": 2028,
+  "experiment_id": "cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__smoke__20260820_181257",
+  "finished_at": "2026-08-20T10:14:18.945667+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__smoke__20260820_181257/metrics.json",
+  "pid": 516789,
+  "return_code": 0,
+  "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__smoke__20260820_181257/test_equal_rate_multiscale_samples.npz",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "c53ba27fb39a7b228c82333d46fcf8039c862e551e85779566ccb036a7be6b66",
+  "started_at": "2026-08-20T10:13:09.773383+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

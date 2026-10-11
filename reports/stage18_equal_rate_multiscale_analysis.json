@@ -1,0 +1,225 @@
+{
+  "checks": {
+    "all_artifacts_and_protocols_pass": true,
+    "both_formals_measured_on_same_gpu_uuid": true,
+    "multiscale_beats_l5_by_seed_and_metric": {
+      "2024": {
+        "mae": true,
+        "mse": true
+      },
+      "2025": {
+        "mae": true,
+        "mse": true
+      }
+    },
+    "strict_equal_realized_rate_across_scales": true,
+    "validation_gate_pass": true,
+    "weather_test_not_revisited": true
+  },
+  "decision": "MULTISCALE_VALIDATION_GATE_PASS_EXPAND_ONLY_TO_NEW_PROTOCOLS",
+  "multiscale_gain_vs_l5_pair_pct": {
+    "2024": {
+      "mae": 0.4526484743505295,
+      "mse": 0.9169078974652205
+    },
+    "2025": {
+      "mae": 0.5951661286176898,
+      "mse": 1.077797444485688
+    }
+  },
+  "pre_registered_design": {
+    "block_lengths": [
+      1,
+      5,
+      20
+    ],
+    "gate": "multiscale MSE and MAE must both beat L5 equal ensemble independently on seed2024 and seed2025",
+    "multiscale_weights": {
+      "l20": 0.25,
+      "l5": 0.25,
+      "original": 0.5
+    },
+    "pair_weights": [
+      0.5,
+      0.5
+    ],
+    "seeds": [
+      2024,
+      2025
+    ],
+    "target_rate": 0.15
+  },
+  "results": {
+    "2024": {
+      "checks": {
+        "artifact_status_pass": true,
+        "equal_rate_protocol": true,
+        "fixed_multiscale_weights": true,
+        "frozen_checkpoint": true,
+        "seed_matches": true,
+        "serial_timing": true,
+        "validation_only": true
+      },
+      "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+      "latency_mean_ms": {
+        "ensemble_l1": 52.0828019756193,
+        "ensemble_l20": 51.0934239488464,
+        "ensemble_l5": 51.291716451676315,
+        "multiscale": 77.09202682450652,
+        "original": 25.284912765990146
+      },
+      "multiscale_measured_multiplier_vs_original": 3.048933865739901,
+      "protocol_pass": true,
+      "realized_rates": {
+        "1": 0.15005742501029196,
+        "20": 0.15005742501029196,
+        "5": 0.15005742501029196
+      },
+      "routes": {
+        "ensemble_l1": {
+          "mae": 0.36535644301021236,
+          "mse": 0.512566133010381
+        },
+        "ensemble_l20": {
+          "mae": 0.36459270780329867,
+          "mse": 0.508494610056853
+        },
+        "ensemble_l5": {
+          "mae": 0.363950630064192,
+          "mse": 0.5089572149431086
+        },
+        "l1": {
+          "mae": 0.36981229494406415,
+          "mse": 0.5208173898685371
+        },
+        "l20": {
+          "mae": 0.37328655522100124,
+          "mse": 0.5216540648169035
+        },
+        "l5": {
+          "mae": 0.36931894773276785,
+          "mse": 0.5177691336077691
+        },
+        "multiscale": {
+          "mae": 0.3623032130898173,
+          "mse": 0.5042905460445762
+        },
+        "on": {
+          "mae": 0.3674395413233306,
+          "mse": 0.5218403043105588
+        }
+      },
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__weather__validation__seed2024__20260723_211435",
+      "sample_count": 5168,
+      "seed": 2024,
+      "timing_measured_batches": 313
+    },
+    "2025": {
+      "checks": {
+        "artifact_status_pass": true,
+        "equal_rate_protocol": true,
+        "fixed_multiscale_weights": true,
+        "frozen_checkpoint": true,
+        "seed_matches": true,
+        "serial_timing": true,
+        "validation_only": true
+      },
+      "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+      "latency_mean_ms": {
+        "ensemble_l1": 52.16554902678433,
+        "ensemble_l20": 51.173991606996275,
+        "ensemble_l5": 51.36185989212304,
+        "multiscale": 77.21160857613904,
+        "original": 25.316053248656253
+      },
+      "multiscale_measured_multiplier_vs_original": 3.049907022147591,
+      "protocol_pass": true,
+      "realized_rates": {
+        "1": 0.1501366798434372,
+        "20": 0.1501366798434372,
+        "5": 0.1501366798434372
+      },
+      "routes": {
+        "ensemble_l1": {
+          "mae": 0.36347119471875566,
+          "mse": 0.5229899774585299
+        },
+        "ensemble_l20": {
+          "mae": 0.36173158748430245,
+          "mse": 0.5169022342655968
+        },
+        "ensemble_l5": {
+          "mae": 0.36221784834510495,
+          "mse": 0.5198114387373578
+        },
+        "l1": {
+          "mae": 0.3667897462048128,
+          "mse": 0.532074983064077
+        },
+        "l20": {
+          "mae": 0.3684743486084489,
+          "mse": 0.5284148437384335
+        },
+        "l5": {
+          "mae": 0.3664524824099433,
+          "mse": 0.5288307773171493
+        },
+        "multiscale": {
+          "mae": 0.3600620503999471,
+          "mse": 0.5142089243345023
+        },
+        "on": {
+          "mae": 0.3667240129436191,
+          "mse": 0.5303185818211336
+        }
+      },
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__weather__validation__seed2025__20260723_211520",
+      "sample_count": 5168,
+      "seed": 2025,
+      "timing_measured_batches": 313
+    }
+  },
+  "scope": "Weather validation only; frozen PG95 checkpoints; exact per-sample additional removal counts; same-GPU serial timing",
+  "serial_latency_two_seed_mean_ms": {
+    "ensemble_l1": 52.12417550120182,
+    "ensemble_l20": 51.13370777792134,
+    "ensemble_l5": 51.32678817189968,
+    "multiscale": 77.15181770032278,
+    "original": 25.3004830073232
+  },
+  "status": "PASS",
+  "two_seed_means": {
+    "ensemble_l1": {
+      "mae": 0.364413818864484,
+      "mse": 0.5177780552344555
+    },
+    "ensemble_l20": {
+      "mae": 0.36316214764380056,
+      "mse": 0.512698422161225
+    },
+    "ensemble_l5": {
+      "mae": 0.3630842392046485,
+      "mse": 0.5143843268402333
+    },
+    "l1": {
+      "mae": 0.3683010205744385,
+      "mse": 0.526446186466307
+    },
+    "l20": {
+      "mae": 0.3708804519147251,
+      "mse": 0.5250344542776685
+    },
+    "l5": {
+      "mae": 0.3678857150713556,
+      "mse": 0.5232999554624592
+    },
+    "multiscale": {
+      "mae": 0.3611826317448822,
+      "mse": 0.5092497351895393
+    },
+    "on": {
+      "mae": 0.3670817771334749,
+      "mse": 0.5260794430658462
+    }
+  }
+}

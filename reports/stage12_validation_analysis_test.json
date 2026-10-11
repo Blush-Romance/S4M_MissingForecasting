@@ -1,0 +1,26 @@
+{
+  "artifact_status": "PASS",
+  "checks": {
+    "negative_case_mae_is_rejected": true,
+    "negative_case_mse_can_still_pass": true,
+    "negative_mae_case_stops_gate": true,
+    "positive_case_all_gate_checks_pass": true,
+    "quartiles_equal_size": true,
+    "quartiles_stable_extremes": true,
+    "weighted_metric_uses_element_counts": true
+  },
+  "negative_gate_checks": {
+    "seed2025_rare_q4_mae_gain_above_common_q1": false,
+    "seed2025_rare_q4_mae_gain_positive": false,
+    "seed2025_rare_q4_mse_gain_above_common_q1": true,
+    "seed2025_rare_q4_mse_gain_positive": true
+  },
+  "positive_gate_checks": {
+    "seed2024_rare_q4_mae_gain_above_common_q1": true,
+    "seed2024_rare_q4_mae_gain_positive": true,
+    "seed2024_rare_q4_mse_gain_above_common_q1": true,
+    "seed2024_rare_q4_mse_gain_positive": true
+  },
+  "schema_version": 1,
+  "step": 12
+}

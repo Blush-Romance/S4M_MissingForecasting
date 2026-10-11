@@ -1,0 +1,9 @@
+{
+  "experiment_id": "s4m_fusion_diagnostic__traffic__point__mr0.06__seed2027__smoke__20261004_210243",
+  "state": "CODE_ERROR",
+  "started_at": "2026-10-04T13:02:43.212287+00:00",
+  "pid": 2584233,
+  "return_code": 1,
+  "finished_at": "2026-10-04T13:02:50.838077+00:00",
+  "verification_error": null
+}

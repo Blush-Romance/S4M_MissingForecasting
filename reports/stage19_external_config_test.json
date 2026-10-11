@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "all_assets_exist": true,
+    "all_stage19_configs_valid": true,
+    "formal_is_complete": true,
+    "frozen_etth1_external_identity": true,
+    "mipp_source_rejected": true,
+    "smoke_is_three_batches": true,
+    "source_is_original_s4m": true,
+    "stage18_configs_still_valid": true,
+    "validation_split_rejected": true,
+    "wrong_dataset_rejected": true,
+    "wrong_method_rejected": true,
+    "wrong_seed_rejected": true,
+    "wrong_weight_rejected": true
+  },
+  "configs": [
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage19_external_validation/s4m_etth1_seed2023_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage19_external_validation/s4m_etth1_seed2023.yaml"
+  ],
+  "stage18_regression_configs": [
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage18_equal_rate_multiscale/s4m_weather_pg95_seed2024.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage18_equal_rate_multiscale/s4m_weather_pg95_seed2024_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage18_equal_rate_multiscale/s4m_weather_pg95_seed2025.yaml"
+  ],
+  "status": "PASS"
+}

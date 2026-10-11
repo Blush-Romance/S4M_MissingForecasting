@@ -1,0 +1,12 @@
+# 步骤22.19：ARD交叉掩码确认
+
+- 协议状态：`PASS`
+- 科学决策：`ARD_BEATS_MCPR_CONTROL_BUT_NOT_PG95_STOP`
+- 范围：预注册Electricity seed2025缺失掩码，validation-only
+- test访问：`false`
+
+- PG95 MSE/MAE：`0.879107853/0.756513116`
+- MCPR-MSE MSE/MAE：`0.887730208/0.756893787`
+- ARD-MCPR MSE/MAE：`0.880757112/0.756085279`
+- ARD相对MCPR-MSE收益：`+0.785497% / +0.106819%`
+- ARD相对PG95收益：`-0.187606% / +0.056554%`

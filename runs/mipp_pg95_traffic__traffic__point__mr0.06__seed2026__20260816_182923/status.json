@@ -1,0 +1,12 @@
+{
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_21_traffic/pg95_traffic_seed2026.yaml",
+  "device": "cuda",
+  "experiment_id": "mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_182923",
+  "finished_at": "2026-08-16T10:30:08.952740+00:00",
+  "metrics_path": null,
+  "pid": 1206492,
+  "return_code": 1,
+  "started_at": "2026-08-16T10:29:23.471252+00:00",
+  "state": "NAN_OR_DIVERGENCE",
+  "verification_error": null
+}

@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "actual_rate_is_identical_per_sample": true,
+    "all_scales_are_nested_subsets": true,
+    "all_scales_remove_exact_rounded_count": true,
+    "different_seed_changes_mask": true,
+    "long_blocks_reduce_mask_transitions": true,
+    "non_row_shared_mask_rejected": true,
+    "same_seed_is_bitwise_deterministic": true,
+    "scales_change_mask_organization": true,
+    "variables_remain_row_shared": true
+  },
+  "mean_transitions": {
+    "1": 49.6484375,
+    "20": 3.7734375,
+    "5": 11.3515625
+  },
+  "realized_rate": 0.1510416716337204,
+  "status": "PASS",
+  "target_removed_count": 29
+}

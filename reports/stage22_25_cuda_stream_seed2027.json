@@ -1,0 +1,83 @@
+{
+  "decision": "CUDA_STREAM_SPEED_GATE_FAIL",
+  "formal": {
+    "artifact_status": "PASS",
+    "maximum_absolute_prediction_difference": {
+      "l20": 0.0,
+      "l5": 0.0,
+      "multiscale": 0.0,
+      "original": 0.0
+    },
+    "paired_latency_reduction_percent_bootstrap_ci95": [
+      -0.05238523260618705,
+      1.105720964533365
+    ],
+    "paired_latency_reduction_percent_mean": 0.5165473056292542,
+    "parallel_mae": 0.316191883227654,
+    "parallel_mse": 0.517810115072775,
+    "parallel_pipeline_timing": {
+      "mean_ms": 197.95923304533767,
+      "p50_ms": 193.85658483952284,
+      "p95_ms": 221.02596927434206,
+      "std_ms": 14.081455800555142,
+      "total_seconds": 18.410208673216403
+    },
+    "peak_gpu_memory_mb": 3167.7412109375,
+    "prediction_equivalence_pass": true,
+    "serial_mae": 0.316191883227654,
+    "serial_mse": 0.517810115072775,
+    "serial_pipeline_timing": {
+      "mean_ms": 199.09983777230786,
+      "p50_ms": 194.517495110631,
+      "p95_ms": 223.72823152691123,
+      "std_ms": 14.613293111521159,
+      "total_seconds": 18.51628491282463
+    },
+    "speed_gate_pass": false
+  },
+  "formal_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_cuda_stream_compare_pg95__traffic__validation__seed2027__20260820_210149",
+  "queue_state": "SUCCESS",
+  "scientific_dependency": {
+    "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_cuda_stream_compare_pg95__traffic__validation__seed2027__smoke__20260820_210049/metrics.json",
+    "passed": true,
+    "reason": "smoke equivalence PASS",
+    "source_job": "traffic_cuda_stream_validation_seed2027_smoke"
+  },
+  "smoke": {
+    "artifact_status": "PASS",
+    "maximum_absolute_prediction_difference": {
+      "l20": 0.0,
+      "l5": 0.0,
+      "multiscale": 0.0,
+      "original": 0.0
+    },
+    "paired_latency_reduction_percent_bootstrap_ci95": [
+      -1.3761244291362447,
+      0.18431708780851985
+    ],
+    "paired_latency_reduction_percent_mean": -0.5959036706638624,
+    "parallel_mae": 0.36528394836284167,
+    "parallel_mse": 0.5735611439857572,
+    "parallel_pipeline_timing": {
+      "mean_ms": 204.94018075987697,
+      "p50_ms": 204.94018075987697,
+      "p95_ms": 218.4982289094478,
+      "std_ms": 15.06449794396758,
+      "total_seconds": 0.40988036151975393
+    },
+    "peak_gpu_memory_mb": 3166.8935546875,
+    "prediction_equivalence_pass": true,
+    "serial_mae": 0.36528394836284167,
+    "serial_mse": 0.5735611439857572,
+    "serial_pipeline_timing": {
+      "mean_ms": 203.85457994416356,
+      "p50_ms": 203.85457994416356,
+      "p95_ms": 218.75529834069312,
+      "std_ms": 16.556353773921728,
+      "total_seconds": 0.4077091598883271
+    },
+    "speed_gate_pass": false
+  },
+  "smoke_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_cuda_stream_compare_pg95__traffic__validation__seed2027__smoke__20260820_210049",
+  "step": "22.25"
+}

@@ -1,0 +1,429 @@
+{
+  "stage": "22.39",
+  "kind": "CPU_SOURCE_AND_SYNTHETIC_AUDIT",
+  "created_at": "2026-10-04T20:55:58.856834+08:00",
+  "passed": true,
+  "tests": {
+    "forward_normalization_ast_matches_upstream": true,
+    "helper_normalization_ast_matches_forward": true,
+    "min_normalization_reads_overwritten_max": true,
+    "actual_min_is_not_standardized_own_distance": true,
+    "own_standardization_is_translation_invariant": true,
+    "actual_min_is_not_translation_invariant": true,
+    "all_valid_extremum_positions_L192_have_positive_std": true,
+    "all_missing_L192_distance_normalization_is_finite": true,
+    "external_constant_distances_produce_nonfinite": true,
+    "L1_distance_normalization_produces_nonfinite": true,
+    "dataset_getitem_ast_matches_upstream": true,
+    "missing_zero_can_be_minimum_of_positive_observations": true,
+    "missing_zero_can_be_maximum_of_negative_observations": true,
+    "missing_zero_extremum_distance_points_at_missing_index": true,
+    "encoder_conv_reshape_ast_matches_upstream": true,
+    "reshape_preserves_shape_but_not_time_channel_axis_mapping": true,
+    "float32_extreme_exp_ratios_can_be_nonfinite": true,
+    "mathematically_equivalent_sigmoid_ratios_stay_finite": true,
+    "all_audited_source_files_unchanged": true
+  },
+  "test_count": 19,
+  "environment": {
+    "python": "3.10.13",
+    "torch": "2.1.0+cu121",
+    "numpy": "1.26.4",
+    "device": "CPU"
+  },
+  "git_commit": "a718823addd3606e763dfc261174e0135b2535f4",
+  "source_hashes": {
+    "baseline_model": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+    "upstream_model": "656131ea5215db76a6d4c134e427d6c290599bba9a97e248c57cfd72a002d1e5",
+    "baseline_bank": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+    "upstream_bank": "50a4aab5a8e80287ff493b4bb469580793ffcc03f4d0cd8a6eb41b3db3f5ed18",
+    "baseline_loader": "abd42e5ae55a1f56c8a5f12eade2fa64413b1c7f75c4e941e5696bbf2f14ee82",
+    "upstream_loader": "b907a7fd2d64e2eb8087e6036a6df836b7e2a916bd87baf206161a280f0db1f2"
+  },
+  "script_sha256": "c5c88b9200823b0ac73f5e9132bd572072f3718fcb11885936132687cf18c950",
+  "scope": {
+    "real_dataset_opened": false,
+    "test_split_opened": false,
+    "checkpoint_loaded": false,
+    "baseline_modified": false,
+    "training_performed": false
+  },
+  "findings": [
+    {
+      "id": "distance_min_wrong_source",
+      "status": "CONFIRMED_UPSTREAM_IMPLEMENTATION_MISMATCH",
+      "priority": 1,
+      "description_zh": "min_idx 分子误用已标准化 max_idx，再减原始 min 距离均值，混合标准化尺度与原始步数尺度；不是真正的 min 距离标准化。",
+      "evidence": [
+        {
+          "path": "baselines/S4M/s4m/model/S4M.py",
+          "sha256": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+          "lines": [
+            {
+              "line": 314,
+              "source": "max_idx = (max_idx-torch.mean(max_idx,dim=1,keepdims=True))/torch.std(max_idx,dim=1,keepdims=True)"
+            },
+            {
+              "line": 315,
+              "source": "min_idx = (max_idx-torch.mean(min_idx,dim=1,keepdims=True))/torch.std(min_idx,dim=1,keepdims=True)"
+            }
+          ]
+        },
+        {
+          "path": "upstream/S4M/s4m/model/S4M.py",
+          "sha256": "656131ea5215db76a6d4c134e427d6c290599bba9a97e248c57cfd72a002d1e5",
+          "lines": [
+            {
+              "line": 145,
+              "source": "max_idx = (max_idx-torch.mean(max_idx,dim=1,keepdims=True))/torch.std(max_idx,dim=1,keepdims=True)"
+            },
+            {
+              "line": 146,
+              "source": "min_idx = (max_idx-torch.mean(min_idx,dim=1,keepdims=True))/torch.std(min_idx,dim=1,keepdims=True)"
+            }
+          ]
+        },
+        {
+          "path": "baselines/S4M/s4m/model/S4M.py",
+          "sha256": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+          "lines": [
+            {
+              "line": 262,
+              "source": "max_idx = (max_idx-torch.mean(max_idx,dim=1,keepdims=True))/torch.std(max_idx,dim=1,keepdims=True)"
+            },
+            {
+              "line": 263,
+              "source": "min_idx = (max_idx-torch.mean(min_idx,dim=1,keepdims=True))/torch.std(min_idx,dim=1,keepdims=True)"
+            }
+          ]
+        }
+      ],
+      "causal_boundary_zh": "数学/源码错误已证实，但当前 checkpoint 已适应该错误；直接修正后的好坏需 validation 诊断，不能声称必然提升，也不计作创新。"
+    },
+    {
+      "id": "extrema_include_imputed_zero",
+      "status": "CONFIRMED_UPSTREAM_MASK_SEMANTICS_RISK",
+      "priority": 2,
+      "description_zh": "Dataset_Custom4 在归一化并将缺失置 0 后求窗口极值，未排除缺失位置；合成正/负观测例证实缺失 0 可成为最小/最大值。",
+      "evidence": [
+        {
+          "path": "baselines/S4M/s4m/data_provider/data_loader.py",
+          "sha256": "abd42e5ae55a1f56c8a5f12eade2fa64413b1c7f75c4e941e5696bbf2f14ee82",
+          "lines": [
+            {
+              "line": 1249,
+              "source": "def __getitem__(self, index):\n        s_begin = index\n        s_end = s_begin + self.seq_len\n        r_begin = s_end\n        r_end = r_begin + self.pred_len\n\n        seq_x = self.data_x[s_begin:s_end]\n        if self.args.mean_type==\"global_mean\":\n            seq_mean = self.global_mean[s_begin:s_end]\n        else:\n            seq_mean = self.em_mean[s_begin:s_end]\n        # idx = list(range(s_begin,s_end))\n        # idx_ls = [list(range(self.config.))]\n        max_idx = np.argmax(seq_x,axis=0)\n        min_idx = np.argmin(seq_x,axis=0)\n        idx = np.expand_dims(np.arange(seq_x.shape[0]),axis=1).repeat(seq_x.shape[1],axis=1)    \n        max_idx = np.abs(max_idx-idx)\n        min_idx = np.abs(min_idx-idx)    \n        \n        value = np.max(seq_x,axis=0)\n        idx = np.argmax(seq_x,axis=0)\n        max_value = np.expand_dims(value,axis=0).repeat(seq_x.shape[0],axis=0)\n        value = np.min(seq_x,axis=0)\n        min_value = np.expand_dims(value,axis=0).repeat(seq_x.shape[0],axis=0)\n                \n        # print(\"max_value\",max_value)\n        # print(\"min_value\",min_value)\n        # print(\"max_idx\",max_idx)\n        # print(\"min_idx\",min_idx)\n                \n        seq_true_x = self.true_data[s_begin:s_end]\n        seq_true_y = self.true_data[r_begin:r_end]\n        seq_y = self.data_y[r_begin:r_end]\n        # seq_x_mark = self.data_stamp[s_begin:s_end]\n        # seq_y_mark = self.data_stamp[r_begin:r_end]\n        # seq_std = self.em_std[s_begin:s_end]\n        seq_x_f = self.data_f[s_begin:s_end]\n        # seq_delta = self.delta[s_begin:s_end]\n        seq_x_mask = self.mask_data[s_begin:s_end]\n        seq_y_mask = self.mask_data[r_begin:r_end]\n        \n        if self.args.model=='BiaTCGNet':\n            seq_x = np.expand_dims(seq_x,axis=-1)\n            seq_x_mask = np.expand_dims(seq_x_mask,axis=-1)\n        # print(\"nan_sim\",np.sum(np.isnan(seq_x)),np.sum(np.isnan(max_idx)),np.sum(np.isnan(min_idx)),np.sum(np.isnan(max_value)),np.sum(np.isnan(min_value)))\n        return seq_x,seq_x_mask,seq_y,seq_y_mask,seq_true_x,seq_true_y,max_idx,min_idx,max_value,min_value"
+            }
+          ]
+        },
+        {
+          "path": "upstream/S4M/s4m/data_provider/data_loader.py",
+          "sha256": "b907a7fd2d64e2eb8087e6036a6df836b7e2a916bd87baf206161a280f0db1f2",
+          "lines": [
+            {
+              "line": 1245,
+              "source": "def __getitem__(self, index):\n        s_begin = index\n        s_end = s_begin + self.seq_len\n        r_begin = s_end\n        r_end = r_begin + self.pred_len\n\n        seq_x = self.data_x[s_begin:s_end]\n        if self.args.mean_type==\"global_mean\":\n            seq_mean = self.global_mean[s_begin:s_end]\n        else:\n            seq_mean = self.em_mean[s_begin:s_end]\n        # idx = list(range(s_begin,s_end))\n        # idx_ls = [list(range(self.config.))]\n        max_idx = np.argmax(seq_x,axis=0)\n        min_idx = np.argmin(seq_x,axis=0)\n        idx = np.expand_dims(np.arange(seq_x.shape[0]),axis=1).repeat(seq_x.shape[1],axis=1)    \n        max_idx = np.abs(max_idx-idx)\n        min_idx = np.abs(min_idx-idx)    \n        \n        value = np.max(seq_x,axis=0)\n        idx = np.argmax(seq_x,axis=0)\n        max_value = np.expand_dims(value,axis=0).repeat(seq_x.shape[0],axis=0)\n        value = np.min(seq_x,axis=0)\n        min_value = np.expand_dims(value,axis=0).repeat(seq_x.shape[0],axis=0)\n                \n        # print(\"max_value\",max_value)\n        # print(\"min_value\",min_value)\n        # print(\"max_idx\",max_idx)\n        # print(\"min_idx\",min_idx)\n                \n        seq_true_x = self.true_data[s_begin:s_end]\n        seq_true_y = self.true_data[r_begin:r_end]\n        seq_y = self.data_y[r_begin:r_end]\n        # seq_x_mark = self.data_stamp[s_begin:s_end]\n        # seq_y_mark = self.data_stamp[r_begin:r_end]\n        # seq_std = self.em_std[s_begin:s_end]\n        seq_x_f = self.data_f[s_begin:s_end]\n        # seq_delta = self.delta[s_begin:s_end]\n        seq_x_mask = self.mask_data[s_begin:s_end]\n        seq_y_mask = self.mask_data[r_begin:r_end]\n        \n        if self.args.model=='BiaTCGNet':\n            seq_x = np.expand_dims(seq_x,axis=-1)\n            seq_x_mask = np.expand_dims(seq_x_mask,axis=-1)\n        # print(\"nan_sim\",np.sum(np.isnan(seq_x)),np.sum(np.isnan(max_idx)),np.sum(np.isnan(min_idx)),np.sum(np.isnan(max_value)),np.sum(np.isnan(min_value)))\n        return seq_x,seq_x_mask,seq_y,seq_y_mask,seq_true_x,seq_true_y,max_idx,min_idx,max_value,min_value"
+            }
+          ]
+        }
+      ],
+      "causal_boundary_zh": "不访问真实数据，因此未量化当前 Traffic 上比例或性能伤害；全窗历史极值可使用历史内较晚点，不等于使用预测未来标签。"
+    },
+    {
+      "id": "encoder_axis_reshape",
+      "status": "CONFIRMED_UPSTREAM_AXIS_MAPPING_MISMATCH",
+      "priority": 3,
+      "description_zh": "Conv2d 输出 [N,H,Tc,1] 直接 reshape 为 [N,Tc,H] 并非交换轴；时间/通道含义发生重新打包。",
+      "evidence": [
+        {
+          "path": "baselines/S4M/s4m/model/Bank.py",
+          "sha256": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+          "lines": [
+            {
+              "line": 100,
+              "source": "input = h_conv1.reshape(-1,self.Tc,self.config.en_conv_hidden_size)"
+            }
+          ]
+        },
+        {
+          "path": "upstream/S4M/s4m/model/Bank.py",
+          "sha256": "50a4aab5a8e80287ff493b4bb469580793ffcc03f4d0cd8a6eb41b3db3f5ed18",
+          "lines": [
+            {
+              "line": 97,
+              "source": "input = h_conv1.reshape(-1,self.Tc,self.config.en_conv_hidden_size)"
+            }
+          ]
+        }
+      ],
+      "causal_boundary_zh": "不一定造成报错，也不能证明损害当前已训练模型。应单列 bug-fix baseline，不能把修正后重训收益混同新模块创新。"
+    },
+    {
+      "id": "normalization_zero_std",
+      "status": "LATENT_NOT_L192_DATASET_FAILURE",
+      "priority": 4,
+      "description_zh": "公式无 epsilon，常数外部距离与 L=1 会非有限；但当前 Dataset_Custom4 L=192 的 |t-k| 对全部合法 k 标准差均为正，完全缺失历史也不自动零 std。",
+      "causal_boundary_zh": "不应将一般数值风险误报为当前实验故障。"
+    },
+    {
+      "id": "exponential_ratio_numeric_range",
+      "status": "LATENT_STRESS_CASE_NOT_OBSERVED_FAILURE",
+      "priority": 5,
+      "description_zh": "exp(-logit) 比值在极端 float32 范围可出现 inf/inf 或 0/0；实际 logits 尚未采样，不能声称当前发生溢出。",
+      "causal_boundary_zh": "稳定 sigmoid 为代数等价建议，不在本步骤修改基线。"
+    }
+  ],
+  "normalization_example": {
+    "case": "L=192, max position=16, min position=140, one variable; no dataset accessed",
+    "raw_max": {
+      "shape": [
+        1,
+        192,
+        1
+      ],
+      "nonfinite": 0,
+      "mean_finite": 80.91666666666667,
+      "std_finite": 53.474790589784355,
+      "min_finite": 0.0,
+      "max_finite": 175.0
+    },
+    "raw_min": {
+      "shape": [
+        1,
+        192,
+        1
+      ],
+      "nonfinite": 0,
+      "mean_finite": 58.3125,
+      "std_finite": 40.74883160885611,
+      "min_finite": 0.0,
+      "max_finite": 140.0
+    },
+    "actual_max": {
+      "shape": [
+        1,
+        192,
+        1
+      ],
+      "nonfinite": 0,
+      "mean_finite": -6.707597440443654e-17,
+      "std_finite": 1.0000000000000004,
+      "min_finite": -1.5131740727587761,
+      "max_finite": 1.759396012507372
+    },
+    "actual_min": {
+      "shape": [
+        1,
+        192,
+        1
+      ],
+      "nonfinite": 0,
+      "mean_finite": -1.4310226256236191,
+      "std_finite": 0.024540580932452212,
+      "min_finite": -1.4681567964210442,
+      "max_finite": -1.3878460253864484
+    },
+    "own_standardized_min": {
+      "shape": [
+        1,
+        192,
+        1
+      ],
+      "nonfinite": 0,
+      "mean_finite": -1.734723475976807e-18,
+      "std_finite": 1.0,
+      "min_finite": -1.4310226256236194,
+      "max_finite": 2.00465870491969
+    },
+    "actual_vs_own_standardized_max_abs_difference": 3.4654728022747143,
+    "actual_min_translation_shift_max_abs": 0.24540580932452238,
+    "temporal_correlation_actual_min_to_actual_max": 1.0,
+    "interpretation": "min branch temporal shape is affine to standardized max branch; raw min contributes its mean and std, not its per-time shape. This demonstrates formula mismatch, not an empirical forecast benefit from repair."
+  },
+  "std_audit": {
+    "L192_min_std_over_extremum_positions": 27.788279573866976,
+    "L192_max_std": 55.569775957799216,
+    "constant_distance_nonfinite": [
+      {
+        "shape": [
+          1,
+          5,
+          1
+        ],
+        "nonfinite": 5,
+        "mean_finite": null,
+        "std_finite": null,
+        "min_finite": null,
+        "max_finite": null
+      },
+      {
+        "shape": [
+          1,
+          5,
+          1
+        ],
+        "nonfinite": 5,
+        "mean_finite": null,
+        "std_finite": null,
+        "min_finite": null,
+        "max_finite": null
+      }
+    ],
+    "L1_nonfinite": [
+      {
+        "shape": [
+          1,
+          1,
+          1
+        ],
+        "nonfinite": 1,
+        "mean_finite": null,
+        "std_finite": null,
+        "min_finite": null,
+        "max_finite": null
+      },
+      {
+        "shape": [
+          1,
+          1,
+          1
+        ],
+        "nonfinite": 1,
+        "mean_finite": null,
+        "std_finite": null,
+        "min_finite": null,
+        "max_finite": null
+      }
+    ]
+  },
+  "extrema_example": {
+    "history": [
+      [
+        1.0,
+        -1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        2.0,
+        -2.0
+      ],
+      [
+        3.0,
+        -3.0
+      ]
+    ],
+    "mask": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    "max_value": [
+      3.0,
+      0.0
+    ],
+    "min_value": [
+      0.0,
+      -3.0
+    ],
+    "expected_observed_only_max_value": [
+      3.0,
+      -1.0
+    ],
+    "expected_observed_only_min_value": [
+      1.0,
+      -3.0
+    ]
+  },
+  "encoder_mapping_example": {
+    "input_NHT1": [
+      [
+        [
+          [
+            0.0
+          ],
+          [
+            1.0
+          ],
+          [
+            2.0
+          ]
+        ],
+        [
+          [
+            3.0
+          ],
+          [
+            4.0
+          ],
+          [
+            5.0
+          ]
+        ]
+      ]
+    ],
+    "source_reshape_NTH": [
+      [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          2.0,
+          3.0
+        ],
+        [
+          4.0,
+          5.0
+        ]
+      ]
+    ],
+    "axis_permutation_NTH": [
+      [
+        [
+          0.0,
+          3.0
+        ],
+        [
+          1.0,
+          4.0
+        ],
+        [
+          2.0,
+          5.0
+        ]
+      ]
+    ],
+    "active_Traffic_dimensions": {
+      "short_len": 32,
+      "W": 6,
+      "en_conv_hidden_size": 512,
+      "seq_len": 192,
+      "Tc": 27
+    },
+    "source_config": "configs/stage22_38_diagnostic/seed2027_formal.yaml",
+    "source_config_sha256": "8af40b3c7cfbc932ebd90e1af9c829dc5565a9442464e1801956048d7ac3bd37",
+    "config_note": "Active dimensions read from frozen Step 22.38 seed2027 formal YAML; not model changes."
+  },
+  "limitations_zh": [
+    "所有数值均为 CPU 合成单元算例，不是预测性能指标。",
+    "不读取 test，不加载 checkpoint，不更改原始源码。",
+    "问题源于上游已有实现；修复必须保留原 baseline 并独立报告，不能计为学术创新。",
+    "当前 checkpoint 是否因修正变好，只能由冻结 validation 诊断和后续公平重训验证。"
+  ]
+}

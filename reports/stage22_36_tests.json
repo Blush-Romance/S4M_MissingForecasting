@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "tests": 7,
+  "expected_common_sha256": "0aea2be2145809f6f3ade6f5680e084a05aae5eaff106ef1554f8346efe76db6",
+  "common_entries": 314,
+  "changed_common_entries": 0
+}

@@ -1,0 +1,24 @@
+experiment:
+  method: ttrr_mcpr
+  dataset: electricity
+  seed: 2024
+  smoke_test: false
+  protocol_scope: stage22_18_same_gpu_full_validation_timing
+source:
+  resolved_config: runs/ttrr_mcpr_pg95_electricity__electricity__point__mr0.06__seed2024__20260813_202834/resolved_config.yaml
+  metrics: runs/ttrr_mcpr_pg95_electricity__electricity__point__mr0.06__seed2024__20260813_202834/metrics.json
+  checkpoint: runs/ttrr_mcpr_pg95_electricity__electricity__point__mr0.06__seed2024__20260813_202834/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE2218TTRRF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2024tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+  mse_key: mse
+  mae_key: mae
+data:
+  missing_csv: data/electricity/electricity_point_paper_r0.06_l5_seed2024.csv
+  complete_csv: data/electricity/electricity.csv
+  mask_asset: artifacts/masks/electricity/point/rate_0.06/seed_2024.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+diagnostic:
+  split: val
+  max_eval_batches: -1
+  timing_warmup_batches: 10
+  timing_repeats: 2

@@ -1,0 +1,33 @@
+{
+  "all_pass": true,
+  "check_count": 26,
+  "checks": {
+    "all_data_assets_exist": true,
+    "all_source_assets_exist": true,
+    "direction_decision": true,
+    "excessive_benefit_flip_rate_rejected": true,
+    "fp32_asset_mismatch_rejected": true,
+    "fp32_scale_aware_positive": true,
+    "indeterminate_stops": true,
+    "mcpr_conflict_rejected": true,
+    "near_zero_benefit_flip_allowed": true,
+    "nonboundary_benefit_flip_rejected": true,
+    "pba_identity_required": true,
+    "protocol_failure_blocks_decision": true,
+    "protocol_forbids_test": true,
+    "protocol_has_q90_and_60pct": true,
+    "protocol_records_fp32_amendment": true,
+    "queue_dependency": true,
+    "queue_memory_estimate_recorded": true,
+    "queue_two_jobs": true,
+    "runner_exact_token_contract": true,
+    "spillover_decision": true,
+    "tail_decision": true,
+    "tail_precedence": true,
+    "teacher_weight_change_rejected": true,
+    "test_split_rejected": true,
+    "two_configs_validate": true,
+    "wrong_tail_rejected": true
+  },
+  "step": "22.31"
+}

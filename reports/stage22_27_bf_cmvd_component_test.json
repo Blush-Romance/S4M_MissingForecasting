@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "complete_benefit_is_strict_bimetric": true,
+    "coverage_gate_has_priority": true,
+    "diagnostic_never_constructs_test_loader": true,
+    "expression_gate_maps_only_to_dmrb": true,
+    "failed_smoke_blocks_formal": true,
+    "float32_residual_identity_tolerance_covers_two_ulp": true,
+    "formal_smoke_budget_is_rejected": true,
+    "mixed_evidence_stops": true,
+    "observed_benefit_is_supported_subset": true,
+    "passed_smoke_leaves_formal_pending": true,
+    "quadratic_mismatch_identity": true,
+    "queue_is_smoke_then_formal": true,
+    "run_parser_and_dispatch_are_wired": true,
+    "shape_mismatch_is_rejected": true,
+    "smoke_and_formal_budgets_are_isolated": true,
+    "spillover_gate_maps_only_to_cbr": true,
+    "student_benefit_is_computed": true,
+    "teacher_protocol_equal": true,
+    "test_split_is_rejected": true,
+    "two_configs_validate": true,
+    "validation_only_is_frozen": true,
+    "wrong_blocks_are_rejected": true,
+    "wrong_rate_is_rejected": true,
+    "wrong_seed_is_rejected": true,
+    "wrong_source_identity_is_rejected": true,
+    "wrong_weight_is_rejected": true
+  },
+  "status": "PASS",
+  "step": "22.27"
+}

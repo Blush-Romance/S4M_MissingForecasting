@@ -1,0 +1,104 @@
+experiment: &id001
+  model: cnm_se_crn_v1_s4m
+  method: s4m_baseline
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2028
+  smoke_test: false
+  purpose: frozen_paired_multiseed_replication
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2599749202006384
+  protocol_scope: stage22_37_paired_training_CRN_validation
+source:
+  job_id: s4m_2028_train_formal
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_37_control/state.json
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946
+  resolved_config: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/resolved_config.yaml
+  metrics: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/metrics.json
+  checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+data: &id002
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2028.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2028.npz
+diagnostic: &id003
+  variant: stage22_34_traffic_s4m_validation
+  split: val
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2028
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: '22.37'
+  user_approved: true
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_36_control/s4m_eval_formal.yaml
+  template_sha256: f2cb5c6658faa1316b2cd505c9e0149710abaef902c27a76af0adc58d9527866
+  configuration_changes:
+    experiment:
+      old:
+        model: cnm_se_crn_v1_s4m
+        method: s4m_baseline
+        dataset: traffic
+        domain: validation_point_r006
+        seed: 2027
+        smoke_test: false
+        purpose: read_only_new_training_checkpoint_control
+        protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+        nominal_missing_rate: 0.06
+        realized_missing_rate: 0.2600889192886457
+        protocol_scope: stage22_36_paired_training_CRN_validation
+      new: *id001
+      reason: user-approved frozen seed replication
+    source:
+      old:
+        job_id: s4m_train_formal
+        queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_36_control/state.json
+      new:
+        job_id: s4m_2028_train_formal
+        queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_37_control/state.json
+      reason: user-approved frozen seed replication
+    data:
+      old:
+        missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+        complete_csv: data/traffic/traffic.csv
+        mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+      new: *id002
+      reason: user-approved frozen seed replication
+    diagnostic:
+      old:
+        variant: stage22_34_traffic_s4m_validation
+        split: val
+        max_eval_batches: -1
+        target_rate: 0.15
+        block_lengths:
+        - 1
+        - 5
+        - 20
+        nested_seed: 2027
+        multiscale_weights:
+          original: 0.5
+          l5: 0.25
+          l20: 0.25
+        timing_warmup_batches: 10
+        fixed_eval_rng: true
+        rng_protocol: stage22_34_crn_v1
+      new: *id003
+      reason: user-approved frozen seed replication
+  materialized_from: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_37_control/s4m_2028_eval_formal.yaml
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_37_control/state.json
+  source_job_id: s4m_2028_train_formal
+  source_is_validation_only: true
+  test_precommitted_without_validation_selection: true

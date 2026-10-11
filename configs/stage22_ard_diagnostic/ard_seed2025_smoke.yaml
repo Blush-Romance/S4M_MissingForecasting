@@ -1,0 +1,25 @@
+experiment:
+  method: ard_mcpr
+  dataset: electricity
+  seed: 2025
+  smoke_test: true
+  protocol_scope: stage22_20_ard_information_diagnostic_smoke
+source:
+  resolved_config: runs/ard_mcpr_electricity__electricity__point__mr0.06__seed2025__20260814_182752/resolved_config.yaml
+  metrics: runs/ard_mcpr_electricity__electricity__point__mr0.06__seed2025__20260814_182752/metrics.json
+  checkpoint: runs/ard_mcpr_electricity__electricity__point__mr0.06__seed2025__20260814_182752/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE2219ARDF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2025tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+  mse_key: mse
+  mae_key: mae
+data:
+  missing_csv: data/electricity/electricity_point_paper_r0.06_l5_seed2025.csv
+  complete_csv: data/electricity/electricity.csv
+  mask_asset: artifacts/masks/electricity/point/rate_0.06/seed_2025.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+diagnostic:
+  split: val
+  max_eval_batches: 3
+  global_feature_dim: 8
+  structured_feature_dim: 108
+

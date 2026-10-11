@@ -1,0 +1,155 @@
+{
+  "stage": "22.40",
+  "queue_state": "SUCCESS",
+  "completed": true,
+  "decision": "BUG_FIX_DIRECTIONAL_GAIN_REQUIRES_REPLICATION_NOT_INNOVATION",
+  "new_research_innovation": false,
+  "test_accessed": false,
+  "original_paper_same_protocol": false,
+  "original_paper_note": "Traffic official hyperparameters unavailable; compare fixed local baseline, not claim paper reproduction",
+  "jobs": [
+    {
+      "id": "fixed_eval_formal",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__20261004_230031",
+      "attempt_count": 1,
+      "oom_retry_count": 0,
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": null
+    },
+    {
+      "id": "fixed_eval_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__smoke__20261004_222450",
+      "attempt_count": 1,
+      "oom_retry_count": 0,
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": null
+    },
+    {
+      "id": "fixed_train_formal",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2027__20261004_222522",
+      "attempt_count": 1,
+      "oom_retry_count": 0,
+      "required_memory_estimate_mib": 6144,
+      "failure_summary": null
+    },
+    {
+      "id": "fixed_train_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2027__smoke__20261004_222345",
+      "attempt_count": 1,
+      "oom_retry_count": 0,
+      "required_memory_estimate_mib": 6144,
+      "failure_summary": null
+    },
+    {
+      "id": "off_eval_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__smoke__20261004_222417",
+      "attempt_count": 1,
+      "oom_retry_count": 0,
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": null
+    },
+    {
+      "id": "off_train_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_off__traffic__point__mr0.06__seed2027__smoke__20261004_222013",
+      "attempt_count": 1,
+      "oom_retry_count": 0,
+      "required_memory_estimate_mib": 6144,
+      "failure_summary": null
+    }
+  ],
+  "pairing_checks": {
+    "initialization": "PASS",
+    "parameter_count": "PASS",
+    "training_rng": "PASS",
+    "sampler_prefix": "PASS",
+    "original_epochs": 4,
+    "fixed_epochs": 4,
+    "identical_max_budget_and_early_stopping": true,
+    "identical_actual_epochs_or_time_not_required": true
+  },
+  "comparison": {
+    "fixed_evaluation_assets": "PASS",
+    "metrics_roundtrip": "PASS",
+    "sample_count": 1648,
+    "baseline_eval": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__20260908_151505",
+    "fixed_eval": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__20261004_230031",
+    "primary_original_path": {
+      "baseline": {
+        "mse": 0.5347613803970451,
+        "mae": 0.32664500314070355
+      },
+      "fixed": {
+        "mse": 0.5206504102513323,
+        "mae": 0.3166143573335947
+      },
+      "absolute_change": {
+        "mse": -0.014110970145712831,
+        "mae": -0.010030645807108829
+      },
+      "relative_gain_percent": {
+        "mse": 2.638741439263216,
+        "mae": 3.0708095059357423
+      },
+      "dual_win": true
+    },
+    "secondary_inherited_CNM": {
+      "baseline": {
+        "mse": 0.5274178883158254,
+        "mae": 0.32265877134535237
+      },
+      "fixed": {
+        "mse": 0.5149421325115996,
+        "mae": 0.31441393318829625
+      },
+      "absolute_change": {
+        "mse": -0.012475755804225774,
+        "mae": -0.008244838157056122
+      },
+      "relative_gain_percent": {
+        "mse": 2.36544039946463,
+        "mae": 2.5552809621999706
+      },
+      "dual_win": true
+    }
+  },
+  "cost": {
+    "original": {
+      "parameter_count": 28371290,
+      "epochs_completed": 4,
+      "optimizer_steps": 2992,
+      "validation_elapsed_seconds": 18.096880878321826,
+      "peak_gpu_memory_mb": 8007.2197265625,
+      "peak_gpu_reserved_mb": 11870.0,
+      "resource_usage": {
+        "device": "cuda",
+        "elapsed_seconds": 1913.2666697837412,
+        "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+        "peak_gpu_memory_mb": 8007.2197265625,
+        "peak_gpu_reserved_mb": 11870.0,
+        "return_code": 0
+      }
+    },
+    "fixed": {
+      "parameter_count": 28371290,
+      "epochs_completed": 4,
+      "optimizer_steps": 2992,
+      "validation_elapsed_seconds": 16.33434213604778,
+      "peak_gpu_memory_mb": 8005.2822265625,
+      "peak_gpu_reserved_mb": 8670.0,
+      "resource_usage": {
+        "device": "cuda",
+        "elapsed_seconds": 2089.97384607594,
+        "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+        "peak_gpu_memory_mb": 8005.2822265625,
+        "peak_gpu_reserved_mb": 8670.0,
+        "return_code": 0
+      }
+    }
+  }
+}

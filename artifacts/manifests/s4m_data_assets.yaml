@@ -1,0 +1,217 @@
+manifest_version: 1
+created_at: 2026-07-14
+storage_policy: read_only_symlinks_to_existing_server_assets
+license_note: dataset redistribution terms must be checked before public release
+
+assets:
+  weather_complete:
+    project_path: data/weather/weather.csv
+    source_path: /mnt/data/zza/code/timeperceiver_meta_uq/data/weather/weather.csv
+    sha256: 34ee981d07313e51da2a50bb600072c8ae4a69cb4b0651f4cb93a069d7a2ba63
+    shape: [52696, 22]
+    missing_values: 0
+
+  weather_point_unknown_public_example:
+    project_path: data/weather/weather_point_r0.06_l5.csv
+    source_path: upstream/S4M/s4m/data/weather/weather_missing.csv
+    sha256: 56ba218e78415837e246821e73bc5da6d7ff8e6c0a9efd80e67f64181c28e111
+    shape: [52696, 22]
+    mechanism: point_missing
+    block_length: 5
+    realized_missing_rate: 0.4515712767572491
+    nominal_start_rate: unknown
+    official_generation_seed: unknown
+    observed_values_equal_complete_csv: true
+    formal_use: false
+    note: public example is incompatible with the paper Table 8 realized rate for r=0.06
+
+  weather_point_r006_l5_seed2023_paper_calibrated:
+    project_path: data/weather/weather_point_paper_r0.06_l5_seed2023.csv
+    complete_path: data/weather/weather.csv
+    mask_path: artifacts/masks/weather/point/rate_0.06/seed_2023.npz
+    metadata_path: artifacts/masks/weather/point/rate_0.06/seed_2023.json
+    sha256: 9b83f16d0ba08495a3433735cee206cf2e9dc25cab5f97ca122f3cd534e0bc5c
+    mask_sha256: 46c9ad3f18e164e3dd0b9efbfed44090918c9338201ce22e64eef6f8bd3415a4
+    shape: [52696, 22]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2023
+    realized_missing_rate: 0.24698269318354335
+    paper_reported_realized_rate: 0.247
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  weather_point_r006_l5_seed2024_paper_calibrated:
+    project_path: data/weather/weather_point_paper_r0.06_l5_seed2024.csv
+    complete_path: data/weather/weather.csv
+    mask_path: artifacts/masks/weather/point/rate_0.06/seed_2024.npz
+    metadata_path: artifacts/masks/weather/point/rate_0.06/seed_2024.json
+    sha256: 425c007157b3ab39cddee97f09a920264eec512347543da27fa4a96e1fe1edd2
+    mask_sha256: 45d3f53394a559e8101556c9ba5535c2ae82ca4ddc9dca9f63de01f391c61ed5
+    shape: [52696, 22]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2024
+    realized_missing_rate: 0.2469637164111128
+    paper_reported_realized_rate: 0.247
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  weather_point_r006_l5_seed2025_paper_calibrated:
+    project_path: data/weather/weather_point_paper_r0.06_l5_seed2025.csv
+    complete_path: data/weather/weather.csv
+    mask_path: artifacts/masks/weather/point/rate_0.06/seed_2025.npz
+    metadata_path: artifacts/masks/weather/point/rate_0.06/seed_2025.json
+    sha256: 5c3b4873f98292458051ee08dc6ef62937e93b2eab93e77b4f3565c14d8dc082
+    mask_sha256: 5b5f683b077cc4bf5ce47bf1adaa31e1bb532c34b81fcbab8025390fea0b724f
+    shape: [52696, 22]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2025
+    realized_missing_rate: 0.24698269318354335
+    paper_reported_realized_rate: 0.247
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  electricity_complete:
+    project_path: data/electricity/electricity.csv
+    source_path: /mnt/data/zza/code/timeperceiver_meta_uq/data/electricity/electricity.csv
+    sha256: 7e45845d54c5219bad0ae6bc1b5316cf8ff9cead5d33fa998a5a51c2e4a497ad
+    shape: [26304, 322]
+    missing_values: 0
+
+  electricity_point_r006_l5_seed2023_paper_calibrated:
+    project_path: data/electricity/electricity_point_paper_r0.06_l5_seed2023.csv
+    complete_path: data/electricity/electricity.csv
+    mask_path: artifacts/masks/electricity/point/rate_0.06/seed_2023.npz
+    metadata_path: artifacts/masks/electricity/point/rate_0.06/seed_2023.json
+    sha256: c4fc8e9a53a3d8f39a87dacfc4dc0d155a074d32e6071977bd83274a9fbd3934
+    mask_sha256: bacce0909f6c1740de6cb245b23c63481ec36d8d820043da147c00695d438406
+    shape: [26304, 322]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2023
+    realized_missing_rate: 0.2599224452554745
+    paper_reported_realized_rate: 0.260
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  electricity_point_r006_l5_seed2024_paper_calibrated:
+    project_path: data/electricity/electricity_point_paper_r0.06_l5_seed2024.csv
+    complete_path: data/electricity/electricity.csv
+    mask_path: artifacts/masks/electricity/point/rate_0.06/seed_2024.npz
+    metadata_path: artifacts/masks/electricity/point/rate_0.06/seed_2024.json
+    sha256: ec5e618741b5cd9b2cb853175bf0f7b4a17056075a08ecf26362df3ad3ef0ebe
+    mask_sha256: eb81b350fb4f402288ddc74d16d1cefadc35859c0954efbad471c0dbfa5b9825
+    shape: [26304, 322]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2024
+    realized_missing_rate: 0.26003649635036497
+    paper_reported_realized_rate: 0.260
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  electricity_point_r006_l5_seed2025_paper_calibrated:
+    project_path: data/electricity/electricity_point_paper_r0.06_l5_seed2025.csv
+    complete_path: data/electricity/electricity.csv
+    mask_path: artifacts/masks/electricity/point/rate_0.06/seed_2025.npz
+    metadata_path: artifacts/masks/electricity/point/rate_0.06/seed_2025.json
+    sha256: 095de96734aa4e583331c6e4b61f675d8babcc3918d067b6f4414886c59775f9
+    mask_sha256: db955a0f7e44b498d6be95d83d1ae9f41f0f87138f3ff6ccf8cfeacdbec7c45e
+    shape: [26304, 322]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2025
+    realized_missing_rate: 0.2599984793187348
+    paper_reported_realized_rate: 0.260
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  etth1_complete:
+    project_path: data/ETT-small/ETTh1.csv
+    source_path: /mnt/data/zza/code/timeperceiver_meta_uq/data/ETT-small/ETTh1.csv
+    sha256: f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066
+    shape: [17420, 8]
+    missing_values: 0
+
+  etth1_point_r006_l5_seed2023_paper_calibrated:
+    project_path: data/ETT-small/ETTh1_point_paper_r0.06_l5_seed2023.csv
+    complete_path: data/ETT-small/ETTh1.csv
+    mask_path: artifacts/masks/etth1/point/rate_0.06/seed_2023.npz
+    metadata_path: artifacts/masks/etth1/point/rate_0.06/seed_2023.json
+    sha256: efb63600adb1f2ebf370cb040cc5d1c654069457d5c35c45afb66e6f898fb6ea
+    mask_sha256: a26534a1bde598dc77c79dea608be0373be156df9b407b63e46de209f4aa2c25
+    shape: [17420, 8]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2023
+    realized_missing_rate: 0.23088404133180251
+    paper_reported_realized_rate: 0.231
+    protocol_match: approximate_missing_mask_seed_unavailable
+    generator: scripts/generate_paper_point_masks.py
+
+  traffic_complete:
+    project_path: data/traffic/traffic.csv
+    source_path: /mnt/data/zza/code/ctldf/ctldf_project_v3_hybrid/data/traffic.csv
+    sha256: cb06463d56fa17d87f47027cd9389ceae82a69eddee51cdb61480e120dab0b16
+    shape: [17544, 863]
+    missing_values: 0
+
+  traffic_point_r006_l5_seed2026_external:
+    project_path: data/traffic/traffic_point_external_r0.06_l5_seed2026.csv
+    complete_path: data/traffic/traffic.csv
+    mask_path: artifacts/masks/traffic/point/rate_0.06/seed_2026.npz
+    metadata_path: artifacts/masks/traffic/point/rate_0.06/seed_2026.json
+    sha256: 03912ad8673901220283118d955b3f4a65c7e8b52d8daf2665812c5bd16d5924
+    mask_sha256: 92bcc7576c2848484a7059693d54e4c09643208cd1c6314941c1708f13ca96d5
+    shape: [17544, 863]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2026
+    target_realized_rate: 0.260
+    realized_missing_rate: 0.2598609211126311
+    protocol_match: fixed_fair_external_protocol_official_traffic_hparams_unavailable
+    generator: scripts/generate_stage22_21_traffic_asset.py
+
+  traffic_point_r006_l5_seed2027_external:
+    project_path: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+    complete_path: data/traffic/traffic.csv
+    mask_path: artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+    metadata_path: artifacts/masks/traffic/point/rate_0.06/seed_2027.json
+    sha256: 68574b2a78a1fd4002cd416d43bbb09ceb2573b19095af869b4d785970a61909
+    mask_sha256: c9ae86954800e95bd735c72271ce8bddd23c5fc0a05eab50a55d00c66e363c01
+    shape: [17544, 863]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2027
+    target_realized_rate: 0.260
+    realized_missing_rate: 0.2600889192886457
+    protocol_match: fixed_fair_external_protocol_official_traffic_hparams_unavailable
+    generator: scripts/generate_stage22_22_traffic_assets.py
+
+  traffic_point_r006_l5_seed2028_external:
+    project_path: data/traffic/traffic_point_external_r0.06_l5_seed2028.csv
+    complete_path: data/traffic/traffic.csv
+    mask_path: artifacts/masks/traffic/point/rate_0.06/seed_2028.npz
+    metadata_path: artifacts/masks/traffic/point/rate_0.06/seed_2028.json
+    sha256: f494e32534d22d49cebbc783ff8315ad83bad861132cb63f5896d0352e0b1b15
+    mask_sha256: b39ea670e364598e6d4e23693908152b94aa8581337543991397ceee18c0b22e
+    shape: [17544, 863]
+    mechanism: point_missing
+    block_length: 5
+    nominal_start_rate: 0.06
+    fixed_generation_seed: 2028
+    target_realized_rate: 0.260
+    realized_missing_rate: 0.2599749202006384
+    protocol_match: fixed_fair_external_protocol_official_traffic_hparams_unavailable
+    generator: scripts/generate_stage22_22_traffic_assets.py

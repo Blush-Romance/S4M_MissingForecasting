@@ -1,0 +1,34 @@
+experiment:
+  model: s4m_original_readonly_via_equal_rate_evaluator
+  method: s4m_baseline
+  dataset: traffic
+  domain: test_point_r006
+  seed: 2026
+  smoke_test: false
+  purpose: frozen_s4m_test_traffic_multiseed_replication_seed2026
+  protocol_match: fixed_fair_external_protocol_official_traffic_hparams_unavailable
+source:
+  job_id: traffic_s4m_seed2026_formal
+  queue_state: runtime/stage22_21_traffic_pipeline/state.json
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2026.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2026.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+diagnostic:
+  variant: stage22_22_traffic_s4m_test
+  split: test
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2026
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10

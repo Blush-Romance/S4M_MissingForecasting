@@ -1,0 +1,146 @@
+{
+  "artifact_status": "PASS",
+  "claim_boundary": "Weather point-r0.06; seeds 2023/2024/2025; model seed and fixed mask seed paired; official mask seeds unavailable",
+  "decision": {
+    "code": "BMSA_THREE_SEED_UNSTABLE_REVIEW_BEFORE_EXPANSION",
+    "summary_zh": "BMSA\u4e09seed\u8bc1\u636e\u4e0d\u7a33\u5b9a\uff1b\u4fdd\u7559\u5168\u90e8\u7ed3\u679c\u5e76\u5728\u6269\u6570\u636e\u96c6\u524d\u5206\u6790\u5199\u5165\u9009\u62e9\u65b9\u5dee\u3002"
+  },
+  "per_seed": {
+    "2023": {
+      "bmsa50": {
+        "mae": 0.29337278975208114,
+        "mse": 0.2606964293878777,
+        "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2023__20260720_154704"
+      },
+      "dual_metric_win": true,
+      "mae_delta_bmsa_minus_pg95": -0.0005061162715674916,
+      "mse_delta_bmsa_minus_pg95": -0.0012500275760614632,
+      "pg95": {
+        "mae": 0.29387890602364863,
+        "mse": 0.26194645696393914,
+        "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2023__20260717_234738"
+      }
+    },
+    "2024": {
+      "bmsa50": {
+        "mae": 0.29988804861811774,
+        "mse": 0.2691507345362584,
+        "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2024__20260721_143610"
+      },
+      "dual_metric_win": true,
+      "mae_delta_bmsa_minus_pg95": -0.000962253031463689,
+      "mse_delta_bmsa_minus_pg95": -0.0020439066392786698,
+      "pg95": {
+        "mae": 0.30085030164958143,
+        "mse": 0.27119464117553704,
+        "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2024__20260721_165520"
+      }
+    },
+    "2025": {
+      "bmsa50": {
+        "mae": 0.2991231839441083,
+        "mse": 0.26020996837071114,
+        "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2025__20260721_143638"
+      },
+      "dual_metric_win": false,
+      "mae_delta_bmsa_minus_pg95": 0.004011923504387671,
+      "mse_delta_bmsa_minus_pg95": 0.0037598961769986228,
+      "pg95": {
+        "mae": 0.29511126043972064,
+        "mse": 0.2564500721937125,
+        "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2025__20260721_143638"
+      }
+    }
+  },
+  "protocol_checks": {
+    "2023": {
+      "bmsa_mode_and_budget_correct": true,
+      "pg95_uses_absolute_mode": true,
+      "same_data_assets": true,
+      "same_parameter_count": true,
+      "same_training_and_evaluation_protocol": true,
+      "seed_identity_matches": true
+    },
+    "2024": {
+      "bmsa_mode_and_budget_correct": true,
+      "pg95_uses_absolute_mode": true,
+      "same_data_assets": true,
+      "same_parameter_count": true,
+      "same_training_and_evaluation_protocol": true,
+      "seed_identity_matches": true
+    },
+    "2025": {
+      "bmsa_mode_and_budget_correct": true,
+      "pg95_uses_absolute_mode": true,
+      "same_data_assets": true,
+      "same_parameter_count": true,
+      "same_training_and_evaluation_protocol": true,
+      "seed_identity_matches": true
+    }
+  },
+  "schema_version": 1,
+  "statistics": {
+    "dual_metric_wins": 2,
+    "mae": {
+      "bmsa50_mean": 0.2974613407714357,
+      "bmsa50_sample_std": 0.0035613819748499275,
+      "bootstrap_95_ci_mean_delta": [
+        -0.000962253031463689,
+        0.004011923504387671
+      ],
+      "losses": 1,
+      "mean_paired_delta": 0.0008478514004521635,
+      "mean_relative_gain": -0.002891325179759025,
+      "median_paired_delta": -0.0005061162715674916,
+      "paired_deltas_bmsa_minus_pg95": [
+        -0.0005061162715674916,
+        -0.000962253031463689,
+        0.004011923504387671
+      ],
+      "paired_relative_gains": [
+        0.001722193261216115,
+        0.0031984446290650006,
+        -0.013594613429558191
+      ],
+      "paired_ttest_two_sided_p": 0.6467041989841056,
+      "pg95_mean": 0.2966134893709836,
+      "pg95_sample_std": 0.0037205655571110772,
+      "sample_std_paired_delta": 0.0027496416848581022,
+      "sign_test_one_sided_win_p": 0.5,
+      "ties": 0,
+      "wilcoxon_one_sided_bmsa_less_p": 0.625,
+      "wins": 2
+    },
+    "mse": {
+      "bmsa50_mean": 0.2633523774316157,
+      "bmsa50_sample_std": 0.005027411850547508,
+      "bootstrap_95_ci_mean_delta": [
+        -0.0020439066392786698,
+        0.0037598961769986228
+      ],
+      "losses": 1,
+      "mean_paired_delta": 0.00015532065388616326,
+      "mean_relative_gain": -0.0007841892591124727,
+      "median_paired_delta": -0.0012500275760614632,
+      "paired_deltas_bmsa_minus_pg95": [
+        -0.0012500275760614632,
+        -0.0020439066392786698,
+        0.0037598961769986228
+      ],
+      "paired_relative_gains": [
+        0.0047720728524056665,
+        0.007536677828216021,
+        -0.014661318457959106
+      ],
+      "paired_ttest_two_sided_p": 0.9396586466641313,
+      "pg95_mean": 0.2631970567777296,
+      "pg95_sample_std": 0.007451414532532394,
+      "sample_std_paired_delta": 0.00314678955732978,
+      "sign_test_one_sided_win_p": 0.5,
+      "ties": 0,
+      "wilcoxon_one_sided_bmsa_less_p": 0.625,
+      "wins": 2
+    }
+  },
+  "step": 10
+}

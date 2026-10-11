@@ -1,0 +1,32 @@
+experiment:
+  model: cnm_se_ablation
+  method: pg95
+  dataset: weather
+  domain: test_point_r006
+  seed: 2025
+  smoke_test: false
+  purpose: cnm_se_block_length_1_formal_test
+
+source:
+  resolved_config: runs/mipp_pg95__weather__point__mr0.06__seed2025__20260721_143638/resolved_config.yaml
+  metrics: runs/mipp_pg95__weather__point__mr0.06__seed2025__20260721_143638/metrics.json
+  checkpoint: runs/mipp_pg95__weather__point__mr0.06__seed2025__20260721_143638/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebP25F_dtprojection_0_data_weather_point_paper_r0.06_l5_seed2025tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+
+data:
+  missing_csv: data/weather/weather_point_paper_r0.06_l5_seed2025.csv
+  complete_csv: data/weather/weather.csv
+  mask_asset: artifacts/masks/weather/point/rate_0.06/seed_2025.npz
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+
+diagnostic:
+  variant: stage16_ablation
+  split: test
+  max_eval_batches: -1
+  nested_target_rate: 0.15
+  nested_block_length: 1
+  nested_seed: 2025
+  save_equal_ensemble: true
+  ensemble_weight: 0.5

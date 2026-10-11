@@ -1,0 +1,26 @@
+{
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 314,
+  "checkpoint_size_bytes": 23431805,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/fusr_v3_hcup/s4m_weather_val_seed2023_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_fusr_v3_hcup__weather__validation_point_r006__seed2023__smoke__20260718_202658",
+  "finished_at": "2026-07-18T12:27:41.443708+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup__weather__validation_point_r006__seed2023__smoke__20260718_202658/metrics.json",
+  "pid": 1439628,
+  "return_code": 0,
+  "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup__weather__validation_point_r006__seed2023__smoke__20260718_202658/hcup_samples.npz",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_reprofix__weather__point__mr0.06__seed2023__20260717_201045/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebPaperAdamFormal_dtprojection_0_data_weather_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "9ad29aeafea06521b96313e22369fe91b0cc68c588e56364b1449724629bf7cd",
+  "started_at": "2026-07-18T12:26:58.585805+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

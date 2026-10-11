@@ -1,0 +1,21 @@
+{
+  "status": "SUCCESS",
+  "smoke_test": true,
+  "synthetic_result": {
+    "windows": 4,
+    "s4m_mse": 1.0,
+    "pg95_mse": 1.0,
+    "mse_change_percent": 0.0,
+    "mse_worse_window_fraction": 0.0,
+    "s4m_mae": 1.0,
+    "pg95_mae": 1.0,
+    "mae_change_percent": 0.0,
+    "mae_worse_window_fraction": 0.0
+  },
+  "uses_test_split": false,
+  "experiment_id": "pg95_diagnosis__traffic__validation__seed2235__smoke__20260908_131729",
+  "method": "pg95_diagnosis",
+  "dataset": "traffic",
+  "evaluation_split": "validation",
+  "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_diagnosis__traffic__validation__seed2235__smoke__20260908_131729"
+}

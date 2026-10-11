@@ -1,0 +1,28 @@
+{
+  "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_public_sgd__weather__point__mr0.06__seed2023__smoke__20260714_154759/checkpoints/S4M_custom4_ft32_ll16_pl32_dm2_eltimeF_ebSmoke_dtprojection_0_data_weather_missingtag1_fill_mean_drop_False_dG_1_pattn_20_n_10_slen_8_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_8_pre_False_en_32_s_25_top4_P_5_m_13_t_test/checkpoint.pth",
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_size_bytes": 498645,
+  "complete_target_mse": 0.8530115485191345,
+  "experiment_id": "s4m_public_sgd__weather__point__mr0.06__seed2023__smoke__20260714_154759",
+  "mae": 0.8003153204917908,
+  "mape": 2.162965774536133,
+  "mse": 0.8530115485191345,
+  "mspe": 17.249788284301758,
+  "nominal_missing_rate": 0.06,
+  "optimizer": "sgd",
+  "optimizer_steps": 1,
+  "realized_missing_rate": 0.4515712767572491,
+  "rmse": 0.9235862493515015,
+  "scope": "smoke_test_not_formal_result",
+  "seed": 2023,
+  "setting": "S4M_custom4_ft32_ll16_pl32_dm2_eltimeF_ebSmoke_dtprojection_0_data_weather_missingtag1_fill_mean_drop_False_dG_1_pattn_20_n_10_slen_8_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_8_pre_False_en_32_s_25_top4_P_5_m_13_t_test",
+  "test_batches_processed": 1,
+  "train_batches_processed": 1,
+  "validation_batches_processed": 1
+}

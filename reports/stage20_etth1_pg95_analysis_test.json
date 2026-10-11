@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "cases": {
+    "full": "FULL_METHOD_DIRECTIONAL_PASS",
+    "incremental_fail": "MULTISCALE_INCREMENT_FAIL",
+    "pg95_only": "PG95_ONLY_PASS",
+    "cnm_se_only": "CNM_SE_ON_PG95_ONLY_PASS",
+    "fail": "FULL_METHOD_FAIL"
+  }
+}

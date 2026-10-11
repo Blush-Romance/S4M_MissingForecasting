@@ -1,0 +1,12 @@
+{
+  "experiment_id": "psavs_offline__traffic__point__mr0.06__seed2233__20260907_141643",
+  "state": "SUCCESS",
+  "pid": 6,
+  "started_at": "2026-09-07T14:16:43.105415+08:00",
+  "device": "cpu",
+  "uses_gpu": false,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/psavs_offline__traffic__point__mr0.06__seed2233__20260907_141643/resolved_config.yaml",
+  "return_code": 0,
+  "scientific_decision": "PSAVS_FEASIBILITY_STOP",
+  "finished_at": "2026-09-07T14:16:43.998798+08:00"
+}

@@ -1,0 +1,90 @@
+{
+  "checks": {
+    "protocol_freezes_all_seeds_before_assets": true,
+    "seed2026_2027_masks_differ_full": true,
+    "seed2026_2027_masks_differ_test": true,
+    "seed2026_2027_masks_differ_validation": true,
+    "seed2026_2028_masks_differ_full": true,
+    "seed2026_2028_masks_differ_test": true,
+    "seed2026_2028_masks_differ_validation": true,
+    "seed2026_deterministic_roundtrip": true,
+    "seed2026_files_exist": true,
+    "seed2026_manifest_matches": true,
+    "seed2026_mask_keys_scalars": true,
+    "seed2026_metadata_matches": true,
+    "seed2026_rate_runs_and_split_coverage": true,
+    "seed2026_shape_columns_dates": true,
+    "seed2026_shared_missing_and_observed_values": true,
+    "seed2027_2028_masks_differ_full": true,
+    "seed2027_2028_masks_differ_test": true,
+    "seed2027_2028_masks_differ_validation": true,
+    "seed2027_deterministic_roundtrip": true,
+    "seed2027_files_exist": true,
+    "seed2027_manifest_matches": true,
+    "seed2027_mask_keys_scalars": true,
+    "seed2027_metadata_matches": true,
+    "seed2027_rate_runs_and_split_coverage": true,
+    "seed2027_shape_columns_dates": true,
+    "seed2027_shared_missing_and_observed_values": true,
+    "seed2028_deterministic_roundtrip": true,
+    "seed2028_files_exist": true,
+    "seed2028_manifest_matches": true,
+    "seed2028_mask_keys_scalars": true,
+    "seed2028_metadata_matches": true,
+    "seed2028_rate_runs_and_split_coverage": true,
+    "seed2028_shape_columns_dates": true,
+    "seed2028_shared_missing_and_observed_values": true,
+    "source_hash_frozen": true,
+    "source_shape_and_schema": true
+  },
+  "failures": [],
+  "model_test_split_accessed": false,
+  "seed_assets": {
+    "2026": {
+      "contiguous_run_count": 753,
+      "contiguous_run_max": 18,
+      "contiguous_run_min": 5,
+      "mask_sha256": "92bcc7576c2848484a7059693d54e4c09643208cd1c6314941c1708f13ca96d5",
+      "output_sha256": "03912ad8673901220283118d955b3f4a65c7e8b52d8daf2665812c5bd16d5924",
+      "realized_missing_rate": 0.2598609211126311,
+      "realized_missing_rows": 4559,
+      "selected_start_count": 1021
+    },
+    "2027": {
+      "contiguous_run_count": 742,
+      "contiguous_run_max": 25,
+      "contiguous_run_min": 5,
+      "mask_sha256": "c9ae86954800e95bd735c72271ce8bddd23c5fc0a05eab50a55d00c66e363c01",
+      "output_sha256": "68574b2a78a1fd4002cd416d43bbb09ceb2573b19095af869b4d785970a61909",
+      "realized_missing_rate": 0.2600889192886457,
+      "realized_missing_rows": 4563,
+      "selected_start_count": 1034
+    },
+    "2028": {
+      "contiguous_run_count": 765,
+      "contiguous_run_max": 19,
+      "contiguous_run_min": 5,
+      "mask_sha256": "b39ea670e364598e6d4e23693908152b94aa8581337543991397ceee18c0b22e",
+      "output_sha256": "f494e32534d22d49cebbc783ff8315ad83bad861132cb63f5896d0352e0b1b15",
+      "realized_missing_rate": 0.2599749202006384,
+      "realized_missing_rows": 4561,
+      "selected_start_count": 1013
+    }
+  },
+  "split_rows": {
+    "test": 3508,
+    "train": 12280,
+    "validation": 1756
+  },
+  "status": "PASS",
+  "test_windows_batches_samples": [
+    3413,
+    213,
+    3408
+  ],
+  "validation_windows_batches_samples": [
+    1661,
+    103,
+    1648
+  ]
+}

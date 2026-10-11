@@ -1,0 +1,68 @@
+experiment:
+  model: cnm_se_crn_v1_pg95
+  method: pg95
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2027
+  smoke_test: false
+  purpose: approved_recovery_four_cells_no_training_no_test
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  protocol_scope: stage22_34_crn_v1_validation
+source:
+  job_id: traffic_pg95_seed2027_formal
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_22_traffic_pipeline/state.json
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327
+  resolved_config: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/resolved_config.yaml
+  metrics: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/metrics.json
+  checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22P952027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+  checkpoint_sha256: ac6987afbe38251cdfd997601727c4da8d483dc0481d299609f223c961922716
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: /mnt/data/zza/code/S4M_MissingForecasting/artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+  mask_asset_sha256: c9ae86954800e95bd735c72271ce8bddd23c5fc0a05eab50a55d00c66e363c01
+diagnostic:
+  variant: stage22_21_traffic_validation
+  split: val
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2027
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: 22.34.4
+  user_approved: true
+  template: /mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433/resolved_config.yaml
+  source_config_sha256: 2e04c163f619552f311105e76210479c39ff670318a4cb23b2714159191628c9
+  source_checkpoint_sha256: ac6987afbe38251cdfd997601727c4da8d483dc0481d299609f223c961922716
+  configuration_changes:
+    fixed_eval_rng:
+      old: false
+      new: true
+      reason: uncontrolled eval memory sampling
+    baseline_reference:
+      old: training_end_historical_rng
+      new: separate_original_only_CRN_pass
+      reason: old checkpoint contains no RNG; user-approved repair
+    max_eval_batches:
+      old: -1
+      new: -1
+      reason: isolated smoke only
+    timing_warmup_batches:
+      old: 10
+      new: 10
+      reason: isolated smoke only
+  consistency_tolerance: 1.0e-05
+  historical_results_preserved: true

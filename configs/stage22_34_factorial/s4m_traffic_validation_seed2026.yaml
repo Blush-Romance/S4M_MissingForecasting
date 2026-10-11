@@ -1,0 +1,58 @@
+experiment:
+  model: s4m_cnm_se_factorial
+  method: s4m_baseline
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2026
+  smoke_test: false
+  purpose: missing_s4m_plus_multiscale_validation_control_no_training_no_test
+  protocol_match: same_fixed_validation_assets_with_pg95_cache
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2598609211126311
+  protocol_scope: stage22_34_fixed_validation_factorial
+source:
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930
+  resolved_config: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930/resolved_config.yaml
+  metrics: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930/metrics.json
+  checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT21S4F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2026tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2026.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2026.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+diagnostic:
+  variant: stage22_34_traffic_s4m_validation
+  split: val
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2026
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+provenance:
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_22_traffic/s4m_traffic_multiscale_test_seed2026.yaml
+  stage: '22.34'
+  uses_test_for_selection: false
+  source_config_sha256: 72032889036b2d6e1af46491f549b1b10cb0397fd0536179d9390ec73ecd0d4b
+  source_checkpoint_sha256: 4cbcfa5891f1798e8b1f5a1b26d023501ce3609068d91a504bb7536ba3217149
+  configuration_changes:
+    split:
+      old: test
+      new: val
+      reason: missing validation control
+    variant:
+      old: stage22_22_traffic_s4m_test
+      new: stage22_34_traffic_s4m_validation
+      reason: explicit validation-only S4M adapter
+    max_eval_batches:
+      old: -1
+      new: -1
+      reason: isolated smoke only

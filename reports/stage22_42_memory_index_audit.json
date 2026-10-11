@@ -1,0 +1,89 @@
+{
+  "stage": "22.42",
+  "status": "SUCCESS",
+  "passed_cases": 4,
+  "records": [
+    {
+      "source": "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/Memory.py",
+      "source_sha256": "ba79c9f460c334a127aa5c8289da0afc234f00bbcc66e0e677302f8a16fb3697",
+      "method_start_line": 100,
+      "capacity": 4,
+      "source_method_used_without_modification": true,
+      "actual_latest_resident_mean": [
+        -1.0,
+        0.0
+      ],
+      "actual_latest_representative": [
+        0.0,
+        1.0
+      ],
+      "mismatch_l2": 1.4142135381698608,
+      "confirmed_index_error": true
+    },
+    {
+      "source": "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/Memory.py",
+      "source_sha256": "ba79c9f460c334a127aa5c8289da0afc234f00bbcc66e0e677302f8a16fb3697",
+      "method_start_line": 100,
+      "capacity": 2,
+      "source_method_used_without_modification": true,
+      "actual_latest_resident_mean": [
+        -1.0,
+        0.0
+      ],
+      "actual_latest_representative": [
+        0.0,
+        1.0
+      ],
+      "mismatch_l2": 1.4142135381698608,
+      "confirmed_index_error": true
+    },
+    {
+      "source": "/mnt/data/zza/code/S4M_MissingForecasting/upstream/S4M/s4m/model/Memory.py",
+      "source_sha256": "2be8f0c37e013487b7a51a68ae35fc5dcf94e6947121b8381f384838563f5f3e",
+      "method_start_line": 83,
+      "capacity": 4,
+      "source_method_used_without_modification": true,
+      "actual_latest_resident_mean": [
+        -1.0,
+        0.0
+      ],
+      "actual_latest_representative": [
+        0.0,
+        1.0
+      ],
+      "mismatch_l2": 1.4142135381698608,
+      "confirmed_index_error": true
+    },
+    {
+      "source": "/mnt/data/zza/code/S4M_MissingForecasting/upstream/S4M/s4m/model/Memory.py",
+      "source_sha256": "2be8f0c37e013487b7a51a68ae35fc5dcf94e6947121b8381f384838563f5f3e",
+      "method_start_line": 83,
+      "capacity": 2,
+      "source_method_used_without_modification": true,
+      "actual_latest_resident_mean": [
+        -1.0,
+        0.0
+      ],
+      "actual_latest_representative": [
+        0.0,
+        1.0
+      ],
+      "mismatch_l2": 1.4142135381698608,
+      "confirmed_index_error": true
+    }
+  ],
+  "device": "cpu",
+  "no_model_instantiated": true,
+  "no_model_forward": true,
+  "no_new_training": true,
+  "uses_test_split": false,
+  "source_unchanged": true,
+  "baseline_or_upstream_modified": false,
+  "decision": "UPSTREAM_NEW_CLUSTER_CENTROID_INDEX_ERROR_CONFIRMED_NOT_SEED2028_CAUSAL_PROOF",
+  "causal_limit": "Both original and distance-fixed models inherit the bug. No effect on forecasting or seed2028 attribution measured.",
+  "script_sha256": "a180d521398f8133a7c1a4017bbb2a897bbe1707a7445cc1ad7747b73bb0403a",
+  "source_hashes": {
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/Memory.py": "ba79c9f460c334a127aa5c8289da0afc234f00bbcc66e0e677302f8a16fb3697",
+    "/mnt/data/zza/code/S4M_MissingForecasting/upstream/S4M/s4m/model/Memory.py": "2be8f0c37e013487b7a51a68ae35fc5dcf94e6947121b8381f384838563f5f3e"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "all_training_protocol_frozen": true,
+    "cross_seed_pg95_formal_budget_identical": true,
+    "cross_seed_s4m_formal_budget_identical": true,
+    "decision_precedence_frozen": true,
+    "evaluation_protocol_frozen": true,
+    "exact_config_counts": true,
+    "exact_validation_only_checkpoint_handoff": true,
+    "negative_eval_cases_rejected": true,
+    "pg95_validation_and_test_are_precommitted": true,
+    "queue_has_exactly_22_unique_jobs": true,
+    "replication_dependencies_complete": true,
+    "s4m_has_explicit_readonly_test_identity": true,
+    "seed2026_reuses_source_but_smoke_precedes_formal": true,
+    "seed2027_assets_equal_between_methods": true,
+    "seed2027_only_pg95_method_difference": true,
+    "seed2028_assets_equal_between_methods": true,
+    "seed2028_only_pg95_method_difference": true,
+    "smoke_and_formal_budgets_separated": true,
+    "test_accessed_source_rejected": true
+  },
+  "config_count": 22,
+  "decision_cases": {
+    "confirmed": "TRAFFIC_MULTISEED_CONFIRMED",
+    "incomplete": "TRAFFIC_MULTISEED_INCOMPLETE",
+    "protocol": "TRAFFIC_MULTISEED_PROTOCOL_FAIL",
+    "strong": "TRAFFIC_MULTISEED_STRONG_CHAIN_CONFIRMED",
+    "unstable": "TRAFFIC_MULTISEED_UNSTABLE"
+  },
+  "evaluation_config_count": 14,
+  "failures": [],
+  "negative_cases": 4,
+  "queue_job_count": 22,
+  "status": "PASS",
+  "training_config_count": 8
+}

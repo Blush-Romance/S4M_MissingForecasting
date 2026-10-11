@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "dataparallel_prefix_supported": true,
+    "delta_format": true,
+    "delta_frozen_reconstructed_from_source": true,
+    "delta_manifest_nonempty": true,
+    "delta_memory_reconstructed": true,
+    "delta_selected_reconstructed": true,
+    "delta_tail_depth": true,
+    "delta_tampered_source_rejected": true,
+    "distillation_is_positive": true,
+    "layer5_rejected": true,
+    "layer6_selected": true,
+    "layer7_selected": true,
+    "norm_selected": true,
+    "only_frozen_prefix_rejected": true,
+    "out_proj_selected": true,
+    "student_receives_gradient": true,
+    "teacher_is_detached": true,
+    "teacher_student_storage_disjoint": true,
+    "token_filter_has_wins_and_rejections": true
+  },
+  "status": "PASS",
+  "step": "22.30"
+}

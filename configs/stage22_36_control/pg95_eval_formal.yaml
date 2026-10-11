@@ -1,0 +1,48 @@
+experiment:
+  model: cnm_se_crn_v1_pg95
+  method: pg95
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2027
+  smoke_test: false
+  purpose: read_only_new_training_checkpoint_control
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  protocol_scope: stage22_36_paired_training_CRN_validation
+source:
+  job_id: pg95_train_formal
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_36_control/state.json
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: /mnt/data/zza/code/S4M_MissingForecasting/artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+  mask_asset_sha256: c9ae86954800e95bd735c72271ce8bddd23c5fc0a05eab50a55d00c66e363c01
+diagnostic:
+  variant: stage22_21_traffic_validation
+  split: val
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2027
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: '22.36'
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_34_crn/pg95_traffic_validation_seed2027.yaml
+  template_sha256: e6d564365ec07751b7bb92da81a254f6de9d69d57568eb0d565905c0af9b1df1
+  user_approved: true
+  configuration_changes:
+    source:
+      old: historical_checkpoint
+      new: paired_training_checkpoint_same_family
+      reason: approved paired control

@@ -1,0 +1,169 @@
+{
+  "artifact_status": "PASS",
+  "claim_boundary": "Weather point-r0.06 seeds2024/2025 frozen anchor screen",
+  "decision": {
+    "code": "SDRA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "run_seed2023": false,
+    "summary_zh": "SDRA\u672a\u5728\u4e24\u4e2a\u951a\u70b9\u540c\u65f6\u53cc\u6307\u6807\u4f18\u4e8ePG95\uff1b\u4fdd\u7559\u7ed3\u679c\u5e76\u505c\u6b62\u8be5\u5019\u9009\uff0c\u4e0d\u6269seed\u6216\u6570\u636e\u96c6\u3002"
+  },
+  "execution_checks": {
+    "seed2024_budget_correct": true,
+    "seed2024_eligible_within_budget": true,
+    "seed2024_mode_correct": true,
+    "seed2024_sampled_within_budget": true,
+    "seed2025_budget_correct": true,
+    "seed2025_eligible_within_budget": true,
+    "seed2025_mode_correct": true,
+    "seed2025_sampled_within_budget": true
+  },
+  "execution_status": "PASS",
+  "mechanism_checks": {
+    "seed2024_positive_diversity_gain": false,
+    "seed2024_selected_pairwise_below_candidate": false,
+    "seed2025_positive_diversity_gain": true,
+    "seed2025_selected_pairwise_below_candidate": true
+  },
+  "mechanism_status": "FAIL",
+  "per_seed": {
+    "2024": {
+      "runs": {
+        "bmsa50": {
+          "elapsed_seconds": 8259.19039827399,
+          "mae": 0.29988804861811774,
+          "mse": 0.2691507345362584,
+          "optimizer_steps": 16002,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.7451171875,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2024__20260721_143610"
+        },
+        "pg95": {
+          "elapsed_seconds": 3926.0854011410847,
+          "mae": 0.30085030164958143,
+          "mse": 0.27119464117553704,
+          "optimizer_steps": 18288,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74365234375,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2024__20260721_165520"
+        },
+        "sdra50": {
+          "elapsed_seconds": 25142.56701251678,
+          "mae": 0.30166805999502083,
+          "mse": 0.2726004789897635,
+          "optimizer_steps": 22860,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.7470703125,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_sdra50__weather__point__mr0.06__seed2024__20260721_184900"
+        }
+      },
+      "sdra_mechanism": {
+        "mipp_stable_write_acceptance_rate_mean": 0.5208333730697632,
+        "mipp_write_budget": 50,
+        "mipp_write_candidate_pairwise_cosine_mean": 0.999773180161457,
+        "mipp_write_diversity_gain_mean": -6.604679613288619e-06,
+        "mipp_write_eligible_count_mean": 50.0,
+        "mipp_write_gate_mode": "stability_diverse_rank",
+        "mipp_write_sampled_count_mean": 50.0,
+        "mipp_write_selected_pairwise_cosine_mean": 0.9997797848410702,
+        "mipp_write_selected_stability_mean": 0.9999058999310224,
+        "mipp_write_updated_count_mean": 49.98232720909886
+      },
+      "sdra_vs_bmsa50": {
+        "dual_metric_win": false,
+        "mae_delta": 0.00178001137690309,
+        "mae_relative_gain": -0.005935586246618935,
+        "mse_delta": 0.003449744453505099,
+        "mse_relative_gain": -0.01281714671687203
+      },
+      "sdra_vs_pg95": {
+        "dual_metric_win": false,
+        "mae_delta": 0.0008177583454394011,
+        "mae_relative_gain": -0.002718156973603084,
+        "mse_delta": 0.0014058378142264294,
+        "mse_relative_gain": -0.005183870183173967
+      }
+    },
+    "2025": {
+      "runs": {
+        "bmsa50": {
+          "elapsed_seconds": 8252.723497010767,
+          "mae": 0.2991231839441083,
+          "mse": 0.26020996837071114,
+          "optimizer_steps": 13716,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74365234375,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2025__20260721_143638"
+        },
+        "pg95": {
+          "elapsed_seconds": 7745.13819304714,
+          "mae": 0.29511126043972064,
+          "mse": 0.2564500721937125,
+          "optimizer_steps": 13716,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74462890625,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2025__20260721_143638"
+        },
+        "sdra50": {
+          "elapsed_seconds": 4702.1823238339275,
+          "mae": 0.30320731177926064,
+          "mse": 0.25576749716548286,
+          "optimizer_steps": 9144,
+          "parameter_count": 5975059,
+          "peak_gpu_memory_mb": 5035.74560546875,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_sdra50__weather__point__mr0.06__seed2025__20260721_193738"
+        }
+      },
+      "sdra_mechanism": {
+        "mipp_stable_write_acceptance_rate_mean": 0.5208333730697632,
+        "mipp_write_budget": 50,
+        "mipp_write_candidate_pairwise_cosine_mean": 0.9992315905952496,
+        "mipp_write_diversity_gain_mean": 3.3334014922615113e-06,
+        "mipp_write_eligible_count_mean": 50.0,
+        "mipp_write_gate_mode": "stability_diverse_rank",
+        "mipp_write_sampled_count_mean": 50.0,
+        "mipp_write_selected_pairwise_cosine_mean": 0.9992282571937573,
+        "mipp_write_selected_stability_mean": 0.9998400695263453,
+        "mipp_write_updated_count_mean": 49.9834864391951
+      },
+      "sdra_vs_bmsa50": {
+        "dual_metric_win": false,
+        "mae_delta": 0.004084127835152329,
+        "mae_relative_gain": -0.013653665293678658,
+        "mse_delta": -0.004442471205228282,
+        "mse_relative_gain": 0.01707264034904022
+      },
+      "sdra_vs_pg95": {
+        "dual_metric_win": false,
+        "mae_delta": 0.00809605133954,
+        "mae_relative_gain": -0.027433895024800987,
+        "mse_delta": -0.0006825750282296594,
+        "mse_relative_gain": 0.002661629308156593
+      }
+    }
+  },
+  "pre_registered_gate": "Both seed2024 and seed2025 must improve both MSE and MAE versus paired PG95.",
+  "protocol_checks": {
+    "seed2024_bmsa50_same_data": true,
+    "seed2024_bmsa50_same_effective_write_budget": true,
+    "seed2024_bmsa50_same_mipp_shared": true,
+    "seed2024_bmsa50_same_parameter_count": true,
+    "seed2024_bmsa50_same_protocol": true,
+    "seed2024_pg95_same_data": true,
+    "seed2024_pg95_same_effective_write_budget": true,
+    "seed2024_pg95_same_mipp_shared": true,
+    "seed2024_pg95_same_parameter_count": true,
+    "seed2024_pg95_same_protocol": true,
+    "seed2025_bmsa50_same_data": true,
+    "seed2025_bmsa50_same_effective_write_budget": true,
+    "seed2025_bmsa50_same_mipp_shared": true,
+    "seed2025_bmsa50_same_parameter_count": true,
+    "seed2025_bmsa50_same_protocol": true,
+    "seed2025_pg95_same_data": true,
+    "seed2025_pg95_same_effective_write_budget": true,
+    "seed2025_pg95_same_mipp_shared": true,
+    "seed2025_pg95_same_parameter_count": true,
+    "seed2025_pg95_same_protocol": true
+  },
+  "protocol_status": "PASS",
+  "schema_version": 2,
+  "step": 10
+}

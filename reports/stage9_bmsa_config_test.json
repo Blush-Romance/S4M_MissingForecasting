@@ -1,0 +1,39 @@
+{
+  "checks": {
+    "budget_matches_existing_M": true,
+    "data_assets_exist": true,
+    "formal_budget_not_reduced": true,
+    "formal_config_valid": true,
+    "formal_data_assets_match_pg95": true,
+    "fusr_not_enabled": true,
+    "invalid_budget_rejected": true,
+    "only_predeclared_pg95_to_bmsa_args_differ": true,
+    "pg95_config_still_valid": true,
+    "smoke_and_formal_use_same_data_assets": true,
+    "smoke_config_valid": true
+  },
+  "configs": [
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_pair_gate_only_t095_seed2023.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_bmsa50_seed2023_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_bmsa50_seed2023.yaml"
+  ],
+  "pg95_to_bmsa_official_arg_differences": {
+    "des": {
+      "bmsa50": "B50F",
+      "pg95": "PG95F"
+    },
+    "mipp_write_budget": {
+      "bmsa50": 50,
+      "pg95": "<missing>"
+    },
+    "mipp_write_gate_mode": {
+      "bmsa50": "budget_topk",
+      "pg95": "<missing>"
+    },
+    "model_id": {
+      "bmsa50": "w_bmsa50_s2023",
+      "pg95": "w_mipp_pg95_s2023"
+    }
+  },
+  "status": "PASS"
+}

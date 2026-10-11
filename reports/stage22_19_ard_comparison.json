@@ -1,0 +1,93 @@
+{
+  "comparisons": {
+    "ard_vs_mcpr_mse": {
+      "dual_noninferior_one_strict": true,
+      "mae_gain_percent": 0.10681919220142103,
+      "mse_gain_percent": 0.7854972438148302
+    },
+    "ard_vs_pg95": {
+      "dual_noninferior_one_strict": false,
+      "mae_gain_percent": 0.0565537846640289,
+      "mse_gain_percent": -0.18760597316458794
+    }
+  },
+  "cost": {
+    "ard_mcpr": {
+      "epochs_completed": 8,
+      "formal_elapsed_seconds": 2071.8739294242114,
+      "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+      "optimizer_steps": 9056,
+      "peak_gpu_allocated_mb": 2476.0029296875,
+      "peak_gpu_reserved_mb": 3700.0,
+      "total_parameters": 24145684,
+      "trainable_parameter_count": 27541
+    },
+    "mcpr_mse": {
+      "epochs_completed": 7,
+      "formal_elapsed_seconds": 1500.9534302670509,
+      "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+      "optimizer_steps": 7924,
+      "peak_gpu_allocated_mb": 2471.580078125,
+      "peak_gpu_reserved_mb": 3700.0,
+      "total_parameters": 24145472,
+      "trainable_parameter_count": 27329
+    }
+  },
+  "decision": "ARD_BEATS_MCPR_CONTROL_BUT_NOT_PG95_STOP",
+  "mechanism": {
+    "ard_action_entropy_mean": 0.9847539294010864,
+    "ard_action_loss_mean": 0.9671260165346807,
+    "ard_applied_residual_energy_mean": 0.0010291048592107907,
+    "ard_gate_max": 0.5848400592803955,
+    "ard_gate_mean": 0.530496765309846,
+    "ard_gate_min": 0.4516924023628235,
+    "ard_gate_std_mean": 0.0008127001736243025,
+    "ard_raw_residual_energy_mean": 0.0036217771709363,
+    "ard_scale_loss_mean": 0.11458472235825012,
+    "ard_teacher_alpha_max": 1.0,
+    "ard_teacher_alpha_mean": 0.5366461342186533,
+    "ard_teacher_alpha_min": 0.0,
+    "ard_teacher_alpha_std": 0.4787588484621747,
+    "ard_teacher_full_count": 60501,
+    "ard_teacher_off_count": 51527,
+    "ard_teacher_partial_count": 14756,
+    "ard_teacher_valid_samples": 126784
+  },
+  "protocol_checks": {
+    "all_full_validation": true,
+    "all_validation_only": true,
+    "ard_checkpoint_contains_gate": true,
+    "ard_executed": true,
+    "checkpoints_finite": true,
+    "control_checkpoint_has_no_ard_gate": true,
+    "control_executed": true,
+    "same_frozen_pg95_source": true,
+    "same_preregistered_seed2025_mask": true,
+    "same_training_budget": true,
+    "trained_backbones_and_memory_frozen": true
+  },
+  "runs": {
+    "ard_mcpr": "/mnt/data/zza/code/S4M_MissingForecasting/runs/ard_mcpr_electricity__electricity__point__mr0.06__seed2025__20260814_182752",
+    "mcpr_mse": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mcpr_mse_seed2025_control_electricity__electricity__point__mr0.06__seed2025__20260814_180243",
+    "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_crossmask_valcache_pg95__electricity__validation__seed2025__20260814_180143"
+  },
+  "scope": "preregistered_cross_mask_seed2025_validation_only",
+  "scores": {
+    "ard_mcpr": {
+      "mae": 0.7560852789682349,
+      "mse": 0.8807571118099559
+    },
+    "mcpr_mse": {
+      "mae": 0.7568937867971143,
+      "mse": 0.8877302081273075
+    },
+    "pg95": {
+      "mae": 0.7565131157666807,
+      "mse": 0.8791078529672304
+    }
+  },
+  "status": "PASS",
+  "step": "22.19",
+  "test_accessed": false,
+  "unexpected_budget_differences": []
+}

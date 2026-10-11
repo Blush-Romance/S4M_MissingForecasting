@@ -1,0 +1,96 @@
+{
+  "comparison": {
+    "accuracy_gate_pass": false,
+    "bf_cmvd_v2_validation": {
+      "mae": 0.31763805278010177,
+      "mse": 0.520750270727185
+    },
+    "cnm_se_teacher_validation": {
+      "mae": 0.316191883227654,
+      "mse": 0.517810115072775
+    },
+    "dmrb_gain_vs_bf_cmvd_v2_percent": {
+      "mae": -0.10964708522100268,
+      "mse": -0.1992013308746137
+    },
+    "dmrb_gain_vs_pg95_percent": {
+      "mae": 0.24947203602545234,
+      "mse": 0.32177296644490483
+    },
+    "dmrb_validation": {
+      "mae": 0.3179863336465279,
+      "mse": 0.5217876121970068
+    },
+    "pg95_validation": {
+      "mae": 0.3187816046060131,
+      "mse": 0.5234720035914716
+    },
+    "protocol_gate_pass": true,
+    "teacher_gain_retention_fraction": {
+      "mae": 0.3070874597286309,
+      "mse": 0.2974963899240814
+    },
+    "teacher_gain_vs_pg95_percent": {
+      "mae": 0.8123810599296613,
+      "mse": 1.0816029281129045
+    },
+    "validation_development_gate_pass": false
+  },
+  "costs": {
+    "bf_cmvd_v2_elapsed_seconds": 2266.238321153447,
+    "bf_cmvd_v2_peak_gpu_memory_mb": 3188.24951171875,
+    "bf_cmvd_v2_trainable_parameters": 45182,
+    "dmrb_checkpoint_size_bytes": 367146,
+    "dmrb_elapsed_seconds": 1715.6571800345555,
+    "dmrb_peak_gpu_memory_mb": 3223.0859375,
+    "dmrb_trainable_parameters": 90364,
+    "inference_backbone_forward_count": 1,
+    "parameter_multiplier_vs_v2": 2.0
+  },
+  "decision": "DMRB_SEED2027_STOP_DIAGNOSE",
+  "formal_mechanism": {
+    "bf_cmvd_beneficial_fraction": 0.185014575814883,
+    "dmrb_l20_distill_l1_mean": 0.011852951272902895,
+    "dmrb_l20_gradient_norm_max": 0.07394606044283106,
+    "dmrb_l20_residual_energy_mean": 0.0003225739247926283,
+    "dmrb_l5_distill_l1_mean": 0.012072970397200563,
+    "dmrb_l5_gradient_norm_max": 0.049632999976373875,
+    "dmrb_l5_residual_energy_mean": 0.00032846031479262424
+  },
+  "formal_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/dmrb_pg95_traffic__traffic__point__mr0.06__seed2027__20260821_233052",
+  "queue_state": "SUCCESS",
+  "scientific_dependency": {
+    "checks": {
+      "both_branches_enabled": true,
+      "both_distill_losses_positive": true,
+      "both_gradient_norms_positive": true,
+      "both_residual_energies_positive": true,
+      "delta_checkpoint_verified": true,
+      "dmrb_enabled": true,
+      "exact_trainable_parameter_count": true,
+      "frozen_backbone_and_memory": true,
+      "single_backbone_inference_path": true,
+      "teacher_factorization_exact": true,
+      "token_filter_active": true,
+      "validation_only": true
+    },
+    "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/dmrb_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260821_233022/metrics.json",
+    "passed": true,
+    "reason": "DMRB smoke PASS",
+    "source_job": "dmrb_traffic_validation_seed2027_smoke"
+  },
+  "seed2027_is_development_not_confirmation": true,
+  "smoke_mechanism": {
+    "checkpoint_format": "mcpr_delta_v1",
+    "checkpoint_size_bytes": 367146,
+    "dmrb_l20_distill_l1_mean": 0.014080799417570233,
+    "dmrb_l20_gradient_norm_max": 0.07394606044283106,
+    "dmrb_l20_residual_energy_mean": 3.359363518029568e-05,
+    "dmrb_l5_distill_l1_mean": 0.013308527180925012,
+    "dmrb_l5_gradient_norm_max": 0.049632999976373875,
+    "dmrb_l5_residual_energy_mean": 2.7969403618044453e-05
+  },
+  "smoke_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/dmrb_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260821_233022",
+  "step": "22.28",
+  "test_sources_accessed": false
+}

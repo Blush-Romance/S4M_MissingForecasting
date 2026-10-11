@@ -1,0 +1,78 @@
+{
+  "artifact_status": "PASS",
+  "bmsa_mechanism": {
+    "mipp_stable_write_acceptance_rate_mean": 0.5208333730697632,
+    "mipp_write_budget": 50,
+    "mipp_write_effective_cutoff_mean": 0.9998684881049157,
+    "mipp_write_eligible_count_mean": 50.0,
+    "mipp_write_gate_mode": "budget_topk",
+    "mipp_write_raw_absolute_acceptance_rate_mean": 0.9990456199186645,
+    "mipp_write_sampled_count_mean": 50.0,
+    "mipp_write_stability_mean": 0.99984374627597,
+    "mipp_write_stability_std_mean": 0.00010579445587321268,
+    "mipp_write_updated_count_mean": 49.97093418878196
+  },
+  "claim_boundary": "Weather point-r0.06 seed2023 fast formal screen; official mask seed unavailable",
+  "decision": {
+    "code": "BMSA_SINGLE_SEED_DIRECTIONAL_POSITIVE",
+    "expand_multi_seed": true,
+    "summary_zh": "BMSA\u5728\u540c\u534f\u8bae\u5355seed\u4e0b\u540c\u65f6\u4f18\u4e8ePG95\u7684MSE\u548cMAE\uff1b\u503c\u5f97\u8fdb\u5165\u590d\u6838\u4e0e\u591aseed\u95e8\u7981\u3002"
+  },
+  "mechanism_checks": {
+    "budget_matches_existing_M": true,
+    "budget_topk_enabled": true,
+    "checkpoint_verified": true,
+    "fusr_disabled": true,
+    "metrics_report_budget_topk": true,
+    "pg95_mipp_settings_unchanged": true,
+    "protocol_matches_baseline": true,
+    "protocol_matches_pg95": true,
+    "same_parameter_count_as_pg95": true
+  },
+  "runs": {
+    "baseline": {
+      "elapsed_seconds": 3053.850510459859,
+      "mae": 0.30115996305745074,
+      "mse": 0.26352574516864824,
+      "optimizer_steps": 11430,
+      "parameter_count": 5821929,
+      "peak_gpu_memory_mb": 3071.16455078125,
+      "peak_gpu_reserved_mb": 3630.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_reprofix__weather__point__mr0.06__seed2023__20260717_201045"
+    },
+    "bmsa50": {
+      "elapsed_seconds": 9086.976815328002,
+      "mae": 0.29337278975208114,
+      "mse": 0.2606964293878777,
+      "optimizer_steps": 20574,
+      "parameter_count": 5975059,
+      "peak_gpu_memory_mb": 5035.744140625,
+      "peak_gpu_reserved_mb": 5622.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_bmsa50__weather__point__mr0.06__seed2023__20260720_154704"
+    },
+    "pg95": {
+      "elapsed_seconds": 13438.126962793991,
+      "mae": 0.29387890602364863,
+      "mse": 0.26194645696393914,
+      "optimizer_steps": 22860,
+      "parameter_count": 5975059,
+      "peak_gpu_memory_mb": 5035.74072265625,
+      "peak_gpu_reserved_mb": 5622.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2023__20260717_234738"
+    }
+  },
+  "schema_version": 1,
+  "step": 9,
+  "versus_baseline": {
+    "mae_absolute_change": -0.007787173305369599,
+    "mae_relative_gain": 0.025857266106398345,
+    "mse_absolute_change": -0.0028293157807705582,
+    "mse_relative_gain": 0.010736392298065165
+  },
+  "versus_pg95": {
+    "mae_absolute_change": -0.0005061162715674916,
+    "mae_relative_gain": 0.001722193261216115,
+    "mse_absolute_change": -0.0012500275760614632,
+    "mse_relative_gain": 0.0047720728524056665
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "experiment_id": "dmrb_failure_attribution__traffic__validation__seed2027__smoke__20260826_164711",
+  "state": "CODE_ERROR",
+  "started_at": "2026-08-26T08:47:07.774931+00:00",
+  "finished_at": "2026-08-26T08:47:22.789863+00:00",
+  "return_code": 1,
+  "evaluation_seed": 2027,
+  "evaluation_split": "validation",
+  "test_split_accessed": false,
+  "failure_stage": "checkpoint_preflight_before_model_forward",
+  "verification_error": "ValueError: Step 22.29 checkpoint lacks complete DMRB branches",
+  "root_cause": "runner_expected_a_postprocessed_checkpoint_dmrb_branches_verified_field_in_the_base_verify_checkpoint_return"
+}

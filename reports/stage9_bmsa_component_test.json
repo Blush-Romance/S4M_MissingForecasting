@@ -1,0 +1,70 @@
+{
+  "absolute_selection": {
+    "acceptance_rate": 0.25,
+    "mask": [
+      [
+        false,
+        true,
+        false,
+        false
+      ]
+    ]
+  },
+  "budget_topk_selection": {
+    "acceptance_rate": 0.5,
+    "effective_cutoff": 0.800000011920929,
+    "mask": [
+      [
+        false,
+        true,
+        false,
+        true
+      ]
+    ]
+  },
+  "checks": {
+    "absolute_gate_allows_empty_admission": true,
+    "absolute_gate_preserves_threshold_behavior": true,
+    "all_losses_finite": true,
+    "budget_topk_cutoff_is_selected_minimum": true,
+    "budget_topk_reports_half_acceptance": true,
+    "budget_topk_selects_exact_budget": true,
+    "content_adapter_receives_gradient": true,
+    "content_shape_preserved": true,
+    "empty_absolute_gate_reports_threshold_cutoff": true,
+    "empty_absolute_gate_reports_zero_acceptance": true,
+    "length20_block_pair_rate_is_finite": true,
+    "length20_block_pair_shape": true,
+    "mask_encoder_receives_gradient": true,
+    "mask_statistics_shape": true,
+    "memory_accepts_empty_eligible_set": true,
+    "write_gate_filters_candidates": true,
+    "zero_initialized_content_identity": true
+  },
+  "empty_absolute_selection": {
+    "acceptance_rate": 0.0,
+    "effective_cutoff": 0.8500000238418579,
+    "mask": [
+      [
+        false,
+        false
+      ]
+    ]
+  },
+  "identity_error": 0.0,
+  "length20_block_realized_missing_rate": 0.41015625,
+  "metrics": {
+    "covariance_loss": 0.2489849328994751,
+    "decorrelation_loss": 6.61974809190724e-07,
+    "invariance_loss": 0.0013960624346509576,
+    "mask_reconstruction_loss": 0.17902471125125885,
+    "paired_content_cosine": 0.9986039996147156,
+    "variance_loss": 0.0
+  },
+  "status": "PASS",
+  "write_gate_diagnostics": {
+    "eligible_count": 1,
+    "sampled_count": 1,
+    "updated_count": 1
+  }
+}

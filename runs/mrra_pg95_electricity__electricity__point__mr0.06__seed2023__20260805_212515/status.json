@@ -1,0 +1,12 @@
+{
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_innovation/mrra_pg95_electricity_seed2023.yaml",
+  "device": "cuda",
+  "experiment_id": "mrra_pg95_electricity__electricity__point__mr0.06__seed2023__20260805_212515",
+  "finished_at": "2026-08-05T13:52:34.302708+00:00",
+  "metrics_path": null,
+  "pid": 1841709,
+  "return_code": 1,
+  "started_at": "2026-08-05T13:25:15.946331+00:00",
+  "state": "CODE_ERROR",
+  "verification_error": null
+}

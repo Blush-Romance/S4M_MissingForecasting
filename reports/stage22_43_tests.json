@@ -1,0 +1,12 @@
+{
+  "stage": "22.43",
+  "passed": true,
+  "tests": 8,
+  "failures": 0,
+  "errors": 0,
+  "device": "cpu",
+  "source_hashes": {
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/stage22_43_cnm_audit.py": "163ac5ea1a3a0483231396565f6260b208ba739e21f9416ad03bc0bf66f27783",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/test_stage22_43_cnm_audit.py": "e908d0e9e60179055c1901a2a981e900db38f9c08b44e17240b4d67c83e43145"
+  }
+}

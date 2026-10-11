@@ -1,0 +1,41 @@
+experiment:
+  model: psavs_offline
+  dataset: traffic
+  mask_type: point
+  nominal_missing_rate: 0.06
+  seed: 2233
+  source_seeds: [2026, 2027, 2028]
+  protocol_scope: stage22_33_validation_temporal_audit
+  protocol_match: same_cached_audit_rows_not_paper_test
+  smoke_test: false
+runtime:
+  device: cpu
+  threads: 1
+actions: ['on', ensemble_l5, ensemble_l20, multiscale]
+primary_policy: disagreement_aware
+policies: [mask_only, disagreement_aware]
+samples_per_seed: 1648
+history_length: 192
+prediction_length: 96
+splits:
+  fit: [0, 576]
+  development: [863, 1055]
+  audit: [1342, 1648]
+tree:
+  criterion: squared_error
+  max_depth: 3
+  min_samples_leaf: 64
+  random_state: 2233
+  splitter: best
+margin_candidates: [0.0, 0.001, 0.002, 0.005, 0.01, null]
+gate:
+  minimum_dual_winning_seeds: 2
+  minimum_mean_gain_percent: 0.15
+bootstrap:
+  replicates: 2000
+  block_length: 96
+  seed: 2233
+source_runs:
+  2026: runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2026__20260816_192252
+  2027: runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433
+  2028: runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2028__20260820_194649

@@ -1,0 +1,2331 @@
+{
+  "correction_geometry": {
+    "all": {
+      "cosine": 0.18363493062649786,
+      "mismatch_energy": 568364.5042353868,
+      "normalized_mismatch": 0.9915367969804458,
+      "projection_coefficient": 0.06290679472749507,
+      "sign_agreement": 0.5684256084078888,
+      "student_energy": 67267.0892337989,
+      "teacher_energy": 573215.7454632474,
+      "token_count": 158208
+    },
+    "nonbeneficial_student_energy_share": 0.3194500227819443,
+    "teacher_beneficial": {
+      "cosine": 0.2002835863810623,
+      "mismatch_energy": 348117.2253244538,
+      "normalized_mismatch": 0.9853877850287542,
+      "projection_coefficient": 0.07209705408590739,
+      "sign_agreement": 0.5687409481284839,
+      "student_energy": 45778.616045586765,
+      "teacher_energy": 353279.42015670054,
+      "token_count": 85033
+    },
+    "teacher_nonbeneficial": {
+      "cosine": 0.15402592791057818,
+      "mismatch_energy": 220247.27891093306,
+      "normalized_mismatch": 1.001413834681255,
+      "projection_coefficient": 0.048144660765748144,
+      "sign_agreement": 0.5680591678856175,
+      "student_energy": 21488.47318821214,
+      "teacher_energy": 219936.32530654687,
+      "token_count": 73175
+    }
+  },
+  "coverage": {
+    "benefit_f1": 0.808310559876673,
+    "benefit_jaccard": 0.6782896052120941,
+    "benefit_precision": 1.0,
+    "benefit_rate_observed_unobserved_abs_gap": 0.0013507989521421848,
+    "complete_benefit_observed_support_recall": 0.6782896052120941,
+    "complete_benefit_rate_observed_tokens": 0.537911288517496,
+    "complete_benefit_rate_unobserved_tokens": 0.5365604895653538,
+    "observed_token_fraction": 0.6777406957928802
+  },
+  "decision": "STUDENT_EXPRESSION_UNDERFIT_FREEZE_DMRB",
+  "horizon_diagnostics": [
+    {
+      "backbone_mae": 0.3272174000740051,
+      "backbone_mse": 0.5301386117935181,
+      "correction": {
+        "cosine": 0.1995779769750781,
+        "mismatch_energy": 6671.08931944333,
+        "normalized_mismatch": 0.9753381342878603,
+        "projection_coefficient": 0.0644122991762503,
+        "sign_agreement": 0.5691495128025713,
+        "student_energy": 712.4492298848927,
+        "teacher_energy": 6839.770829133224,
+        "token_count": 1648
+      },
+      "horizon": 1,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5473300970873787,
+      "student_mae": 0.3263969421386719,
+      "student_mse": 0.5277794003486633,
+      "teacher_beneficial_fraction": 0.5327669902912622,
+      "teacher_mae": 0.3251893222332001,
+      "teacher_mse": 0.5241771936416626
+    },
+    {
+      "backbone_mae": 0.32681986689567566,
+      "backbone_mse": 0.5293688178062439,
+      "correction": {
+        "cosine": 0.19717714267321543,
+        "mismatch_energy": 6616.570888729766,
+        "normalized_mismatch": 0.9770916186233968,
+        "projection_coefficient": 0.06379693191019682,
+        "sign_agreement": 0.5687391153153585,
+        "student_energy": 708.898619743064,
+        "teacher_energy": 6771.699564930983,
+        "token_count": 1648
+      },
+      "horizon": 2,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5491504854368932,
+      "student_mae": 0.32600027322769165,
+      "student_mse": 0.5269995927810669,
+      "teacher_beneficial_fraction": 0.5309466019417476,
+      "teacher_mae": 0.3247168958187103,
+      "teacher_mse": 0.5230209827423096
+    },
+    {
+      "backbone_mae": 0.3263298571109772,
+      "backbone_mse": 0.5285868048667908,
+      "correction": {
+        "cosine": 0.18751492387948068,
+        "mismatch_energy": 6298.779904609546,
+        "normalized_mismatch": 0.9859010741894247,
+        "projection_coefficient": 0.06237602142267071,
+        "sign_agreement": 0.5697563097733733,
+        "student_energy": 706.9468412622809,
+        "teacher_energy": 6388.8559101005085,
+        "token_count": 1648
+      },
+      "horizon": 3,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5491504854368932,
+      "student_mae": 0.3254818916320801,
+      "student_mse": 0.5261886119842529,
+      "teacher_beneficial_fraction": 0.5370145631067961,
+      "teacher_mae": 0.32418161630630493,
+      "teacher_mse": 0.5219148993492126
+    },
+    {
+      "backbone_mae": 0.3257446587085724,
+      "backbone_mse": 0.5278810262680054,
+      "correction": {
+        "cosine": 0.17681994560252082,
+        "mismatch_energy": 6487.215894397348,
+        "normalized_mismatch": 0.9914752294392172,
+        "projection_coefficient": 0.057929670948320626,
+        "sign_agreement": 0.5698072963412703,
+        "student_energy": 702.2893799170852,
+        "teacher_energy": 6542.993412015494,
+        "token_count": 1648
+      },
+      "horizon": 4,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5521844660194175,
+      "student_mae": 0.324865460395813,
+      "student_mse": 0.5254525542259216,
+      "teacher_beneficial_fraction": 0.5242718446601942,
+      "teacher_mae": 0.323803573846817,
+      "teacher_mse": 0.5218032002449036
+    },
+    {
+      "backbone_mae": 0.32491257786750793,
+      "backbone_mse": 0.5271618962287903,
+      "correction": {
+        "cosine": 0.18034306986943024,
+        "mismatch_energy": 6543.095368936658,
+        "normalized_mismatch": 0.9880479504192671,
+        "projection_coefficient": 0.058389859465281774,
+        "sign_agreement": 0.5679183203409326,
+        "student_energy": 694.1945063844323,
+        "teacher_energy": 6622.244766724296,
+        "token_count": 1648
+      },
+      "horizon": 5,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5546116504854369,
+      "student_mae": 0.3240083158016205,
+      "student_mse": 0.5247124433517456,
+      "teacher_beneficial_fraction": 0.5157766990291263,
+      "teacher_mae": 0.3227808177471161,
+      "teacher_mse": 0.522059440612793
+    },
+    {
+      "backbone_mae": 0.32444941997528076,
+      "backbone_mse": 0.5268166065216064,
+      "correction": {
+        "cosine": 0.18700256613851265,
+        "mismatch_energy": 6397.469462126493,
+        "normalized_mismatch": 0.9842817056036653,
+        "projection_coefficient": 0.06091663233825447,
+        "sign_agreement": 0.5668979110571424,
+        "student_energy": 689.7082936279476,
+        "teacher_energy": 6499.632600814104,
+        "token_count": 1648
+      },
+      "horizon": 6,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5527912621359223,
+      "student_mae": 0.32353365421295166,
+      "student_mse": 0.5243552327156067,
+      "teacher_beneficial_fraction": 0.5103155339805825,
+      "teacher_mae": 0.322263240814209,
+      "teacher_mse": 0.5219624638557434
+    },
+    {
+      "backbone_mae": 0.324180006980896,
+      "backbone_mse": 0.5266143083572388,
+      "correction": {
+        "cosine": 0.1882550829756025,
+        "mismatch_energy": 6398.245678715408,
+        "normalized_mismatch": 0.983237498048882,
+        "projection_coefficient": 0.061167957426003346,
+        "sign_agreement": 0.5662879001193882,
+        "student_energy": 687.0004371870309,
+        "teacher_energy": 6507.32472206559,
+        "token_count": 1648
+      },
+      "horizon": 7,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5527912621359223,
+      "student_mae": 0.32326841354370117,
+      "student_mse": 0.5241576433181763,
+      "teacher_beneficial_fraction": 0.5242718446601942,
+      "teacher_mae": 0.3218587040901184,
+      "teacher_mse": 0.5216732025146484
+    },
+    {
+      "backbone_mae": 0.32432082295417786,
+      "backbone_mse": 0.5269804000854492,
+      "correction": {
+        "cosine": 0.18987450606903084,
+        "mismatch_energy": 6199.907170146704,
+        "normalized_mismatch": 0.9837476460533633,
+        "projection_coefficient": 0.06277002221148681,
+        "sign_agreement": 0.568227958236659,
+        "student_energy": 688.7676344439387,
+        "teacher_energy": 6302.334948418662,
+        "token_count": 1648
+      },
+      "horizon": 8,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.554004854368932,
+      "student_mae": 0.32341670989990234,
+      "student_mse": 0.5245342254638672,
+      "teacher_beneficial_fraction": 0.5273058252427184,
+      "teacher_mae": 0.3214775621891022,
+      "teacher_mse": 0.520966112613678
+    },
+    {
+      "backbone_mae": 0.324633926153183,
+      "backbone_mse": 0.5274913907051086,
+      "correction": {
+        "cosine": 0.18982554302827986,
+        "mismatch_energy": 6411.04911769554,
+        "normalized_mismatch": 0.9824631119863024,
+        "projection_coefficient": 0.061850601964847256,
+        "sign_agreement": 0.5671842046724841,
+        "student_energy": 692.7737298868597,
+        "teacher_energy": 6525.485831965692,
+        "token_count": 1648
+      },
+      "horizon": 9,
+      "observed_fraction": 0.6868932038834952,
+      "student_beneficial_fraction": 0.5558252427184466,
+      "student_mae": 0.32373714447021484,
+      "student_mse": 0.5250663161277771,
+      "teacher_beneficial_fraction": 0.5260922330097088,
+      "teacher_mae": 0.3217693567276001,
+      "teacher_mse": 0.5211429595947266
+    },
+    {
+      "backbone_mae": 0.3250809907913208,
+      "backbone_mse": 0.5283661484718323,
+      "correction": {
+        "cosine": 0.1844528395857234,
+        "mismatch_energy": 6343.867119444534,
+        "normalized_mismatch": 0.9869105863812112,
+        "projection_coefficient": 0.060710208856993235,
+        "sign_agreement": 0.5670369864575868,
+        "student_energy": 696.3523298762739,
+        "teacher_energy": 6428.005948042497,
+        "token_count": 1648
+      },
+      "horizon": 10,
+      "observed_fraction": 0.6875,
+      "student_beneficial_fraction": 0.5643203883495146,
+      "student_mae": 0.3241695165634155,
+      "student_mse": 0.525939404964447,
+      "teacher_beneficial_fraction": 0.533373786407767,
+      "teacher_mae": 0.3224458396434784,
+      "teacher_mse": 0.522142231464386
+    },
+    {
+      "backbone_mae": 0.32545292377471924,
+      "backbone_mse": 0.5287456512451172,
+      "correction": {
+        "cosine": 0.18279883083253992,
+        "mismatch_energy": 6423.511179598048,
+        "normalized_mismatch": 0.9877597097604061,
+        "projection_coefficient": 0.06001570257489187,
+        "sign_agreement": 0.5640047164000492,
+        "student_energy": 700.977597316727,
+        "teacher_energy": 6503.111147503834,
+        "token_count": 1648
+      },
+      "horizon": 11,
+      "observed_fraction": 0.6881067961165048,
+      "student_beneficial_fraction": 0.5734223300970874,
+      "student_mae": 0.3245088756084442,
+      "student_mse": 0.5262859463691711,
+      "teacher_beneficial_fraction": 0.5139563106796117,
+      "teacher_mae": 0.3233967125415802,
+      "teacher_mse": 0.5234190225601196
+    },
+    {
+      "backbone_mae": 0.3255738317966461,
+      "backbone_mse": 0.5287769436836243,
+      "correction": {
+        "cosine": 0.18355930221539624,
+        "mismatch_energy": 6132.5557188130915,
+        "normalized_mismatch": 0.9898485657569132,
+        "projection_coefficient": 0.06185861021875942,
+        "sign_agreement": 0.5645562081859753,
+        "student_energy": 703.5909835211933,
+        "teacher_energy": 6195.448405912146,
+        "token_count": 1648
+      },
+      "horizon": 12,
+      "observed_fraction": 0.6881067961165048,
+      "student_beneficial_fraction": 0.5849514563106796,
+      "student_mae": 0.32459157705307007,
+      "student_mse": 0.5262787938117981,
+      "teacher_beneficial_fraction": 0.5109223300970874,
+      "teacher_mae": 0.3238714933395386,
+      "teacher_mse": 0.523990273475647
+    },
+    {
+      "backbone_mae": 0.32546475529670715,
+      "backbone_mse": 0.5285632014274597,
+      "correction": {
+        "cosine": 0.1859138281647606,
+        "mismatch_energy": 6370.6313233710825,
+        "normalized_mismatch": 0.9862597763452206,
+        "projection_coefficient": 0.06139211492885498,
+        "sign_agreement": 0.5644511052934273,
+        "student_energy": 704.357193056494,
+        "teacher_energy": 6459.384714013897,
+        "token_count": 1648
+      },
+      "horizon": 13,
+      "observed_fraction": 0.6881067961165048,
+      "student_beneficial_fraction": 0.5904126213592233,
+      "student_mae": 0.324456125497818,
+      "student_mse": 0.5260292291641235,
+      "teacher_beneficial_fraction": 0.5151699029126213,
+      "teacher_mae": 0.32377558946609497,
+      "teacher_mse": 0.5232737064361572
+    },
+    {
+      "backbone_mae": 0.3250897526741028,
+      "backbone_mse": 0.5281200408935547,
+      "correction": {
+        "cosine": 0.19134311736377863,
+        "mismatch_energy": 6601.957842882723,
+        "normalized_mismatch": 0.9808049171408353,
+        "projection_coefficient": 0.061864485635860625,
+        "sign_agreement": 0.5672681836580258,
+        "student_energy": 703.6346773002297,
+        "teacher_energy": 6731.163075862452,
+        "token_count": 1648
+      },
+      "horizon": 14,
+      "observed_fraction": 0.6881067961165048,
+      "student_beneficial_fraction": 0.5855582524271845,
+      "student_mae": 0.3240731656551361,
+      "student_mse": 0.5255659818649292,
+      "teacher_beneficial_fraction": 0.5097087378640777,
+      "teacher_mae": 0.3234994411468506,
+      "teacher_mse": 0.5233815312385559
+    },
+    {
+      "backbone_mae": 0.32455334067344666,
+      "backbone_mse": 0.5275792479515076,
+      "correction": {
+        "cosine": 0.17444713768553993,
+        "mismatch_energy": 6584.313049741089,
+        "normalized_mismatch": 0.9922540122815994,
+        "projection_coefficient": 0.056706705085209475,
+        "sign_agreement": 0.5662695976843196,
+        "student_energy": 701.1787382978946,
+        "teacher_energy": 6635.713202712126,
+        "token_count": 1648
+      },
+      "horizon": 15,
+      "observed_fraction": 0.6881067961165048,
+      "student_beneficial_fraction": 0.5855582524271845,
+      "student_mae": 0.3235384523868561,
+      "student_mse": 0.5250067114830017,
+      "teacher_beneficial_fraction": 0.4963592233009709,
+      "teacher_mae": 0.3232647776603699,
+      "teacher_mse": 0.5232394933700562
+    },
+    {
+      "backbone_mae": 0.32397595047950745,
+      "backbone_mse": 0.527004063129425,
+      "correction": {
+        "cosine": 0.17092282025324537,
+        "mismatch_energy": 6530.097501177341,
+        "normalized_mismatch": 0.9949303474197085,
+        "projection_coefficient": 0.05577370589136158,
+        "sign_agreement": 0.5683215822314329,
+        "student_energy": 698.8530936148018,
+        "teacher_energy": 6563.371514511295,
+        "token_count": 1648
+      },
+      "horizon": 16,
+      "observed_fraction": 0.6875,
+      "student_beneficial_fraction": 0.5867718446601942,
+      "student_mae": 0.3229633867740631,
+      "student_mse": 0.5244078636169434,
+      "teacher_beneficial_fraction": 0.5200242718446602,
+      "teacher_mae": 0.32245227694511414,
+      "teacher_mse": 0.5226494669914246
+    },
+    {
+      "backbone_mae": 0.3234022855758667,
+      "backbone_mse": 0.5264188647270203,
+      "correction": {
+        "cosine": 0.17996732390643572,
+        "mismatch_energy": 6271.776497147977,
+        "normalized_mismatch": 0.9906399214411769,
+        "projection_coefficient": 0.05969833667947279,
+        "sign_agreement": 0.5680439258750858,
+        "student_energy": 696.6455898471177,
+        "teacher_energy": 6331.035486661829,
+        "token_count": 1648
+      },
+      "horizon": 17,
+      "observed_fraction": 0.6868932038834952,
+      "student_beneficial_fraction": 0.5837378640776699,
+      "student_mae": 0.3223972022533417,
+      "student_mse": 0.5238088369369507,
+      "teacher_beneficial_fraction": 0.5297330097087378,
+      "teacher_mae": 0.32137155532836914,
+      "teacher_mse": 0.5212705135345459
+    },
+    {
+      "backbone_mae": 0.32283902168273926,
+      "backbone_mse": 0.5257226824760437,
+      "correction": {
+        "cosine": 0.18879446770577896,
+        "mismatch_energy": 6097.830566275865,
+        "normalized_mismatch": 0.9857729107609401,
+        "projection_coefficient": 0.06327209572205042,
+        "sign_agreement": 0.5677778364394699,
+        "student_energy": 694.7753229569644,
+        "teacher_energy": 6185.837021600455,
+        "token_count": 1648
+      },
+      "horizon": 18,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.5849514563106796,
+      "student_mae": 0.3218291699886322,
+      "student_mse": 0.5231042504310608,
+      "teacher_beneficial_fraction": 0.5655339805825242,
+      "teacher_mae": 0.32057827711105347,
+      "teacher_mse": 0.5202379822731018
+    },
+    {
+      "backbone_mae": 0.32228028774261475,
+      "backbone_mse": 0.5251536965370178,
+      "correction": {
+        "cosine": 0.16834992946683353,
+        "mismatch_energy": 5933.521244220436,
+        "normalized_mismatch": 1.0017733754129514,
+        "projection_coefficient": 0.057556633782602375,
+        "sign_agreement": 0.564364032617755,
+        "student_energy": 692.3216475397348,
+        "teacher_energy": 5923.017510596663,
+        "token_count": 1648
+      },
+      "horizon": 19,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.5849514563106796,
+      "student_mae": 0.3212677538394928,
+      "student_mse": 0.5225366950035095,
+      "teacher_beneficial_fraction": 0.5339805825242718,
+      "teacher_mae": 0.32000666856765747,
+      "teacher_mse": 0.5198096036911011
+    },
+    {
+      "backbone_mae": 0.3217504918575287,
+      "backbone_mse": 0.5244191288948059,
+      "correction": {
+        "cosine": 0.1646620521909447,
+        "mismatch_energy": 6148.597848046571,
+        "normalized_mismatch": 1.0019972459189852,
+        "projection_coefficient": 0.05520806229304126,
+        "sign_agreement": 0.5629107931647396,
+        "student_energy": 689.8068810328841,
+        "teacher_energy": 6136.342063901946,
+        "token_count": 1648
+      },
+      "horizon": 20,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.5788834951456311,
+      "student_mae": 0.3207468092441559,
+      "student_mse": 0.5218218564987183,
+      "teacher_beneficial_fraction": 0.5358009708737864,
+      "teacher_mae": 0.31908702850341797,
+      "teacher_mse": 0.5186986923217773
+    },
+    {
+      "backbone_mae": 0.3211614489555359,
+      "backbone_mse": 0.5233862996101379,
+      "correction": {
+        "cosine": 0.17626580221310673,
+        "mismatch_energy": 6162.970751833171,
+        "normalized_mismatch": 0.9933512007998563,
+        "projection_coefficient": 0.05861498416170519,
+        "sign_agreement": 0.565230980412861,
+        "student_energy": 686.0700577441603,
+        "teacher_energy": 6204.221373941749,
+        "token_count": 1648
+      },
+      "horizon": 21,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.5800970873786407,
+      "student_mae": 0.320163756608963,
+      "student_mse": 0.520818293094635,
+      "teacher_beneficial_fraction": 0.5327669902912622,
+      "teacher_mae": 0.3183751404285431,
+      "teacher_mse": 0.5175418853759766
+    },
+    {
+      "backbone_mae": 0.32059988379478455,
+      "backbone_mse": 0.5227292776107788,
+      "correction": {
+        "cosine": 0.19101338720050026,
+        "mismatch_energy": 6032.191233243793,
+        "normalized_mismatch": 0.9838124651691742,
+        "projection_coefficient": 0.06370037977408587,
+        "sign_agreement": 0.5670753984483726,
+        "student_energy": 681.8976779412478,
+        "teacher_energy": 6131.444199791178,
+        "token_count": 1648
+      },
+      "horizon": 22,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.5776699029126213,
+      "student_mae": 0.31961238384246826,
+      "student_mse": 0.5201897621154785,
+      "teacher_beneficial_fraction": 0.529126213592233,
+      "teacher_mae": 0.31793177127838135,
+      "teacher_mse": 0.5166805982589722
+    },
+    {
+      "backbone_mae": 0.3200317323207855,
+      "backbone_mse": 0.5225385427474976,
+      "correction": {
+        "cosine": 0.1719173940375943,
+        "mismatch_energy": 6085.832956906408,
+        "normalized_mismatch": 0.9965799326778474,
+        "projection_coefficient": 0.057348589343474955,
+        "sign_agreement": 0.5665368833562232,
+        "student_energy": 679.5379728469998,
+        "teacher_energy": 6106.718344762921,
+        "token_count": 1648
+      },
+      "horizon": 23,
+      "observed_fraction": 0.6862864077669902,
+      "student_beneficial_fraction": 0.5770631067961165,
+      "student_mae": 0.31905561685562134,
+      "student_mse": 0.5200191140174866,
+      "teacher_beneficial_fraction": 0.5279126213592233,
+      "teacher_mae": 0.31778278946876526,
+      "teacher_mse": 0.5173937678337097
+    },
+    {
+      "backbone_mae": 0.3196146786212921,
+      "backbone_mse": 0.5224123597145081,
+      "correction": {
+        "cosine": 0.18649329227348127,
+        "mismatch_energy": 6020.678954524919,
+        "normalized_mismatch": 0.9869577275908192,
+        "projection_coefficient": 0.062275635510041394,
+        "sign_agreement": 0.5683870486337936,
+        "student_energy": 680.2316300403327,
+        "teacher_energy": 6100.239945657551,
+        "token_count": 1648
+      },
+      "horizon": 24,
+      "observed_fraction": 0.6856796116504854,
+      "student_beneficial_fraction": 0.5764563106796117,
+      "student_mae": 0.31864750385284424,
+      "student_mse": 0.5198974013328552,
+      "teacher_beneficial_fraction": 0.5151699029126213,
+      "teacher_mae": 0.3175882399082184,
+      "teacher_mse": 0.5181627869606018
+    },
+    {
+      "backbone_mae": 0.3193046450614929,
+      "backbone_mse": 0.5223057866096497,
+      "correction": {
+        "cosine": 0.18079085297641362,
+        "mismatch_energy": 6058.5321427211165,
+        "normalized_mismatch": 0.9908436830289574,
+        "projection_coefficient": 0.060417150219134574,
+        "sign_agreement": 0.5666356463856914,
+        "student_energy": 682.8571115620434,
+        "teacher_energy": 6114.518613269553,
+        "token_count": 1648
+      },
+      "horizon": 25,
+      "observed_fraction": 0.6850728155339806,
+      "student_beneficial_fraction": 0.5800970873786407,
+      "student_mae": 0.3183366358280182,
+      "student_mse": 0.519766628742218,
+      "teacher_beneficial_fraction": 0.524878640776699,
+      "teacher_mae": 0.3175105154514313,
+      "teacher_mse": 0.5187091827392578
+    },
+    {
+      "backbone_mae": 0.3188648521900177,
+      "backbone_mse": 0.5213790535926819,
+      "correction": {
+        "cosine": 0.176023117010436,
+        "mismatch_energy": 6030.587093548849,
+        "normalized_mismatch": 0.9946545976920057,
+        "projection_coefficient": 0.059169130995022697,
+        "sign_agreement": 0.5639843021311792,
+        "student_energy": 685.0752327460796,
+        "teacher_energy": 6062.996247684583,
+        "token_count": 1648
+      },
+      "horizon": 26,
+      "observed_fraction": 0.6844660194174758,
+      "student_beneficial_fraction": 0.5782766990291263,
+      "student_mae": 0.31788021326065063,
+      "student_mse": 0.5188174247741699,
+      "teacher_beneficial_fraction": 0.5273058252427184,
+      "teacher_mae": 0.3172523081302643,
+      "teacher_mse": 0.5178583860397339
+    },
+    {
+      "backbone_mae": 0.3185218870639801,
+      "backbone_mse": 0.5210290551185608,
+      "correction": {
+        "cosine": 0.18256586376936298,
+        "mismatch_energy": 5872.599244236946,
+        "normalized_mismatch": 0.9916037563171687,
+        "projection_coefficient": 0.06215839228852028,
+        "sign_agreement": 0.5674070497004373,
+        "student_energy": 686.5190536733717,
+        "teacher_energy": 5922.324524110183,
+        "token_count": 1648
+      },
+      "horizon": 27,
+      "observed_fraction": 0.6838592233009708,
+      "student_beneficial_fraction": 0.5752427184466019,
+      "student_mae": 0.3175191283226013,
+      "student_mse": 0.518448531627655,
+      "teacher_beneficial_fraction": 0.5266990291262136,
+      "teacher_mae": 0.3166240155696869,
+      "teacher_mse": 0.5168114900588989
+    },
+    {
+      "backbone_mae": 0.31825342774391174,
+      "backbone_mse": 0.5204941630363464,
+      "correction": {
+        "cosine": 0.17237425904192932,
+        "mismatch_energy": 5768.145865090191,
+        "normalized_mismatch": 1.0001935412255683,
+        "projection_coefficient": 0.05952238398241875,
+        "sign_agreement": 0.5657232197475522,
+        "student_energy": 687.6508722733706,
+        "teacher_energy": 5767.029707092792,
+        "token_count": 1648
+      },
+      "horizon": 28,
+      "observed_fraction": 0.683252427184466,
+      "student_beneficial_fraction": 0.5740291262135923,
+      "student_mae": 0.3172382116317749,
+      "student_mse": 0.5178915858268738,
+      "teacher_beneficial_fraction": 0.5206310679611651,
+      "teacher_mae": 0.3162406384944916,
+      "teacher_mse": 0.5163093209266663
+    },
+    {
+      "backbone_mae": 0.31800535321235657,
+      "backbone_mse": 0.5201758742332458,
+      "correction": {
+        "cosine": 0.1648991533919876,
+        "mismatch_energy": 5935.9156587310135,
+        "normalized_mismatch": 1.0039827047207035,
+        "projection_coefficient": 0.0563067932135353,
+        "sign_agreement": 0.5661859220287011,
+        "student_energy": 689.3602325711399,
+        "teacher_energy": 5912.368441030383,
+        "token_count": 1648
+      },
+      "horizon": 29,
+      "observed_fraction": 0.6826456310679612,
+      "student_beneficial_fraction": 0.5794902912621359,
+      "student_mae": 0.31697630882263184,
+      "student_mse": 0.5175477266311646,
+      "teacher_beneficial_fraction": 0.524878640776699,
+      "teacher_mae": 0.315739244222641,
+      "teacher_mse": 0.5148935317993164
+    },
+    {
+      "backbone_mae": 0.3177739083766937,
+      "backbone_mse": 0.5198968052864075,
+      "correction": {
+        "cosine": 0.17027311356934668,
+        "mismatch_energy": 5828.337895410135,
+        "normalized_mismatch": 1.001347680036822,
+        "projection_coefficient": 0.05865205117007932,
+        "sign_agreement": 0.5690667511395033,
+        "student_energy": 690.611936647445,
+        "teacher_energy": 5820.493732202798,
+        "token_count": 1648
+      },
+      "horizon": 30,
+      "observed_fraction": 0.6820388349514563,
+      "student_beneficial_fraction": 0.5794902912621359,
+      "student_mae": 0.3167378008365631,
+      "student_mse": 0.5172484517097473,
+      "teacher_beneficial_fraction": 0.5103155339805825,
+      "teacher_mae": 0.3154287338256836,
+      "teacher_mse": 0.5142232179641724
+    },
+    {
+      "backbone_mae": 0.3175826966762543,
+      "backbone_mse": 0.519791305065155,
+      "correction": {
+        "cosine": 0.18774871209665003,
+        "mismatch_energy": 5734.490581769496,
+        "normalized_mismatch": 0.9896404894424444,
+        "projection_coefficient": 0.06486991682422007,
+        "sign_agreement": 0.5715436154681136,
+        "student_energy": 691.7515444755554,
+        "teacher_energy": 5794.518962133676,
+        "token_count": 1648
+      },
+      "horizon": 31,
+      "observed_fraction": 0.6814320388349514,
+      "student_beneficial_fraction": 0.5807038834951457,
+      "student_mae": 0.316550612449646,
+      "student_mse": 0.517140805721283,
+      "teacher_beneficial_fraction": 0.5339805825242718,
+      "teacher_mae": 0.31515806913375854,
+      "teacher_mse": 0.514194130897522
+    },
+    {
+      "backbone_mae": 0.3175058960914612,
+      "backbone_mse": 0.5199623703956604,
+      "correction": {
+        "cosine": 0.1821312424100938,
+        "mismatch_energy": 5819.537464775145,
+        "normalized_mismatch": 0.993040926125217,
+        "projection_coefficient": 0.06265946008478462,
+        "sign_agreement": 0.5669450750576351,
+        "student_energy": 693.6265646740794,
+        "teacher_energy": 5860.319863636047,
+        "token_count": 1648
+      },
+      "horizon": 32,
+      "observed_fraction": 0.6808252427184466,
+      "student_beneficial_fraction": 0.5813106796116505,
+      "student_mae": 0.3164651393890381,
+      "student_mse": 0.5172996520996094,
+      "teacher_beneficial_fraction": 0.5260922330097088,
+      "teacher_mae": 0.31475144624710083,
+      "teacher_mse": 0.513752281665802
+    },
+    {
+      "backbone_mae": 0.31751859188079834,
+      "backbone_mse": 0.5204636454582214,
+      "correction": {
+        "cosine": 0.18886257610156293,
+        "mismatch_energy": 5927.135746696964,
+        "normalized_mismatch": 0.9872233326288624,
+        "projection_coefficient": 0.06424442614946119,
+        "sign_agreement": 0.5713781893797859,
+        "student_energy": 694.7180018592626,
+        "teacher_energy": 6003.844875620678,
+        "token_count": 1648
+      },
+      "horizon": 33,
+      "observed_fraction": 0.6802184466019418,
+      "student_beneficial_fraction": 0.5825242718446602,
+      "student_mae": 0.3164728283882141,
+      "student_mse": 0.5177944302558899,
+      "teacher_beneficial_fraction": 0.5345873786407767,
+      "teacher_mae": 0.31465449929237366,
+      "teacher_mse": 0.5139381289482117
+    },
+    {
+      "backbone_mae": 0.3177238404750824,
+      "backbone_mse": 0.5213141441345215,
+      "correction": {
+        "cosine": 0.19596592880542077,
+        "mismatch_energy": 5793.62015543133,
+        "normalized_mismatch": 0.9834401306109218,
+        "projection_coefficient": 0.06736504104454326,
+        "sign_agreement": 0.5684902240290023,
+        "student_energy": 696.1616720091552,
+        "teacher_energy": 5891.177281765267,
+        "token_count": 1648
+      },
+      "horizon": 34,
+      "observed_fraction": 0.6796116504854369,
+      "student_beneficial_fraction": 0.5843446601941747,
+      "student_mae": 0.3166620135307312,
+      "student_mse": 0.5186309218406677,
+      "teacher_beneficial_fraction": 0.5455097087378641,
+      "teacher_mae": 0.3151857554912567,
+      "teacher_mse": 0.5155342221260071
+    },
+    {
+      "backbone_mae": 0.3178624212741852,
+      "backbone_mse": 0.5217606425285339,
+      "correction": {
+        "cosine": 0.19768039303686527,
+        "mismatch_energy": 5786.990832829848,
+        "normalized_mismatch": 0.9822551615363672,
+        "projection_coefficient": 0.06795018038336806,
+        "sign_agreement": 0.5682473646234799,
+        "student_energy": 696.1174345165491,
+        "teacher_energy": 5891.535172773525,
+        "token_count": 1648
+      },
+      "horizon": 35,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.5879854368932039,
+      "student_mae": 0.316779226064682,
+      "student_mse": 0.5190486311912537,
+      "teacher_beneficial_fraction": 0.537621359223301,
+      "teacher_mae": 0.31555360555648804,
+      "teacher_mse": 0.5166139602661133
+    },
+    {
+      "backbone_mae": 0.31791093945503235,
+      "backbone_mse": 0.5219178199768066,
+      "correction": {
+        "cosine": 0.1879707820179166,
+        "mismatch_energy": 5697.199556961656,
+        "normalized_mismatch": 0.9901588209301525,
+        "projection_coefficient": 0.06534473668501624,
+        "sign_agreement": 0.5662953381553244,
+        "student_energy": 695.3398172724992,
+        "teacher_energy": 5753.823968976736,
+        "token_count": 1648
+      },
+      "horizon": 36,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.5843446601941747,
+      "student_mae": 0.3168080151081085,
+      "student_mse": 0.5191825032234192,
+      "teacher_beneficial_fraction": 0.5266990291262136,
+      "teacher_mae": 0.31572282314300537,
+      "teacher_mse": 0.5167807936668396
+    },
+    {
+      "backbone_mae": 0.3178199529647827,
+      "backbone_mse": 0.5219302773475647,
+      "correction": {
+        "cosine": 0.1773822503603797,
+        "mismatch_energy": 5829.3399555794895,
+        "normalized_mismatch": 0.9965492777919888,
+        "projection_coefficient": 0.061153470283069944,
+        "sign_agreement": 0.5653300219911416,
+        "student_energy": 695.2524020876735,
+        "teacher_energy": 5849.525041546673,
+        "token_count": 1648
+      },
+      "horizon": 37,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.587378640776699,
+      "student_mae": 0.3167007267475128,
+      "student_mse": 0.5191834568977356,
+      "teacher_beneficial_fraction": 0.5345873786407767,
+      "teacher_mae": 0.3155910074710846,
+      "teacher_mse": 0.5167534947395325
+    },
+    {
+      "backbone_mae": 0.3176943361759186,
+      "backbone_mse": 0.5216684937477112,
+      "correction": {
+        "cosine": 0.18825297151170023,
+        "mismatch_energy": 6026.126527272165,
+        "normalized_mismatch": 0.9868066198190221,
+        "projection_coefficient": 0.06351716589327937,
+        "sign_agreement": 0.5637065528349064,
+        "student_energy": 695.1919511761516,
+        "teacher_energy": 6106.694469051436,
+        "token_count": 1648
+      },
+      "horizon": 38,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.587378640776699,
+      "student_mae": 0.31656742095947266,
+      "student_mse": 0.5189259648323059,
+      "teacher_beneficial_fraction": 0.5297330097087378,
+      "teacher_mae": 0.3152909576892853,
+      "teacher_mse": 0.516432523727417
+    },
+    {
+      "backbone_mae": 0.31755080819129944,
+      "backbone_mse": 0.5214104056358337,
+      "correction": {
+        "cosine": 0.19322816030996917,
+        "mismatch_energy": 5841.228536840528,
+        "normalized_mismatch": 0.984973219062025,
+        "projection_coefficient": 0.06619892812160127,
+        "sign_agreement": 0.5658740762536834,
+        "student_energy": 696.0506650004536,
+        "teacher_energy": 5930.342494390905,
+        "token_count": 1648
+      },
+      "horizon": 39,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.5885922330097088,
+      "student_mae": 0.3164234757423401,
+      "student_mse": 0.5186718702316284,
+      "teacher_beneficial_fraction": 0.5358009708737864,
+      "teacher_mae": 0.31524449586868286,
+      "teacher_mse": 0.5163499116897583
+    },
+    {
+      "backbone_mae": 0.3173585832118988,
+      "backbone_mse": 0.5211285352706909,
+      "correction": {
+        "cosine": 0.18633244415436057,
+        "mismatch_energy": 5853.918217364699,
+        "normalized_mismatch": 0.9898955495838332,
+        "projection_coefficient": 0.06395398726369772,
+        "sign_agreement": 0.568828819316122,
+        "student_energy": 696.651489218697,
+        "teacher_energy": 5913.6726292241365,
+        "token_count": 1648
+      },
+      "horizon": 40,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.5885922330097088,
+      "student_mae": 0.316226601600647,
+      "student_mse": 0.5183840394020081,
+      "teacher_beneficial_fraction": 0.533373786407767,
+      "teacher_mae": 0.3149740993976593,
+      "teacher_mse": 0.5160250067710876
+    },
+    {
+      "backbone_mae": 0.31714731454849243,
+      "backbone_mse": 0.5208643674850464,
+      "correction": {
+        "cosine": 0.19188600524359783,
+        "mismatch_energy": 5642.8337935730815,
+        "normalized_mismatch": 0.9879241902467147,
+        "projection_coefficient": 0.06700460045045188,
+        "sign_agreement": 0.5731429689688816,
+        "student_energy": 696.4601615983993,
+        "teacher_energy": 5711.808506444097,
+        "token_count": 1648
+      },
+      "horizon": 41,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.5922330097087378,
+      "student_mae": 0.31601184606552124,
+      "student_mse": 0.518123209476471,
+      "teacher_beneficial_fraction": 0.5351941747572816,
+      "teacher_mae": 0.3142964541912079,
+      "teacher_mse": 0.5149766206741333
+    },
+    {
+      "backbone_mae": 0.31689193844795227,
+      "backbone_mse": 0.5205800533294678,
+      "correction": {
+        "cosine": 0.17678412105605157,
+        "mismatch_energy": 5676.1167101711035,
+        "normalized_mismatch": 0.9986767328366618,
+        "projection_coefficient": 0.0618364618220139,
+        "sign_agreement": 0.5708372607391524,
+        "student_energy": 695.3911218326539,
+        "teacher_energy": 5683.637681283057,
+        "token_count": 1648
+      },
+      "horizon": 42,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.587378640776699,
+      "student_mae": 0.31575316190719604,
+      "student_mse": 0.5178448557853699,
+      "teacher_beneficial_fraction": 0.5588592233009708,
+      "teacher_mae": 0.31383076310157776,
+      "teacher_mse": 0.514427900314331
+    },
+    {
+      "backbone_mae": 0.3165983259677887,
+      "backbone_mse": 0.5199485421180725,
+      "correction": {
+        "cosine": 0.16760085013415485,
+        "mismatch_energy": 5949.585391912609,
+        "normalized_mismatch": 1.0022315520982306,
+        "projection_coefficient": 0.05727454554258281,
+        "sign_agreement": 0.5692568150220861,
+        "student_energy": 693.2493969667703,
+        "teacher_energy": 5936.3381440714,
+        "token_count": 1648
+      },
+      "horizon": 43,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.5910194174757282,
+      "student_mae": 0.315456748008728,
+      "student_mse": 0.5172223448753357,
+      "teacher_beneficial_fraction": 0.558252427184466,
+      "teacher_mae": 0.31387728452682495,
+      "teacher_mse": 0.5140500068664551
+    },
+    {
+      "backbone_mae": 0.31626787781715393,
+      "backbone_mse": 0.5190438032150269,
+      "correction": {
+        "cosine": 0.1715089368420789,
+        "mismatch_energy": 5741.647372059524,
+        "normalized_mismatch": 1.00141969263242,
+        "projection_coefficient": 0.05953211491886575,
+        "sign_agreement": 0.5689869024774492,
+        "student_energy": 690.7955038622022,
+        "teacher_energy": 5733.5075536277145,
+        "token_count": 1648
+      },
+      "horizon": 44,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.591626213592233,
+      "student_mae": 0.3151271641254425,
+      "student_mse": 0.5163264870643616,
+      "teacher_beneficial_fraction": 0.5412621359223301,
+      "teacher_mae": 0.3134290874004364,
+      "teacher_mse": 0.513266384601593
+    },
+    {
+      "backbone_mae": 0.31593355536460876,
+      "backbone_mse": 0.5180702805519104,
+      "correction": {
+        "cosine": 0.18116412105557775,
+        "mismatch_energy": 5883.896362986416,
+        "normalized_mismatch": 0.9926993840988942,
+        "projection_coefficient": 0.061761269055062434,
+        "sign_agreement": 0.5692844637825213,
+        "student_energy": 688.8668754603714,
+        "teacher_energy": 5927.1683424357325,
+        "token_count": 1648
+      },
+      "horizon": 45,
+      "observed_fraction": 0.679004854368932,
+      "student_beneficial_fraction": 0.591626213592233,
+      "student_mae": 0.3147905170917511,
+      "student_mse": 0.5153571367263794,
+      "teacher_beneficial_fraction": 0.5588592233009708,
+      "teacher_mae": 0.3126939833164215,
+      "teacher_mse": 0.5116088390350342
+    },
+    {
+      "backbone_mae": 0.3156892955303192,
+      "backbone_mse": 0.5174556970596313,
+      "correction": {
+        "cosine": 0.18076129834220195,
+        "mismatch_energy": 5847.820765666664,
+        "normalized_mismatch": 0.9932268058694141,
+        "projection_coefficient": 0.06176624301427551,
+        "sign_agreement": 0.5688000546258446,
+        "student_energy": 687.4436244722456,
+        "teacher_energy": 5887.699295980856,
+        "token_count": 1648
+      },
+      "horizon": 46,
+      "observed_fraction": 0.6783980582524272,
+      "student_beneficial_fraction": 0.5940533980582524,
+      "student_mae": 0.31454378366470337,
+      "student_mse": 0.5147345662117004,
+      "teacher_beneficial_fraction": 0.537621359223301,
+      "teacher_mae": 0.3127407431602478,
+      "teacher_mse": 0.5118994116783142
+    },
+    {
+      "backbone_mae": 0.31555843353271484,
+      "backbone_mse": 0.5179096460342407,
+      "correction": {
+        "cosine": 0.16808013962649623,
+        "mismatch_energy": 6005.5092194434255,
+        "normalized_mismatch": 1.0007863916110369,
+        "projection_coefficient": 0.05689236390005807,
+        "sign_agreement": 0.5651510373257045,
+        "student_energy": 687.517258932814,
+        "teacher_energy": 6000.790248332545,
+        "token_count": 1648
+      },
+      "horizon": 47,
+      "observed_fraction": 0.6777912621359223,
+      "student_beneficial_fraction": 0.5952669902912622,
+      "student_mae": 0.31441065669059753,
+      "student_mse": 0.5151876211166382,
+      "teacher_beneficial_fraction": 0.5200242718446602,
+      "teacher_mae": 0.31299057602882385,
+      "teacher_mse": 0.5133152008056641
+    },
+    {
+      "backbone_mae": 0.3155593276023865,
+      "backbone_mse": 0.5179417729377747,
+      "correction": {
+        "cosine": 0.17482674571514145,
+        "mismatch_energy": 6117.581832267344,
+        "normalized_mismatch": 0.9949362505338153,
+        "projection_coefficient": 0.058482334580444564,
+        "sign_agreement": 0.5648565754804575,
+        "student_energy": 688.0471302717924,
+        "teacher_energy": 6148.717396702617,
+        "token_count": 1648
+      },
+      "horizon": 48,
+      "observed_fraction": 0.6771844660194175,
+      "student_beneficial_fraction": 0.5976941747572816,
+      "student_mae": 0.3144126832485199,
+      "student_mse": 0.5152209997177124,
+      "teacher_beneficial_fraction": 0.5430825242718447,
+      "teacher_mae": 0.3129473924636841,
+      "teacher_mse": 0.5131837725639343
+    },
+    {
+      "backbone_mae": 0.3156609535217285,
+      "backbone_mse": 0.5180996656417847,
+      "correction": {
+        "cosine": 0.1752084656864946,
+        "mismatch_energy": 6154.840787291527,
+        "normalized_mismatch": 0.9944109371138126,
+        "projection_coefficient": 0.05846119388988923,
+        "sign_agreement": 0.5671555532090878,
+        "student_energy": 689.0902710407972,
+        "teacher_energy": 6189.433922715485,
+        "token_count": 1648
+      },
+      "horizon": 49,
+      "observed_fraction": 0.6765776699029126,
+      "student_beneficial_fraction": 0.5964805825242718,
+      "student_mae": 0.3145136535167694,
+      "student_mse": 0.5153740048408508,
+      "teacher_beneficial_fraction": 0.5564320388349514,
+      "teacher_mae": 0.3129863440990448,
+      "teacher_mse": 0.5132351517677307
+    },
+    {
+      "backbone_mae": 0.3156988024711609,
+      "backbone_mse": 0.5181141495704651,
+      "correction": {
+        "cosine": 0.17531808840380636,
+        "mismatch_energy": 5837.2775224894285,
+        "normalized_mismatch": 0.9974320985462761,
+        "projection_coefficient": 0.060160914617631754,
+        "sign_agreement": 0.5678414952807875,
+        "student_energy": 689.1319863218814,
+        "teacher_energy": 5852.305666718632,
+        "token_count": 1648
+      },
+      "horizon": 50,
+      "observed_fraction": 0.6759708737864077,
+      "student_beneficial_fraction": 0.5964805825242718,
+      "student_mae": 0.3145417273044586,
+      "student_mse": 0.5153744220733643,
+      "teacher_beneficial_fraction": 0.5345873786407767,
+      "teacher_mae": 0.3130686581134796,
+      "teacher_mse": 0.5130999088287354
+    },
+    {
+      "backbone_mae": 0.31577908992767334,
+      "backbone_mse": 0.5182962417602539,
+      "correction": {
+        "cosine": 0.1752337213674646,
+        "mismatch_energy": 5598.925356561318,
+        "normalized_mismatch": 1.0001974324526814,
+        "projection_coefficient": 0.0615122720476163,
+        "sign_agreement": 0.5685247171039896,
+        "student_energy": 689.774462653324,
+        "teacher_energy": 5597.820165196434,
+        "token_count": 1648
+      },
+      "horizon": 51,
+      "observed_fraction": 0.6759708737864077,
+      "student_beneficial_fraction": 0.5964805825242718,
+      "student_mae": 0.31461822986602783,
+      "student_mse": 0.5155465006828308,
+      "teacher_beneficial_fraction": 0.5351941747572816,
+      "teacher_mae": 0.31340137124061584,
+      "teacher_mse": 0.5134605765342712
+    },
+    {
+      "backbone_mae": 0.31580978631973267,
+      "backbone_mse": 0.5184348821640015,
+      "correction": {
+        "cosine": 0.16897330711074254,
+        "mismatch_energy": 5670.361949332058,
+        "normalized_mismatch": 1.0041210722404388,
+        "projection_coefficient": 0.059095064620111985,
+        "sign_agreement": 0.5694240497151152,
+        "student_energy": 690.7023219801486,
+        "teacher_energy": 5647.089883971959,
+        "token_count": 1648
+      },
+      "horizon": 52,
+      "observed_fraction": 0.6753640776699029,
+      "student_beneficial_fraction": 0.5946601941747572,
+      "student_mae": 0.31464236974716187,
+      "student_mse": 0.5156728029251099,
+      "teacher_beneficial_fraction": 0.5424757281553398,
+      "teacher_mae": 0.3136999011039734,
+      "teacher_mse": 0.5137618780136108
+    },
+    {
+      "backbone_mae": 0.3159615993499756,
+      "backbone_mse": 0.5188604593276978,
+      "correction": {
+        "cosine": 0.16562413216677224,
+        "mismatch_energy": 5588.2470724880695,
+        "normalized_mismatch": 1.0077282266943652,
+        "projection_coefficient": 0.05848734997849492,
+        "sign_agreement": 0.5699946430067304,
+        "student_energy": 691.5265088770539,
+        "teacher_energy": 5545.391033472493,
+        "token_count": 1648
+      },
+      "horizon": 53,
+      "observed_fraction": 0.6747572815533981,
+      "student_beneficial_fraction": 0.595873786407767,
+      "student_mae": 0.31479015946388245,
+      "student_mse": 0.5160903930664062,
+      "teacher_beneficial_fraction": 0.5309466019417476,
+      "teacher_mae": 0.313832551240921,
+      "teacher_mse": 0.5139016509056091
+    },
+    {
+      "backbone_mae": 0.3161797523498535,
+      "backbone_mse": 0.5197100043296814,
+      "correction": {
+        "cosine": 0.1781197465893983,
+        "mismatch_energy": 5606.332947406918,
+        "normalized_mismatch": 0.9981679199861383,
+        "projection_coefficient": 0.06252362643790195,
+        "sign_agreement": 0.5715809243305875,
+        "student_energy": 692.053166359663,
+        "teacher_energy": 5616.623050242662,
+        "token_count": 1648
+      },
+      "horizon": 54,
+      "observed_fraction": 0.6741504854368932,
+      "student_beneficial_fraction": 0.5922330097087378,
+      "student_mae": 0.3150075376033783,
+      "student_mse": 0.5169357061386108,
+      "teacher_beneficial_fraction": 0.5266990291262136,
+      "teacher_mae": 0.3134496808052063,
+      "teacher_mse": 0.5140295028686523
+    },
+    {
+      "backbone_mae": 0.3164937198162079,
+      "backbone_mse": 0.5210989713668823,
+      "correction": {
+        "cosine": 0.18689487572152788,
+        "mismatch_energy": 5646.616893086582,
+        "normalized_mismatch": 0.991338502794237,
+        "projection_coefficient": 0.0652206177141652,
+        "sign_agreement": 0.5722430315091164,
+        "student_energy": 693.6515743490309,
+        "teacher_energy": 5695.95236861147,
+        "token_count": 1648
+      },
+      "horizon": 55,
+      "observed_fraction": 0.6735436893203883,
+      "student_beneficial_fraction": 0.5928398058252428,
+      "student_mae": 0.3153226673603058,
+      "student_mse": 0.5183224678039551,
+      "teacher_beneficial_fraction": 0.5394417475728155,
+      "teacher_mae": 0.31349337100982666,
+      "teacher_mse": 0.5150827765464783
+    },
+    {
+      "backbone_mae": 0.3168606460094452,
+      "backbone_mse": 0.5222555994987488,
+      "correction": {
+        "cosine": 0.18436337664132926,
+        "mismatch_energy": 5807.018173601478,
+        "normalized_mismatch": 0.9916327049818866,
+        "projection_coefficient": 0.06350098916380324,
+        "sign_agreement": 0.5718037721398337,
+        "student_energy": 694.7267427146435,
+        "teacher_energy": 5856.017197120935,
+        "token_count": 1648
+      },
+      "horizon": 56,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5946601941747572,
+      "student_mae": 0.31568968296051025,
+      "student_mse": 0.5194801688194275,
+      "teacher_beneficial_fraction": 0.5418689320388349,
+      "teacher_mae": 0.3142162561416626,
+      "teacher_mse": 0.5164698958396912
+    },
+    {
+      "backbone_mae": 0.3172193467617035,
+      "backbone_mse": 0.5238258242607117,
+      "correction": {
+        "cosine": 0.168573572197868,
+        "mismatch_energy": 5904.23510761559,
+        "normalized_mismatch": 1.0023191476510922,
+        "projection_coefficient": 0.057970934657090654,
+        "sign_agreement": 0.5701447863401887,
+        "student_energy": 696.6252967230976,
+        "teacher_energy": 5890.573996767402,
+        "token_count": 1648
+      },
+      "horizon": 57,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5922330097087378,
+      "student_mae": 0.3160400390625,
+      "student_mse": 0.5210376977920532,
+      "teacher_beneficial_fraction": 0.5527912621359223,
+      "teacher_mae": 0.31460949778556824,
+      "teacher_mse": 0.5182200074195862
+    },
+    {
+      "backbone_mae": 0.3176582157611847,
+      "backbone_mse": 0.5248647332191467,
+      "correction": {
+        "cosine": 0.18828814657125406,
+        "mismatch_energy": 5921.885836776346,
+        "normalized_mismatch": 0.9879556595437379,
+        "projection_coefficient": 0.06425994993277387,
+        "sign_agreement": 0.5709793569505306,
+        "student_energy": 698.1638888977468,
+        "teacher_energy": 5994.08058405295,
+        "token_count": 1648
+      },
+      "horizon": 58,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5922330097087378,
+      "student_mae": 0.3164657652378082,
+      "student_mse": 0.5220564603805542,
+      "teacher_beneficial_fraction": 0.5442961165048543,
+      "teacher_mae": 0.3145461678504944,
+      "teacher_mse": 0.5176078081130981
+    },
+    {
+      "backbone_mae": 0.31798574328422546,
+      "backbone_mse": 0.5252745747566223,
+      "correction": {
+        "cosine": 0.19672979036211533,
+        "mismatch_energy": 5941.988370332867,
+        "normalized_mismatch": 0.9817093419463409,
+        "projection_coefficient": 0.06680947586411945,
+        "sign_agreement": 0.5713531492529433,
+        "student_energy": 698.0471280515194,
+        "teacher_energy": 6052.696166211739,
+        "token_count": 1648
+      },
+      "horizon": 59,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5952669902912622,
+      "student_mae": 0.3167792856693268,
+      "student_mse": 0.5224460363388062,
+      "teacher_beneficial_fraction": 0.5497572815533981,
+      "teacher_mae": 0.3147376775741577,
+      "teacher_mse": 0.5179645419120789
+    },
+    {
+      "backbone_mae": 0.31819894909858704,
+      "backbone_mse": 0.5255264639854431,
+      "correction": {
+        "cosine": 0.18707402521122848,
+        "mismatch_energy": 5881.477935194969,
+        "normalized_mismatch": 0.9891747383598091,
+        "projection_coefficient": 0.0640813930316694,
+        "sign_agreement": 0.5693338476786881,
+        "student_energy": 697.6705028414726,
+        "teacher_energy": 5945.843243982643,
+        "token_count": 1648
+      },
+      "horizon": 60,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.595873786407767,
+      "student_mae": 0.31697845458984375,
+      "student_mse": 0.5226808786392212,
+      "teacher_beneficial_fraction": 0.5345873786407767,
+      "teacher_mae": 0.3154080808162689,
+      "teacher_mse": 0.5196449160575867
+    },
+    {
+      "backbone_mae": 0.31834203004837036,
+      "backbone_mse": 0.5257232189178467,
+      "correction": {
+        "cosine": 0.18990850709495644,
+        "mismatch_energy": 5801.866301372647,
+        "normalized_mismatch": 0.9879529286598568,
+        "projection_coefficient": 0.0654968752060244,
+        "sign_agreement": 0.5711592637905523,
+        "student_energy": 698.5279460772872,
+        "teacher_energy": 5872.614102417603,
+        "token_count": 1648
+      },
+      "horizon": 61,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5964805825242718,
+      "student_mae": 0.31710541248321533,
+      "student_mse": 0.5228558778762817,
+      "teacher_beneficial_fraction": 0.5418689320388349,
+      "teacher_mae": 0.3156503438949585,
+      "teacher_mse": 0.5202533006668091
+    },
+    {
+      "backbone_mae": 0.31841856241226196,
+      "backbone_mse": 0.5258752107620239,
+      "correction": {
+        "cosine": 0.19910106250709853,
+        "mismatch_energy": 5746.9118578359485,
+        "normalized_mismatch": 0.9818707739683301,
+        "projection_coefficient": 0.06884333237834504,
+        "sign_agreement": 0.5714746292695769,
+        "student_energy": 699.7724114283919,
+        "teacher_energy": 5853.022628027946,
+        "token_count": 1648
+      },
+      "horizon": 62,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5940533980582524,
+      "student_mae": 0.3171707093715668,
+      "student_mse": 0.5229867696762085,
+      "teacher_beneficial_fraction": 0.5449029126213593,
+      "teacher_mae": 0.3157905638217926,
+      "teacher_mse": 0.5205469727516174
+    },
+    {
+      "backbone_mae": 0.31847065687179565,
+      "backbone_mse": 0.5259787440299988,
+      "correction": {
+        "cosine": 0.19130156025957337,
+        "mismatch_energy": 5626.890598271042,
+        "normalized_mismatch": 0.9889515327492615,
+        "projection_coefficient": 0.06717332748652519,
+        "sign_agreement": 0.5704884082068234,
+        "student_energy": 701.5363245885819,
+        "teacher_energy": 5689.753655195236,
+        "token_count": 1648
+      },
+      "horizon": 63,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5964805825242718,
+      "student_mae": 0.31721216440200806,
+      "student_mse": 0.5230713486671448,
+      "teacher_beneficial_fraction": 0.558252427184466,
+      "teacher_mae": 0.3157469630241394,
+      "teacher_mse": 0.5206261277198792
+    },
+    {
+      "backbone_mae": 0.3185333013534546,
+      "backbone_mse": 0.5263046622276306,
+      "correction": {
+        "cosine": 0.18777145829581288,
+        "mismatch_energy": 5770.1648550108075,
+        "normalized_mismatch": 0.9903364610759811,
+        "projection_coefficient": 0.06529837208894473,
+        "sign_agreement": 0.5699389331784664,
+        "student_energy": 704.6135698258877,
+        "teacher_energy": 5826.4691665917635,
+        "token_count": 1648
+      },
+      "horizon": 64,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5976941747572816,
+      "student_mae": 0.3172619640827179,
+      "student_mse": 0.5233725309371948,
+      "teacher_beneficial_fraction": 0.5631067961165048,
+      "teacher_mae": 0.31560659408569336,
+      "teacher_mse": 0.5204032063484192
+    },
+    {
+      "backbone_mae": 0.3185546398162842,
+      "backbone_mse": 0.5264008045196533,
+      "correction": {
+        "cosine": 0.1922463849423002,
+        "mismatch_energy": 5808.867362130433,
+        "normalized_mismatch": 0.9867927029904241,
+        "projection_coefficient": 0.06658668947604238,
+        "sign_agreement": 0.5705143547406123,
+        "student_energy": 706.1939840614796,
+        "teacher_energy": 5886.613616544753,
+        "token_count": 1648
+      },
+      "horizon": 65,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.5995145631067961,
+      "student_mae": 0.31727737188339233,
+      "student_mse": 0.5234598517417908,
+      "teacher_beneficial_fraction": 0.558252427184466,
+      "teacher_mae": 0.31560397148132324,
+      "teacher_mse": 0.5208426117897034
+    },
+    {
+      "backbone_mae": 0.3185020089149475,
+      "backbone_mse": 0.5264452695846558,
+      "correction": {
+        "cosine": 0.19336582900386634,
+        "mismatch_energy": 5855.575459010899,
+        "normalized_mismatch": 0.9856582160803334,
+        "projection_coefficient": 0.06674666425002178,
+        "sign_agreement": 0.568747162240642,
+        "student_energy": 707.8527263738215,
+        "teacher_energy": 5940.776796136051,
+        "token_count": 1648
+      },
+      "horizon": 66,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6013349514563107,
+      "student_mae": 0.317217618227005,
+      "student_mse": 0.5235009789466858,
+      "teacher_beneficial_fraction": 0.5685679611650486,
+      "teacher_mae": 0.3150063753128052,
+      "teacher_mse": 0.519656240940094
+    },
+    {
+      "backbone_mae": 0.31834676861763,
+      "backbone_mse": 0.5260089039802551,
+      "correction": {
+        "cosine": 0.18681055480169315,
+        "mismatch_energy": 5817.1756649799645,
+        "normalized_mismatch": 0.9908783818252419,
+        "projection_coefficient": 0.06489077359740107,
+        "sign_agreement": 0.5671748642804045,
+        "student_energy": 708.3614333402365,
+        "teacher_energy": 5870.726187672466,
+        "token_count": 1648
+      },
+      "horizon": 67,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6049757281553398,
+      "student_mae": 0.3170526623725891,
+      "student_mse": 0.5230668783187866,
+      "teacher_beneficial_fraction": 0.5533980582524272,
+      "teacher_mae": 0.31485244631767273,
+      "teacher_mse": 0.5185942649841309
+    },
+    {
+      "backbone_mae": 0.31813129782676697,
+      "backbone_mse": 0.5253647565841675,
+      "correction": {
+        "cosine": 0.19292369050353214,
+        "mismatch_energy": 5609.310124810785,
+        "normalized_mismatch": 0.9885656777976337,
+        "projection_coefficient": 0.06819881368473989,
+        "sign_agreement": 0.5693167475377894,
+        "student_energy": 709.0656418018043,
+        "teacher_energy": 5674.190648928285,
+        "token_count": 1648
+      },
+      "horizon": 68,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6061893203883495,
+      "student_mae": 0.31682828068733215,
+      "student_mse": 0.5224171876907349,
+      "teacher_beneficial_fraction": 0.5485436893203883,
+      "teacher_mae": 0.3146485984325409,
+      "teacher_mse": 0.5176915526390076
+    },
+    {
+      "backbone_mae": 0.3178562521934509,
+      "backbone_mse": 0.5245583057403564,
+      "correction": {
+        "cosine": 0.20356494634759345,
+        "mismatch_energy": 5803.626304388046,
+        "normalized_mismatch": 0.9788429870056996,
+        "projection_coefficient": 0.07042913518372546,
+        "sign_agreement": 0.5685313562949114,
+        "student_energy": 709.7168688792735,
+        "teacher_energy": 5929.067666042596,
+        "token_count": 1648
+      },
+      "horizon": 69,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6074029126213593,
+      "student_mae": 0.3165447413921356,
+      "student_mse": 0.5216014385223389,
+      "teacher_beneficial_fraction": 0.5600728155339806,
+      "teacher_mae": 0.31403371691703796,
+      "teacher_mse": 0.5162826180458069
+    },
+    {
+      "backbone_mae": 0.3175737261772156,
+      "backbone_mse": 0.5236507058143616,
+      "correction": {
+        "cosine": 0.19262458864705911,
+        "mismatch_energy": 5662.290695790201,
+        "normalized_mismatch": 0.9883848483387202,
+        "projection_coefficient": 0.0678573241649951,
+        "sign_agreement": 0.566430095961075,
+        "student_energy": 710.9451470915228,
+        "teacher_energy": 5728.831947704777,
+        "token_count": 1648
+      },
+      "horizon": 70,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6055825242718447,
+      "student_mae": 0.3162586987018585,
+      "student_mse": 0.5206940174102783,
+      "teacher_beneficial_fraction": 0.5497572815533981,
+      "teacher_mae": 0.31395870447158813,
+      "teacher_mse": 0.5158576369285583
+    },
+    {
+      "backbone_mae": 0.31729015707969666,
+      "backbone_mse": 0.5226430296897888,
+      "correction": {
+        "cosine": 0.19364297633503558,
+        "mismatch_energy": 5936.358726728708,
+        "normalized_mismatch": 0.985072996488837,
+        "projection_coefficient": 0.06658958148248939,
+        "sign_agreement": 0.5668803125494958,
+        "student_energy": 712.6245752200484,
+        "teacher_energy": 6026.313529949635,
+        "token_count": 1648
+      },
+      "horizon": 71,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6037621359223301,
+      "student_mae": 0.31596800684928894,
+      "student_mse": 0.5196832418441772,
+      "teacher_beneficial_fraction": 0.5509708737864077,
+      "teacher_mae": 0.31390446424484253,
+      "teacher_mse": 0.5153838396072388
+    },
+    {
+      "backbone_mae": 0.3170299232006073,
+      "backbone_mse": 0.5221235156059265,
+      "correction": {
+        "cosine": 0.2010977418999506,
+        "mismatch_energy": 5897.311425928026,
+        "normalized_mismatch": 0.9800988219848246,
+        "projection_coefficient": 0.0692605763726199,
+        "sign_agreement": 0.5699421501449414,
+        "student_energy": 713.7432435713708,
+        "teacher_energy": 6017.057967670262,
+        "token_count": 1648
+      },
+      "horizon": 72,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6067961165048543,
+      "student_mae": 0.3157038390636444,
+      "student_mse": 0.5191656947135925,
+      "teacher_beneficial_fraction": 0.5455097087378641,
+      "teacher_mae": 0.31415432691574097,
+      "teacher_mse": 0.5160040259361267
+    },
+    {
+      "backbone_mae": 0.31685689091682434,
+      "backbone_mse": 0.5219878554344177,
+      "correction": {
+        "cosine": 0.17886702788147407,
+        "mismatch_energy": 5814.009008783847,
+        "normalized_mismatch": 0.9972659992440963,
+        "projection_coefficient": 0.06258930289151586,
+        "sign_agreement": 0.569665804339792,
+        "student_energy": 713.8456798829138,
+        "teacher_energy": 5829.948091272265,
+        "token_count": 1648
+      },
+      "horizon": 73,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6080097087378641,
+      "student_mae": 0.31552326679229736,
+      "student_mse": 0.5190218091011047,
+      "teacher_beneficial_fraction": 0.5449029126213593,
+      "teacher_mae": 0.31420958042144775,
+      "teacher_mse": 0.5164257287979126
+    },
+    {
+      "backbone_mae": 0.31669583916664124,
+      "backbone_mse": 0.521884560585022,
+      "correction": {
+        "cosine": 0.17488893987276644,
+        "mismatch_energy": 5691.328063428402,
+        "normalized_mismatch": 1.0017035961072096,
+        "projection_coefficient": 0.062012542485245216,
+        "sign_agreement": 0.5692352961052418,
+        "student_energy": 714.3462547790259,
+        "teacher_energy": 5681.648828601465,
+        "token_count": 1648
+      },
+      "horizon": 74,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6055825242718447,
+      "student_mae": 0.31535038352012634,
+      "student_mse": 0.5189045071601868,
+      "teacher_beneficial_fraction": 0.5558252427184466,
+      "teacher_mae": 0.31373342871665955,
+      "teacher_mse": 0.5161911845207214
+    },
+    {
+      "backbone_mae": 0.3167153596878052,
+      "backbone_mse": 0.522062361240387,
+      "correction": {
+        "cosine": 0.17264407271748533,
+        "mismatch_energy": 5770.151542298496,
+        "normalized_mismatch": 1.0025821307815437,
+        "projection_coefficient": 0.06087620440506183,
+        "sign_agreement": 0.5695060098903613,
+        "student_energy": 715.5814065560699,
+        "teacher_energy": 5755.290629208088,
+        "token_count": 1648
+      },
+      "horizon": 75,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6104368932038835,
+      "student_mae": 0.3153652548789978,
+      "student_mse": 0.519081711769104,
+      "teacher_beneficial_fraction": 0.5473300970873787,
+      "teacher_mae": 0.3135475218296051,
+      "teacher_mse": 0.5161675810813904
+    },
+    {
+      "backbone_mae": 0.3168334662914276,
+      "backbone_mse": 0.52289217710495,
+      "correction": {
+        "cosine": 0.16786381778348636,
+        "mismatch_energy": 5681.562459196895,
+        "normalized_mismatch": 1.0074167261233944,
+        "projection_coefficient": 0.059848513459233955,
+        "sign_agreement": 0.5670488590543554,
+        "student_energy": 716.8877696208656,
+        "teacher_energy": 5639.734095998108,
+        "token_count": 1648
+      },
+      "horizon": 76,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6116504854368932,
+      "student_mae": 0.31547826528549194,
+      "student_mse": 0.5199096202850342,
+      "teacher_beneficial_fraction": 0.5509708737864077,
+      "teacher_mae": 0.3137122094631195,
+      "teacher_mse": 0.517014741897583
+    },
+    {
+      "backbone_mae": 0.31697186827659607,
+      "backbone_mse": 0.5239744186401367,
+      "correction": {
+        "cosine": 0.1747713540104949,
+        "mismatch_energy": 5798.56470811367,
+        "normalized_mismatch": 1.0008447426889393,
+        "projection_coefficient": 0.06150954147383466,
+        "sign_agreement": 0.5662664766027841,
+        "student_energy": 717.626178579405,
+        "teacher_energy": 5793.670547276735,
+        "token_count": 1648
+      },
+      "horizon": 77,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6104368932038835,
+      "student_mae": 0.31561747193336487,
+      "student_mse": 0.5209980010986328,
+      "teacher_beneficial_fraction": 0.5515776699029126,
+      "teacher_mae": 0.31386277079582214,
+      "teacher_mse": 0.5175006985664368
+    },
+    {
+      "backbone_mae": 0.3171311914920807,
+      "backbone_mse": 0.5252425670623779,
+      "correction": {
+        "cosine": 0.18885763563980737,
+        "mismatch_energy": 5718.885889377445,
+        "normalized_mismatch": 0.991173763813919,
+        "projection_coefficient": 0.06660815444531543,
+        "sign_agreement": 0.569007620153811,
+        "student_energy": 717.7072571124882,
+        "teacher_energy": 5769.811609391123,
+        "token_count": 1648
+      },
+      "horizon": 78,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6104368932038835,
+      "student_mae": 0.3157828152179718,
+      "student_mse": 0.522270679473877,
+      "teacher_beneficial_fraction": 0.5388349514563107,
+      "teacher_mae": 0.31409215927124023,
+      "teacher_mse": 0.5187896490097046
+    },
+    {
+      "backbone_mae": 0.3172621428966522,
+      "backbone_mse": 0.5263259410858154,
+      "correction": {
+        "cosine": 0.1997183396595986,
+        "mismatch_energy": 5616.895063593984,
+        "normalized_mismatch": 0.9841227875775702,
+        "projection_coefficient": 0.07083422295008993,
+        "sign_agreement": 0.5693894589237042,
+        "student_energy": 717.9552845545113,
+        "teacher_energy": 5707.514483451843,
+        "token_count": 1648
+      },
+      "horizon": 79,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6067961165048543,
+      "student_mae": 0.3159236013889313,
+      "student_mse": 0.5233646035194397,
+      "teacher_beneficial_fraction": 0.5467233009708737,
+      "teacher_mae": 0.3142149746417999,
+      "teacher_mse": 0.5197956562042236
+    },
+    {
+      "backbone_mae": 0.31743770837783813,
+      "backbone_mse": 0.5273422598838806,
+      "correction": {
+        "cosine": 0.18563951407753265,
+        "mismatch_energy": 5812.319963462651,
+        "normalized_mismatch": 0.9926311401931777,
+        "projection_coefficient": 0.0650182956350019,
+        "sign_agreement": 0.5711257765341499,
+        "student_energy": 718.2769571915269,
+        "teacher_energy": 5855.468086898327,
+        "token_count": 1648
+      },
+      "horizon": 80,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6086165048543689,
+      "student_mae": 0.31611302495002747,
+      "student_mse": 0.5243997573852539,
+      "teacher_beneficial_fraction": 0.5467233009708737,
+      "teacher_mae": 0.3145553469657898,
+      "teacher_mse": 0.5212683081626892
+    },
+    {
+      "backbone_mae": 0.31772708892822266,
+      "backbone_mse": 0.5284188389778137,
+      "correction": {
+        "cosine": 0.17996116806967188,
+        "mismatch_energy": 5766.043832156807,
+        "normalized_mismatch": 0.9974176134111263,
+        "projection_coefficient": 0.06345403171329918,
+        "sign_agreement": 0.5715582974793323,
+        "student_energy": 718.7233296185732,
+        "teacher_energy": 5780.972538109869,
+        "token_count": 1648
+      },
+      "horizon": 81,
+      "observed_fraction": 0.6729368932038835,
+      "student_beneficial_fraction": 0.6067961165048543,
+      "student_mae": 0.3164164125919342,
+      "student_mse": 0.5254942774772644,
+      "teacher_beneficial_fraction": 0.5552184466019418,
+      "teacher_mae": 0.3151552379131317,
+      "teacher_mse": 0.5232409834861755
+    },
+    {
+      "backbone_mae": 0.3180335462093353,
+      "backbone_mse": 0.52879798412323,
+      "correction": {
+        "cosine": 0.187984713286349,
+        "mismatch_energy": 5493.690703332424,
+        "normalized_mismatch": 0.9945056507574409,
+        "projection_coefficient": 0.0678133423267175,
+        "sign_agreement": 0.5738824067719057,
+        "student_energy": 718.8564620744437,
+        "teacher_energy": 5524.041717760265,
+        "token_count": 1648
+      },
+      "horizon": 82,
+      "observed_fraction": 0.6723300970873787,
+      "student_beneficial_fraction": 0.6092233009708737,
+      "student_mae": 0.3167283833026886,
+      "student_mse": 0.525875985622406,
+      "teacher_beneficial_fraction": 0.5552184466019418,
+      "teacher_mae": 0.31509608030319214,
+      "teacher_mse": 0.5228344202041626
+    },
+    {
+      "backbone_mae": 0.31822285056114197,
+      "backbone_mse": 0.5289779901504517,
+      "correction": {
+        "cosine": 0.1824198401667361,
+        "mismatch_energy": 5454.911092299968,
+        "normalized_mismatch": 0.9991639765266622,
+        "projection_coefficient": 0.06613332727739238,
+        "sign_agreement": 0.5726488025263028,
+        "student_energy": 717.5423088744283,
+        "teacher_energy": 5459.475341837853,
+        "token_count": 1648
+      },
+      "horizon": 83,
+      "observed_fraction": 0.6717233009708737,
+      "student_beneficial_fraction": 0.6086165048543689,
+      "student_mae": 0.31691476702690125,
+      "student_mse": 0.5260546803474426,
+      "teacher_beneficial_fraction": 0.5339805825242718,
+      "teacher_mae": 0.3155937194824219,
+      "teacher_mse": 0.5238271355628967
+    },
+    {
+      "backbone_mae": 0.31834152340888977,
+      "backbone_mse": 0.5290224552154541,
+      "correction": {
+        "cosine": 0.18300194148152116,
+        "mismatch_energy": 5567.881250530481,
+        "normalized_mismatch": 0.9972015224066707,
+        "projection_coefficient": 0.06554966260115654,
+        "sign_agreement": 0.5707474584217366,
+        "student_energy": 716.3686275035143,
+        "teacher_energy": 5583.506568554789,
+        "token_count": 1648
+      },
+      "horizon": 84,
+      "observed_fraction": 0.6711165048543689,
+      "student_beneficial_fraction": 0.6098300970873787,
+      "student_mae": 0.3170287609100342,
+      "student_mse": 0.5261001586914062,
+      "teacher_beneficial_fraction": 0.5430825242718447,
+      "teacher_mae": 0.31572529673576355,
+      "teacher_mse": 0.5233146548271179
+    },
+    {
+      "backbone_mae": 0.3183318078517914,
+      "backbone_mse": 0.5289757251739502,
+      "correction": {
+        "cosine": 0.19940504913186682,
+        "mismatch_energy": 5568.138058796525,
+        "normalized_mismatch": 0.9846935837908033,
+        "projection_coefficient": 0.07094613388018237,
+        "sign_agreement": 0.5702832589384706,
+        "student_energy": 715.8038883209229,
+        "teacher_energy": 5654.691114529967,
+        "token_count": 1648
+      },
+      "horizon": 85,
+      "observed_fraction": 0.6705097087378641,
+      "student_beneficial_fraction": 0.6116504854368932,
+      "student_mae": 0.3170124590396881,
+      "student_mse": 0.5260533690452576,
+      "teacher_beneficial_fraction": 0.5388349514563107,
+      "teacher_mae": 0.3155101239681244,
+      "teacher_mse": 0.5223361253738403
+    },
+    {
+      "backbone_mae": 0.31802257895469666,
+      "backbone_mse": 0.5283487439155579,
+      "correction": {
+        "cosine": 0.195651912132293,
+        "mismatch_energy": 5588.055579602718,
+        "normalized_mismatch": 0.9873630852518449,
+        "projection_coefficient": 0.06961010649459645,
+        "sign_agreement": 0.5672466661410582,
+        "student_energy": 716.407681627199,
+        "teacher_energy": 5659.5751482620835,
+        "token_count": 1648
+      },
+      "horizon": 86,
+      "observed_fraction": 0.6699029126213593,
+      "student_beneficial_fraction": 0.6086165048543689,
+      "student_mae": 0.31669992208480835,
+      "student_mse": 0.5254222750663757,
+      "teacher_beneficial_fraction": 0.533373786407767,
+      "teacher_mae": 0.31517741084098816,
+      "teacher_mse": 0.5218358039855957
+    },
+    {
+      "backbone_mae": 0.31737858057022095,
+      "backbone_mse": 0.5268316268920898,
+      "correction": {
+        "cosine": 0.1858245884953503,
+        "mismatch_energy": 5647.716167259961,
+        "normalized_mismatch": 0.9942628161120676,
+        "projection_coefficient": 0.06606274737288617,
+        "sign_agreement": 0.5661165373176354,
+        "student_energy": 717.9241573363543,
+        "teacher_energy": 5680.305122286081,
+        "token_count": 1648
+      },
+      "horizon": 87,
+      "observed_fraction": 0.6699029126213593,
+      "student_beneficial_fraction": 0.6067961165048543,
+      "student_mae": 0.3160530626773834,
+      "student_mse": 0.5239039659500122,
+      "teacher_beneficial_fraction": 0.5345873786407767,
+      "teacher_mae": 0.3145965039730072,
+      "teacher_mse": 0.5210705995559692
+    },
+    {
+      "backbone_mae": 0.3162956237792969,
+      "backbone_mse": 0.5233283638954163,
+      "correction": {
+        "cosine": 0.1823088093347925,
+        "mismatch_energy": 5718.759367659688,
+        "normalized_mismatch": 0.995890458222298,
+        "projection_coefficient": 0.06435045854956829,
+        "sign_agreement": 0.5655798289987005,
+        "student_energy": 715.4482636377215,
+        "teacher_energy": 5742.357827052474,
+        "token_count": 1648
+      },
+      "horizon": 88,
+      "observed_fraction": 0.6699029126213593,
+      "student_beneficial_fraction": 0.6080097087378641,
+      "student_mae": 0.3149944543838501,
+      "student_mse": 0.5205495953559875,
+      "teacher_beneficial_fraction": 0.5321601941747572,
+      "teacher_mae": 0.31354284286499023,
+      "teacher_mse": 0.5176504254341125
+    },
+    {
+      "backbone_mae": 0.3153262436389923,
+      "backbone_mse": 0.5204781889915466,
+      "correction": {
+        "cosine": 0.17634286438458754,
+        "mismatch_energy": 5595.962189458311,
+        "normalized_mismatch": 1.0017772696924843,
+        "projection_coefficient": 0.06306989733809991,
+        "sign_agreement": 0.5680188881129908,
+        "student_energy": 714.5490801222622,
+        "teacher_energy": 5586.03429999575,
+        "token_count": 1648
+      },
+      "horizon": 89,
+      "observed_fraction": 0.6692961165048543,
+      "student_beneficial_fraction": 0.6080097087378641,
+      "student_mae": 0.3140397071838379,
+      "student_mse": 0.5177797675132751,
+      "teacher_beneficial_fraction": 0.5412621359223301,
+      "teacher_mae": 0.3127945065498352,
+      "teacher_mse": 0.5152555108070374
+    },
+    {
+      "backbone_mae": 0.31496235728263855,
+      "backbone_mse": 0.5198915600776672,
+      "correction": {
+        "cosine": 0.1812011202445874,
+        "mismatch_energy": 5829.668385066092,
+        "normalized_mismatch": 0.9954360574146632,
+        "projection_coefficient": 0.06330037904630571,
+        "sign_agreement": 0.5705835395882786,
+        "student_energy": 714.6959937121719,
+        "teacher_energy": 5856.396643102169,
+        "token_count": 1648
+      },
+      "horizon": 90,
+      "observed_fraction": 0.6686893203883495,
+      "student_beneficial_fraction": 0.6055825242718447,
+      "student_mae": 0.31368711590766907,
+      "student_mse": 0.5172152519226074,
+      "teacher_beneficial_fraction": 0.5436893203883495,
+      "teacher_mae": 0.31204575300216675,
+      "teacher_mse": 0.5140785574913025
+    },
+    {
+      "backbone_mae": 0.31479665637016296,
+      "backbone_mse": 0.5197431445121765,
+      "correction": {
+        "cosine": 0.1862686036303877,
+        "mismatch_energy": 5796.21731480211,
+        "normalized_mismatch": 0.9919928633969102,
+        "projection_coefficient": 0.06512618135327831,
+        "sign_agreement": 0.5687193082242696,
+        "student_energy": 714.2792318109423,
+        "teacher_energy": 5843.003038302064,
+        "token_count": 1648
+      },
+      "horizon": 91,
+      "observed_fraction": 0.6680825242718447,
+      "student_beneficial_fraction": 0.6049757281553398,
+      "student_mae": 0.31352925300598145,
+      "student_mse": 0.5170794129371643,
+      "teacher_beneficial_fraction": 0.5521844660194175,
+      "teacher_mae": 0.31186753511428833,
+      "teacher_mse": 0.5135902762413025
+    },
+    {
+      "backbone_mae": 0.31467103958129883,
+      "backbone_mse": 0.5195656418800354,
+      "correction": {
+        "cosine": 0.18477205086981888,
+        "mismatch_energy": 5635.537232108414,
+        "normalized_mismatch": 0.994802770003294,
+        "projection_coefficient": 0.06557557939760487,
+        "sign_agreement": 0.5708797992923987,
+        "student_energy": 713.5264092460275,
+        "teacher_energy": 5664.979433149099,
+        "token_count": 1648
+      },
+      "horizon": 92,
+      "observed_fraction": 0.6674757281553398,
+      "student_beneficial_fraction": 0.6037621359223301,
+      "student_mae": 0.3134087920188904,
+      "student_mse": 0.5169147253036499,
+      "teacher_beneficial_fraction": 0.5442961165048543,
+      "teacher_mae": 0.31171146035194397,
+      "teacher_mse": 0.5130499601364136
+    },
+    {
+      "backbone_mae": 0.3144925534725189,
+      "backbone_mse": 0.5192928910255432,
+      "correction": {
+        "cosine": 0.1889248685731878,
+        "mismatch_energy": 5860.583116117865,
+        "normalized_mismatch": 0.9892151172389736,
+        "projection_coefficient": 0.0655090701927404,
+        "sign_agreement": 0.5720911799157525,
+        "student_energy": 712.3192777540535,
+        "teacher_energy": 5924.4779158607125,
+        "token_count": 1648
+      },
+      "horizon": 93,
+      "observed_fraction": 0.6668689320388349,
+      "student_beneficial_fraction": 0.6025485436893204,
+      "student_mae": 0.3132312297821045,
+      "student_mse": 0.5166506171226501,
+      "teacher_beneficial_fraction": 0.5509708737864077,
+      "teacher_mae": 0.3117850720882416,
+      "teacher_mse": 0.5133857131004333
+    },
+    {
+      "backbone_mae": 0.3142724335193634,
+      "backbone_mse": 0.5190355777740479,
+      "correction": {
+        "cosine": 0.1841922067175534,
+        "mismatch_energy": 5883.336743436754,
+        "normalized_mismatch": 0.9923445198837978,
+        "projection_coefficient": 0.06378141478134859,
+        "sign_agreement": 0.5720394910511588,
+        "student_energy": 710.8975637182593,
+        "teacher_energy": 5928.723971918225,
+        "token_count": 1648
+      },
+      "horizon": 94,
+      "observed_fraction": 0.6668689320388349,
+      "student_beneficial_fraction": 0.6025485436893204,
+      "student_mae": 0.31300997734069824,
+      "student_mse": 0.5163974165916443,
+      "teacher_beneficial_fraction": 0.5430825242718447,
+      "teacher_mae": 0.31177660822868347,
+      "teacher_mse": 0.5140722990036011
+    },
+    {
+      "backbone_mae": 0.31393176317214966,
+      "backbone_mse": 0.5185530781745911,
+      "correction": {
+        "cosine": 0.18565076419506146,
+        "mismatch_energy": 5858.075702290982,
+        "normalized_mismatch": 0.9914681523181791,
+        "projection_coefficient": 0.06436368077761603,
+        "sign_agreement": 0.5685207971977564,
+        "student_energy": 710.1735170967877,
+        "teacher_energy": 5908.486004915088,
+        "token_count": 1648
+      },
+      "horizon": 95,
+      "observed_fraction": 0.6668689320388349,
+      "student_beneficial_fraction": 0.6037621359223301,
+      "student_mae": 0.31266191601753235,
+      "student_mse": 0.5159087777137756,
+      "teacher_beneficial_fraction": 0.5188106796116505,
+      "teacher_mae": 0.31155842542648315,
+      "teacher_mse": 0.51358562707901
+    },
+    {
+      "backbone_mae": 0.31338822841644287,
+      "backbone_mse": 0.5174806714057922,
+      "correction": {
+        "cosine": 0.18710201583279715,
+        "mismatch_energy": 5868.199958410114,
+        "normalized_mismatch": 0.9902267343943245,
+        "projection_coefficient": 0.06472866145099519,
+        "sign_agreement": 0.5655572105962652,
+        "student_energy": 709.2618095669895,
+        "teacher_energy": 5926.117478538305,
+        "token_count": 1648
+      },
+      "horizon": 96,
+      "observed_fraction": 0.6662621359223301,
+      "student_beneficial_fraction": 0.6043689320388349,
+      "student_mae": 0.31210950016975403,
+      "student_mse": 0.5148241519927979,
+      "teacher_beneficial_fraction": 0.537621359223301,
+      "teacher_mae": 0.3109515607357025,
+      "teacher_mse": 0.5123472213745117
+    }
+  ],
+  "main_cause": "student_expression_underfit",
+  "metrics_roundtrip": {
+    "bf_cmvd_v2_student": {
+      "mae": 0.31763797998428345,
+      "mse": 0.5207502245903015
+    },
+    "cnm_se_teacher": {
+      "mae": 0.3161918520927429,
+      "mse": 0.5178101062774658
+    },
+    "pg95_backbone": {
+      "mae": 0.31878164410591125,
+      "mse": 0.523472011089325
+    }
+  },
+  "preregistered_triggers": {
+    "coverage_mismatch": false,
+    "nonbeneficial_spillover": false,
+    "student_expression_underfit": true
+  },
+  "protocol": {
+    "horizon": 96,
+    "sample_count": 1648,
+    "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/bf_cmvd_v2_failure_attribution__traffic__validation__seed2027__20260821_221024/bf_cmvd_failure_tokens.npz",
+    "source_run": "bf_cmvd_v2_failure_attribution__traffic__validation__seed2027__20260821_221024",
+    "status": "PASS",
+    "validation_only": true,
+    "variable_count": 862
+  },
+  "recommended_v3": "DMRB（双尺度掩码条件残差基）",
+  "scientific_boundary": "validation-only frozen failure attribution; no v3 training, no new seed, no test access",
+  "teacher_advantage_gap": {
+    "mae": {
+      "beneficial_positive_gap": 737.0720007121563,
+      "beneficial_positive_gap_share": 0.9434798275476529,
+      "beneficial_region": {
+        "student_minus_backbone_mean": -0.001898641059105454,
+        "student_minus_teacher_mean": 0.008418667858348154,
+        "student_positive_harm_vs_backbone": 51.04443829506636,
+        "teacher_minus_backbone_mean": -0.010317308917453607,
+        "token_count": 85033
+      },
+      "nonbeneficial_positive_gap": 44.155089884996414,
+      "nonbeneficial_positive_gap_share": 0.056520172452347035,
+      "nonbeneficial_region": {
+        "student_minus_backbone_mean": -0.00026611378901966775,
+        "student_minus_teacher_mean": -0.006656232608802334,
+        "student_positive_harm_vs_backbone": 74.89534913003445,
+        "teacher_minus_backbone_mean": 0.006390118819782666,
+        "token_count": 73175
+      },
+      "positive_teacher_student_gap_total": 781.2270905971527
+    },
+    "mse": {
+      "beneficial_positive_gap": 1176.8363039996475,
+      "beneficial_positive_gap_share": 0.9743538683066895,
+      "beneficial_region": {
+        "student_minus_backbone_mean": -0.0041107508266455305,
+        "student_minus_teacher_mean": 0.013375125864658824,
+        "student_positive_harm_vs_backbone": 53.419859344139695,
+        "teacher_minus_backbone_mean": -0.017485876691304355,
+        "token_count": 85033
+      },
+      "nonbeneficial_positive_gap": 30.97570586577058,
+      "nonbeneficial_positive_gap_share": 0.025646131693310523,
+      "nonbeneficial_region": {
+        "student_minus_backbone_mean": -0.00110764886833903,
+        "student_minus_teacher_mean": -0.009185818091727256,
+        "student_positive_harm_vs_backbone": 60.31095049157739,
+        "teacher_minus_backbone_mean": 0.008078169223388226,
+        "token_count": 73175
+      },
+      "positive_teacher_student_gap_total": 1207.812009865418
+    }
+  },
+  "thresholds": {
+    "beneficial_cosine_lt": 0.5,
+    "beneficial_normalized_mismatch_gt": 0.75,
+    "beneficial_projection_lt": 0.5,
+    "coverage_benefit_rate_gap_gt": 0.05,
+    "coverage_recall_lt": 0.7,
+    "mixed_score_separation_gte": 0.1,
+    "nonbeneficial_student_energy_share_gte": 0.25,
+    "regional_positive_gap_share_gte": 0.6
+  },
+  "variable_diagnostics": {
+    "top10_correction_mismatch_energy": [
+      {
+        "mismatch_energy": 2161.039638519287,
+        "variable_index": 108
+      },
+      {
+        "mismatch_energy": 2095.6765966415405,
+        "variable_index": 795
+      },
+      {
+        "mismatch_energy": 2078.5432529449463,
+        "variable_index": 571
+      },
+      {
+        "mismatch_energy": 2078.507797241211,
+        "variable_index": 512
+      },
+      {
+        "mismatch_energy": 2011.7499914169312,
+        "variable_index": 53
+      },
+      {
+        "mismatch_energy": 2009.0372800827026,
+        "variable_index": 269
+      },
+      {
+        "mismatch_energy": 1967.0296235084534,
+        "variable_index": 748
+      },
+      {
+        "mismatch_energy": 1820.1850881576538,
+        "variable_index": 477
+      },
+      {
+        "mismatch_energy": 1757.5479793548584,
+        "variable_index": 825
+      },
+      {
+        "mismatch_energy": 1750.4702558517456,
+        "variable_index": 833
+      }
+    ],
+    "top10_student_harm_vs_backbone": [
+      {
+        "delta_mse": 0.03797754727328094,
+        "variable_index": 332
+      },
+      {
+        "delta_mse": 0.022649759613580303,
+        "variable_index": 244
+      },
+      {
+        "delta_mse": 0.021359052858692155,
+        "variable_index": 836
+      },
+      {
+        "delta_mse": 0.020395570250776592,
+        "variable_index": 426
+      },
+      {
+        "delta_mse": 0.019433670638062808,
+        "variable_index": 400
+      },
+      {
+        "delta_mse": 0.014016711596146371,
+        "variable_index": 796
+      },
+      {
+        "delta_mse": 0.012135197815385837,
+        "variable_index": 140
+      },
+      {
+        "delta_mse": 0.01179148531654506,
+        "variable_index": 215
+      },
+      {
+        "delta_mse": 0.011506361482984426,
+        "variable_index": 304
+      },
+      {
+        "delta_mse": 0.011183764411793558,
+        "variable_index": 447
+      }
+    ]
+  }
+}

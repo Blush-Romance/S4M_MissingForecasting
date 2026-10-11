@@ -1,0 +1,74 @@
+{
+  "artifact_root": "/tmp/s4m_stage5_scheduler_selftest_o2q6n4x2",
+  "checks": {
+    "configured_max_jobs_supports_user_override": true,
+    "dependency_order_completed": true,
+    "deterministic_error_not_retried": true,
+    "dynamic_refill": true,
+    "oom_requeued_once_then_succeeded": true,
+    "queue_and_max_concurrency": true,
+    "resume_state_preserves_success": true,
+    "stale_running_resume_is_external_kill": true,
+    "unmaterialized_reservation_blocks_startup_race": true
+  },
+  "jobs": {
+    "data_error": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "data_error",
+      "state": "DATA_ERROR"
+    },
+    "dependent": {
+      "attempts": 1,
+      "depends": [
+        "fast_a"
+      ],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "fast_a": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "fast_b": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "fast_c": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "fast_d": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "fast_e": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "fast_f": {
+      "attempts": 1,
+      "depends": [],
+      "kind": "success",
+      "state": "SUCCESS"
+    },
+    "oom_once": {
+      "attempts": 2,
+      "depends": [],
+      "kind": "oom_once",
+      "state": "SUCCESS"
+    }
+  },
+  "max_observed_running": 3,
+  "self_test": "PASS"
+}

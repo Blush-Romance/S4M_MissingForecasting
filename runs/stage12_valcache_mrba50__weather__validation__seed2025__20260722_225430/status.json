@@ -1,0 +1,36 @@
+{
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 321,
+  "checkpoint_size_bytes": 24040515,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage12_validation/s4m_weather_mrba50_seed2025.yaml",
+  "device": "cuda",
+  "evaluation_seed": 2025,
+  "experiment_id": "stage12_valcache_mrba50__weather__validation__seed2025__20260722_225430",
+  "finished_at": "2026-07-22T14:55:44.911536+00:00",
+  "method": "mrba50",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage12_valcache_mrba50__weather__validation__seed2025__20260722_225430/metrics.json",
+  "pid": 555683,
+  "return_code": 0,
+  "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage12_valcache_mrba50__weather__validation__seed2025__20260722_225430/validation_samples.npz",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_mrba50__weather__point__mr0.06__seed2025__20260722_143257/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebD25F_dtprojection_0_data_weather_point_paper_r0.06_l5_seed2025tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "0bf34bc52020786cb95c8d4a5c9c6295b5610c4fb3fa4b1ed8284959e42018a9",
+  "started_at": "2026-07-22T14:54:30.949290+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

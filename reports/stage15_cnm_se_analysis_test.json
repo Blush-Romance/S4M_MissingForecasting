@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "one_seed_regression_fails": true,
+    "positive_passes": true,
+    "weak_mean_fails": true
+  },
+  "status": "PASS"
+}

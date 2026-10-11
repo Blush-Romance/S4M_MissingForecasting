@@ -1,0 +1,59 @@
+{
+  "stage": "22.34",
+  "decision": "FACTORIAL_EXECUTION_STOP",
+  "queue_state": "FAILED",
+  "queue_records": [
+    {
+      "id": "traffic_s4m_validation_seed2026_formal",
+      "state": "BLOCKED_DEPENDENCY",
+      "run_dir": null,
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": "dependency states: ['CODE_ERROR']"
+    },
+    {
+      "id": "traffic_s4m_validation_seed2027_formal",
+      "state": "CODE_ERROR",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__validation__seed2027__20260907_193113",
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": "RuntimeError: equal-rate multiscale artifact checks failed: {'sample_count_positive': True, 'all_vectors_match': True, 'packed_shapes_match': True, 'chronological_indices': True, 'nested_masks_are_subsets': True, 'all_scales_remove_rows': True, 'target_count_roundtrip': True, 'strict_equal_removed_count_per_sample': True, 'additional_rates_roundtrip': True, 'prediction_difference_roundtrip': True, 'scales_change_mask_organization': True, 'finite_vectors': True, 'positive_counts': True, 'expected_validation_split': True, 'frozen': True, 'metric_roundtrip': True, 'frozen_equal_rate_protocol': True, 'fixed_multiscale_weights': True, 'serial_timing_protocol': True, 'timing_arrays_match': True, 'timing_finite_positive': True, 'matched_source_validation_baseline': False, 'source_is_validation_only': True}"
+    },
+    {
+      "id": "traffic_s4m_validation_seed2027_smoke",
+      "state": "SUCCESS",
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__validation__seed2027__smoke__20260907_192822",
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": null
+    },
+    {
+      "id": "traffic_s4m_validation_seed2028_formal",
+      "state": "BLOCKED_DEPENDENCY",
+      "run_dir": null,
+      "required_memory_estimate_mib": 4608,
+      "failure_summary": "dependency states: ['CODE_ERROR']"
+    }
+  ],
+  "missing_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "artifact_errors": [],
+  "per_seed": [],
+  "summary": {},
+  "source_reports": [
+    "stage7_mipp_comparison",
+    "stage16_cnm_se_three_seed_analysis",
+    "stage18_equal_rate_multiscale_analysis",
+    "stage20_etth1_pg95_full_method",
+    "stage21_electricity_validation_gate",
+    "stage22_22_traffic_multiseed_results"
+  ],
+  "scope": "already_developed_validation_factorial_no_new_test",
+  "uses_new_training": false,
+  "limitations": [
+    "different historical CNM versions must not be pooled",
+    "negative ETTh1/Electricity results retained",
+    "same 3 timestamps/mask-training seeds are not independent holdout datasets",
+    "no checkpoint or hyperparameter selection is authorized by this audit"
+  ]
+}

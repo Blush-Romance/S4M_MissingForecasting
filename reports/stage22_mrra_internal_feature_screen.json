@@ -1,0 +1,263 @@
+{
+  "decision": "MRRA_ACCURACY_BRANCH_STOP",
+  "limitations": [
+    "single-seed validation diagnosis is not statistical confirmation",
+    "a supported rule would still require implementation and new validation-locked training",
+    "the test split was not accessed"
+  ],
+  "protocol_checks": {
+    "feature_count_matches": true,
+    "feature_count_positive": true,
+    "frozen": true,
+    "full_validation": true,
+    "history_mask_matches_pg95": true,
+    "instrumentation_preserves_v3_sae": true,
+    "instrumentation_preserves_v3_sse": true,
+    "internal_artifact_pass": true,
+    "internal_features_declared": true,
+    "previous_artifacts_pass": true,
+    "same_data_as_pg95": true,
+    "same_data_as_previous_v3": true,
+    "sample_index_matches_pg95": true,
+    "validation_only": true
+  },
+  "runs": {
+    "internal": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_internal_valcache_mrra_v3__electricity__validation__seed2023__20260813_151549",
+    "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_valcache_pg95__electricity__validation__seed2023__20260805_164843",
+    "previous_mrra_v3": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_valcache_mrra_v3__electricity__validation__seed2023__20260813_144756"
+  },
+  "scope": "Electricity seed2023 frozen-checkpoint validation-only internal feature screen",
+  "screening": {
+    "audit_gate_pass": false,
+    "candidate_rule_count": 0,
+    "feature_summaries": {
+      "history_longest_missing_run": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 14.0,
+        "minimum": 5.0,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.5309764497908065,
+        "spearman_with_mse_gain": -0.5275603037281514
+      },
+      "history_missing_block_count": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 13.0,
+        "minimum": 5.0,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.2033444822350588,
+        "spearman_with_mse_gain": -0.20767242460556062
+      },
+      "history_missing_transition_rate": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.13612565398216248,
+        "minimum": 0.04712041839957237,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.20289821479298065,
+        "spearman_with_mse_gain": -0.20775698772320353
+      },
+      "history_observed_fraction": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.8541666269302368,
+        "minimum": 0.5729166269302368,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": 0.3558716592299685,
+        "spearman_with_mse_gain": 0.36203002523212835
+      },
+      "mrra_context_abs_mean": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.024227943271398544,
+        "minimum": 0.0211016945540905,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.1350648013859706,
+        "spearman_with_mse_gain": -0.14194834371034243
+      },
+      "mrra_context_max_abs": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.08510403335094452,
+        "minimum": 0.07447563856840134,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.12293716470899664,
+        "spearman_with_mse_gain": -0.12132745203023766
+      },
+      "mrra_context_rms": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.02849370241165161,
+        "minimum": 0.0249208752065897,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.2317992812176569,
+        "spearman_with_mse_gain": -0.23344668706600763
+      },
+      "mrra_correction_abs_mean": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.843972384929657,
+        "minimum": 0.782961905002594,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.24540281665203476,
+        "spearman_with_mse_gain": -0.23136037098984213
+      },
+      "mrra_correction_max_abs": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.9999987483024597,
+        "minimum": 0.9999759793281555,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": 0.42741677697418284,
+        "spearman_with_mse_gain": 0.4457376009065491
+      },
+      "mrra_correction_rms": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.8828741312026978,
+        "minimum": 0.8390804529190063,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.15530085666345128,
+        "spearman_with_mse_gain": -0.14032284017364877
+      },
+      "mrra_correction_to_input_rms": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.8315739035606384,
+        "minimum": 0.5317360758781433,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": 0.5301856436612258,
+        "spearman_with_mse_gain": 0.5568462118141858
+      },
+      "mrra_hidden_abs_mean": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.388298362493515,
+        "minimum": 0.3475160598754883,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.3536997044545589,
+        "spearman_with_mse_gain": -0.34649413522315825
+      },
+      "mrra_hidden_max_abs": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 5.4680376052856445,
+        "minimum": 5.382455348968506,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": 0.3044753156833201,
+        "spearman_with_mse_gain": 0.30570587052916015
+      },
+      "mrra_hidden_rms": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.8613920211791992,
+        "minimum": 0.8175229430198669,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": -0.26960182976837055,
+        "spearman_with_mse_gain": -0.2789512043849941
+      },
+      "retrieval_normalized_entropy_temporal_std": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 0.0,
+        "minimum": 0.0,
+        "nonconstant_fit": false,
+        "spearman_with_mae_gain": null,
+        "spearman_with_mse_gain": null
+      },
+      "retrieval_retrieval_entropy": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 1.0986123085021973,
+        "minimum": 1.0986123085021973,
+        "nonconstant_fit": false,
+        "spearman_with_mae_gain": null,
+        "spearman_with_mse_gain": null
+      },
+      "retrieval_retrieved_query_cosine_mean": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "nonconstant_fit": false,
+        "spearman_with_mae_gain": null,
+        "spearman_with_mse_gain": null
+      },
+      "retrieval_retrieved_query_norm_ratio": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "nonconstant_fit": false,
+        "spearman_with_mae_gain": null,
+        "spearman_with_mse_gain": null
+      },
+      "retrieval_selected_similarity": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "nonconstant_fit": false,
+        "spearman_with_mae_gain": null,
+        "spearman_with_mse_gain": null
+      },
+      "retrieval_top1_similarity": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 1.0,
+        "minimum": 1.0,
+        "nonconstant_fit": false,
+        "spearman_with_mae_gain": null,
+        "spearman_with_mse_gain": null
+      },
+      "retrieval_top1_temporal_std": {
+        "finite": true,
+        "fit_development_feasible_rule_count": 0,
+        "maximum": 6.285334563926881e-08,
+        "minimum": 3.494632139222631e-08,
+        "nonconstant_fit": true,
+        "spearman_with_mae_gain": 0.06602325378251706,
+        "spearman_with_mse_gain": 0.07027218426647959
+      }
+    },
+    "selected_rule": null,
+    "status": "NO_FEASIBLE_RULE_ON_FIT_AND_DEVELOPMENT"
+  },
+  "selection_constraints": {
+    "audit_used_once_after_selection": true,
+    "directions": [
+      "low",
+      "high"
+    ],
+    "fit_and_development_dual_nondegradation_required": true,
+    "maximum_candidate_fraction": 0.95,
+    "minimum_candidate_fraction": 0.05,
+    "thresholds": "fit quantiles 0,5,...,100 percent"
+  },
+  "split": {
+    "audit": [
+      2080,
+      2528
+    ],
+    "development": [
+      1456,
+      1888
+    ],
+    "embargo_1": [
+      1264,
+      1456
+    ],
+    "embargo_2": [
+      1888,
+      2080
+    ],
+    "fit": [
+      0,
+      1264
+    ]
+  },
+  "status": "PASS",
+  "step": "22.15",
+  "test_accessed": false
+}

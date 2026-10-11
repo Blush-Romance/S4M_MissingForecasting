@@ -1,0 +1,134 @@
+{
+  "checks": {
+    "core": {
+      "all_feature_cases_finite": true,
+      "all_observed_spectral_jsd_is_zero": true,
+      "checkpoint_has_router_parameters": true,
+      "checkpoint_roundtrip_preserves_gate": true,
+      "evaluation_gate_is_hard_and_reaches_off": true,
+      "evaluation_gate_is_hard_and_reaches_on": true,
+      "feature_shape_is_b8": true,
+      "features_are_detached_from_history": true,
+      "future_target_change_does_not_change_gate": true,
+      "router_receives_finite_nonzero_gradient": true,
+      "soft_gate_decreases_with_uncertainty": true,
+      "soft_gate_increases_with_predicted_utility": true,
+      "spectral_ablation_keeps_shape_and_zeros_feature": true,
+      "spectral_jsd_is_bounded": true,
+      "utility_loss_is_finite": true,
+      "utility_target_is_detached": true
+    },
+    "mtnet": {
+      "all_mtnet_outputs_finite": true,
+      "forced_off_gate_is_zero": true,
+      "forced_off_matches_baseline_prototype_off": true,
+      "forced_on_gate_is_one": true,
+      "forced_on_matches_baseline_prototype_on": true,
+      "fusr_checkpoint_has_expected_prefix": true,
+      "shared_baseline_state_load_has_no_unexpected_keys": true,
+      "use_fusr_false_does_not_instantiate_router": true,
+      "use_fusr_false_has_no_fusr_state_keys": true
+    }
+  },
+  "core_status": "PASS",
+  "evidence": {
+    "core": {
+      "checkpoint_keys": [
+        "backbone.0.bias",
+        "backbone.0.weight",
+        "backbone.2.bias",
+        "backbone.2.weight",
+        "calibrated_threshold",
+        "calibration_ready",
+        "feature_center",
+        "feature_scale",
+        "gate_prior_logit",
+        "normalization_ready",
+        "utility_head.bias",
+        "utility_head.weight"
+      ],
+      "checkpoint_roundtrip_gate_max_abs_error": 0.0,
+      "feature_max": 1.0,
+      "feature_min": 0.0,
+      "feature_names": [
+        "top1_similarity",
+        "selected_similarity",
+        "normalized_retrieval_entropy",
+        "missing_rate",
+        "longest_missing_run_ratio",
+        "variable_missing_rate_std",
+        "mask_binary_entropy",
+        "spectral_js_divergence"
+      ],
+      "feature_shape": [
+        5,
+        8
+      ],
+      "initial_gate_mean": 1.0,
+      "router_gradient_parameter_names": [
+        "backbone.0.bias",
+        "backbone.0.weight",
+        "backbone.2.bias",
+        "backbone.2.weight",
+        "utility_head.bias",
+        "utility_head.weight"
+      ],
+      "router_parameter_count": 452,
+      "sign_loss": 0.6931471824645996,
+      "spectral_jsd_max": 0.06569314002990723,
+      "spectral_jsd_min": 0.0,
+      "uncertainty_penalty_gate_delta_min": 0.983952522277832,
+      "utility_loss": 1.2894246578216553,
+      "utility_monotonic_gate_delta_min": 0.060275137424468994,
+      "utility_nll": 0.9428510069847107,
+      "utility_valid_count": 4
+    },
+    "mtnet": {
+      "added_parameter_count": 452,
+      "baseline_output_shape": [
+        2,
+        8,
+        4
+      ],
+      "baseline_parameter_count": 2508,
+      "forced_off_max_abs_error": 0.0,
+      "forced_on_max_abs_error": 0.0,
+      "fusr_checkpoint_keys": [
+        "fusr.backbone.0.bias",
+        "fusr.backbone.0.weight",
+        "fusr.backbone.2.bias",
+        "fusr.backbone.2.weight",
+        "fusr.calibrated_threshold",
+        "fusr.calibration_ready",
+        "fusr.feature_center",
+        "fusr.feature_scale",
+        "fusr.gate_prior_logit",
+        "fusr.normalization_ready",
+        "fusr.utility_head.bias",
+        "fusr.utility_head.weight"
+      ],
+      "fusr_parameter_count": 2960,
+      "missing_keys_when_loading_baseline_into_fusr": [
+        "fusr.backbone.0.bias",
+        "fusr.backbone.0.weight",
+        "fusr.backbone.2.bias",
+        "fusr.backbone.2.weight",
+        "fusr.calibrated_threshold",
+        "fusr.calibration_ready",
+        "fusr.feature_center",
+        "fusr.feature_scale",
+        "fusr.gate_prior_logit",
+        "fusr.normalization_ready",
+        "fusr.utility_head.bias",
+        "fusr.utility_head.weight"
+      ]
+    }
+  },
+  "mtnet_status": "PASS",
+  "notes": {
+    "future_target_is_not_a_router_input": true,
+    "mtnet_blocker_is_preserved_when_present": true,
+    "smoke_test_is_not_a_formal_result": true
+  },
+  "status": "PASS"
+}

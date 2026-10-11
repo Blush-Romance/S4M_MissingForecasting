@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "formal_budget_is_full": true,
+    "missing_delta_rejected": true,
+    "missing_switch_rejected": true,
+    "mixed_mcpr_rejected": true,
+    "passing_smoke_releases_formal": true,
+    "pba_is_single_active_innovation": true,
+    "queue_is_smoke_then_formal": true,
+    "queue_preserves_user_max_concurrency": true,
+    "reduced_formal_rejected": true,
+    "same_frozen_protocol": true,
+    "shared_teacher_blocks_formal": true,
+    "smoke_budget_is_isolated": true,
+    "test_access_rejected": true,
+    "two_configs_validate": true,
+    "validation_only": true,
+    "wrong_lr_rejected": true,
+    "wrong_tail_rejected": true,
+    "wrong_weight_rejected": true,
+    "zero_distillation_blocks_formal": true
+  },
+  "status": "PASS",
+  "step": "22.30"
+}

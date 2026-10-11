@@ -1,0 +1,10 @@
+{
+  "experiment_id": "stage22_21_scientific_gate__traffic__test_not_authorized__seed2026__20260816_192338",
+  "finished_at": "2026-08-16T11:23:38.221369+00:00",
+  "result": "SKIPPED_BY_VALIDATION_GATE",
+  "return_code": 0,
+  "scientific_decision": "TRAFFIC_PROTOCOL_FAIL_TEST_FORBIDDEN",
+  "state": "SUCCESS",
+  "test_accessed": false,
+  "test_authorized": false
+}

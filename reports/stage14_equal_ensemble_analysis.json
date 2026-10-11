@@ -1,0 +1,68 @@
+{
+  "decision": "STAGE14_EQUAL_ENSEMBLE_GATE_PASS_IMPLEMENT_TEST_MODULE",
+  "pre_analysis_gate": {
+    "all_seeds_required": [
+      2024,
+      2025
+    ],
+    "equal_weights": [
+      0.5,
+      0.5
+    ],
+    "identity_mse_atol": 1e-05,
+    "mae_gain_vs_pg95_each_seed_min_pct": 0.5,
+    "mse_gain_vs_pg95_each_seed_min_pct": 1.5
+  },
+  "results": {
+    "2024": {
+      "checks": {
+        "artifact_status_pass": true,
+        "fixed_equal_weights": true,
+        "frozen_checkpoint": true,
+        "identity_mse_matches_prior_cache": true,
+        "mae_gain_at_least_0_5_pct": true,
+        "mse_gain_at_least_1_5_pct": true,
+        "validation_only": true
+      },
+      "gate_pass": true,
+      "mae_equal_ensemble": 0.36418035789124004,
+      "mae_gain_vs_nested_pct": 1.5297875186641157,
+      "mae_gain_vs_on_pct": 0.8869985577362363,
+      "mae_nested": 0.36983809490638303,
+      "mae_on": 0.3674395413233306,
+      "mse_equal_ensemble": 0.5094765485112184,
+      "mse_gain_vs_nested_pct": 1.803157993091011,
+      "mse_gain_vs_on_pct": 2.3692604226258673,
+      "mse_nested": 0.5188319075224154,
+      "mse_on": 0.5218403043105588
+    },
+    "2025": {
+      "checks": {
+        "artifact_status_pass": true,
+        "fixed_equal_weights": true,
+        "frozen_checkpoint": true,
+        "identity_mse_matches_prior_cache": true,
+        "mae_gain_at_least_0_5_pct": true,
+        "mse_gain_at_least_1_5_pct": true,
+        "validation_only": true
+      },
+      "gate_pass": true,
+      "mae_equal_ensemble": 0.36190915662062845,
+      "mae_gain_vs_nested_pct": 1.1248392090566894,
+      "mae_gain_vs_on_pct": 1.3129353619369157,
+      "mae_nested": 0.36602636468610256,
+      "mae_on": 0.3667240057731355,
+      "mse_equal_ensemble": 0.519410617335041,
+      "mse_gain_vs_nested_pct": 1.6402849051660295,
+      "mse_gain_vs_on_pct": 2.056868763098539,
+      "mse_nested": 0.5280725110216605,
+      "mse_on": 0.5303185744375566
+    }
+  },
+  "runs": {
+    "2024": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_equal_ensemble_pg95__weather__validation__seed2024__20260723_153121",
+    "2025": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage14_equal_ensemble_pg95__weather__validation__seed2025__20260723_153121"
+  },
+  "scope": "Weather PG95 frozen checkpoints; validation only; no test samples",
+  "status": "PASS"
+}

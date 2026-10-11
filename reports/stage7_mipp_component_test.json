@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "all_losses_finite": true,
+    "content_adapter_receives_gradient": true,
+    "content_shape_preserved": true,
+    "length20_block_pair_rate_is_finite": true,
+    "length20_block_pair_shape": true,
+    "mask_encoder_receives_gradient": true,
+    "mask_statistics_shape": true,
+    "write_gate_filters_candidates": true,
+    "zero_initialized_content_identity": true
+  },
+  "identity_error": 0.0,
+  "length20_block_realized_missing_rate": 0.41015625,
+  "metrics": {
+    "covariance_loss": 0.2489849328994751,
+    "decorrelation_loss": 6.61974809190724e-07,
+    "invariance_loss": 0.0013960624346509576,
+    "mask_reconstruction_loss": 0.17902471125125885,
+    "paired_content_cosine": 0.9986039996147156,
+    "variance_loss": 0.0
+  },
+  "status": "PASS",
+  "write_gate_diagnostics": {
+    "eligible_count": 1,
+    "sampled_count": 1,
+    "updated_count": 1
+  }
+}

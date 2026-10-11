@@ -1,0 +1,31 @@
+{
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 321,
+  "checkpoint_size_bytes": 24046659,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage13_cfr/s4m_weather_pg95_seed2023_regression_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "mipp_pg95__weather__point__mr0.06__seed2023__smoke__20260722_230844",
+  "finished_at": "2026-07-22T15:09:12.772958+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2023__smoke__20260722_230844/metrics.json",
+  "pid": 589411,
+  "return_code": 0,
+  "started_at": "2026-07-22T15:08:44.782009+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

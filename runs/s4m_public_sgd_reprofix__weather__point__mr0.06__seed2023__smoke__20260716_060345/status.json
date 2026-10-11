@@ -1,0 +1,20 @@
+{
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_size_bytes": 23803260,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/baseline/s4m_weather_point_r006_fullarch_gpu_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_public_sgd_reprofix__weather__point__mr0.06__seed2023__smoke__20260716_060345",
+  "finished_at": "2026-07-15T22:04:17.379078+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_public_sgd_reprofix__weather__point__mr0.06__seed2023__smoke__20260716_060345/metrics.json",
+  "pid": 1007181,
+  "return_code": 0,
+  "started_at": "2026-07-15T22:03:45.355087+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

@@ -1,0 +1,23 @@
+{
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [],
+  "checkpoint_model_key_count": 314,
+  "checkpoint_size_bytes": 91895420,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage21_electricity/s4m_electricity_seed2023.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_paper_adam_electricity__electricity__point__mr0.06__seed2023__20260804_193645",
+  "finished_at": "2026-08-04T12:21:32.872760+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_electricity__electricity__point__mr0.06__seed2023__20260804_193645/metrics.json",
+  "pid": 265109,
+  "return_code": 0,
+  "started_at": "2026-08-04T11:36:45.961209+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

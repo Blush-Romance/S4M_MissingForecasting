@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "all_missing_runs_at_least_l5": true,
+    "all_partitions_have_observed_and_missing_rows": true,
+    "complete_has_no_nan": true,
+    "complete_schema_date_plus_862": true,
+    "complete_shape_17544_by_863": true,
+    "dates_match_exactly": true,
+    "deterministic_row_mask_roundtrip": true,
+    "deterministic_start_indices_roundtrip": true,
+    "expected_test_windows_batches_samples": true,
+    "expected_validation_windows_batches_samples": true,
+    "fixed_hashes": true,
+    "frozen_mask_scalars": true,
+    "manifest_matches_frozen_assets": true,
+    "mask_keys_exact": true,
+    "mask_shape_and_dtype": true,
+    "metadata_hashes_and_schema_match": true,
+    "missing_shape_and_columns_match": true,
+    "nearest_reachable_target_count": true,
+    "observed_values_preserved": true,
+    "protocol_link_and_post_smoke_amendment_are_auditable": true,
+    "row_shared_missing_mask": true,
+    "traffic_target_column_is_final_ot": true
+  },
+  "contiguous_run_count": 753,
+  "contiguous_run_max": 18,
+  "contiguous_run_min": 5,
+  "failures": [],
+  "mask_sha256": "92bcc7576c2848484a7059693d54e4c09643208cd1c6314941c1708f13ca96d5",
+  "model_test_split_accessed": false,
+  "observed_max_abs_error": 1.1102230246251565e-16,
+  "output_sha256": "03912ad8673901220283118d955b3f4a65c7e8b52d8daf2665812c5bd16d5924",
+  "realized_missing_rate": 0.2598609211126311,
+  "realized_missing_rows": 4559,
+  "shape": [
+    17544,
+    863
+  ],
+  "source_sha256": "cb06463d56fa17d87f47027cd9389ceae82a69eddee51cdb61480e120dab0b16",
+  "split_rows": {
+    "test": 3508,
+    "train": 12280,
+    "validation": 1756
+  },
+  "status": "PASS",
+  "test_windows_batches_samples": [
+    3413,
+    213,
+    3408
+  ],
+  "validation_windows_batches_samples": [
+    1661,
+    103,
+    1648
+  ]
+}

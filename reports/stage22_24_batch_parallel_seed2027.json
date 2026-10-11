@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "decision": "BATCH_PARALLEL_EQUIVALENCE_FAIL",
+  "efficiency": {
+    "paired_latency_reduction_percent_bootstrap_ci95": [
+      20.077411909347575,
+      22.40450485284458
+    ],
+    "paired_latency_reduction_percent_mean": 21.26300453026672,
+    "parallel_over_serial_mean_ratio": 0.7852349894577384,
+    "parallel_pipeline": {
+      "mean_ms": 198.75091313314374,
+      "p50_ms": 202.67019048333168,
+      "p95_ms": 224.6126938611269,
+      "std_ms": 19.114276706174575,
+      "total_seconds": 18.483834921382368
+    },
+    "peak_gpu_memory_mb": 8806.4365234375,
+    "peak_gpu_reserved_mb": 14036.0,
+    "serial_pipeline": {
+      "mean_ms": 253.11010818608025,
+      "p50_ms": 255.78426755964756,
+      "p95_ms": 285.4539727792144,
+      "std_ms": 24.577024034652183,
+      "total_seconds": 23.539240061305463
+    },
+    "speed_gate_pass": true
+  },
+  "equivalence": {
+    "maximum_absolute_prediction_difference": {
+      "l20": 0.0011243820190429688,
+      "l5": 0.0011069774627685547,
+      "multiscale": 0.0005869865417480469,
+      "original": 0.001010894775390625
+    },
+    "parallel_mae": 0.31619188460253644,
+    "parallel_mse": 0.5178101141991518,
+    "pass": false,
+    "serial_mae": 0.316191883227654,
+    "serial_mse": 0.517810115072775
+  },
+  "protocol_pass": true,
+  "queue_state": "SUCCESS",
+  "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_batch_parallel_compare_pg95__traffic__validation__seed2027__20260820_205223",
+  "step": "22.24.3"
+}

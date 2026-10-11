@@ -1,0 +1,206 @@
+{
+  "artifact_checks": {
+    "all_vectors_match": true,
+    "chronological_indices": true,
+    "equivalence_report_consistent": true,
+    "finite_vectors": true,
+    "frozen_batch_parallel_protocol": true,
+    "metric_roundtrip": true,
+    "nested_masks_are_subsets": true,
+    "packed_shapes_match": true,
+    "paired_reduction_roundtrip": true,
+    "paired_same_gpu_timing_protocol": true,
+    "positive_counts": true,
+    "positive_pipeline_timings": true,
+    "sample_count_positive": true,
+    "source_is_validation_only": true,
+    "strict_equal_removed_count_per_sample": true,
+    "target_count_roundtrip": true,
+    "timing_arrays_match": true,
+    "timing_finite": true,
+    "validation_only": true
+  },
+  "artifact_status": "PASS",
+  "block_lengths": [
+    5,
+    20
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260820,
+  "buffer_bytes": 160,
+  "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22P952027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_ard_state_keys": [],
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [],
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 321,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 123162368,
+  "checkpoint_ttrr_state_keys": [],
+  "chronological_loader": true,
+  "complete_target_mae_parallel_multiscale": 0.36528393557834454,
+  "complete_target_mae_serial_multiscale": 0.36528394836284167,
+  "complete_target_mse_parallel_multiscale": 0.5735611361183742,
+  "complete_target_mse_serial_multiscale": 0.5735611439857572,
+  "dataset": "traffic",
+  "evaluation_elapsed_seconds": 5.526499889791012,
+  "evaluation_samples_sha256": "69ba77f291480cafc6f02775e7923dd57d9808e5eaf3f202acb8a74857394536",
+  "evaluation_seed": 2027,
+  "execution_optimization_only": true,
+  "experiment_id": "cnm_se_batch_parallel_compare_pg95__traffic__validation__seed2027__smoke__20260820_205107",
+  "gpu_uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb",
+  "mae": 0.36528393557834454,
+  "mask_asset": "/mnt/data/zza/code/S4M_MissingForecasting/artifacts/masks/traffic/point/rate_0.06/seed_2027.npz",
+  "mask_asset_sha256": "c9ae86954800e95bd735c72271ce8bddd23c5fc0a05eab50a55d00c66e363c01",
+  "maximum_absolute_prediction_difference": {
+    "l20": 0.0007734298706054688,
+    "l5": 0.0008244514465332031,
+    "multiscale": 0.00037550926208496094,
+    "original": 0.0007270574569702148
+  },
+  "mean_squared_prediction_difference": {
+    "l20": 2.230106513230005e-10,
+    "l5": 2.382635165554259e-10,
+    "multiscale": 9.264037988699718e-11,
+    "original": 2.540480901457494e-10
+  },
+  "method": "cnm_se_batch_parallel_compare_pg95",
+  "metric_equivalence_tolerance": 1e-06,
+  "mse": 0.5735611361183742,
+  "multiscale_weights": {
+    "l20": 0.25,
+    "l5": 0.25,
+    "original": 0.5
+  },
+  "nested_seed": 2027,
+  "paired_latency_reduction_percent_bootstrap_ci95": [
+    17.96548444731321,
+    20.75435265706886
+  ],
+  "paired_latency_reduction_percent_mean": 19.359918552191033,
+  "parallel_effective_model_batch_size": 48,
+  "parallel_over_serial_mean_ratio": 0.8062179928989648,
+  "parallel_pipeline_timing": {
+    "mean_ms": 200.51724836230278,
+    "p50_ms": 200.51724836230278,
+    "p95_ms": 201.27199348062277,
+    "std_ms": 0.8386056870222092,
+    "total_seconds": 0.40103449672460556
+  },
+  "parameter_bytes": 122654808,
+  "parameter_count": 30663702,
+  "peak_gpu_memory_mb": 8805.6865234375,
+  "peak_gpu_reserved_mb": 14036.0,
+  "prediction_equivalence_pass": false,
+  "prediction_equivalence_tolerance": 0.0001,
+  "realized_additional_missing_rate_l20": 0.14894769713282585,
+  "realized_additional_missing_rate_l5": 0.14894769713282585,
+  "sample_count": 48,
+  "scope": "smoke_test_not_formal_result",
+  "serial_pipeline_timing": {
+    "mean_ms": 248.7134374678135,
+    "p50_ms": 248.7134374678135,
+    "p95_ms": 251.64818819612267,
+    "std_ms": 3.2608341425657272,
+    "total_seconds": 0.497426874935627
+  },
+  "setting": "S4M_custom4_stage22_24_batch_parallel_val_cnm_se_batch_parallel_compare_pg95__traffic__validation__seed2027__smoke__20260820_205107",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22P952027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "ac6987afbe38251cdfd997601727c4da8d483dc0481d299609f223c961922716",
+  "source_formal_test_mae_reference_only": 0.3187816046060131,
+  "source_formal_test_mse_reference_only": 0.5234720035914716,
+  "source_split": "val",
+  "source_validation_mae_reference_only": 0.3187816046060131,
+  "source_validation_mse_reference_only": 0.5234720035914716,
+  "speed_gate_pass": false,
+  "speed_gate_reduction_threshold_percent": 20.0,
+  "target_additional_missing_rate": 0.15,
+  "target_count_rounding": "numpy_rint_ties_to_even",
+  "timing_batch_size": 16,
+  "timing_components": {
+    "l20_mask_seconds": {
+      "mean_ms": 1.5407088212668896,
+      "p50_ms": 1.5407088212668896,
+      "p95_ms": 1.5770112629979849,
+      "std_ms": 0.04033604636788368,
+      "total_seconds": 0.003081417642533779
+    },
+    "l20_preprocess_seconds": {
+      "mean_ms": 0.26527605950832367,
+      "p50_ms": 0.26527605950832367,
+      "p95_ms": 0.269160233438015,
+      "std_ms": 0.0043157488107681274,
+      "total_seconds": 0.0005305521190166473
+    },
+    "l5_mask_seconds": {
+      "mean_ms": 2.4500428698956966,
+      "p50_ms": 2.4500428698956966,
+      "p95_ms": 2.491202624514699,
+      "std_ms": 0.04573306068778038,
+      "total_seconds": 0.004900085739791393
+    },
+    "l5_preprocess_seconds": {
+      "mean_ms": 0.34259120002388954,
+      "p50_ms": 0.34259120002388954,
+      "p95_ms": 0.36529568023979664,
+      "std_ms": 0.025227200239896774,
+      "total_seconds": 0.0006851824000477791
+    },
+    "parallel_concat_forward_split_seconds": {
+      "mean_ms": 195.8597912453115,
+      "p50_ms": 195.8597912453115,
+      "p95_ms": 196.71974391676486,
+      "std_ms": 0.9555029682815075,
+      "total_seconds": 0.391719582490623
+    },
+    "parallel_fusion_seconds": {
+      "mean_ms": 0.058838166296482086,
+      "p50_ms": 0.058838166296482086,
+      "p95_ms": 0.05999486893415451,
+      "std_ms": 0.0012852251529693604,
+      "total_seconds": 0.00011767633259296417
+    },
+    "serial_forward_seconds": {
+      "mean_ms": 244.02848863974214,
+      "p50_ms": 244.02848863974214,
+      "p95_ms": 246.85432114638388,
+      "std_ms": 3.139813896268606,
+      "total_seconds": 0.48805697727948427
+    },
+    "serial_fusion_seconds": {
+      "mean_ms": 0.0863298773765564,
+      "p50_ms": 0.0863298773765564,
+      "p95_ms": 0.09119724854826927,
+      "std_ms": 0.005408190190792084,
+      "total_seconds": 0.0001726597547531128
+    }
+  },
+  "timing_device_same_gpu": true,
+  "timing_execution_order_alternates": true,
+  "timing_measured_batches": 2,
+  "timing_order_encoding": {
+    "parallel_first": 1,
+    "serial_first": 0
+  },
+  "timing_scope": "paired batch latency excluding dataloader/host-to-device; both pipelines include shared L5/L20 mask construction and preprocessing",
+  "timing_warmup_batches": 1,
+  "updates_model_or_memory": false,
+  "uses_test_split": false,
+  "validation_batches_processed": 3
+}

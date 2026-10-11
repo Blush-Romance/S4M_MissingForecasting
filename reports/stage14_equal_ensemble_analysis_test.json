@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "identity_mismatch_fails": true,
+    "positive_passes": true,
+    "weak_mae_fails": true
+  },
+  "status": "PASS"
+}

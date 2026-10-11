@@ -1,0 +1,33 @@
+{
+  "decision": "RERUN_VALIDATION_TO_MEASURE_EQUAL_ENSEMBLE_MAE",
+  "formula": "SSE(mean(on,nested)) = 0.5*(SSE_on+SSE_nested) - 0.25*SSE(on-nested)",
+  "mae_available": false,
+  "results": {
+    "2024": {
+      "element_count": 10418688,
+      "improves_both_single_views": true,
+      "mae_available": false,
+      "mse_equal_ensemble": 0.5094765411709954,
+      "mse_nested": 0.5188319103775741,
+      "mse_on": 0.5218402913594586,
+      "relative_gain_vs_best_single_pct": 1.8031599482326541,
+      "relative_gain_vs_nested_pct": 1.8031599482326541,
+      "relative_gain_vs_on_pct": 2.3692594062168237,
+      "sample_count": 5168
+    },
+    "2025": {
+      "element_count": 10418688,
+      "improves_both_single_views": true,
+      "mae_available": false,
+      "mse_equal_ensemble": 0.519410618345593,
+      "mse_nested": 0.5280725081877379,
+      "mse_on": 0.5303185818211336,
+      "relative_gain_vs_best_single_pct": 1.640284185948467,
+      "relative_gain_vs_nested_pct": 1.640284185948467,
+      "relative_gain_vs_on_pct": 2.0568699361961302,
+      "sample_count": 5168
+    }
+  },
+  "scope": "Post-hoc exact MSE identity on frozen validation caches; no test data",
+  "status": "PASS"
+}

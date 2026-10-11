@@ -1,0 +1,12 @@
+{
+  "comparison": {},
+  "decision": "BF_CMVD_SMOKE_MECHANISM_FAIL",
+  "formal_mechanism": {},
+  "formal_run": null,
+  "queue_state": "FAILED",
+  "scientific_dependency": null,
+  "smoke_mechanism": {},
+  "smoke_run": null,
+  "step": "22.26",
+  "test_sources_accessed": false
+}

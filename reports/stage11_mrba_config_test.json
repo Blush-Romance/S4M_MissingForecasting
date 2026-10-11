@@ -1,0 +1,109 @@
+{
+  "checks": {
+    "invalid_budget_is_rejected": true,
+    "missing_stability_gate_is_rejected": true,
+    "seed2024_formal_complete_csv_exists": true,
+    "seed2024_formal_formal_budget_not_reduced": true,
+    "seed2024_formal_mask_asset_exists": true,
+    "seed2024_formal_mask_metadata_exists": true,
+    "seed2024_formal_missing_csv_exists": true,
+    "seed2024_formal_module_prerequisites": true,
+    "seed2024_formal_new_mode_and_budget": true,
+    "seed2024_formal_only_expected_experiment_identity_changes": true,
+    "seed2024_formal_only_expected_official_changes": true,
+    "seed2024_formal_same_data": true,
+    "seed2024_formal_same_runtime": true,
+    "seed2024_smoke_complete_csv_exists": true,
+    "seed2024_smoke_mask_asset_exists": true,
+    "seed2024_smoke_mask_metadata_exists": true,
+    "seed2024_smoke_missing_csv_exists": true,
+    "seed2024_smoke_module_prerequisites": true,
+    "seed2024_smoke_new_mode_and_budget": true,
+    "seed2024_smoke_only_expected_experiment_identity_changes": true,
+    "seed2024_smoke_only_expected_official_changes": true,
+    "seed2024_smoke_same_data": true,
+    "seed2024_smoke_same_runtime": true,
+    "seed2024_smoke_smoke_is_lifecycle_only": true,
+    "seed2025_formal_complete_csv_exists": true,
+    "seed2025_formal_formal_budget_not_reduced": true,
+    "seed2025_formal_mask_asset_exists": true,
+    "seed2025_formal_mask_metadata_exists": true,
+    "seed2025_formal_missing_csv_exists": true,
+    "seed2025_formal_module_prerequisites": true,
+    "seed2025_formal_new_mode_and_budget": true,
+    "seed2025_formal_only_expected_experiment_identity_changes": true,
+    "seed2025_formal_only_expected_official_changes": true,
+    "seed2025_formal_same_data": true,
+    "seed2025_formal_same_runtime": true,
+    "seed2025_smoke_complete_csv_exists": true,
+    "seed2025_smoke_mask_asset_exists": true,
+    "seed2025_smoke_mask_metadata_exists": true,
+    "seed2025_smoke_missing_csv_exists": true,
+    "seed2025_smoke_module_prerequisites": true,
+    "seed2025_smoke_new_mode_and_budget": true,
+    "seed2025_smoke_only_expected_experiment_identity_changes": true,
+    "seed2025_smoke_only_expected_official_changes": true,
+    "seed2025_smoke_same_data": true,
+    "seed2025_smoke_same_runtime": true,
+    "seed2025_smoke_smoke_is_lifecycle_only": true
+  },
+  "records": {
+    "seed2024_formal": {
+      "bmsa_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_bmsa50_seed2024.yaml",
+      "experiment_differences": [
+        "model",
+        "protocol_scope",
+        "purpose"
+      ],
+      "mrba_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_mrba50_seed2024.yaml",
+      "official_arg_differences": [
+        "des",
+        "mipp_write_gate_mode",
+        "model_id"
+      ]
+    },
+    "seed2024_smoke": {
+      "bmsa_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_bmsa50_seed2024_smoke.yaml",
+      "experiment_differences": [
+        "model",
+        "protocol_scope",
+        "purpose"
+      ],
+      "mrba_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_mrba50_seed2024_smoke.yaml",
+      "official_arg_differences": [
+        "des",
+        "mipp_write_gate_mode",
+        "model_id"
+      ]
+    },
+    "seed2025_formal": {
+      "bmsa_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_bmsa50_seed2025.yaml",
+      "experiment_differences": [
+        "model",
+        "protocol_scope",
+        "purpose"
+      ],
+      "mrba_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_mrba50_seed2025.yaml",
+      "official_arg_differences": [
+        "des",
+        "mipp_write_gate_mode",
+        "model_id"
+      ]
+    },
+    "seed2025_smoke": {
+      "bmsa_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_bmsa50_seed2025_smoke.yaml",
+      "experiment_differences": [
+        "model",
+        "protocol_scope",
+        "purpose"
+      ],
+      "mrba_path": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_mrba50_seed2025_smoke.yaml",
+      "official_arg_differences": [
+        "des",
+        "mipp_write_gate_mode",
+        "model_id"
+      ]
+    }
+  },
+  "status": "PASS"
+}

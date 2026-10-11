@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "both_anchor_dual_wins_unlock_seed2023": true,
+    "failed_mechanism_checks_are_reportable": true,
+    "metric_change_uses_lower_is_better": true,
+    "single_metric_failure_stops_candidate": true,
+    "single_seed_failure_stops_candidate": true,
+    "valid_protocol_checks_remain_pass": true
+  },
+  "mixed_decision": [
+    false,
+    "SDRA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "SDRA未在两个锚点同时双指标优于PG95；保留结果并停止该候选，不扩seed或数据集。"
+  ],
+  "negative_decision": [
+    false,
+    "SDRA_TWO_ANCHOR_GATE_FAILED_STOP_CANDIDATE",
+    "SDRA未在两个锚点同时双指标优于PG95；保留结果并停止该候选，不扩seed或数据集。"
+  ],
+  "positive_decision": [
+    true,
+    "SDRA_TWO_ANCHOR_DUAL_WIN_RUN_SEED2023",
+    "SDRA在正向与失败锚点均双指标优于PG95；按预注册规则补跑seed2023。"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,57 @@
+{
+  "decision": "MCPR_BRANCH_STOP",
+  "fairness_note": "post-hoc screen only; any winner requires equal-budget PG95 continuation control",
+  "methods": {
+    "mcpr_mse": {
+      "dual_metric_gate_pass": false,
+      "gradient_cosine_mean": null,
+      "mae": 0.7529857713770618,
+      "mae_gain_percent": 0.2017054081118006,
+      "mse": 0.8761089148499424,
+      "mse_gain_percent": -0.3780119070660382,
+      "objective": "mse_only",
+      "protocol_checks": {
+        "backbone_frozen": true,
+        "checkpoint_finite": true,
+        "full_validation": true,
+        "mechanism_executed": true,
+        "memory_frozen": true,
+        "validation_only": true
+      },
+      "protocol_pass": true,
+      "run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mcpr_mse_pg95_electricity__electricity__point__mr0.06__seed2023__20260813_171648",
+      "state": "SUCCESS",
+      "trainable_parameter_count": 27329
+    },
+    "mcpr_pcd": {
+      "dual_metric_gate_pass": false,
+      "gradient_cosine_mean": 0.03518921920703179,
+      "mae": 0.7449589940697675,
+      "mae_gain_percent": 1.2655484670209491,
+      "mse": 0.9158393188654669,
+      "mse_gain_percent": -4.930024675964674,
+      "objective": "pareto_common_descent",
+      "protocol_checks": {
+        "backbone_frozen": true,
+        "checkpoint_finite": true,
+        "full_validation": true,
+        "mechanism_executed": true,
+        "memory_frozen": true,
+        "validation_only": true
+      },
+      "protocol_pass": true,
+      "run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mcpr_pcd_pg95_electricity__electricity__point__mr0.06__seed2023__20260813_171718",
+      "state": "SUCCESS",
+      "trainable_parameter_count": 27329
+    }
+  },
+  "pg95": {
+    "mae": 0.7545076541200394,
+    "mse": 0.8728095906711909,
+    "run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346"
+  },
+  "status": "PASS",
+  "step": "22.16",
+  "test_accessed": false,
+  "winners": []
+}

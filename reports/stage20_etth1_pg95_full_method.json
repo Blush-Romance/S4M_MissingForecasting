@@ -1,0 +1,124 @@
+{
+  "baseline": {
+    "mae": 0.8389232621938696,
+    "mse": 1.2079909426906097,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_reprofix__etth1__point__mr0.06__seed2023__20260717_195944"
+  },
+  "cnm_se_gate_by_metric": {
+    "mae": true,
+    "mse": false
+  },
+  "cnm_se_gate_pass": false,
+  "decision": "FULL_METHOD_FAIL",
+  "evaluation_peak_gpu_memory_mb": 1036.6494140625,
+  "evaluation_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__etth1__test__seed2023__20260723_224153",
+  "gains": {
+    "full_method_vs_s4m_pct": {
+      "mae": -0.18799521674450495,
+      "mse": -0.29346471202835134
+    },
+    "multiscale_vs_l5_pair_pct": {
+      "mae": 4.801325943323094e-09,
+      "mse": 4.44121843889901e-09
+    },
+    "multiscale_vs_pg95_original_pct": {
+      "mae": 5.761597733480731e-08,
+      "mse": -2.220600055832991e-09
+    },
+    "pg95_vs_s4m_pct": {
+      "mae": -0.18799496981280495,
+      "mse": -0.2934645071328215
+    }
+  },
+  "incremental_gate_by_metric": {
+    "mae": true,
+    "mse": true
+  },
+  "incremental_gate_pass": true,
+  "multiscale_multiplier_vs_original": 4.093322189644952,
+  "pg95": {
+    "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_etth1__etth1__point__mr0.06__seed2023__20260723_220401/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebEPG95F_dtprojection_0_data_ETTh1_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+    "elapsed_seconds": null,
+    "mae": 0.8405003957273836,
+    "mse": 1.2115359673567858,
+    "parameter_count": 5906109,
+    "peak_gpu_memory_mb": 5011.2265625,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_etth1__etth1__point__mr0.06__seed2023__20260723_220401"
+  },
+  "pg95_gate_by_metric": {
+    "mae": false,
+    "mse": false
+  },
+  "pg95_gate_pass": false,
+  "protocol_checks": {
+    "complete_test_budget": true,
+    "equal_count_protocol": true,
+    "equal_realized_rate_across_scales": true,
+    "evaluation_artifact_pass": true,
+    "evaluation_is_etth1_pg95_test": true,
+    "exact_training_checkpoint_handoff": true,
+    "fixed_multiscale_weights": true,
+    "frozen_evaluation": true,
+    "full_training_budget": true,
+    "matched_training_source_metric": true,
+    "mipp_checkpoint_verified": true,
+    "queue_success": true,
+    "serial_timing_recorded": true,
+    "training_artifact_success": true,
+    "training_is_frozen_etth1_pg95": true
+  },
+  "protocol_limitations": [
+    "the hypothesis was proposed after the Stage-19 negative result",
+    "the official ETTh1 missing-mask seed is unavailable",
+    "the historical ETTh1 baseline differs materially from the paper",
+    "single-seed results are directional, not statistical stability"
+  ],
+  "realized_additional_missing_rates": {
+    "l1": 0.1497454893338313,
+    "l20": 0.1497454893338313,
+    "l5": 0.1497454893338313
+  },
+  "routes": {
+    "ensemble_l1": {
+      "mae": 0.8405003982294066,
+      "mse": 1.2115359700874884
+    },
+    "ensemble_l20": {
+      "mae": 0.8405003977854992,
+      "mse": 1.2115359698857122
+    },
+    "ensemble_l5": {
+      "mae": 0.8405003978393062,
+      "mse": 1.2115359698857122
+    },
+    "l1": {
+      "mae": 0.8405003982966652,
+      "mse": 1.2115359699664228
+    },
+    "l20": {
+      "mae": 0.8405003980276305,
+      "mse": 1.211535970302716
+    },
+    "l5": {
+      "mae": 0.8405003982832135,
+      "mse": 1.2115359701412953
+    },
+    "multiscale": {
+      "mae": 0.840500397798951,
+      "mse": 1.2115359698319053
+    },
+    "on": {
+      "mae": 0.8405003982832135,
+      "mse": 1.2115359698050019
+    }
+  },
+  "scope": "post-hoc single-seed ETTh1 full-method external validation: new PG95 training followed by frozen equal-rate multiscale CNM-SE",
+  "serial_latency_mean_ms": {
+    "ensemble_l1": 153.2572673805132,
+    "ensemble_l20": 153.4035297977131,
+    "ensemble_l5": 166.7209538672842,
+    "multiscale": 255.07215185053832,
+    "original": 62.31421325587441
+  },
+  "status": "PASS"
+}

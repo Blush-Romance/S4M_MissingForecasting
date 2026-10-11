@@ -1,0 +1,63 @@
+{
+  "artifact_checks": {
+    "checkpoint_finite": true,
+    "checkpoint_identity": true,
+    "chronological_loader": true,
+    "cuda_event_timing": true,
+    "expected_batch_count": true,
+    "expected_sample_count": true,
+    "expected_timing_count": true,
+    "formal_metric_roundtrip": true,
+    "frozen_model_and_memory": true,
+    "latencies_finite_positive": true,
+    "metrics_finite": true,
+    "model_forward_only_scope": true,
+    "validation_only": true
+  },
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [
+    "mcpr.hidden_projection.weight",
+    "mcpr.mask_projection.bias",
+    "mcpr.mask_projection.weight",
+    "mcpr.output_projection.bias",
+    "mcpr.output_projection.weight",
+    "mcpr.temporal_filter.bias",
+    "mcpr.temporal_filter.weight"
+  ],
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 328,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 96744650,
+  "checkpoint_ttrr_state_keys": [],
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_ttrr/timing_mcpr_mse_electricity_seed2024_smoke.yaml",
+  "device": "cuda",
+  "evaluation_seed": 2024,
+  "experiment_id": "stage22_18_timing_mcpr_mse__electricity__validation__seed2024__smoke__20260814_170325",
+  "finished_at": "2026-08-14T09:03:42.150816+00:00",
+  "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+  "method": "mcpr_mse",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_18_timing_mcpr_mse__electricity__validation__seed2024__smoke__20260814_170325/metrics.json",
+  "pid": 873922,
+  "return_code": 0,
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mcpr_mse_crossmask_electricity__electricity__point__mr0.06__seed2024__20260813_202819/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE2218MCPRMSEF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2024tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "60b9e4c6e04f90f5fe08ede18bd8eab2b9e4a2fa34b5743fea6f4e1fdc94bafb",
+  "started_at": "2026-08-14T09:03:25.954349+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

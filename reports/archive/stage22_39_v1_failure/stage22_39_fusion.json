@@ -1,0 +1,124 @@
+{
+  "stage": "22.39",
+  "queue_state": "FAILED",
+  "completed": false,
+  "decision": "EXECUTION_STOP",
+  "test_accessed": false,
+  "new_model": false,
+  "jobs": [
+    {
+      "attempt_count": 0,
+      "attempt_log": null,
+      "config": "configs/stage22_39_fusion/seed2027_formal.yaml",
+      "depends_on": [
+        "seed2027_smoke"
+      ],
+      "failure_summary": "dependency states: ['CODE_ERROR']",
+      "finished_at": "2026-10-04T13:39:10.163536+00:00",
+      "gpu": null,
+      "history": [],
+      "id": "seed2027_formal",
+      "last_launch_free_mib": null,
+      "last_launch_total_mib": null,
+      "last_oom_time": null,
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "requeue_reason": "instrumented_prototype_off_failure_diagnosis",
+      "requeued_at": "2026-10-04T13:38:53.060981+00:00",
+      "required_memory_estimate_mib": 4608,
+      "run_dir": null,
+      "runner_status": null,
+      "state": "BLOCKED_DEPENDENCY",
+      "training_pid": null
+    },
+    {
+      "attempt_count": 2,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_39_fusion/seed2027_smoke__attempt02__20261004_213853.log",
+      "config": "configs/stage22_39_fusion/seed2027_smoke.yaml",
+      "depends_on": [],
+      "failure_summary": "CODE_ERROR",
+      "finished_at": "2026-10-04T13:39:08.128283+00:00",
+      "gpu": {
+        "effective_free_mib": 11560,
+        "free_mib": 11560,
+        "name": "NVIDIA GeForce RTX 4080",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 0,
+        "total_mib": 16376,
+        "used_mib": 4518,
+        "utilization_percent": 85,
+        "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_39_fusion/seed2027_smoke__attempt01__20261004_210242.log",
+          "failure_type": "CODE_ERROR",
+          "finished_at": "2026-10-04T13:02:57.836530+00:00",
+          "gpu": {
+            "effective_free_mib": 11560,
+            "free_mib": 11560,
+            "name": "NVIDIA GeForce RTX 4080",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 0,
+            "total_mib": 16376,
+            "used_mib": 4518,
+            "utilization_percent": 83,
+            "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+          },
+          "pid": 2584203,
+          "return_code": 1,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusion_diagnostic__traffic__point__mr0.06__seed2027__smoke__20261004_210243",
+          "run_state": "CODE_ERROR",
+          "started_at": "2026-10-04T13:02:42.818059+00:00"
+        },
+        {
+          "attempt": 2,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_39_fusion/seed2027_smoke__attempt02__20261004_213853.log",
+          "failure_type": "CODE_ERROR",
+          "finished_at": "2026-10-04T13:39:08.128283+00:00",
+          "gpu": {
+            "effective_free_mib": 11560,
+            "free_mib": 11560,
+            "name": "NVIDIA GeForce RTX 4080",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 0,
+            "total_mib": 16376,
+            "used_mib": 4518,
+            "utilization_percent": 85,
+            "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+          },
+          "pid": 2651688,
+          "return_code": 1,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusion_diagnostic__traffic__point__mr0.06__seed2027__smoke__20261004_213853",
+          "run_state": "CODE_ERROR",
+          "started_at": "2026-10-04T13:38:53.112218+00:00"
+        }
+      ],
+      "id": "seed2027_smoke",
+      "last_failure_type": "CODE_ERROR",
+      "last_launch_free_mib": 11560,
+      "last_launch_total_mib": 16376,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3874.0,
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "requeue_reason": "instrumented_prototype_off_failure_diagnosis",
+      "requeued_at": "2026-10-04T13:38:53.061026+00:00",
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusion_diagnostic__traffic__point__mr0.06__seed2027__smoke__20261004_213853",
+      "runner_status": "CODE_ERROR",
+      "started_at": "2026-10-04T13:38:53.112218+00:00",
+      "state": "CODE_ERROR",
+      "training_pid": 2651721
+    }
+  ],
+  "distance_audit": "reports/stage22_39_distance_audit.json"
+}

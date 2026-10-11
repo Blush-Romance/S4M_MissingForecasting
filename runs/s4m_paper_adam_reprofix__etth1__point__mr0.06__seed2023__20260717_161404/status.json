@@ -1,0 +1,12 @@
+{
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/baseline/s4m_etth1_point_r006_paper_adam_seed2023.yaml",
+  "device": "cuda",
+  "experiment_id": "s4m_paper_adam_reprofix__etth1__point__mr0.06__seed2023__20260717_161404",
+  "finished_at": "2026-07-17T08:16:40.578556+00:00",
+  "metrics_path": null,
+  "pid": 513918,
+  "return_code": 1,
+  "started_at": "2026-07-17T08:14:04.304557+00:00",
+  "state": "CODE_ERROR",
+  "verification_error": null
+}

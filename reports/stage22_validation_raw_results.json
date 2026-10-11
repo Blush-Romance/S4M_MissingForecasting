@@ -1,0 +1,66 @@
+{
+  "queue_finished_at": "2026-08-05T08:49:42.807241+00:00",
+  "queue_state": "SUCCESS",
+  "records": [
+    {
+      "artifact_status": "PASS",
+      "attempt_count": 1,
+      "complete_target_mae_original": 0.7545076517884093,
+      "complete_target_mse_original": 0.8728095890164856,
+      "job_id": "electricity_pg95_seed2023_validation_formal",
+      "method": "pg95",
+      "peak_gpu_memory_mb": 2448.0107421875,
+      "prediction_disagreement_mse_mean": 1.1007818706270184e-15,
+      "prediction_exact_equal_sample_fraction": 0.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_valcache_pg95__electricity__validation__seed2023__20260805_164843",
+      "sample_count": 2528,
+      "scope": "stage22_formal_validation_only_cache",
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "attempt_count": 1,
+      "complete_target_mae_original": 0.843601830899406,
+      "complete_target_mse_original": 1.1208617229204187,
+      "job_id": "electricity_pg95_seed2023_validation_smoke",
+      "method": "pg95",
+      "peak_gpu_memory_mb": 2448.0107421875,
+      "prediction_disagreement_mse_mean": 1.1226500341618063e-15,
+      "prediction_exact_equal_sample_fraction": 0.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_valcache_pg95__electricity__validation__seed2023__smoke__20260805_164743",
+      "sample_count": 32,
+      "scope": "smoke_test_not_formal_result",
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "attempt_count": 1,
+      "complete_target_mae_original": 0.7530064544904379,
+      "complete_target_mse_original": 0.8783867808658292,
+      "job_id": "electricity_s4m_seed2023_validation_formal",
+      "method": "s4m",
+      "peak_gpu_memory_mb": 2443.615234375,
+      "prediction_disagreement_mse_mean": 9.158536701891022e-16,
+      "prediction_exact_equal_sample_fraction": 0.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_valcache_s4m__electricity__validation__seed2023__20260805_164813",
+      "sample_count": 2528,
+      "scope": "stage22_formal_validation_only_cache",
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "attempt_count": 1,
+      "complete_target_mae_original": 0.8511348082640461,
+      "complete_target_mse_original": 1.1498777839129835,
+      "job_id": "electricity_s4m_seed2023_validation_smoke",
+      "method": "s4m",
+      "peak_gpu_memory_mb": 2443.615234375,
+      "prediction_disagreement_mse_mean": 7.681481129998298e-16,
+      "prediction_exact_equal_sample_fraction": 0.0,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_valcache_s4m__electricity__validation__seed2023__smoke__20260805_164713",
+      "sample_count": 32,
+      "scope": "smoke_test_not_formal_result",
+      "state": "SUCCESS"
+    }
+  ]
+}

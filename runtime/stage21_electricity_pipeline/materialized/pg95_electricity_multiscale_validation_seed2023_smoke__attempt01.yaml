@@ -1,0 +1,42 @@
+experiment:
+  model: cnm_se_equal_rate_multiscale
+  method: pg95
+  dataset: electricity
+  domain: validation_point_r006
+  seed: 2023
+  smoke_test: true
+  purpose: stage21_electricity_validation_multiscale_pipeline_smoke_only
+  protocol_match: approximate_missing_mask_and_architecture_seed_unavailable
+source:
+  job_id: electricity_pg95_seed2023_formal
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346
+  resolved_config: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346/resolved_config.yaml
+  metrics: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346/metrics.json
+  checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE21P95F_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+data:
+  missing_csv: data/electricity/electricity_point_paper_r0.06_l5_seed2023.csv
+  complete_csv: data/electricity/electricity.csv
+  mask_asset: artifacts/masks/electricity/point/rate_0.06/seed_2023.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+diagnostic:
+  variant: stage21_electricity_validation
+  split: val
+  max_eval_batches: 3
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2023
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 1
+provenance:
+  materialized_from: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage21_electricity/pg95_electricity_multiscale_validation_seed2023_smoke.yaml
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage21_electricity_pipeline/state.json
+  source_job_id: electricity_pg95_seed2023_formal
+  source_is_validation_only: true

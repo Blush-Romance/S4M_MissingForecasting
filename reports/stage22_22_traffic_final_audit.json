@@ -1,0 +1,43 @@
+{
+  "checks": {
+    "aggregate_mean_std_roundtrip": true,
+    "cnm_se_beats_pg95_all_test_seeds": true,
+    "complete_run_files": true,
+    "csv_18_rows_roundtrip": true,
+    "exact_checkpoint_handoff": true,
+    "exact_precommitted_seed_set": true,
+    "first_attempt_no_errors": true,
+    "paired_gain_win_roundtrip": true,
+    "per_seed_protocol_checks_pass": true,
+    "pg95_not_strong_chain_vs_s4m": true,
+    "preregistered_decision_matches": true,
+    "prerequisite_audits_pass": true,
+    "protocol_predates_replication_assets": true,
+    "queue_success_exact_22": true,
+    "successful_run_status_and_resources": true,
+    "timing_cost_finite": true,
+    "timing_excludes_l1_audit_only_route": true,
+    "unique_run_directories": true,
+    "validation_metric_roundtrip": true
+  },
+  "decision": "TRAFFIC_MULTISEED_CONFIRMED",
+  "failures": [],
+  "handoff_failures": [],
+  "run_file_failures": [],
+  "run_status_failures": [],
+  "serial_over_original_ratios": [
+    3.0235483009478563,
+    3.0819729552595088,
+    3.0384075561722974
+  ],
+  "status": "PASS",
+  "test_cnm_se_vs_pg95_mean_improvement_percent": {
+    "mae": 0.7771609691111739,
+    "mse": 0.8591890722748297
+  },
+  "test_cnm_se_vs_s4m_mean_improvement_percent": {
+    "mae": 1.1748034965528757,
+    "mse": 1.3862303838445962
+  },
+  "validation_roundtrip_failures": []
+}

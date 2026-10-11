@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "dual_improvement_passes": true,
+    "exact_tie_fails_strict_clause": true,
+    "innovation_identity_is_ignored": true,
+    "mae_only_mse_degrade_fails": true,
+    "mse_only_mae_degrade_fails": true,
+    "real_budget_drift_is_detected": true
+  },
+  "status": "PASS",
+  "step": 22
+}

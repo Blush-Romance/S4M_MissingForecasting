@@ -1,0 +1,16 @@
+{
+  "block_length": 5,
+  "checks": {
+    "different_seed_changes_mask": true,
+    "nested_mask_is_subset": true,
+    "non_row_shared_mask_rejected": true,
+    "original_missing_rows_remain_missing": true,
+    "realized_rate_matches_target_with_sampling_tolerance": true,
+    "same_seed_is_bitwise_deterministic": true,
+    "variables_remain_row_shared": true
+  },
+  "realized_additional_missing_rate": 0.1515815556049347,
+  "start_probability": 0.0319812149975186,
+  "status": "PASS",
+  "target_rate": 0.15
+}

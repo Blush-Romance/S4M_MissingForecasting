@@ -1,0 +1,31 @@
+experiment:
+  method: dmrb
+  dataset: traffic
+  seed: 2027
+  smoke_test: true
+  protocol_scope: stage22_29_dmrb_failure_attribution_smoke
+source:
+  dmrb_resolved_config: runs/dmrb_pg95_traffic__traffic__point__mr0.06__seed2027__20260821_233052/resolved_config.yaml
+  dmrb_metrics: runs/dmrb_pg95_traffic__traffic__point__mr0.06__seed2027__20260821_233052/metrics.json
+  dmrb_checkpoint: runs/dmrb_pg95_traffic__traffic__point__mr0.06__seed2027__20260821_233052/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE2228DMRBF_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+  backbone_metrics: runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/metrics.json
+  backbone_checkpoint: runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22P952027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+  teacher_metrics: runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433/metrics.json
+  teacher_samples: runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433/validation_equal_rate_multiscale_samples.npz
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+diagnostic:
+  split: val
+  max_eval_batches: 3
+  target_rate: 0.15
+  block_lengths: [5, 20]
+  nested_seed: 2027
+  teacher_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25

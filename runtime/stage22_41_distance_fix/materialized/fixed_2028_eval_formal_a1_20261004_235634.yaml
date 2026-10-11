@@ -1,0 +1,84 @@
+experiment: &id001
+  model: s4m_min_distance_fixed
+  method: s4m_baseline
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2028
+  smoke_test: false
+  purpose: multiseed_isolated_bug_fix_replication_not_research_innovation
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2599749202006384
+  protocol_scope: stage22_37_paired_training_CRN_validation
+source:
+  job_id: fixed_2028_train_formal
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_41_distance_fix/state.json
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2028__20261004_231820
+  resolved_config: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2028__20261004_231820/resolved_config.yaml
+  metrics: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2028__20261004_231820/metrics.json
+  checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_min_distance_fixed__traffic__point__mr0.06__seed2028__20261004_231820/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT2241FIXED2028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2028.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2028.npz
+diagnostic:
+  variant: stage22_34_traffic_s4m_validation
+  split: val
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2028
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: '22.41'
+  user_approved: true
+  fix_enabled: true
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_37_control/s4m_2028_eval_formal.yaml
+  template_sha256: d284586782e5b17fd77015b5985b858e37b51675ca7952ad71aebeb1b9551535
+  configuration_changes:
+    experiment:
+      old:
+        model: cnm_se_crn_v1_s4m
+        method: s4m_baseline
+        dataset: traffic
+        domain: validation_point_r006
+        seed: 2028
+        smoke_test: false
+        purpose: frozen_paired_multiseed_replication
+        protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+        nominal_missing_rate: 0.06
+        realized_missing_rate: 0.2599749202006384
+        protocol_scope: stage22_37_paired_training_CRN_validation
+      new: *id001
+      reason: approved two-seed replication of isolated minimum-distance bug fix;
+        identity only otherwise
+    source:
+      old:
+        job_id: s4m_2028_train_formal
+        queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_37_control/state.json
+      new:
+        job_id: fixed_2028_train_formal
+        queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_41_distance_fix/state.json
+      reason: approved two-seed replication of isolated minimum-distance bug fix;
+        identity only otherwise
+  baseline_manifest: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_41_distance_fix/baseline_manifest.json
+  scientific_classification: baseline_bug_fix_not_innovation
+  primary_comparison: original_on_path_CRN_validation_only
+  unchanged_evaluation_routes: inherited_frozen_L1_L5_L20_CNM_secondary_not_new_mechanism
+  materialized_from: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_41_distance_fix/fixed_2028_eval_formal.yaml
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_41_distance_fix/state.json
+  source_job_id: fixed_2028_train_formal
+  source_is_validation_only: true
+  test_precommitted_without_validation_selection: true

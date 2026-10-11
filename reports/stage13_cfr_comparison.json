@@ -1,0 +1,32 @@
+{
+  "cfr": {
+    "elapsed_seconds": null,
+    "mae": 0.29809008984386554,
+    "mse": 0.26340121179362014,
+    "peak_gpu_memory_mb": 5444.46484375,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_cfr__weather__point__mr0.06__seed2023__20260722_230914",
+    "training_harmful_retrieval_rate": 0.044104512977544474,
+    "training_positive_regret": 0.00030373042046043426
+  },
+  "decision": {
+    "code": "CFR_ACCURACY_GATE_FAILED_STOP_OR_MINIMAL_REVIEW",
+    "summary_zh": "CFR\u672a\u5728\u5355seed\u540c\u65f6\u6539\u5584MSE\u4e0eMAE\uff1b\u4e0d\u6269\u7b2c\u4e8cseed\uff0c\u5148\u6309\u673a\u5236\u8bc1\u636e\u51b3\u5b9a\u505c\u6b62\u6216\u4e00\u6b21\u6700\u5c0f\u4fee\u6b63\u3002"
+  },
+  "gain": {
+    "mae_absolute": -0.004211183820216902,
+    "mae_relative": -0.01432965665074997,
+    "mse_absolute": -0.0014547548296809931,
+    "mse_relative": -0.005553634305812588
+  },
+  "gates": {
+    "accuracy_gate": false,
+    "artifact_gate": true,
+    "protocol_gate": true
+  },
+  "pg95": {
+    "mae": 0.29387890602364863,
+    "mse": 0.26194645696393914,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2023__20260717_234738"
+  },
+  "protocol_differences_excluding_identity_and_output_paths": {}
+}

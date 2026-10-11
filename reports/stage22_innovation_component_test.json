@@ -1,0 +1,62 @@
+{
+  "checks": {
+    "early_stopping_checkpoint_is_atomic_and_loadable": true,
+    "early_stopping_rejects_nonfinite_validation": true,
+    "mrra_baseline_preserved_at_initialization": true,
+    "mrra_checkpoint_keys_detected_at_model_root": true,
+    "mrra_context_head_receives_gradient": true,
+    "mrra_encoder_receives_gradient": true,
+    "mrra_missing_supervision_active": true,
+    "mrra_responds_to_mask": true,
+    "mrra_shapes_match_contract": true,
+    "mrra_temporal_filter_is_causal": true,
+    "mrra_v1_default_has_no_normalization_state": true,
+    "mrra_v2_encoder_receives_finite_gradient": true,
+    "mrra_v2_extreme_input_stays_finite": true,
+    "mrra_v2_uses_normalized_bounded_path": true,
+    "mrra_v3_adapter_still_receives_gradient": true,
+    "mrra_v3_input_gradient_is_isolated": true,
+    "mrra_v3_learning_rate_ratio_is_preserved": true,
+    "mrra_v3_normalization_is_non_affine": true,
+    "mrra_v3_optimizer_groups_are_disjoint": true,
+    "mrra_v3_output_is_bounded_and_finite": true,
+    "nonfinite_checkpoint_is_rejected": true,
+    "radr_has_no_trainable_parameters": true,
+    "radr_loss_finite_positive": true,
+    "radr_prediction_gradient_finite_nonzero": true,
+    "radr_rank_nonconstant": true,
+    "radr_tail_emphasizes_hard_samples": true
+  },
+  "mrra": {
+    "causal_prefix_error": 0.0,
+    "mask_response": 0.364213764667511,
+    "missing_count": 41,
+    "parameter_count": 173,
+    "reconstruction_loss": 0.47874724864959717,
+    "v2_parameter_count": 181,
+    "v3_adjusted_group_lrs": {
+      "backbone": 0.005,
+      "mrra": 0.0005
+    },
+    "v3_initial_group_lrs": {
+      "backbone": 0.01,
+      "mrra": 0.001
+    },
+    "v3_parameter_count": 173,
+    "zero_context_error": 0.0
+  },
+  "radr": {
+    "body_mae": 0.5,
+    "body_mse": 0.7500000596046448,
+    "difficulty_rank_std": 0.3726779818534851,
+    "hard_body_mse_gap": 8.625,
+    "normalized_body_risk": 0.3076923191547394,
+    "normalized_tail_risk": 1.8518518209457397,
+    "sample_count": 4,
+    "tail_mse": 9.375,
+    "total_loss": 5.466346263885498
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "step": 22
+}

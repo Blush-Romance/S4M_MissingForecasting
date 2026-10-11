@@ -1,0 +1,8 @@
+{
+  "device": "cuda",
+  "elapsed_seconds": 72.63092492055148,
+  "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+  "peak_gpu_memory_mb": 3340.951171875,
+  "peak_gpu_reserved_mb": 4148.0,
+  "return_code": 0
+}

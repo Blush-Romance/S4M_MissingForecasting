@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "scope": "cpu_checkpoint_and_rng_control_flow_audit_no_forecasting_no_test",
+  "historical_and_failed_gpu_identical": true,
+  "gpu_uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121",
+  "records": [
+    {
+      "seed": 2026,
+      "family": "s4m",
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT21S4F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2026tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "checkpoint_sha256": "4cbcfa5891f1798e8b1f5a1b26d023501ce3609068d91a504bb7536ba3217149",
+      "prototype_count": 200,
+      "topM": 100,
+      "random_sampling_branch_active": true,
+      "checkpoint_top_level_keys": [
+        "model",
+        "memory",
+        "repre",
+        "num_dic"
+      ],
+      "saved_rng_keys": [],
+      "cpu_selection_probe": {
+        "same_state_replays_exactly": true,
+        "interleaved_views_change_next_original_subset": true,
+        "overlap_of_next_original_subsets": 45,
+        "description": "sampling-only control-flow probe, not forecast accuracy experiment"
+      }
+    },
+    {
+      "seed": 2026,
+      "family": "pg95",
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_184930/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT21P95F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2026tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "checkpoint_sha256": "005555a5fc36a06085123e8f6557abcf1e1c5847ad1789144d9bc3cf144c9fd7",
+      "prototype_count": 5,
+      "topM": 100,
+      "random_sampling_branch_active": false,
+      "checkpoint_top_level_keys": [
+        "model",
+        "memory",
+        "repre",
+        "num_dic"
+      ],
+      "saved_rng_keys": []
+    },
+    {
+      "seed": 2027,
+      "family": "s4m",
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "checkpoint_sha256": "8b69bd6c079a51ac5c61e64ff9fdbf49cda9dbc120a38eefec70b594abad8f59",
+      "prototype_count": 200,
+      "topM": 100,
+      "random_sampling_branch_active": true,
+      "checkpoint_top_level_keys": [
+        "model",
+        "memory",
+        "repre",
+        "num_dic"
+      ],
+      "saved_rng_keys": [],
+      "cpu_selection_probe": {
+        "same_state_replays_exactly": true,
+        "interleaved_views_change_next_original_subset": true,
+        "overlap_of_next_original_subsets": 52,
+        "description": "sampling-only control-flow probe, not forecast accuracy experiment"
+      }
+    },
+    {
+      "seed": 2027,
+      "family": "pg95",
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22P952027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "checkpoint_sha256": "ac6987afbe38251cdfd997601727c4da8d483dc0481d299609f223c961922716",
+      "prototype_count": 8,
+      "topM": 100,
+      "random_sampling_branch_active": false,
+      "checkpoint_top_level_keys": [
+        "model",
+        "memory",
+        "repre",
+        "num_dic"
+      ],
+      "saved_rng_keys": []
+    },
+    {
+      "seed": 2028,
+      "family": "s4m",
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "checkpoint_sha256": "c53ba27fb39a7b228c82333d46fcf8039c862e551e85779566ccb036a7be6b66",
+      "prototype_count": 6,
+      "topM": 100,
+      "random_sampling_branch_active": false,
+      "checkpoint_top_level_keys": [
+        "model",
+        "memory",
+        "repre",
+        "num_dic"
+      ],
+      "saved_rng_keys": []
+    },
+    {
+      "seed": 2028,
+      "family": "pg95",
+      "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2028__20260820_184856/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22P952028F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2028tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+      "checkpoint_sha256": "c29fd6a46e84fe83cf10159b7efd4a55d5e27641e2a5f74bf68bc102188b5e51",
+      "prototype_count": 5,
+      "topM": 100,
+      "random_sampling_branch_active": false,
+      "checkpoint_top_level_keys": [
+        "model",
+        "memory",
+        "repre",
+        "num_dic"
+      ],
+      "saved_rng_keys": []
+    }
+  ],
+  "code_location": "baselines/S4M/s4m/model/Bank.py:420",
+  "conclusion": "evaluation uses random prototype subsampling even in eval mode; multiview changes the original-view random stream",
+  "limitation": "proves an uncontrolled stochastic path, not that it explains every bit of the observed metric discrepancy",
+  "recovery": "do not blindly retry or relax tolerance; historical RNG is absent; a new fixed-RNG paired reference protocol needs explicit approval"
+}

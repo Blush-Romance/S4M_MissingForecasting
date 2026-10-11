@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "both_branches_are_explicit": true,
+    "dead_branch_blocks_formal": true,
+    "delta_checkpoint_is_explicit": true,
+    "empty_branch_set_is_rejected": true,
+    "formal_budget_is_full": true,
+    "fp32_tolerance_is_frozen_and_strict": true,
+    "full_checkpoint_blocks_formal": true,
+    "missing_delta_checkpoint_is_rejected": true,
+    "missing_dmrb_switch_is_rejected": true,
+    "passing_smoke_releases_formal": true,
+    "queue_is_smoke_then_formal": true,
+    "queue_preserves_user_max_concurrency": true,
+    "same_frozen_protocol": true,
+    "smoke_budget_is_isolated": true,
+    "test_evaluation_is_rejected_by_protocol_test": true,
+    "two_configs_validate": true,
+    "validation_only_is_frozen": true,
+    "wrong_objective_is_rejected": true,
+    "wrong_rank_is_rejected": true,
+    "wrong_teacher_weight_is_rejected": true
+  },
+  "status": "PASS",
+  "step": "22.28"
+}

@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "all_assets_exist": true,
+    "all_configs_valid": true,
+    "changed_rate_rejected": true,
+    "formal_budgets_are_complete": true,
+    "nested_protocol_frozen": true,
+    "non_pg95_source_rejected": true,
+    "smoke_and_formal_seed2024_share_assets": true,
+    "smoke_only_reduces_eval_batches": true,
+    "test_split_rejected": true,
+    "wrong_nested_seed_rejected": true
+  },
+  "configs": [
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage14_uncertainty/s4m_weather_pg95_seed2024_smoke.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage14_uncertainty/s4m_weather_pg95_seed2024.yaml",
+    "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage14_uncertainty/s4m_weather_pg95_seed2025.yaml"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "axis_mae_improved_fraction": true,
+    "axis_mse_improved_fraction": true,
+    "axis_size": true,
+    "body_mae_degrades": true,
+    "bootstrap_contains_empirical_mean": true,
+    "bootstrap_deterministic": true,
+    "quadrants_sum_to_one": true,
+    "tail_sse_gain_dominates": true
+  },
+  "status": "PASS",
+  "step": 22
+}

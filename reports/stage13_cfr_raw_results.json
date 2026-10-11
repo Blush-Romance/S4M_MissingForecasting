@@ -1,0 +1,50 @@
+{
+  "queue_state": "SUCCESS",
+  "records": [
+    {
+      "cfr_enabled": true,
+      "cfr_harmful_retrieval_rate_mean": 0.044104512977544474,
+      "cfr_positive_regret_mean": 0.00030373042046043426,
+      "cfr_samples": 219456,
+      "cfr_steps": 13716,
+      "checkpoint_load_verified": true,
+      "job_id": "weather_pg95_cfr_seed2023_formal",
+      "mae": 0.29809008984386554,
+      "mse": 0.26340121179362014,
+      "optimizer_steps": 13716,
+      "peak_gpu_memory_mb": 5444.46484375,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_cfr__weather__point__mr0.06__seed2023__20260722_230914",
+      "state": "SUCCESS"
+    },
+    {
+      "cfr_enabled": true,
+      "cfr_harmful_retrieval_rate_mean": 0.5,
+      "cfr_positive_regret_mean": 0.008050955832004547,
+      "cfr_samples": 16,
+      "cfr_steps": 1,
+      "checkpoint_load_verified": true,
+      "job_id": "weather_pg95_cfr_seed2023_smoke",
+      "mae": 0.8505502939224243,
+      "mse": 1.210854411125183,
+      "optimizer_steps": 1,
+      "peak_gpu_memory_mb": 5413.1103515625,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_cfr__weather__point__mr0.06__seed2023__smoke__20260722_230844",
+      "state": "SUCCESS"
+    },
+    {
+      "cfr_enabled": false,
+      "cfr_harmful_retrieval_rate_mean": null,
+      "cfr_positive_regret_mean": null,
+      "cfr_samples": 0,
+      "cfr_steps": 0,
+      "checkpoint_load_verified": true,
+      "job_id": "weather_pg95_default_off_regression_smoke",
+      "mae": 0.8294916152954102,
+      "mse": 1.101908802986145,
+      "optimizer_steps": 1,
+      "peak_gpu_memory_mb": 5006.78857421875,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95__weather__point__mr0.06__seed2023__smoke__20260722_230844",
+      "state": "SUCCESS"
+    }
+  ]
+}

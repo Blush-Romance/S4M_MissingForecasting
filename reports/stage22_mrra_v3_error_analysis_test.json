@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "all_candidate_tradeoff_detected": true,
+    "average_tie_ranks": true,
+    "bootstrap_is_finite": true,
+    "response_rule_survives_audit": true,
+    "routing_uses_frozen_partitions": true,
+    "spearman_monotonic_positive": true
+  },
+  "status": "PASS",
+  "step": "22.14"
+}

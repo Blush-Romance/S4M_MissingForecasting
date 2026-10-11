@@ -1,0 +1,34 @@
+experiment:
+  model: cnm_se_equal_rate_multiscale
+  method: pg95
+  dataset: electricity
+  domain: gated_external_test_point_r006
+  seed: 2023
+  smoke_test: false
+  purpose: one_time_electricity_test_only_after_frozen_validation_gate_passes
+  protocol_match: approximate_missing_mask_and_architecture_seed_unavailable
+
+source:
+  job_id: electricity_pg95_seed2023_formal
+
+data:
+  missing_csv: data/electricity/electricity_point_paper_r0.06_l5_seed2023.csv
+  complete_csv: data/electricity/electricity.csv
+  mask_asset: artifacts/masks/electricity/point/rate_0.06/seed_2023.npz
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+
+diagnostic:
+  variant: stage21_electricity_test
+  split: test
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths: [1, 5, 20]
+  nested_seed: 2023
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10

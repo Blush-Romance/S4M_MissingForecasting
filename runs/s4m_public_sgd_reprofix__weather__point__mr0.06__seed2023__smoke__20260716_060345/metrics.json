@@ -1,0 +1,30 @@
+{
+  "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_public_sgd_reprofix__weather__point__mr0.06__seed2023__smoke__20260716_060345/checkpoints/S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebFullArchGpuSmoke_dtprojection_0_data_weather_missingtag1_fill_mean_drop_False_dG_1_pattn_20_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_size_bytes": 23803260,
+  "complete_target_mse": 0.6923139095306396,
+  "experiment_id": "s4m_public_sgd_reprofix__weather__point__mr0.06__seed2023__smoke__20260716_060345",
+  "mae": 0.6670731902122498,
+  "mape": 6.476010322570801,
+  "mse": 0.6923139095306396,
+  "mspe": 2261.152587890625,
+  "nominal_missing_rate": 0.06,
+  "optimizer": "sgd",
+  "optimizer_steps": 1,
+  "peak_gpu_memory_mb": 9482.349609375,
+  "peak_gpu_reserved_mb": 9550.0,
+  "realized_missing_rate": 0.4515712767572491,
+  "rmse": 0.8320540189743042,
+  "scope": "smoke_test_not_formal_result",
+  "seed": 2023,
+  "setting": "S4M_custom4_ft192_ll96_pl256_dm8_eltimeF_ebFullArchGpuSmoke_dtprojection_0_data_weather_missingtag1_fill_mean_drop_False_dG_1_pattn_20_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_256_s_25_top20_P_5_m_13_t_test",
+  "test_batches_processed": 1,
+  "train_batches_processed": 1,
+  "validation_batches_processed": 1
+}

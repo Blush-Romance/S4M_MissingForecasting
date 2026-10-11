@@ -1,0 +1,25 @@
+experiment:
+  id: cnm_cache_audit__traffic__validation__seed2243__smoke__20261006_224028
+  model: cnm_cache_audit
+  dataset: traffic
+  mask_type: point
+  seed: 2243
+  smoke_test: true
+  protocol_match: reaggregation_of_same_checkpoint_fixed_validation_assets
+  protocol_scope: descriptive_cache_audit_not_new_predictive_experiment
+analysis_seeds:
+- 2028
+device: cpu
+primary: fixed_formula_same_checkpoint_original_vs_multiscale
+weights:
+  original: 0.5
+  l5: 0.25
+  l20: 0.25
+manifest: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_43_cnm_audit/source_manifest.json
+manifest_sha256: 40dab1c97fccd26dee71aef8afa7beb0e8670d4927b8b0ede08afb96b0695e93
+no_model_forward: true
+no_new_training: true
+uses_test_split: false
+formula_cross_diagnostic: DEFERRED_NOT_STARTED
+configuration_changes:
+- analysis identity and comparison only; model/data/training/evaluation settings unchanged

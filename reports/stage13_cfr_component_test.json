@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "beneficial_retrieval_has_zero_penalty": true,
+    "empty_target_rejected": true,
+    "harmful_rate_exact": true,
+    "loss_equals_unweighted_positive_regret": true,
+    "mismatched_shape_rejected": true,
+    "positive_regret_exact": true,
+    "prototype_off_mse_exact": true,
+    "prototype_off_reference_is_detached": true,
+    "prototype_on_mse_exact": true,
+    "prototype_on_receives_gradient": true,
+    "sample_count_respects_per_sample_mask": true,
+    "signed_regret_exact": true
+  },
+  "frozen_objective": "forecast_mse + mean(relu(sample_mse_on - stopgrad(sample_mse_off)))",
+  "metrics": {
+    "harmful_retrieval_rate": 0.5,
+    "positive_regret": 0.75,
+    "prototype_off_mse": 0.75,
+    "prototype_on_mse": 1.125,
+    "sample_count": 2,
+    "signed_regret": 0.375,
+    "total_loss": 0.75
+  },
+  "status": "PASS"
+}

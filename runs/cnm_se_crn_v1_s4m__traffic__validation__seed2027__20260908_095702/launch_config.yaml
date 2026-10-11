@@ -1,0 +1,66 @@
+experiment:
+  model: cnm_se_crn_v1_s4m
+  method: s4m_baseline
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2027
+  smoke_test: false
+  purpose: approved_recovery_four_cells_no_training_no_test
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2600889192886457
+  protocol_scope: stage22_34_crn_v1_validation
+source:
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612
+  resolved_config: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612/resolved_config.yaml
+  metrics: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612/metrics.json
+  checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT22S42027F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2027tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+diagnostic:
+  variant: stage22_34_traffic_s4m_validation
+  split: val
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2027
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: 22.34.4
+  user_approved: true
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_34_factorial/s4m_traffic_validation_seed2027.yaml
+  source_config_sha256: cb5fbcf94b3b002b7a22677cfc0d12e48f651da09c94d1a893c2b7ba38ac3eb5
+  source_checkpoint_sha256: 8b69bd6c079a51ac5c61e64ff9fdbf49cda9dbc120a38eefec70b594abad8f59
+  configuration_changes:
+    fixed_eval_rng:
+      old: false
+      new: true
+      reason: uncontrolled eval memory sampling
+    baseline_reference:
+      old: training_end_historical_rng
+      new: separate_original_only_CRN_pass
+      reason: old checkpoint contains no RNG; user-approved repair
+    max_eval_batches:
+      old: -1
+      new: -1
+      reason: isolated smoke only
+    timing_warmup_batches:
+      old: 10
+      new: 10
+      reason: isolated smoke only
+  consistency_tolerance: 1.0e-05
+  historical_results_preserved: true

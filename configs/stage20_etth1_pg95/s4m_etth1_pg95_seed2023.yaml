@@ -1,0 +1,103 @@
+experiment:
+  model: mipp_pg95_etth1
+  dataset: etth1
+  mask_type: point
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.23088404133180251
+  block_length: 5
+  seed: 2023
+  smoke_test: false
+  protocol_scope: posthoc_etth1_pg95_full_training_external_validation
+  protocol_match: approximate_missing_mask_seed_unavailable
+  purpose: train_frozen_pg95_on_etth1_before_one_time_multiscale_cnm_se_test
+  paper_reference_mae: 0.574
+  paper_reference_mse: 0.593
+
+data:
+  missing_csv: data/ETT-small/ETTh1_point_paper_r0.06_l5_seed2023.csv
+  complete_csv: data/ETT-small/ETTh1.csv
+  mask_asset: artifacts/masks/etth1/point/rate_0.06/seed_2023.npz
+  mask_metadata: artifacts/masks/etth1/point/rate_0.06/seed_2023.json
+  source_manifest: artifacts/manifests/s4m_data_assets.yaml
+  official_mask_seed: unpublished
+  generation_seed: 2023
+  split: [0.7, 0.1, 0.2]
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+  gpu_name: NVIDIA GeForce RTX 4090
+  user_mapping_note: scheduler_uuid_is_preserved_and_exposed_as_local_cuda0
+  max_train_batches: -1
+  max_eval_batches: -1
+
+official_args:
+  is_training: 1
+  seed: 2023
+  model_id: e_pg95_s2023
+  model: S4M
+  data: custom4
+  features: M
+  target: OT
+  freq: h
+  seq_len: 192
+  pred_len: 96
+  label_len: 48
+  enc_in: 7
+  dec_in: 7
+  c_out: 7
+  per_mem_size: 5
+  en_conv_hidden_size: 256
+  topK: 20
+  topM: 100
+  thres1: 0.95
+  thres2: 0.6
+  M: 50
+  K: 10
+  memory_size: 200
+  momentum: 0.99
+  short_len: 32
+  W: 6
+  e_layers: 8
+  d_model: 256
+  d_ff: 256
+  n_heads: 8
+  num_pattn: 30
+  num_dG: 1
+  encoder_type: 3
+  memnet: 13
+  mem_type: 3
+  batch_size: 16
+  learning_rate: 0.005
+  optimizer: adam
+  train_epochs: 15
+  patience: 3
+  lradj: type1
+  num_workers: 10
+  itr: 1
+  des: EPG95F
+  mean_type: global_mean
+  fillna: mean
+  plot: 0
+  max_train_batches: -1
+  max_eval_batches: -1
+  wandb_mode: disabled
+  deterministic_cluster: true
+  use_mipp: true
+  use_content_mask_factorization: false
+  use_mask_intervention_pair: true
+  use_stability_write_gate: true
+  mipp_write_gate_mode: absolute
+  mipp_inv_weight: 0.05
+  mipp_var_weight: 0.0
+  mipp_cov_weight: 0.0
+  mipp_dec_weight: 0.0
+  mipp_mask_weight: 0.0
+  mipp_variance_target: 1.0
+  mipp_stability_threshold: 0.95
+  mipp_pair_rate_min: 0.15
+  mipp_pair_rate_max: 0.50
+  mipp_pair_block_lengths: [1, 5, 20]
+  use_fusr: false
+  use_cfr: false
+  gpu: 0

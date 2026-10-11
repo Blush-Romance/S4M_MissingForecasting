@@ -1,0 +1,13 @@
+{
+  "stage": "22.42",
+  "passed": true,
+  "tests": 7,
+  "failed": 0,
+  "errors": 0,
+  "device": "cpu",
+  "no_model_forward": true,
+  "source_hashes": {
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/test_stage22_42_diagnostic.py": "2070dbf7abaad795523098b09da572728cbbdb7d0b71eaca5a029808ae3895ac",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/stage22_42_diagnostic.py": "2d94903dd141c6740ecbf22c594120eb1bca3c0ff207594178c850c001e8d645"
+  }
+}

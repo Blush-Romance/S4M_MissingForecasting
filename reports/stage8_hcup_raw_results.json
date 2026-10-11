@@ -1,0 +1,27 @@
+{
+  "jobs": [
+    {
+      "artifact_status": "PASS",
+      "job_id": "weather_hcup_validation_formal",
+      "probe_valid_count": 5072,
+      "prototype_on_mse": 0.5893483192893466,
+      "routed_mse_threshold0": 0.5983217227036255,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup__weather__validation_point_r006__seed2023__20260718_202756",
+      "sample_count": 5168,
+      "scope": "formal_validation_hcup_cache",
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "job_id": "weather_hcup_validation_smoke",
+      "probe_valid_count": 32,
+      "prototype_on_mse": 0.30044927273411304,
+      "routed_mse_threshold0": 0.29212178045418113,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_fusr_v3_hcup__weather__validation_point_r006__seed2023__smoke__20260718_202658",
+      "sample_count": 128,
+      "scope": "smoke_test_not_formal_result",
+      "state": "SUCCESS"
+    }
+  ],
+  "queue_state": "SUCCESS"
+}

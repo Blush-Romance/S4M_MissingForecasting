@@ -1,0 +1,239 @@
+{
+  "stage": "22.41",
+  "passed": true,
+  "tests": 13,
+  "checks": {
+    "test_actual_gpu_selection_keeps_oom_more_free_or_larger_card_requirement": true,
+    "test_actual_gpu_selection_never_stacks_running_jobs_and_refills_after_success": true,
+    "test_cpu_sampler_permutations_reproduce_historic_order_hashes_without_training": true,
+    "test_eight_frozen_configurations_only_change_declared_bugfix_and_identity": true,
+    "test_existing_default_off_model_and_cli_remain_unchanged": true,
+    "test_formal_training_gated_by_smoke_and_fixed_validation_depends_on_training": true,
+    "test_old_source_snapshots_match_pre_edit_baseline_except_declared_switch": true,
+    "test_oom_memory_estimates_are_never_reduced_by_queue_refresh": true,
+    "test_real_models_switch_preserves_historic_init_parameter_count_and_all_rngs": true,
+    "test_required_code_and_documentation_sources_exist_before_binding": true,
+    "test_seed_assets_remain_historic_and_distinct": true,
+    "test_undeclared_evaluation_and_test_access_rejected": true,
+    "test_undeclared_training_budget_and_protocol_changes_rejected": true
+  },
+  "device": "cpu",
+  "dataset_splits_accessed": false,
+  "trained_checkpoints_loaded": false,
+  "tested_at": "2026-10-04T15:14:20.457334+00:00",
+  "history": [],
+  "manifest_sha256": "915ec6c9ed66d5c59174599f4cd3f6aff6d10c0891b6b0ff5e5ff69fa0adbfea",
+  "code_hashes": {
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/data_provider/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/data_provider/data_factory.py": "8dd0c95a0b20ac502e791b231c596bda377c33150251f482f8278c1a181a1a8a",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/data_provider/data_loader.py": "abd42e5ae55a1f56c8a5f12eade2fa64413b1c7f75c4e941e5696bbf2f14ee82",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/experiments/exp_basic.py": "ff18c5d847a68f846a27f0028b5718e9d1127f22b46e4a8c488969f74a7c2175",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/experiments/exp_pretrain1.py": "491437b8cb63ed2bf2dd2bc94f6762d245603c96dda707d38a17fde22768a219",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/ARD.py": "003e9ffbccd35c8770dbc87a2544e7478221fbf6f5ea0ccaa377419386cdbddb",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/Bank.py": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/FUSR.py": "c79dc213cda9dac99d82006a5af593396d1a11a06e7c02404ce2dd6feaff71fb",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/MCPR.py": "2846b3b21084e93008c89f60555626e8d62a3a689b722aa64f5f2e06e2fa2277",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/MIPP.py": "1726e6c1857da2f9b14a4806841db344ccb47be997d1a839bd7f848ddf77d58d",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/MRRA.py": "f9df75c23c15eaf348116363d8f9a5cee112fa98a3e78d2c3251b73ec2a626d7",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/Memory.py": "ba79c9f460c334a127aa5c8289da0afc234f00bbcc66e0e677302f8a16fb3697",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/S4M.py": "91de3ae863ef687a18b579474e190aa70c968ca12fa345c302737da673284a4a",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/model/TTRR.py": "acacea172806fba680d977609365358b2747f6f113398b45f2836092606049df",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/run.py": "634e21e26dab4b53d3b5a1c895e06ea215e521b253f7e4558ace1a40a61e7d8d",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/masking.py": "02f453e52cfaec65e34132923add80e7132f188706680fa86d7bd884976e09ef",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/metrics.py": "743a63a7d2661c994027bdbf5bffe8a2892e5ca381b9b319d5e0fb2715cf53ff",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/paired_eval_rng.py": "659092e0c729a2f374eb56028332a314341ae6ac8a0f5a4cca35c0d71e2f9c3e",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/paired_training_rng.py": "3fb2c077032e1c7b6350797b904a009b729f2c5a0b826435871ca4e4719c668b",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/timefeatures.py": "319b3da2ef15ccae95162b1b4f4a9a0b0da63fa0062a7f6006a06dd567258d85",
+    "/mnt/data/zza/code/S4M_MissingForecasting/baselines/S4M/s4m/utils/tools.py": "6e80a470b333b9fe8c6745b08d6047c381e8c1ee21765bd993fa928c9a11eb00",
+    "/mnt/data/zza/code/S4M_MissingForecasting/docs/STAGE22_41_DISTANCE_FIX_ZH.md": "a03c6bc17fb062f232c58cf841b14208b58201003e786c87a1dfe27891763aa7",
+    "/mnt/data/zza/code/S4M_MissingForecasting/reports/stage22_40_distance_fix_tests.json": "e32c48dc3f0782a3f709d27a90b11b181c04b7aa1de987962da67835e947b038",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/data_provider/data_factory.py": "8dd0c95a0b20ac502e791b231c596bda377c33150251f482f8278c1a181a1a8a",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/experiments/exp_basic.py": "ff18c5d847a68f846a27f0028b5718e9d1127f22b46e4a8c488969f74a7c2175",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/experiments/exp_pretrain1.py": "491437b8cb63ed2bf2dd2bc94f6762d245603c96dda707d38a17fde22768a219",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/model/Bank.py": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/model/MCPR.py": "2846b3b21084e93008c89f60555626e8d62a3a689b722aa64f5f2e06e2fa2277",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/model/MIPP.py": "1726e6c1857da2f9b14a4806841db344ccb47be997d1a839bd7f848ddf77d58d",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/model/S4M.py": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/run.py": "eb32e826c56e476f8c88db4b744be4675d216750cb204f16e866c55038790d6b",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/utils/paired_eval_rng.py": "659092e0c729a2f374eb56028332a314341ae6ac8a0f5a4cca35c0d71e2f9c3e",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/utils/paired_training_rng.py": "3fb2c077032e1c7b6350797b904a009b729f2c5a0b826435871ca4e4719c668b",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946/source_snapshot/baseline/s4m/utils/tools.py": "6e80a470b333b9fe8c6745b08d6047c381e8c1ee21765bd993fa928c9a11eb00",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/data_provider/data_factory.py": "8dd0c95a0b20ac502e791b231c596bda377c33150251f482f8278c1a181a1a8a",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/experiments/exp_basic.py": "ff18c5d847a68f846a27f0028b5718e9d1127f22b46e4a8c488969f74a7c2175",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/experiments/exp_pretrain1.py": "491437b8cb63ed2bf2dd2bc94f6762d245603c96dda707d38a17fde22768a219",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/model/Bank.py": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/model/MCPR.py": "2846b3b21084e93008c89f60555626e8d62a3a689b722aa64f5f2e06e2fa2277",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/model/MIPP.py": "1726e6c1857da2f9b14a4806841db344ccb47be997d1a839bd7f848ddf77d58d",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/model/S4M.py": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/run.py": "eb32e826c56e476f8c88db4b744be4675d216750cb204f16e866c55038790d6b",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/utils/paired_eval_rng.py": "659092e0c729a2f374eb56028332a314341ae6ac8a0f5a4cca35c0d71e2f9c3e",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/utils/paired_training_rng.py": "3fb2c077032e1c7b6350797b904a009b729f2c5a0b826435871ca4e4719c668b",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902/source_snapshot/baseline/s4m/utils/tools.py": "6e80a470b333b9fe8c6745b08d6047c381e8c1ee21765bd993fa928c9a11eb00",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_40_distance_fix/pre_edit/S4M.py": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+    "/mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_40_distance_fix/pre_edit/run.py": "eb32e826c56e476f8c88db4b744be4675d216750cb204f16e866c55038790d6b",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/generate_paper_point_masks.py": "8024672bbd513eb8b3319255cac9e19090ab2ac385ca927d7f2cc1e37ba8776a",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/generate_stage22_22_traffic_assets.py": "45ce5113364bfe5ce3a52033e4dbc2154950f642d24e1cf89f7f0c65ac8d7f91",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/run_s4m_experiment.py": "52e618ba8c81b22dcd8c51c2ca4a376b4689d4d25b8972edd4487175b06b85a8",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/run_stage14_uncertainty_cache.py": "28515b17afbe870341978057d2c2f1152771adfab2cd01f367155b3c6d9c7cb0",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/run_stage22_22_traffic_pipeline.py": "b7c920cfdc6a9e39568d5fa68ee59364cfa4ae36dac5c091d45e7156a3c4d373",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/run_stage22_41_queue.py": "6c0dcd39dc67039ba74c6a833ffc9b20041aed28ccceebad87c73407d8510d7e",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/run_stage5_baseline_queue.py": "75c79a060a868577f5651fbe6d12eb7b3d03a1b6870200575240c6d821b9e2c7",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/stage22_34_crn.py": "18149daade4f40c4e7619d992e8d9a48f028553b442d3e73440e7f71cf710b20",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/stage22_34_factorial.py": "20d29fad19383e2ba992285cc0dc65dd268bad0ff1bc9e223378710bb2a4fbe1",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/stage22_40_distance_fix.py": "228286cadf3e8968e3a371b0fdf81bdfa5c892c319d77ad43780925b8d8f6afa",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/stage22_41_distance_fix.py": "6f41cae344f827407be01480a6b2b984019b5331b30ecfb1eab6112e6a304949",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/start_stage22_41.sh": "ba9263f043938f3cf6c73a4fb77d4268726135e50e0be69fff5b0fd01ddb4391",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/test_stage22_40_distance_fix.py": "5940b8dab898e0c22d861224359572c2ac5831609b3d0639b47ae40afc73f994",
+    "/mnt/data/zza/code/S4M_MissingForecasting/scripts/test_stage22_41_distance_fix.py": "ebb67eac5611231a479d133731b5fff12e296537a2262d36ce9f391f6e068423"
+  },
+  "gpu_admission_cpu_fixture": {
+    "running_gpu_excluded": true,
+    "second_gpu_can_refill": true,
+    "single_busy_gpu_waits": true,
+    "same_poll_double_start_blocked": true,
+    "success_releases_gpu": true
+  },
+  "historic_sampler_order_cpu_recomputed": {
+    "2028": {
+      "paired_train_order": [
+        {
+          "iteration": 0,
+          "samples": 11993,
+          "sha256": "f600c6af151efe0323cff4e3b1e3e410a71935d049c271d0f93a288f228f3c1c"
+        },
+        {
+          "iteration": 1,
+          "samples": 11993,
+          "sha256": "4c5870473f7af25fd4748ce803ce3c656e6003e69bd95cea539a67b5e967f2ca"
+        },
+        {
+          "iteration": 2,
+          "samples": 11993,
+          "sha256": "74d2042a74a37b9750f75850214d1932204c55d7a7a46057af85e5f6d153dd36"
+        },
+        {
+          "iteration": 3,
+          "samples": 11993,
+          "sha256": "61c253c61a99f2275018d68d16de80131bad0e53a9ef62d7fe46c7f2497a9ef2"
+        }
+      ],
+      "paired_validation_order": [
+        {
+          "iteration": 0,
+          "samples": 1661,
+          "sha256": "feedb7458470440fa57078a4d4fcbfaeade9bafb1dd5ba308cc42e380783a1c0"
+        },
+        {
+          "iteration": 1,
+          "samples": 1661,
+          "sha256": "bc9eb9180cca687fe42771ef52690248d058b19f82ab230b96cff09e53c9e3b8"
+        },
+        {
+          "iteration": 2,
+          "samples": 1661,
+          "sha256": "107449503ebd48fa191ad79e0d501ffaa77109b0180815c727b29724bdc30985"
+        },
+        {
+          "iteration": 3,
+          "samples": 1661,
+          "sha256": "0d746e3fea7db2e378c01a65c42e987608bacf2194671c6bcf20c860ac046fb0"
+        }
+      ]
+    },
+    "2029": {
+      "paired_train_order": [
+        {
+          "iteration": 0,
+          "samples": 11993,
+          "sha256": "460f457d64c5759a20e0e2a9cb4ef98ca5dc11a49f8de5c629bd0460a1a9d970"
+        },
+        {
+          "iteration": 1,
+          "samples": 11993,
+          "sha256": "ee68ae50bc1b31ec1775313f8970d238f3f91e911c64564268dcbd889e4cbbe8"
+        },
+        {
+          "iteration": 2,
+          "samples": 11993,
+          "sha256": "f4575f72bec2fed3aa5d9a24865195db12058a1d307d454848552b30f2472853"
+        },
+        {
+          "iteration": 3,
+          "samples": 11993,
+          "sha256": "97d0e70ee81a63c24a2ffbf8505456be6b980492facce0fe24328ff4400472e1"
+        }
+      ],
+      "paired_validation_order": [
+        {
+          "iteration": 0,
+          "samples": 1661,
+          "sha256": "419bf85c0a04000075772f807955f9885816b2a8c9b0e6537435380a75a0bf7c"
+        },
+        {
+          "iteration": 1,
+          "samples": 1661,
+          "sha256": "56b081d09659777c524df4b23e6609779995a70b392ba7cf664316220144366d"
+        },
+        {
+          "iteration": 2,
+          "samples": 1661,
+          "sha256": "b54a25d34d3072141ba55a6796e3ed1e67a3ef7f8a1eeb32ab8f8a1bf89cb1a3"
+        },
+        {
+          "iteration": 3,
+          "samples": 1661,
+          "sha256": "b1fe8bf263031921da1aab0acd4c5da5fb862a68a2f614f408a57209faaf799b"
+        }
+      ]
+    }
+  },
+  "inherited_default_off_checks": "PASS_actual_AST_and_FP32_paths",
+  "historical_baseline_snapshot_hashes": {
+    "2028": {
+      "baseline/s4m/data_provider/data_factory.py": "8dd0c95a0b20ac502e791b231c596bda377c33150251f482f8278c1a181a1a8a",
+      "baseline/s4m/experiments/exp_basic.py": "ff18c5d847a68f846a27f0028b5718e9d1127f22b46e4a8c488969f74a7c2175",
+      "baseline/s4m/experiments/exp_pretrain1.py": "491437b8cb63ed2bf2dd2bc94f6762d245603c96dda707d38a17fde22768a219",
+      "baseline/s4m/model/Bank.py": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+      "baseline/s4m/model/MCPR.py": "2846b3b21084e93008c89f60555626e8d62a3a689b722aa64f5f2e06e2fa2277",
+      "baseline/s4m/model/MIPP.py": "1726e6c1857da2f9b14a4806841db344ccb47be997d1a839bd7f848ddf77d58d",
+      "baseline/s4m/model/S4M.py": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+      "baseline/s4m/run.py": "eb32e826c56e476f8c88db4b744be4675d216750cb204f16e866c55038790d6b",
+      "baseline/s4m/utils/paired_eval_rng.py": "659092e0c729a2f374eb56028332a314341ae6ac8a0f5a4cca35c0d71e2f9c3e",
+      "baseline/s4m/utils/paired_training_rng.py": "3fb2c077032e1c7b6350797b904a009b729f2c5a0b826435871ca4e4719c668b",
+      "baseline/s4m/utils/tools.py": "6e80a470b333b9fe8c6745b08d6047c381e8c1ee21765bd993fa928c9a11eb00"
+    },
+    "2029": {
+      "baseline/s4m/data_provider/data_factory.py": "8dd0c95a0b20ac502e791b231c596bda377c33150251f482f8278c1a181a1a8a",
+      "baseline/s4m/experiments/exp_basic.py": "ff18c5d847a68f846a27f0028b5718e9d1127f22b46e4a8c488969f74a7c2175",
+      "baseline/s4m/experiments/exp_pretrain1.py": "491437b8cb63ed2bf2dd2bc94f6762d245603c96dda707d38a17fde22768a219",
+      "baseline/s4m/model/Bank.py": "9e2206d4ee94013fc58ab8a290695780e17bb34c62d04839e2ac7db51d108474",
+      "baseline/s4m/model/MCPR.py": "2846b3b21084e93008c89f60555626e8d62a3a689b722aa64f5f2e06e2fa2277",
+      "baseline/s4m/model/MIPP.py": "1726e6c1857da2f9b14a4806841db344ccb47be997d1a839bd7f848ddf77d58d",
+      "baseline/s4m/model/S4M.py": "3f97a483a3c08c31c598a155343797a12b8e42932e79bda22fbd064bd625b526",
+      "baseline/s4m/run.py": "eb32e826c56e476f8c88db4b744be4675d216750cb204f16e866c55038790d6b",
+      "baseline/s4m/utils/paired_eval_rng.py": "659092e0c729a2f374eb56028332a314341ae6ac8a0f5a4cca35c0d71e2f9c3e",
+      "baseline/s4m/utils/paired_training_rng.py": "3fb2c077032e1c7b6350797b904a009b729f2c5a0b826435871ca4e4719c668b",
+      "baseline/s4m/utils/tools.py": "6e80a470b333b9fe8c6745b08d6047c381e8c1ee21765bd993fa928c9a11eb00"
+    }
+  },
+  "initial_hashes": {
+    "2028": "f8ddf4747f02604c11425c96840b5dd1d6381e9c98fd9fc7afc11798d125e345",
+    "2029": "ea47579518a59fd201532f34bcc385f7bd36ec4e514fb076e6894332f402ca80"
+  },
+  "parameter_count": 28371290,
+  "state_entries": 314,
+  "asset_hashes": {
+    "2028": {
+      "mask_asset": "b39ea670e364598e6d4e23693908152b94aa8581337543991397ceee18c0b22e",
+      "mask_metadata": "15282e20e103b6ec33d4799a8eae5adbd115b17aab22e32a3d1bc96263f4b314",
+      "missing_csv": "f494e32534d22d49cebbc783ff8315ad83bad861132cb63f5896d0352e0b1b15"
+    },
+    "2029": {
+      "mask_asset": "e3663f6695bc129769757ec86794362ef56d56d5c10b4ff1937e5874e8b00fb4",
+      "mask_metadata": "029b7318375bd956b7a20e5f4eafbb1770ce372a74ec59539630889ca83c338a",
+      "missing_csv": "950aacc8bce658ab7085d6875bb0f25528d1434a50496f888c2e53ed622a8976"
+    }
+  },
+  "code_sources_bound": 62
+}

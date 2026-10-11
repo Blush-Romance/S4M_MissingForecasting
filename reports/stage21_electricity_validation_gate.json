@@ -1,0 +1,146 @@
+{
+  "actual_method_differences": [
+    "checkpoints",
+    "des",
+    "metrics_path",
+    "mipp_cov_weight",
+    "mipp_dec_weight",
+    "mipp_inv_weight",
+    "mipp_mask_weight",
+    "mipp_pair_block_lengths",
+    "mipp_pair_rate_max",
+    "mipp_pair_rate_min",
+    "mipp_stability_threshold",
+    "mipp_var_weight",
+    "mipp_variance_target",
+    "mipp_write_gate_mode",
+    "model_id",
+    "results_root",
+    "test_results_root",
+    "use_content_mask_factorization",
+    "use_mask_intervention_pair",
+    "use_mipp",
+    "use_stability_write_gate"
+  ],
+  "baseline": {
+    "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_electricity__electricity__point__mr0.06__seed2023__20260804_193645/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE21S4F_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+    "mae": 0.753006454590723,
+    "mse": 0.8783867812669699,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paper_adam_electricity__electricity__point__mr0.06__seed2023__20260804_193645"
+  },
+  "decision": "FULL_VALIDATION_FAIL_TEST_FORBIDDEN",
+  "gains_percent": {
+    "multiscale_vs_original_plus_l5": {
+      "mae": 2.99058089060024e-08,
+      "mse": -2.5852330151659576e-08
+    },
+    "multiscale_vs_pg95_original": {
+      "mae": 3.987442168038582e-08,
+      "mse": -5.7449594280790295e-09
+    },
+    "pg95_vs_s4m": {
+      "mae": -0.1993607784055868,
+      "mse": 0.6349356245701407
+    }
+  },
+  "gate_definition": {
+    "multiscale": "MSE and MAE must both be strictly lower than PG95 original and original+L5; no numerical gain threshold",
+    "pg95": "MSE and MAE must both be <= S4M, with at least one strict improvement; no numerical gain threshold",
+    "test_policy": "one test evaluation only when every protocol and gate passes"
+  },
+  "multiscale_gate_pass": false,
+  "multiscale_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__electricity__validation__seed2023__20260804_232745",
+  "multiscale_vs_l5_by_metric": {
+    "mae": true,
+    "mse": false
+  },
+  "multiscale_vs_original_by_metric": {
+    "mae": true,
+    "mse": false
+  },
+  "paper_test_reference_only": {
+    "mae": 0.367,
+    "mse": 0.274
+  },
+  "pg95": {
+    "checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE21P95F_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+    "mae": 0.7545076541200394,
+    "mse": 0.8728095906711909,
+    "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346"
+  },
+  "pg95_gate_by_metric": {
+    "mae": false,
+    "mse": true
+  },
+  "pg95_gate_pass": false,
+  "pg95_has_strict_improvement": true,
+  "protocol_checks": {
+    "baseline_modules_disabled": true,
+    "both_training_metrics_are_validation_only": true,
+    "complete_validation_budget": true,
+    "equal_count_protocol": true,
+    "equal_realized_rate_across_scales": true,
+    "evaluation_artifact_pass": true,
+    "evaluation_is_validation_only": true,
+    "exact_pg95_checkpoint_handoff": true,
+    "fixed_multiscale_weights": true,
+    "frozen_electricity_architecture": true,
+    "frozen_evaluation": true,
+    "frozen_full_training_budget": true,
+    "pg95_module_frozen": true,
+    "required_jobs_success": true,
+    "same_budget_except_pg95_module": true,
+    "same_fixed_data_assets": true,
+    "serial_timing_recorded": true,
+    "source_is_validation_only": true,
+    "source_validation_metric_roundtrip": true,
+    "test_not_accessed_before_gate": true,
+    "training_artifacts_success": true
+  },
+  "protocol_limitations": [
+    "the official Electricity missing-mask seed is unavailable",
+    "the paper discloses a layer search set but not the selected Electricity layer count",
+    "the pre-frozen eight-layer architecture is therefore an approximate protocol match",
+    "single-seed validation is directional and not statistical stability",
+    "paper test values 0.274/0.367 are references only and are not compared to validation"
+  ],
+  "protocol_pass": true,
+  "routes": {
+    "ensemble_l1": {
+      "mae": 0.754507651763338,
+      "mse": 0.8728095889663431
+    },
+    "ensemble_l20": {
+      "mae": 0.7545076517884093,
+      "mse": 0.8728095890164856
+    },
+    "ensemble_l5": {
+      "mae": 0.7545076517131953,
+      "mse": 0.8728095888409866
+    },
+    "l1": {
+      "mae": 0.7545076518886944,
+      "mse": 0.8728095893674838
+    },
+    "l20": {
+      "mae": 0.7545076516630528,
+      "mse": 0.8728095893674838
+    },
+    "l5": {
+      "mae": 0.7545076517884093,
+      "mse": 0.8728095891418421
+    },
+    "multiscale": {
+      "mae": 0.7545076514875537,
+      "mse": 0.8728095890666282
+    },
+    "on": {
+      "mae": 0.7545076517884093,
+      "mse": 0.8728095890164856
+    }
+  },
+  "scope": "single-seed Electricity validation-only scientific gate",
+  "status": "PASS",
+  "test_authorized": false,
+  "unexpected_method_differences": []
+}

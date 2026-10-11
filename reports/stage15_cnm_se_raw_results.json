@@ -1,0 +1,73 @@
+{
+  "queue_state": "SUCCESS",
+  "records": [
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.28949322153892404,
+      "complete_target_mae_nested": 0.29166809694959583,
+      "complete_target_mae_on": 0.29387890643938364,
+      "complete_target_mse_ensemble": 0.25432488264686315,
+      "complete_target_mse_nested": 0.259642618713482,
+      "complete_target_mse_on": 0.26194645553879525,
+      "evaluation_elapsed_seconds": 27.2441385416314,
+      "evaluation_seed": 2023,
+      "inference_forward_multiplier": 2.0,
+      "job_id": "weather_cnm_se_seed2023_formal",
+      "peak_gpu_memory_mb": 1051.251953125,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2023__20260723_194924",
+      "sample_count": 10432,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.29752503753387544,
+      "complete_target_mae_nested": 0.299614028395534,
+      "complete_target_mae_on": 0.30085030128300183,
+      "complete_target_mse_ensemble": 0.2645600752484016,
+      "complete_target_mse_nested": 0.27146278982202987,
+      "complete_target_mse_on": 0.2711946418595408,
+      "evaluation_elapsed_seconds": 37.06128084985539,
+      "evaluation_seed": 2024,
+      "inference_forward_multiplier": 2.0,
+      "job_id": "weather_cnm_se_seed2024_formal",
+      "peak_gpu_memory_mb": 1051.251953125,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2024__20260723_154027",
+      "sample_count": 10432,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.24291677039767068,
+      "complete_target_mae_nested": 0.2523871660232544,
+      "complete_target_mae_on": 0.24421251766265384,
+      "complete_target_mse_ensemble": 0.13224857383304173,
+      "complete_target_mse_nested": 0.1496038299704355,
+      "complete_target_mse_on": 0.13237791851399436,
+      "evaluation_elapsed_seconds": 0.9184119468554854,
+      "evaluation_seed": 2024,
+      "inference_forward_multiplier": 2.0,
+      "job_id": "weather_cnm_se_seed2024_smoke",
+      "peak_gpu_memory_mb": 1051.251953125,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2024__smoke__20260723_154012",
+      "sample_count": 32,
+      "state": "SUCCESS"
+    },
+    {
+      "artifact_status": "PASS",
+      "complete_target_mae_ensemble": 0.2941198825077266,
+      "complete_target_mae_nested": 0.2990007599412507,
+      "complete_target_mae_on": 0.2951112645615191,
+      "complete_target_mse_ensemble": 0.25310812653966985,
+      "complete_target_mse_nested": 0.2626501900600196,
+      "complete_target_mse_on": 0.25645007990095325,
+      "evaluation_elapsed_seconds": 60.79834771202877,
+      "evaluation_seed": 2025,
+      "inference_forward_multiplier": 2.0,
+      "job_id": "weather_cnm_se_seed2025_formal",
+      "peak_gpu_memory_mb": 1051.251953125,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2025__20260723_154027",
+      "sample_count": 10432,
+      "state": "SUCCESS"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "decision": "CNM_SE_THREE_SEED_GATE_PASS_START_ABLATIONS",
+  "pre_registered_gate": {
+    "all_seeds": [
+      2023,
+      2024,
+      2025
+    ],
+    "each_seed_mse_and_mae_must_improve": true,
+    "mean_mae_gain_min_pct": 0.5,
+    "mean_mse_gain_min_pct": 1.0
+  },
+  "results": {
+    "2023": {
+      "checks": {
+        "artifact_status_pass": true,
+        "fixed_equal_weights": true,
+        "frozen_checkpoint": true,
+        "matched_on_route_mae_improves": true,
+        "matched_on_route_mse_improves": true,
+        "test_split": true
+      },
+      "evaluation_elapsed_seconds": 27.2441385416314,
+      "inference_forward_multiplier": 2.0,
+      "mae_cnm_se": 0.28949322153892404,
+      "mae_gain_pct": 1.4923442289874593,
+      "mae_nested": 0.29166809694959583,
+      "mae_on": 0.29387890643938364,
+      "mse_cnm_se": 0.25432488264686315,
+      "mse_gain_pct": 2.90959191497948,
+      "mse_nested": 0.259642618713482,
+      "mse_on": 0.26194645553879525,
+      "peak_gpu_memory_mb": 1051.251953125,
+      "seed_pass": true
+    },
+    "2024": {
+      "checks": {
+        "artifact_status_pass": true,
+        "fixed_equal_weights": true,
+        "frozen_checkpoint": true,
+        "matched_on_route_mae_improves": true,
+        "matched_on_route_mse_improves": true,
+        "test_split": true
+      },
+      "evaluation_elapsed_seconds": 37.06128084985539,
+      "inference_forward_multiplier": 2.0,
+      "mae_cnm_se": 0.29752503753387544,
+      "mae_gain_pct": 1.1052884889745909,
+      "mae_nested": 0.299614028395534,
+      "mae_on": 0.30085030128300183,
+      "mse_cnm_se": 0.2645600752484016,
+      "mse_gain_pct": 2.4464224534994425,
+      "mse_nested": 0.27146278982202987,
+      "mse_on": 0.2711946418595408,
+      "peak_gpu_memory_mb": 1051.251953125,
+      "seed_pass": true
+    },
+    "2025": {
+      "checks": {
+        "artifact_status_pass": true,
+        "fixed_equal_weights": true,
+        "frozen_checkpoint": true,
+        "matched_on_route_mae_improves": true,
+        "matched_on_route_mse_improves": true,
+        "test_split": true
+      },
+      "evaluation_elapsed_seconds": 60.79834771202877,
+      "inference_forward_multiplier": 2.0,
+      "mae_cnm_se": 0.2941198825077266,
+      "mae_gain_pct": 0.3359350092127191,
+      "mae_nested": 0.2990007599412507,
+      "mae_on": 0.2951112645615191,
+      "mse_cnm_se": 0.25310812653966985,
+      "mse_gain_pct": 1.3031594151088344,
+      "mse_nested": 0.2626501900600196,
+      "mse_on": 0.25645007990095325,
+      "peak_gpu_memory_mb": 1051.251953125,
+      "seed_pass": true
+    }
+  },
+  "runs": {
+    "2023": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2023__20260723_194924",
+    "2024": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2024__20260723_154027",
+    "2025": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_pg95__weather__test__seed2025__20260723_154027"
+  },
+  "scope": "Weather fixed point-missing test assets; three frozen PG95 checkpoints",
+  "status": "PASS",
+  "summary": {
+    "checks": {
+      "both_seeds_improve_both_metrics": true,
+      "mean_mae_gain_at_least_0_5_pct": true,
+      "mean_mse_gain_at_least_1_pct": true
+    },
+    "gate_pass": true,
+    "mean_mae_gain_pct": 0.9778559090582565,
+    "mean_mse_gain_pct": 2.2197245945292523
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mcpr_state_keys": [
+    "mcpr.hidden_projection.weight",
+    "mcpr.mask_projection.bias",
+    "mcpr.mask_projection.weight",
+    "mcpr.output_projection.bias",
+    "mcpr.output_projection.weight",
+    "mcpr.temporal_filter.bias",
+    "mcpr.temporal_filter.weight"
+  ],
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 328,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 96744650,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_mcpr_attribution/mcpr_pcd_electricity_seed2023_smoke.yaml",
+  "device": "cuda",
+  "evaluation_seed": 2023,
+  "experiment_id": "stage22_mcpr_valcache_mcpr_pcd__electricity__validation__seed2023__smoke__20260813_191808",
+  "finished_at": "2026-08-13T11:18:25.334129+00:00",
+  "method": "mcpr_pcd",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_mcpr_valcache_mcpr_pcd__electricity__validation__seed2023__smoke__20260813_191808/metrics.json",
+  "pid": 4176331,
+  "return_code": 0,
+  "samples_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_mcpr_valcache_mcpr_pcd__electricity__validation__seed2023__smoke__20260813_191808/stage22_validation_samples.npz",
+  "source_checkpoint": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mcpr_pcd_pg95_electricity__electricity__point__mr0.06__seed2023__20260813_171718/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE22MCPRPCDF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth",
+  "source_checkpoint_sha256": "d67fd2a1921d6b1c9b1ebc538e060e6d6aa0fa260349212548c1215fe65620ad",
+  "stage_identity": "stage22_mcpr",
+  "started_at": "2026-08-13T11:18:08.604350+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

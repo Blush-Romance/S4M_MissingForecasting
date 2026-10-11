@@ -1,0 +1,33 @@
+{
+  "checkpoint_all_model_tensors_finite": true,
+  "checkpoint_fusr_state_keys": [],
+  "checkpoint_keys": [
+    "memory",
+    "model",
+    "num_dic",
+    "repre"
+  ],
+  "checkpoint_load_verified": true,
+  "checkpoint_mipp_state_keys": [
+    "mem_net.mipp.content_adapter.weight",
+    "mem_net.mipp.mask_decoder.bias",
+    "mem_net.mipp.mask_decoder.weight",
+    "mem_net.mipp.mask_encoder.0.bias",
+    "mem_net.mipp.mask_encoder.0.weight",
+    "mem_net.mipp.mask_encoder.2.bias",
+    "mem_net.mipp.mask_encoder.2.weight"
+  ],
+  "checkpoint_model_key_count": 321,
+  "checkpoint_mrra_state_keys": [],
+  "checkpoint_size_bytes": 96632807,
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/stage21_electricity/pg95_electricity_seed2023_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "mipp_pg95_electricity__electricity__point__mr0.06__seed2023__smoke__20260806_141953",
+  "finished_at": "2026-08-06T06:20:14.722462+00:00",
+  "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__smoke__20260806_141953/metrics.json",
+  "pid": 3894501,
+  "return_code": 0,
+  "started_at": "2026-08-06T06:19:53.198476+00:00",
+  "state": "SUCCESS",
+  "verification_error": null
+}

@@ -1,0 +1,164 @@
+experiment:
+  model: cnm_se_equal_rate_multiscale
+  method: pg95
+  dataset: traffic
+  domain: gated_external_test_point_r006
+  seed: 2026
+  smoke_test: false
+  purpose: one_time_traffic_test_only_after_frozen_validation_gate_passes
+  protocol_match: fixed_fair_external_protocol_official_traffic_hparams_unavailable
+  id: stage22_21_scientific_gate__traffic__test_not_authorized__seed2026__20260816_192338
+  created_at: '2026-08-16T11:23:38.217233+00:00'
+source:
+  job_id: traffic_pg95_seed2026_formal
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2026.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2026.npz
+runtime:
+  device: cuda
+  gpu_uuid: GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb
+  scheduler_attempt: 1
+diagnostic:
+  variant: stage22_21_traffic_test
+  split: test
+  max_eval_batches: -1
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2026
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 10
+scientific_gate:
+  actual_method_differences:
+  - checkpoints
+  - des
+  - metrics_path
+  - mipp_cov_weight
+  - mipp_dec_weight
+  - mipp_inv_weight
+  - mipp_mask_weight
+  - mipp_pair_block_lengths
+  - mipp_pair_rate_max
+  - mipp_pair_rate_min
+  - mipp_stability_threshold
+  - mipp_var_weight
+  - mipp_variance_target
+  - mipp_write_gate_mode
+  - model_id
+  - results_root
+  - test_results_root
+  - use_content_mask_factorization
+  - use_mask_intervention_pair
+  - use_mipp
+  - use_stability_write_gate
+  baseline:
+    checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT21S4F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2026tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+    mae: 0.3169115486282794
+    mse: 0.5369708269505791
+    run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930
+  decision: TRAFFIC_PROTOCOL_FAIL_TEST_FORBIDDEN
+  gains_percent:
+    multiscale_vs_original_plus_l5:
+      mae: 0.6348516249232823
+      mse: 0.546012161511404
+    multiscale_vs_pg95_original:
+      mae: 1.248123323916074
+      mse: 1.1080946441595423
+    pg95_vs_s4m:
+      mae: 0.5984411480797264
+      mse: 1.611347476024954
+  gate_definition:
+    multiscale: both metrics strict vs original and original+L5
+    pg95: both MSE/MAE non-worse than S4M and at least one strict
+    test_policy: one test only if protocol and all gates pass
+    view_response: max L5/L20 prediction-difference ratio > 1e-10
+  multiscale_gate_pass: true
+  multiscale_run: /mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2026__20260816_192252
+  multiscale_vs_l5_by_metric:
+    mae: true
+    mse: true
+  multiscale_vs_original_by_metric:
+    mae: true
+    mse: true
+  pg95:
+    checkpoint: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_184930/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebT21P95F_dtprojection_0_data_traffic_point_external_r0.06_l5_seed2026tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+    mae: 0.3150150195182711
+    mse: 0.5283183610835206
+    run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_184930
+  pg95_gate_by_metric:
+    mae: true
+    mse: true
+  pg95_gate_pass: true
+  pg95_has_strict_improvement: true
+  protocol_checks:
+    baseline_modules_disabled: true
+    both_training_metrics_validation_only: true
+    complete_validation_budget: true
+    equal_count_protocol: true
+    equal_realized_rate_across_scales: true
+    evaluation_artifact_pass: true
+    evaluation_is_validation_only: true
+    exact_pg95_checkpoint_handoff: true
+    fixed_external_protocol_disclosed: true
+    fixed_multiscale_weights: true
+    frozen_asset_audit_pass: true
+    frozen_evaluation: true
+    frozen_full_training_budget: false
+    frozen_traffic_architecture: true
+    pg95_module_frozen: true
+    prediction_difference_artifact_roundtrip: true
+    required_jobs_success: true
+    same_budget_except_pg95_module: true
+    same_fixed_data_assets: true
+    serial_timing_recorded: true
+    source_is_validation_only: true
+    source_validation_metric_roundtrip: true
+    test_not_accessed_before_gate: true
+    training_artifacts_success: true
+  protocol_limitations:
+  - public S4M does not disclose Traffic mask seed or final hyperparameters
+  - this is a fixed fair external extension rather than official Traffic reproduction
+  - single-seed validation is directional, not statistical stability
+  protocol_pass: false
+  routes:
+    ensemble_l1:
+      mae: 0.312783803620374
+      mse: 0.5258638496975517
+    ensemble_l20:
+      mae: 0.31343463947000344
+      mse: 0.5250903423107878
+    ensemble_l5:
+      mae: 0.31307077899429
+      mse: 0.5253324694920598
+    l1:
+      mae: 0.318104003790989
+      mse: 0.5327497552805495
+    l20:
+      mae: 0.32314482438352965
+      mse: 0.5372837677671063
+    l5:
+      mae: 0.32103514879527284
+      mse: 0.5352919227405838
+    multiscale:
+      mae: 0.31108324406668475
+      mse: 0.522464090320265
+    'on':
+      mae: 0.31501502000520865
+      mse: 0.5283183577465663
+  scope: single-seed Traffic validation-only external scientific gate
+  status: FAIL
+  test_authorized: false
+  unexpected_method_differences: []
+  view_response_gate_pass: true
+  view_response_ratios:
+    l20: 0.05837935125998991
+    l5: 0.04900584056887835
+paths:
+  run_dir: /mnt/data/zza/code/S4M_MissingForecasting/runs/stage22_21_scientific_gate__traffic__test_not_authorized__seed2026__20260816_192338
+  config_source: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_21_traffic/pg95_traffic_multiscale_test_seed2026.yaml

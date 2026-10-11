@@ -1,0 +1,31 @@
+experiment:
+  model: stage22_mcpr_attribution_cache
+  method: mcpr_mse
+  dataset: electricity
+  domain: validation_point_r006
+  seed: 2023
+  smoke_test: false
+  purpose: exact_mcpr_mse_residual_failure_attribution
+
+source:
+  resolved_config: runs/mcpr_mse_pg95_electricity__electricity__point__mr0.06__seed2023__20260813_171648/resolved_config.yaml
+  metrics: runs/mcpr_mse_pg95_electricity__electricity__point__mr0.06__seed2023__20260813_171648/metrics.json
+  checkpoint: runs/mcpr_mse_pg95_electricity__electricity__point__mr0.06__seed2023__20260813_171648/checkpoints/S4M_custom4_ft192_ll96_pl512_dm8_eltimeF_ebE22MCPRMSEF_dtprojection_0_data_electricity_point_paper_r0.06_l5_seed2023tag1_fill_mean_drop_False_dG_1.0_pattn_30_n_10_slen_32_W_6_ts1_0.95_ts2_0.6_K_10_n_10_M_50_pre_False_en_512_s_25_top20_P_5_m_13_t_test/checkpoint.pth
+  backbone_metrics: runs/mipp_pg95_electricity__electricity__point__mr0.06__seed2023__20260804_222346/metrics.json
+
+data:
+  missing_csv: data/electricity/electricity_point_paper_r0.06_l5_seed2023.csv
+  complete_csv: data/electricity/electricity.csv
+  mask_asset: artifacts/masks/electricity/point/rate_0.06/seed_2023.npz
+
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+
+diagnostic:
+  stage_identity: stage22_mcpr
+  split: val
+  max_eval_batches: -1
+  nested_target_rate: 0.15
+  nested_block_length: 5
+  nested_seed: 2023

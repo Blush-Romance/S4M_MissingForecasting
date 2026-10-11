@@ -1,0 +1,27 @@
+{
+  "source_project": "S4M_MissingForecasting",
+  "source_directory": "/mnt/data/zza/code/S4M_MissingForecasting",
+  "snapshot_date": "2026-10-11",
+  "publication": "public GitHub repository requested by source owner",
+  "git_provenance": [
+    {
+      "path": "baselines/S4M",
+      "head": "a718823addd3606e763dfc261174e0135b2535f4",
+      "status_entries": 20,
+      "upstreams": [
+        "local_or_other_remote_omitted"
+      ]
+    },
+    {
+      "path": "upstream/S4M",
+      "head": "a718823addd3606e763dfc261174e0135b2535f4",
+      "status_entries": 0,
+      "upstreams": [
+        "https://github.com/WINTERWEEL/S4M"
+      ]
+    }
+  ],
+  "scope": "Code, configurations, dependency records, licenses and lightweight documentation.",
+  "omitted": "Raw data, model weights, environments, caches, large files, credentials and restricted third-party source.",
+  "history": "Original repositories and histories remain untouched. This publication is a new filtered snapshot; old Git blobs are not pushed."
+}

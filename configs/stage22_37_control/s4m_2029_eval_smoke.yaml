@@ -1,0 +1,93 @@
+experiment: &id001
+  model: cnm_se_crn_v1_s4m
+  method: s4m_baseline
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2029
+  smoke_test: true
+  purpose: frozen_paired_multiseed_replication
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2599749202006384
+  protocol_scope: stage22_37_paired_training_CRN_validation
+source: &id002
+  job_id: s4m_2029_train_smoke
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_37_control/state.json
+data: &id003
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2029.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2029.npz
+diagnostic: &id004
+  variant: stage22_34_traffic_s4m_validation
+  split: val
+  max_eval_batches: 3
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2029
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 1
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: '22.37'
+  user_approved: true
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_36_control/s4m_eval_smoke.yaml
+  template_sha256: 6a81c4b959ffff7fbd0c7145158723b4c7d924419ae60dc8c1708698b9deec44
+  configuration_changes:
+    experiment:
+      old:
+        model: cnm_se_crn_v1_s4m
+        method: s4m_baseline
+        dataset: traffic
+        domain: validation_point_r006
+        seed: 2027
+        smoke_test: true
+        purpose: read_only_new_training_checkpoint_control
+        protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+        nominal_missing_rate: 0.06
+        realized_missing_rate: 0.2600889192886457
+        protocol_scope: stage22_36_paired_training_CRN_validation
+      new: *id001
+      reason: user-approved frozen seed replication
+    source:
+      old:
+        job_id: s4m_train_smoke
+        queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_36_control/state.json
+      new: *id002
+      reason: user-approved frozen seed replication
+    data:
+      old:
+        missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2027.csv
+        complete_csv: data/traffic/traffic.csv
+        mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2027.npz
+      new: *id003
+      reason: user-approved frozen seed replication
+    diagnostic:
+      old:
+        variant: stage22_34_traffic_s4m_validation
+        split: val
+        max_eval_batches: 3
+        target_rate: 0.15
+        block_lengths:
+        - 1
+        - 5
+        - 20
+        nested_seed: 2027
+        multiscale_weights:
+          original: 0.5
+          l5: 0.25
+          l20: 0.25
+        timing_warmup_batches: 1
+        fixed_eval_rng: true
+        rng_protocol: stage22_34_crn_v1
+      new: *id004
+      reason: user-approved frozen seed replication

@@ -1,0 +1,757 @@
+{
+  "aggregate": {
+    "test": {
+      "cnm_se_vs_pg95": {
+        "mae": {
+          "relative_improvement_percent": {
+            "mean": 0.7771609691111739,
+            "sample_std": 0.09411046137700468
+          },
+          "win_count": 3
+        },
+        "mse": {
+          "relative_improvement_percent": {
+            "mean": 0.8591890722748297,
+            "sample_std": 0.07410161728392464
+          },
+          "win_count": 3
+        }
+      },
+      "cnm_se_vs_s4m": {
+        "mae": {
+          "relative_improvement_percent": {
+            "mean": 1.1748034965528757,
+            "sample_std": 1.172165786386862
+          },
+          "win_count": 2
+        },
+        "mse": {
+          "relative_improvement_percent": {
+            "mean": 1.3862303838445962,
+            "sample_std": 1.0702350152969438
+          },
+          "win_count": 3
+        }
+      },
+      "pg95_cnm_se_multiscale": {
+        "mae": {
+          "mean": 0.359373404057063,
+          "sample_std": 0.0013268308391334608
+        },
+        "mse": {
+          "mean": 0.664123663264391,
+          "sample_std": 0.005047782623719016
+        }
+      },
+      "pg95_original": {
+        "mae": {
+          "mean": 0.3621876557337357,
+          "sample_std": 0.001044109741887185
+        },
+        "mse": {
+          "mean": 0.6698817741738906,
+          "sample_std": 0.0055532050754393955
+        }
+      },
+      "pg95_vs_s4m": {
+        "mae": {
+          "relative_improvement_percent": {
+            "mean": 0.40117040889288985,
+            "sample_std": 1.124123007145715
+          },
+          "win_count": 2
+        },
+        "mse": {
+          "relative_improvement_percent": {
+            "mean": 0.5320004882208598,
+            "sample_std": 1.0214081198132163
+          },
+          "win_count": 2
+        }
+      },
+      "s4m_original": {
+        "mae": {
+          "mean": 0.3636772916732479,
+          "sample_std": 0.004220507162201142
+        },
+        "mse": {
+          "mean": 0.6735308837352282,
+          "sample_std": 0.010814463436155698
+        }
+      }
+    },
+    "validation": {
+      "cnm_se_vs_pg95": {
+        "mae": {
+          "relative_improvement_percent": {
+            "mean": 0.9046547667386988,
+            "sample_std": 0.3078829754892503
+          },
+          "win_count": 3
+        },
+        "mse": {
+          "relative_improvement_percent": {
+            "mean": 1.0341221943046244,
+            "sample_std": 0.10601223550531301
+          },
+          "win_count": 3
+        }
+      },
+      "cnm_se_vs_s4m": {
+        "mae": {
+          "relative_improvement_percent": {
+            "mean": 0.12596916544106143,
+            "sample_std": 1.7045431504220936
+          },
+          "win_count": 2
+        },
+        "mse": {
+          "relative_improvement_percent": {
+            "mean": 0.8135317983365624,
+            "sample_std": 2.141581899092239
+          },
+          "win_count": 2
+        }
+      },
+      "pg95_cnm_se_multiscale": {
+        "mae": {
+          "mean": 0.31558568518023755,
+          "sample_std": 0.004232030368754319
+        },
+        "mse": {
+          "mean": 0.5211345672979786,
+          "sample_std": 0.002898219849243904
+        }
+      },
+      "pg95_original": {
+        "mae": {
+          "mean": 0.31845999037701755,
+          "sample_std": 0.003295953205456523
+        },
+        "mse": {
+          "mean": 0.5265794249470334,
+          "sample_std": 0.002697472895994753
+        }
+      },
+      "pg95_vs_s4m": {
+        "mae": {
+          "relative_improvement_percent": {
+            "mean": -0.7829917371419571,
+            "sample_std": 1.4196209405117997
+          },
+          "win_count": 1
+        },
+        "mse": {
+          "relative_improvement_percent": {
+            "mean": -0.22146466039985988,
+            "sample_std": 2.0584690305124864
+          },
+          "win_count": 2
+        }
+      },
+      "s4m_original": {
+        "mae": {
+          "mean": 0.31599714884089664,
+          "sample_std": 0.0012723806995551849
+        },
+        "mse": {
+          "mean": 0.5255596014129519,
+          "sample_std": 0.010868786189895188
+        }
+      }
+    }
+  },
+  "all_seeds_included": true,
+  "decision": "TRAFFIC_MULTISEED_CONFIRMED",
+  "inference_note": "n=3: report mean, sample standard deviation and paired win counts; do not claim inferential significance. Seed varies training and mask jointly.",
+  "missing_sources": [],
+  "per_seed": [
+    {
+      "cost": {
+        "pg95_parameter_count": 30663702,
+        "pg95_test_timing": {
+          "excludes_l1_audit_only_route": true,
+          "measured_batches": 203,
+          "original_forward_mean_ms": 58.142370741649216,
+          "serial_multiscale_pipeline_mean_ms": 175.79626626899383,
+          "serial_over_original_ratio": 3.0235483009478563
+        },
+        "pg95_training_elapsed_seconds": 1970.0054722111672,
+        "pg95_training_peak_gpu_memory_mb": 12174.3955078125,
+        "s4m_parameter_count": 28371290,
+        "s4m_training_elapsed_seconds": 1531.3157355962321,
+        "s4m_training_peak_gpu_memory_mb": 8007.388671875
+      },
+      "protocol_checks": {
+        "all_metrics_finite_nonnegative": true,
+        "evaluation_artifact_checks_pass": true,
+        "source_training_validation_only": true,
+        "test_samples_3408": true,
+        "test_split_explicit": true,
+        "validation_samples_1648": true
+      },
+      "runs": {
+        "pg95_test": {
+          "job_id": "traffic_conditional_single_test_seed2026_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2026__20260816_194746/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2026__20260816_194746"
+        },
+        "pg95_train": {
+          "job_id": "traffic_pg95_seed2026_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_184930/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2026__20260816_184930"
+        },
+        "pg95_validation": {
+          "job_id": "traffic_pg95_multiscale_validation_seed2026_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2026__20260816_192252/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2026__20260816_192252"
+        },
+        "s4m_test": {
+          "job_id": "traffic_s4m_multiscale_test_seed2026_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2026__20260820_145959/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2026__20260820_145959"
+        },
+        "s4m_train": {
+          "job_id": "traffic_s4m_seed2026_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2026__20260816_184930"
+        }
+      },
+      "seed": 2026,
+      "test": {
+        "cnm_se_vs_pg95": {
+          "mae": {
+            "absolute_reduction": 0.003192868819023642,
+            "relative_improvement_percent": 0.8835222741942986
+          },
+          "mse": {
+            "absolute_reduction": 0.006152919472057872,
+            "relative_improvement_percent": 0.9154990050004622
+          }
+        },
+        "cnm_se_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.008162258356194219,
+            "relative_improvement_percent": 2.2280010870295626
+          },
+          "mse": {
+            "absolute_reduction": 0.01775086024701178,
+            "relative_improvement_percent": 2.596363499069336
+          }
+        },
+        "pg95_cnm_se_multiscale": {
+          "mae": 0.35818668122517666,
+          "mse": 0.665930768052514
+        },
+        "pg95_original": {
+          "mae": 0.3613795500442003,
+          "mse": 0.6720836875245719
+        },
+        "pg95_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.0049693895371705765,
+            "relative_improvement_percent": 1.356463469731652
+          },
+          "mse": {
+            "absolute_reduction": 0.011597940774953908,
+            "relative_improvement_percent": 1.6963949731691148
+          }
+        },
+        "s4m_original": {
+          "mae": 0.3663489395813709,
+          "mse": 0.6836816282995258
+        }
+      },
+      "validation": {
+        "cnm_se_vs_pg95": {
+          "mae": {
+            "absolute_reduction": 0.003931775938523896,
+            "relative_improvement_percent": 1.248123323916074
+          },
+          "mse": {
+            "absolute_reduction": 0.005854267426301352,
+            "relative_improvement_percent": 1.1080946441595423
+          }
+        },
+        "cnm_se_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.005828304561594666,
+            "relative_improvement_percent": 1.839095036713528
+          },
+          "mse": {
+            "absolute_reduction": 0.014506736630314099,
+            "relative_improvement_percent": 2.7015874796582287
+          }
+        },
+        "pg95_cnm_se_multiscale": {
+          "mae": 0.31108324406668475,
+          "mse": 0.522464090320265
+        },
+        "pg95_original": {
+          "mae": 0.31501502000520865,
+          "mse": 0.5283183577465663
+        },
+        "pg95_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.00189652862307077,
+            "relative_improvement_percent": 0.5984409944287952
+          },
+          "mse": {
+            "absolute_reduction": 0.008652469204012747,
+            "relative_improvement_percent": 1.6113480974654684
+          }
+        },
+        "s4m_original": {
+          "mae": 0.3169115486282794,
+          "mse": 0.5369708269505791
+        }
+      }
+    },
+    {
+      "cost": {
+        "pg95_parameter_count": 30663702,
+        "pg95_test_timing": {
+          "excludes_l1_audit_only_route": true,
+          "measured_batches": 203,
+          "original_forward_mean_ms": 90.45902685964195,
+          "serial_multiscale_pipeline_mean_ms": 278.79227434051,
+          "serial_over_original_ratio": 3.0819729552595088
+        },
+        "pg95_training_elapsed_seconds": 3557.6453611347824,
+        "pg95_training_peak_gpu_memory_mb": 12174.88671875,
+        "s4m_parameter_count": 28371290,
+        "s4m_training_elapsed_seconds": 7491.173003660515,
+        "s4m_training_peak_gpu_memory_mb": 8007.9462890625
+      },
+      "protocol_checks": {
+        "all_metrics_finite_nonnegative": true,
+        "evaluation_artifact_checks_pass": true,
+        "source_training_validation_only": true,
+        "test_samples_3408": true,
+        "test_split_explicit": true,
+        "validation_samples_1648": true
+      },
+      "runs": {
+        "pg95_test": {
+          "job_id": "traffic_pg95_multiscale_test_seed2027_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2027__20260820_184434/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2027__20260820_184434"
+        },
+        "pg95_train": {
+          "job_id": "traffic_pg95_seed2027_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327"
+        },
+        "pg95_validation": {
+          "job_id": "traffic_pg95_multiscale_validation_seed2027_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433"
+        },
+        "s4m_test": {
+          "job_id": "traffic_s4m_multiscale_test_seed2027_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2027__20260820_171322/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2027__20260820_171322"
+        },
+        "s4m_train": {
+          "job_id": "traffic_s4m_seed2027_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612"
+        }
+      },
+      "seed": 2027,
+      "test": {
+        "cnm_se_vs_pg95": {
+          "mae": {
+            "absolute_reduction": 0.002560596747171018,
+            "relative_improvement_percent": 0.7046869621087216
+          },
+          "mse": {
+            "absolute_reduction": 0.0059771874170246875,
+            "relative_improvement_percent": 0.8868278626543165
+          }
+        },
+        "cnm_se_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.005065296196185343,
+            "relative_improvement_percent": 1.384447702868032
+          },
+          "mse": {
+            "absolute_reduction": 0.006735112196157522,
+            "relative_improvement_percent": 0.9981577674955703
+          }
+        },
+        "pg95_cnm_se_multiscale": {
+          "mae": 0.36080595958993344,
+          "mse": 0.6680191616754239
+        },
+        "pg95_original": {
+          "mae": 0.36336655633710446,
+          "mse": 0.6739963490924485
+        },
+        "pg95_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.002504699449014325,
+            "relative_improvement_percent": 0.6845849214452976
+          },
+          "mse": {
+            "absolute_reduction": 0.0007579247791328347,
+            "relative_improvement_percent": 0.11232604349195752
+          }
+        },
+        "s4m_original": {
+          "mae": 0.3658712557861188,
+          "mse": 0.6747542738715814
+        }
+      },
+      "validation": {
+        "cnm_se_vs_pg95": {
+          "mae": {
+            "absolute_reduction": 0.0025897205047358818,
+            "relative_improvement_percent": 0.8123807881052932
+          },
+          "mse": {
+            "absolute_reduction": 0.005661888031759044,
+            "relative_improvement_percent": 1.0816028360982661
+          }
+        },
+        "cnm_se_vs_s4m": {
+          "mae": {
+            "absolute_reduction": 0.00034398610604113866,
+            "relative_improvement_percent": 0.10867207775385013
+          },
+          "mse": {
+            "absolute_reduction": 0.0065680820146946095,
+            "relative_improvement_percent": 1.2525467403441666
+          }
+        },
+        "pg95_cnm_se_multiscale": {
+          "mae": 0.316191883227654,
+          "mse": 0.517810115072775
+        },
+        "pg95_original": {
+          "mae": 0.3187816037323899,
+          "mse": 0.523472003104534
+        },
+        "pg95_vs_s4m": {
+          "mae": {
+            "absolute_reduction": -0.002245734398694743,
+            "relative_improvement_percent": -0.7094723272348222
+          },
+          "mse": {
+            "absolute_reduction": 0.0009061939829355659,
+            "relative_improvement_percent": 0.1728130551515678
+          }
+        },
+        "s4m_original": {
+          "mae": 0.31653586933369515,
+          "mse": 0.5243781970874696
+        }
+      }
+    },
+    {
+      "cost": {
+        "pg95_parameter_count": 30663702,
+        "pg95_test_timing": {
+          "excludes_l1_audit_only_route": true,
+          "measured_batches": 203,
+          "original_forward_mean_ms": 79.59544286590639,
+          "serial_multiscale_pipeline_mean_ms": 241.84339504065036,
+          "serial_over_original_ratio": 3.0384075561722974
+        },
+        "pg95_training_elapsed_seconds": 3363.6918234620243,
+        "pg95_training_peak_gpu_memory_mb": 12175.484375,
+        "s4m_parameter_count": 28371290,
+        "s4m_training_elapsed_seconds": 3122.2930874424055,
+        "s4m_training_peak_gpu_memory_mb": 8007.9462890625
+      },
+      "protocol_checks": {
+        "all_metrics_finite_nonnegative": true,
+        "evaluation_artifact_checks_pass": true,
+        "source_training_validation_only": true,
+        "test_samples_3408": true,
+        "test_split_explicit": true,
+        "validation_samples_1648": true
+      },
+      "runs": {
+        "pg95_test": {
+          "job_id": "traffic_pg95_multiscale_test_seed2028_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2028__20260820_194708/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2028__20260820_194708"
+        },
+        "pg95_train": {
+          "job_id": "traffic_pg95_seed2028_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2028__20260820_184856/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2028__20260820_184856"
+        },
+        "pg95_validation": {
+          "job_id": "traffic_pg95_multiscale_validation_seed2028_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2028__20260820_194649/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2028__20260820_194649"
+        },
+        "s4m_test": {
+          "job_id": "traffic_s4m_multiscale_test_seed2028_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__20260820_181437/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__20260820_181437"
+        },
+        "s4m_train": {
+          "job_id": "traffic_s4m_seed2028_formal",
+          "resolved_config": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004/resolved_config.yaml",
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004"
+        }
+      },
+      "seed": 2028,
+      "test": {
+        "cnm_se_vs_pg95": {
+          "mae": {
+            "absolute_reduction": 0.0026892894638234077,
+            "relative_improvement_percent": 0.7432736710305015
+          },
+          "mse": {
+            "absolute_reduction": 0.0051442258394162055,
+            "relative_improvement_percent": 0.7752403491697103
+          }
+        },
+        "cnm_se_vs_s4m": {
+          "mae": {
+            "absolute_reduction": -0.0003158917038247333,
+            "relative_improvement_percent": -0.08803830023896737
+          },
+          "mse": {
+            "absolute_reduction": 0.003735688969342066,
+            "relative_improvement_percent": 0.5641698849688824
+          }
+        },
+        "pg95_cnm_se_multiscale": {
+          "mae": 0.35912757135607887,
+          "mse": 0.6584210600652352
+        },
+        "pg95_original": {
+          "mae": 0.3618168608199023,
+          "mse": 0.6635652859046514
+        },
+        "pg95_vs_s4m": {
+          "mae": {
+            "absolute_reduction": -0.003005181167648141,
+            "relative_improvement_percent": -0.83753716449828
+          },
+          "mse": {
+            "absolute_reduction": -0.0014085368700741396,
+            "relative_improvement_percent": -0.21271955199849318
+          }
+        },
+        "s4m_original": {
+          "mae": 0.35881167965225413,
+          "mse": 0.6621567490345772
+        }
+      },
+      "validation": {
+        "cnm_se_vs_pg95": {
+          "mae": {
+            "absolute_reduction": 0.0021014191470801746,
+            "relative_improvement_percent": 0.6534601881947292
+          },
+          "mse": {
+            "absolute_reduction": 0.004818417489103943,
+            "relative_improvement_percent": 0.9126691026560647
+          }
+        },
+        "cnm_se_vs_s4m": {
+          "mae": {
+            "absolute_reduction": -0.004937899685658609,
+            "relative_improvement_percent": -1.5698596181441937
+          },
+          "mse": {
+            "absolute_reduction": -0.007799716300088799,
+            "relative_improvement_percent": -1.513538824992708
+          }
+        },
+        "pg95_cnm_se_multiscale": {
+          "mae": 0.3194819282463739,
+          "mse": 0.5231294965008958
+        },
+        "pg95_original": {
+          "mae": 0.32158334739345407,
+          "mse": 0.5279479139899997
+        },
+        "pg95_vs_s4m": {
+          "mae": {
+            "absolute_reduction": -0.0070393188327387834,
+            "relative_improvement_percent": -2.2379438786198445
+          },
+          "mse": {
+            "absolute_reduction": -0.012618133789192743,
+            "relative_improvement_percent": -2.448555133816616
+          }
+        },
+        "s4m_original": {
+          "mae": 0.3145440285607153,
+          "mse": 0.515329780200807
+        }
+      }
+    }
+  ],
+  "precommitted_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "protocol_pass": true,
+  "queue_records": [
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_test_seed2027_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2027__20260820_184434",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_test_seed2027_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2027__smoke__20260820_184312",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_test_seed2028_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2028__20260820_194708",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_test_seed2028_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__test__seed2028__smoke__20260820_194546",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_validation_seed2027_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__20260820_184433",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_validation_seed2027_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2027__smoke__20260820_184312",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_validation_seed2028_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2028__20260820_194649",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_multiscale_validation_seed2028_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_pg95__traffic__validation__seed2028__smoke__20260820_194531",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_seed2027_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_174327",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_seed2027_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260820_174045",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_seed2028_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2028__20260820_184856",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_pg95_seed2028_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/mipp_pg95_traffic__traffic__point__mr0.06__seed2028__smoke__20260820_184723",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_multiscale_test_seed2026_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2026__20260820_145959",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_multiscale_test_seed2026_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2026__smoke__20260820_145817",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_multiscale_test_seed2027_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2027__20260820_171322",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_multiscale_test_seed2027_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2027__smoke__20260820_171145",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_multiscale_test_seed2028_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__20260820_181437",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_multiscale_test_seed2028_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_equal_rate_multiscale_s4m__traffic__test__seed2028__smoke__20260820_181257",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_seed2027_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__20260820_150612",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_seed2027_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2027__smoke__20260820_150351",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_seed2028_formal",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__20260820_172004",
+      "state": "SUCCESS"
+    },
+    {
+      "attempt": null,
+      "job_id": "traffic_s4m_seed2028_smoke",
+      "last_error_type": null,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_traffic__traffic__point__mr0.06__seed2028__smoke__20260820_171729",
+      "state": "SUCCESS"
+    }
+  ],
+  "queue_state": "SUCCESS",
+  "status": "PASS"
+}

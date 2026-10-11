@@ -1,0 +1,12 @@
+{
+  "config": "/mnt/data/zza/code/S4M_MissingForecasting/configs/mipp/s4m_weather_mipp_pg95_seed2024_smoke.yaml",
+  "device": "cuda",
+  "experiment_id": "mipp_pg95__weather__point__mr0.06__seed2024__smoke__20260721_143405",
+  "finished_at": "2026-07-21T06:35:31.275375+00:00",
+  "metrics_path": null,
+  "pid": 558752,
+  "return_code": 1,
+  "started_at": "2026-07-21T06:34:06.272038+00:00",
+  "state": "CODE_ERROR",
+  "verification_error": null
+}

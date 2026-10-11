@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "analyzer_registered": true,
+    "formal_depends_on_smoke": true,
+    "internal_identity_frozen": true,
+    "memory_estimates_safe": true,
+    "runtime_isolated": true,
+    "seed_frozen": true,
+    "two_job_queue": true,
+    "validation_only": true
+  },
+  "status": "PASS",
+  "step": "22.15"
+}

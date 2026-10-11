@@ -1,0 +1,73 @@
+experiment: &id001
+  model: s4m_min_distance_fixed
+  method: s4m_baseline
+  dataset: traffic
+  domain: validation_point_r006
+  seed: 2028
+  smoke_test: true
+  purpose: multiseed_isolated_bug_fix_replication_not_research_innovation
+  protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+  nominal_missing_rate: 0.06
+  realized_missing_rate: 0.2599749202006384
+  protocol_scope: stage22_37_paired_training_CRN_validation
+source: &id002
+  job_id: fixed_2028_train_smoke
+  queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_41_distance_fix/state.json
+data:
+  missing_csv: data/traffic/traffic_point_external_r0.06_l5_seed2028.csv
+  complete_csv: data/traffic/traffic.csv
+  mask_asset: artifacts/masks/traffic/point/rate_0.06/seed_2028.npz
+diagnostic:
+  variant: stage22_34_traffic_s4m_validation
+  split: val
+  max_eval_batches: 3
+  target_rate: 0.15
+  block_lengths:
+  - 1
+  - 5
+  - 20
+  nested_seed: 2028
+  multiscale_weights:
+    original: 0.5
+    l5: 0.25
+    l20: 0.25
+  timing_warmup_batches: 1
+  fixed_eval_rng: true
+  rng_protocol: stage22_34_crn_v1
+runtime:
+  device: cuda
+  gpu_uuid: GPU-c88b779d-77c7-92b9-e031-943bae990121
+provenance:
+  stage: '22.41'
+  user_approved: true
+  fix_enabled: true
+  template: /mnt/data/zza/code/S4M_MissingForecasting/configs/stage22_37_control/s4m_2028_eval_smoke.yaml
+  template_sha256: 3ef5e3c117ffec649ff021c62c80d28588cd88f7463fcb3fe025829c9be1e432
+  configuration_changes:
+    experiment:
+      old:
+        model: cnm_se_crn_v1_s4m
+        method: s4m_baseline
+        dataset: traffic
+        domain: validation_point_r006
+        seed: 2028
+        smoke_test: true
+        purpose: frozen_paired_multiseed_replication
+        protocol_match: new_fixed_rng_paired_validation_not_historical_rng
+        nominal_missing_rate: 0.06
+        realized_missing_rate: 0.2599749202006384
+        protocol_scope: stage22_37_paired_training_CRN_validation
+      new: *id001
+      reason: approved two-seed replication of isolated minimum-distance bug fix;
+        identity only otherwise
+    source:
+      old:
+        job_id: s4m_2028_train_smoke
+        queue_state: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_37_control/state.json
+      new: *id002
+      reason: approved two-seed replication of isolated minimum-distance bug fix;
+        identity only otherwise
+  baseline_manifest: /mnt/data/zza/code/S4M_MissingForecasting/runtime/stage22_41_distance_fix/baseline_manifest.json
+  scientific_classification: baseline_bug_fix_not_innovation
+  primary_comparison: original_on_path_CRN_validation_only
+  unchanged_evaluation_routes: inherited_frozen_L1_L5_L20_CNM_secondary_not_new_mechanism

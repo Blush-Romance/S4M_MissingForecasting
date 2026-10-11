@@ -1,0 +1,157 @@
+{
+  "branch_composition": {
+    "conflict_branches": [],
+    "gate_pass": false,
+    "interaction": {
+      "mae": 0.00012334858555790307,
+      "mse": 0.0001647942556091131
+    },
+    "single_candidates": {
+      "l20": {
+        "advantage_vs_full_dmrb": {
+          "mae": -0.0004086954793519615,
+          "mse": -0.00087729181103402
+        },
+        "beats_full_dmrb_both_metrics": false,
+        "gain_vs_backbone": {
+          "mae": 0.00038657856647955624,
+          "mse": 0.0008070960572361674
+        },
+        "lost_gain_recovery_fraction": {
+          "mae": 0.0,
+          "mse": 0.0
+        }
+      },
+      "l5": {
+        "advantage_vs_full_dmrb": {
+          "mae": -0.00026322998092165317,
+          "mse": -0.0006423018016270543
+        },
+        "beats_full_dmrb_both_metrics": false,
+        "gain_vs_backbone": {
+          "mae": 0.0005320440649098646,
+          "mse": 0.001042086066643133
+        },
+        "lost_gain_recovery_fraction": {
+          "mae": 0.0,
+          "mse": 0.0
+        }
+      }
+    },
+    "student_branch_cosine": 0.3645908204103456,
+    "student_cancellation_ratio": 0.0
+  },
+  "branch_expression": {
+    "cross_projection": {
+      "r20_on_c5": 0.021786312525742996,
+      "r5_on_c20": 0.0292693690414534
+    },
+    "gate_pass": true,
+    "l20": {
+      "cosine": 0.07729415977248028,
+      "geometry_fail_count": 3,
+      "mismatch_energy": 158991.78280622815,
+      "normalized_mismatch": 1.061719951200063,
+      "positive_teacher_student_gap_share": {
+        "mae": 0.9523062034311215,
+        "mse": 0.9726603895756644
+      },
+      "projection": 0.02608488647828583,
+      "residual_energy": 17054.902529351646,
+      "target_energy": 149749.2654503851,
+      "token_count": 81538,
+      "underfit_gate_pass": true
+    },
+    "l5": {
+      "cosine": 0.07742543108062924,
+      "geometry_fail_count": 3,
+      "mismatch_energy": 148289.89433486015,
+      "normalized_mismatch": 1.1253219671892267,
+      "positive_teacher_student_gap_share": {
+        "mae": 0.9501375347844682,
+        "mse": 0.9704865608218174
+      },
+      "projection": 0.034051847404526894,
+      "residual_energy": 25488.768446619157,
+      "target_energy": 131775.52616808083,
+      "token_count": 84657,
+      "underfit_gate_pass": true
+    }
+  },
+  "decision": "DUAL_BRANCH_EXPRESSION_UNDERFIT_STOP_LOW_RANK_ROUTE",
+  "formal_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/dmrb_failure_attribution__traffic__validation__seed2027__20260826_165007",
+  "metric_table": {
+    "backbone": {
+      "mae": 0.3187815968239602,
+      "mse": 0.5234719936260965
+    },
+    "student_joint": {
+      "mae": 0.31798632277812866,
+      "mse": 0.5217876057578263
+    },
+    "student_l20": {
+      "mae": 0.3183950182574806,
+      "mse": 0.5226648975688604
+    },
+    "student_l5": {
+      "mae": 0.3182495527590503,
+      "mse": 0.5224299075594534
+    },
+    "teacher_joint": {
+      "mae": 0.31619187453603464,
+      "mse": 0.5178101022114535
+    },
+    "teacher_l20": {
+      "mae": 0.3173238403631207,
+      "mse": 0.5202205606599695
+    },
+    "teacher_l5": {
+      "mae": 0.31708555160725904,
+      "mse": 0.5202353535129419
+    }
+  },
+  "protocol_pass": true,
+  "queue_state": "SUCCESS",
+  "scientific_dependency": {
+    "checks": {
+      "all_artifact_checks": true,
+      "artifact_status": true,
+      "both_dmrb_branches": true,
+      "forty_eight_samples": true,
+      "frozen": true,
+      "three_batches": true,
+      "validation_only": true
+    },
+    "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/dmrb_failure_attribution__traffic__validation__seed2027__smoke__20260826_164922/metrics.json",
+    "passed": true,
+    "reason": "Step22.29 smoke artifact gate PASS",
+    "source_job": "dmrb_failure_attribution_seed2027_smoke"
+  },
+  "source_metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/dmrb_failure_attribution__traffic__validation__seed2027__20260826_165007/dmrb_branch_failure_tokens.npz",
+  "step": "22.29",
+  "supervision_alignment": {
+    "checks": {
+      "branch_support_missed_above_0_25": false,
+      "component_opposition_or_cancellation": false,
+      "joint_precision_below_0_75": false
+    },
+    "gate_pass": false,
+    "jaccard_b20_bjoint": 0.6601154110647119,
+    "jaccard_b5_b20": 0.4412387047539761,
+    "jaccard_b5_bjoint": 0.6811976142826005,
+    "joint_partition": {
+      "both_beneficial": 0.592452342031917,
+      "neither_individually_beneficial": 0.004951019016146673,
+      "only_l20_beneficial": 0.18646878270788989,
+      "only_l5_beneficial": 0.21612785624404643
+    },
+    "p_b20_given_bjoint": 0.7789211247398069,
+    "p_b20_outside_bjoint_given_b20": 0.18769162844317988,
+    "p_b5_given_bjoint": 0.8085801982759635,
+    "p_b5_outside_bjoint_given_b5": 0.18782853160400204,
+    "teacher_cancellation_ratio": 0.0,
+    "teacher_component_cosine": 0.24546357051781345
+  },
+  "test_sources_accessed": false,
+  "validation_samples_processed": 1648
+}

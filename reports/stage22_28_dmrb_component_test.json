@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "bad_teacher_factorization_is_rejected": true,
+    "basis_parameters_are_not_shared": true,
+    "both_basis_gradients_are_nonzero": true,
+    "both_scale_targets_backpropagate": true,
+    "checkpoint_round_trip_is_exact": true,
+    "delta_checkpoint_does_not_duplicate_full_source": true,
+    "delta_checkpoint_is_verified": true,
+    "delta_checkpoint_reconstructs_source_plus_adapter": true,
+    "empty_scale_selection_is_rejected": true,
+    "fixed_sum_identity": true,
+    "formal_dual_head_parameter_count_is_frozen": true,
+    "formal_single_head_parameter_count_is_frozen": true,
+    "fp32_reconstruction_tolerance_is_frozen": true,
+    "independent_l20_switch_returns_exact_zero": true,
+    "l5_loss_does_not_reach_l20_basis": true,
+    "scale_losses_are_positive": true,
+    "strict_bimetric_token_filter_is_reused": true,
+    "teacher_and_backbone_are_detached": true,
+    "teacher_factorization_is_exact": true,
+    "zero_initialization_recovers_backbone": true
+  },
+  "dmrb_parameter_count": 90364,
+  "single_mcpr_parameter_count": 45182,
+  "status": "PASS",
+  "step": "22.28"
+}

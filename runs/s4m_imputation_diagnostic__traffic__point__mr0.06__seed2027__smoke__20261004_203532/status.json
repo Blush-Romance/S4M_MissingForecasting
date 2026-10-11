@@ -1,0 +1,9 @@
+{
+  "experiment_id": "s4m_imputation_diagnostic__traffic__point__mr0.06__seed2027__smoke__20261004_203532",
+  "state": "SUCCESS",
+  "started_at": "2026-10-04T12:35:32.786159+00:00",
+  "pid": 2528996,
+  "return_code": 0,
+  "finished_at": "2026-10-04T12:36:00.822595+00:00",
+  "verification_error": null
+}

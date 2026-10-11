@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "all_teacher_features_are_detached": true,
+    "both_layers_have_positive_raw_loss": true,
+    "both_student_features_receive_gradient": true,
+    "capture_adds_no_state_keys": true,
+    "capture_contains_only_frozen_layers": true,
+    "capture_default_off_preserves_output": true,
+    "capture_disable_clears_ephemeral_state": true,
+    "captured_student_features_require_grad": true,
+    "no_benefit_returns_graph_zero": true,
+    "nonfinite_feature_rejected": true,
+    "positive_finite_hidden_loss": true,
+    "scale_is_detached": true,
+    "wrong_layer_set_rejected": true,
+    "wrong_shape_rejected": true
+  },
+  "status": "PASS",
+  "step": "22.32"
+}

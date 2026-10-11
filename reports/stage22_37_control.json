@@ -1,0 +1,1296 @@
+{
+  "stage": "22.37",
+  "queue_state": "SUCCESS",
+  "completed": true,
+  "decision": "PAIRED_THREE_SEED_COMPLETE",
+  "test_accessed": false,
+  "new_module": false,
+  "randomness": "joint_training_and_missing_mask",
+  "per_seed": [
+    {
+      "seed": 2027,
+      "sources": {
+        "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2027__20260908_151505",
+        "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2027__20260908_195821"
+      },
+      "cells": {
+        "A_s4m": {
+          "mse": 0.5347613803970451,
+          "mae": 0.32664500314070355
+        },
+        "B_pg95": {
+          "mse": 0.5335844910518334,
+          "mae": 0.3218767654092067
+        },
+        "C_s4m_cnm": {
+          "mse": 0.5274178883158254,
+          "mae": 0.32265877134535237
+        },
+        "D_pg95_cnm": {
+          "mse": 0.5256434049709368,
+          "mae": 0.3183358659710535
+        }
+      },
+      "pg95_gain_without_cnm_percent": [
+        0.22007747536629432,
+        1.4597614185584022
+      ],
+      "cnm_gain_on_s4m_percent": [
+        1.3732278265433877,
+        1.2203559696378077
+      ],
+      "cnm_gain_on_pg95_percent": [
+        1.488252791088937,
+        1.1000792286611831
+      ],
+      "pg95_gain_with_cnm_percent": [
+        0.33644731894759417,
+        1.3397761840702942
+      ],
+      "interaction_absolute": [
+        0.0005975939996768487,
+        -0.0004453323571980139
+      ],
+      "interaction_percent_of_s4m": [
+        0.11174965537585234,
+        -0.13633527313019553
+      ],
+      "fixed_assets_check": "PASS",
+      "new_test_inference": false,
+      "pairing_check": "PASS",
+      "actual_epochs": [
+        4,
+        4
+      ],
+      "training_sources": {
+        "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2027__20260908_144251",
+        "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2027__20260908_191934"
+      }
+    },
+    {
+      "seed": 2028,
+      "sources": {
+        "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20260919_204034",
+        "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2028__20260921_032700"
+      },
+      "cells": {
+        "A_s4m": {
+          "mse": 0.5157885276869995,
+          "mae": 0.3146687898905184
+        },
+        "B_pg95": {
+          "mse": 0.5215116016967482,
+          "mae": 0.3171443020329219
+        },
+        "C_s4m_cnm": {
+          "mse": 0.5111358006036197,
+          "mae": 0.3124219797895297
+        },
+        "D_pg95_cnm": {
+          "mse": 0.5158634147838531,
+          "mae": 0.31344257759725136
+        }
+      },
+      "pg95_gain_without_cnm_percent": [
+        -1.1095776083685367,
+        -0.7867040589773099
+      ],
+      "cnm_gain_on_s4m_percent": [
+        0.9020609869405958,
+        0.714023815889218
+      ],
+      "cnm_gain_on_pg95_percent": [
+        1.0830414691674262,
+        1.167205089904548
+      ],
+      "pg95_gain_with_cnm_percent": [
+        -0.9249233128750433,
+        -0.32667285714315897
+      ],
+      "interaction_absolute": [
+        0.0009954598295153216,
+        0.0014549143346818116
+      ],
+      "interaction_percent_of_s4m": [
+        0.1929976678580578,
+        0.46236372383419877
+      ],
+      "fixed_assets_check": "PASS",
+      "new_test_inference": false,
+      "pairing_check": "PASS",
+      "actual_epochs": [
+        4,
+        4
+      ],
+      "training_sources": {
+        "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946",
+        "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2028__20260921_020704"
+      }
+    },
+    {
+      "seed": 2029,
+      "sources": {
+        "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2029__20260920_001842",
+        "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2029__20260921_050750"
+      },
+      "cells": {
+        "A_s4m": {
+          "mse": 0.5315446757897183,
+          "mae": 0.3251432665113381
+        },
+        "B_pg95": {
+          "mse": 0.5383125337943813,
+          "mae": 0.33183391021578884
+        },
+        "C_s4m_cnm": {
+          "mse": 0.5266873567180012,
+          "mae": 0.32231231592180193
+        },
+        "D_pg95_cnm": {
+          "mse": 0.532219122266378,
+          "mae": 0.3283389346439301
+        }
+      },
+      "pg95_gain_without_cnm_percent": [
+        -1.2732434944641136,
+        -2.0577525028393615
+      ],
+      "cnm_gain_on_s4m_percent": [
+        0.9138120073351537,
+        0.8706779075916916
+      ],
+      "cnm_gain_on_pg95_percent": [
+        1.1319468051492072,
+        1.0532303855220777
+      ],
+      "pg95_gain_with_cnm_percent": [
+        -1.0502939700029068,
+        -1.8698071480428093
+      ],
+      "interaction_absolute": [
+        0.0012360924562860864,
+        0.0006640249823225419
+      ],
+      "interaction_percent_of_s4m": [
+        0.23254723687141035,
+        0.20422535254913132
+      ],
+      "fixed_assets_check": "PASS",
+      "new_test_inference": false,
+      "pairing_check": "PASS",
+      "actual_epochs": [
+        4,
+        4
+      ],
+      "training_sources": {
+        "s4m": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902",
+        "pg95": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2029__20260921_032716"
+      }
+    }
+  ],
+  "errors": [],
+  "jobs": [
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_eval_formal__attempt01__20260921_032659.log",
+      "config": "configs/stage22_37_control/pg95_2028_eval_formal.yaml",
+      "depends_on": [
+        "pg95_2028_train_formal"
+      ],
+      "finished_at": "2026-09-20T19:30:14.541808+00:00",
+      "gpu": {
+        "effective_free_mib": 24216,
+        "free_mib": 24216,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 1,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_eval_formal__attempt01__20260921_032659.log",
+          "finished_at": "2026-09-20T19:30:14.541808+00:00",
+          "gpu": {
+            "effective_free_mib": 24216,
+            "free_mib": 24216,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 1,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 432092,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2028__20260921_032700",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T19:26:59.060076+00:00"
+        }
+      ],
+      "id": "pg95_2028_eval_formal",
+      "last_launch_free_mib": 24216,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2028__20260921_032700",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T19:26:59.060076+00:00",
+      "state": "SUCCESS",
+      "training_pid": 432515
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_eval_smoke__attempt01__20260921_020449.log",
+      "config": "configs/stage22_37_control/pg95_2028_eval_smoke.yaml",
+      "depends_on": [
+        "pg95_2028_train_smoke"
+      ],
+      "finished_at": "2026-09-20T18:05:49.876681+00:00",
+      "gpu": {
+        "effective_free_mib": 24216,
+        "free_mib": 24216,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 1,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_eval_smoke__attempt01__20260921_020449.log",
+          "finished_at": "2026-09-20T18:05:49.876681+00:00",
+          "gpu": {
+            "effective_free_mib": 24216,
+            "free_mib": 24216,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 1,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 3460294,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2028__smoke__20260921_020451",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T18:04:49.647219+00:00"
+        }
+      ],
+      "id": "pg95_2028_eval_smoke",
+      "last_launch_free_mib": 24216,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2028__smoke__20260921_020451",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T18:04:49.647219+00:00",
+      "state": "SUCCESS",
+      "training_pid": 3460763
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_train_formal__attempt01__20260921_020702.log",
+      "config": "configs/stage22_37_control/pg95_2028_train_formal.yaml",
+      "depends_on": [
+        "pg95_2028_eval_smoke"
+      ],
+      "finished_at": "2026-09-20T19:26:56.454998+00:00",
+      "gpu": {
+        "effective_free_mib": 24216,
+        "free_mib": 24216,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 1,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_train_formal__attempt01__20260921_020702.log",
+          "finished_at": "2026-09-20T19:26:56.454998+00:00",
+          "gpu": {
+            "effective_free_mib": 24216,
+            "free_mib": 24216,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 1,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 3491640,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2028__20260921_020704",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T18:07:02.139880+00:00"
+        }
+      ],
+      "id": "pg95_2028_train_formal",
+      "last_launch_free_mib": 24216,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-20T18:06:44.339381+00:00",
+      "launch_reservation_mib": 18432,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 16448.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1644.8000000000002
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 18432,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2028__20260921_020704",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T18:07:02.139880+00:00",
+      "state": "SUCCESS",
+      "training_pid": 3492171
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_train_smoke__attempt01__20260921_020203.log",
+      "config": "configs/stage22_37_control/pg95_2028_train_smoke.yaml",
+      "depends_on": [],
+      "finished_at": "2026-09-20T18:04:33.877700+00:00",
+      "gpu": {
+        "effective_free_mib": 24216,
+        "free_mib": 24216,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 1,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2028_train_smoke__attempt01__20260921_020203.log",
+          "finished_at": "2026-09-20T18:04:33.877700+00:00",
+          "gpu": {
+            "effective_free_mib": 24216,
+            "free_mib": 24216,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 1,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 3421044,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2028__smoke__20260921_020223",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T18:02:03.145555+00:00"
+        }
+      ],
+      "id": "pg95_2028_train_smoke",
+      "last_launch_free_mib": 24216,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-20T18:01:48.016193+00:00",
+      "launch_reservation_mib": 18432,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 16448.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1644.8000000000002
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 18432,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2028__smoke__20260921_020223",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T18:02:03.145555+00:00",
+      "state": "SUCCESS",
+      "training_pid": 3426156
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_eval_formal__attempt01__20260921_050748.log",
+      "config": "configs/stage22_37_control/pg95_2029_eval_formal.yaml",
+      "depends_on": [
+        "pg95_2029_train_formal"
+      ],
+      "finished_at": "2026-09-20T21:10:03.629262+00:00",
+      "gpu": {
+        "effective_free_mib": 24216,
+        "free_mib": 24216,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 1,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_eval_formal__attempt01__20260921_050748.log",
+          "finished_at": "2026-09-20T21:10:03.629262+00:00",
+          "gpu": {
+            "effective_free_mib": 24216,
+            "free_mib": 24216,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 1,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 1799192,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2029__20260921_050750",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T21:07:48.340452+00:00"
+        }
+      ],
+      "id": "pg95_2029_eval_formal",
+      "last_launch_free_mib": 24216,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2029__20260921_050750",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T21:07:48.340452+00:00",
+      "state": "SUCCESS",
+      "training_pid": 1799562
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_eval_smoke__attempt01__20260921_020702.log",
+      "config": "configs/stage22_37_control/pg95_2029_eval_smoke.yaml",
+      "depends_on": [
+        "pg95_2029_train_smoke"
+      ],
+      "finished_at": "2026-09-20T18:08:02.324063+00:00",
+      "gpu": {
+        "effective_free_mib": 6315,
+        "free_mib": 6315,
+        "name": "NVIDIA GeForce RTX 4080",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 0,
+        "total_mib": 16376,
+        "used_mib": 9761,
+        "utilization_percent": 100,
+        "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_eval_smoke__attempt01__20260921_020702.log",
+          "finished_at": "2026-09-20T18:08:02.324063+00:00",
+          "gpu": {
+            "effective_free_mib": 6315,
+            "free_mib": 6315,
+            "name": "NVIDIA GeForce RTX 4080",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 0,
+            "total_mib": 16376,
+            "used_mib": 9761,
+            "utilization_percent": 100,
+            "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+          },
+          "pid": 3491666,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2029__smoke__20260921_020704",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T18:07:02.180291+00:00"
+        }
+      ],
+      "id": "pg95_2029_eval_smoke",
+      "last_launch_free_mib": 6315,
+      "last_launch_total_mib": 16376,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_pg95__traffic__validation__seed2029__smoke__20260921_020704",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T18:07:02.180291+00:00",
+      "state": "SUCCESS",
+      "training_pid": 3492195
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_train_formal__attempt01__20260921_032714.log",
+      "config": "configs/stage22_37_control/pg95_2029_train_formal.yaml",
+      "depends_on": [
+        "pg95_2029_eval_smoke"
+      ],
+      "finished_at": "2026-09-20T21:07:44.899964+00:00",
+      "gpu": {
+        "effective_free_mib": 19601,
+        "free_mib": 23585,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 3984,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 631,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_train_formal__attempt01__20260921_032714.log",
+          "finished_at": "2026-09-20T21:07:44.899964+00:00",
+          "gpu": {
+            "effective_free_mib": 19601,
+            "free_mib": 23585,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 3984,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 631,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 435504,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2029__20260921_032716",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T19:27:14.178912+00:00"
+        }
+      ],
+      "id": "pg95_2029_train_formal",
+      "last_launch_free_mib": 23585,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-20T19:26:59.095181+00:00",
+      "launch_reservation_mib": 18432,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 16448.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1644.8000000000002
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 18432,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2029__20260921_032716",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T19:27:14.178912+00:00",
+      "state": "SUCCESS",
+      "training_pid": 435939
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_train_smoke__attempt01__20260921_020504.log",
+      "config": "configs/stage22_37_control/pg95_2029_train_smoke.yaml",
+      "depends_on": [],
+      "finished_at": "2026-09-20T18:06:59.356340+00:00",
+      "gpu": {
+        "effective_free_mib": 19608,
+        "free_mib": 24216,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 4608,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 1,
+        "utilization_percent": 0,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/pg95_2029_train_smoke__attempt01__20260921_020504.log",
+          "finished_at": "2026-09-20T18:06:59.356340+00:00",
+          "gpu": {
+            "effective_free_mib": 19608,
+            "free_mib": 24216,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 4608,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 1,
+            "utilization_percent": 0,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 3463724,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2029__smoke__20260921_020509",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-20T18:05:04.785388+00:00"
+        }
+      ],
+      "id": "pg95_2029_train_smoke",
+      "last_launch_free_mib": 24216,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-20T18:04:49.685690+00:00",
+      "launch_reservation_mib": 18432,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 16448.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1644.8000000000002
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 18432,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/pg95_paired_rng__traffic__point__mr0.06__seed2029__smoke__20260921_020509",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-20T18:05:04.785388+00:00",
+      "state": "SUCCESS",
+      "training_pid": 3464701
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_eval_formal__attempt01__20260919_204032.log",
+      "config": "configs/stage22_37_control/s4m_2028_eval_formal.yaml",
+      "depends_on": [
+        "s4m_2028_train_formal"
+      ],
+      "finished_at": "2026-09-19T12:44:49.777358+00:00",
+      "gpu": {
+        "effective_free_mib": 17561,
+        "free_mib": 17561,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 6655,
+        "utilization_percent": 16,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_eval_formal__attempt01__20260919_204032.log",
+          "finished_at": "2026-09-19T12:44:49.777358+00:00",
+          "gpu": {
+            "effective_free_mib": 17561,
+            "free_mib": 17561,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 6655,
+            "utilization_percent": 16,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 933907,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20260919_204034",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T12:40:32.137470+00:00"
+        }
+      ],
+      "id": "s4m_2028_eval_formal",
+      "last_launch_free_mib": 17561,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__20260919_204034",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T12:40:32.137470+00:00",
+      "state": "SUCCESS",
+      "training_pid": 934444
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_eval_smoke__attempt01__20260919_194841.log",
+      "config": "configs/stage22_37_control/s4m_2028_eval_smoke.yaml",
+      "depends_on": [
+        "s4m_2028_train_smoke"
+      ],
+      "finished_at": "2026-09-19T11:49:42.074032+00:00",
+      "gpu": {
+        "effective_free_mib": 17561,
+        "free_mib": 17561,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 6655,
+        "utilization_percent": 20,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_eval_smoke__attempt01__20260919_194841.log",
+          "finished_at": "2026-09-19T11:49:42.074032+00:00",
+          "gpu": {
+            "effective_free_mib": 17561,
+            "free_mib": 17561,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 6655,
+            "utilization_percent": 20,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 74583,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__smoke__20260919_194843",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T11:48:41.469459+00:00"
+        }
+      ],
+      "id": "s4m_2028_eval_smoke",
+      "last_launch_free_mib": 17561,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2028__smoke__20260919_194843",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T11:48:41.469459+00:00",
+      "state": "SUCCESS",
+      "training_pid": 75190
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_train_formal__attempt01__20260919_194944.log",
+      "config": "configs/stage22_37_control/s4m_2028_train_formal.yaml",
+      "depends_on": [
+        "s4m_2028_eval_smoke"
+      ],
+      "finished_at": "2026-09-19T12:40:28.904629+00:00",
+      "gpu": {
+        "effective_free_mib": 17561,
+        "free_mib": 17561,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 6655,
+        "utilization_percent": 62,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_train_formal__attempt01__20260919_194944.log",
+          "finished_at": "2026-09-19T12:40:28.904629+00:00",
+          "gpu": {
+            "effective_free_mib": 17561,
+            "free_mib": 17561,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 6655,
+            "utilization_percent": 62,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 92080,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T11:49:44.984383+00:00"
+        }
+      ],
+      "id": "s4m_2028_train_formal",
+      "last_launch_free_mib": 17561,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 13312,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 11874.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1187.4
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 13312,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__20260919_194946",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T11:49:44.984383+00:00",
+      "state": "SUCCESS",
+      "training_pid": 92871
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_train_smoke__attempt01__20260919_194640.log",
+      "config": "configs/stage22_37_control/s4m_2028_train_smoke.yaml",
+      "depends_on": [],
+      "finished_at": "2026-09-19T11:48:26.432566+00:00",
+      "gpu": {
+        "effective_free_mib": 14618,
+        "free_mib": 14618,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 9599,
+        "utilization_percent": 95,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2028_train_smoke__attempt01__20260919_194640.log",
+          "finished_at": "2026-09-19T11:48:26.432566+00:00",
+          "gpu": {
+            "effective_free_mib": 14618,
+            "free_mib": 14618,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 9599,
+            "utilization_percent": 95,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 40602,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__smoke__20260919_194642",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T11:46:40.338625+00:00"
+        }
+      ],
+      "id": "s4m_2028_train_smoke",
+      "last_launch_free_mib": 14618,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-19T11:46:25.160869+00:00",
+      "launch_reservation_mib": 13312,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 11874.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1187.4
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 13312,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2028__smoke__20260919_194642",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T11:46:40.338625+00:00",
+      "state": "SUCCESS",
+      "training_pid": 41235
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_eval_formal__attempt01__20260920_001840.log",
+      "config": "configs/stage22_37_control/s4m_2029_eval_formal.yaml",
+      "depends_on": [
+        "s4m_2029_train_formal"
+      ],
+      "finished_at": "2026-09-19T16:23:12.860739+00:00",
+      "gpu": {
+        "effective_free_mib": 8032,
+        "free_mib": 8032,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 16185,
+        "utilization_percent": 94,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_eval_formal__attempt01__20260920_001840.log",
+          "finished_at": "2026-09-19T16:23:12.860739+00:00",
+          "gpu": {
+            "effective_free_mib": 8032,
+            "free_mib": 8032,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 16185,
+            "utilization_percent": 94,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 372602,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2029__20260920_001842",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T16:18:40.864471+00:00"
+        }
+      ],
+      "id": "s4m_2029_eval_formal",
+      "last_launch_free_mib": 8032,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2029__20260920_001842",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T16:18:40.864471+00:00",
+      "state": "SUCCESS",
+      "training_pid": 373105
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_eval_smoke__attempt01__20260919_214747.log",
+      "config": "configs/stage22_37_control/s4m_2029_eval_smoke.yaml",
+      "depends_on": [
+        "s4m_2029_train_smoke"
+      ],
+      "finished_at": "2026-09-19T13:49:18.352613+00:00",
+      "gpu": {
+        "effective_free_mib": 8032,
+        "free_mib": 8032,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 16185,
+        "utilization_percent": 100,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_eval_smoke__attempt01__20260919_214747.log",
+          "finished_at": "2026-09-19T13:49:18.352613+00:00",
+          "gpu": {
+            "effective_free_mib": 8032,
+            "free_mib": 8032,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 16185,
+            "utilization_percent": 100,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 2068498,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2029__smoke__20260919_214749",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T13:47:47.740487+00:00"
+        }
+      ],
+      "id": "s4m_2029_eval_smoke",
+      "last_launch_free_mib": 8032,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "launch_reservation_mib": 4608,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 3936.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 512.0
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 4608,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/cnm_se_crn_v1_s4m__traffic__validation__seed2029__smoke__20260919_214749",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T13:47:47.740487+00:00",
+      "state": "SUCCESS",
+      "training_pid": 2069025
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_train_formal__attempt01__20260919_225900.log",
+      "config": "configs/stage22_37_control/s4m_2029_train_formal.yaml",
+      "depends_on": [
+        "s4m_2029_eval_smoke"
+      ],
+      "finished_at": "2026-09-19T16:18:34.452682+00:00",
+      "gpu": {
+        "effective_free_mib": 14128,
+        "free_mib": 14128,
+        "name": "NVIDIA GeForce RTX 4090",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 1,
+        "total_mib": 24564,
+        "used_mib": 10089,
+        "utilization_percent": 90,
+        "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_train_formal__attempt01__20260919_225900.log",
+          "finished_at": "2026-09-19T16:18:34.452682+00:00",
+          "gpu": {
+            "effective_free_mib": 14128,
+            "free_mib": 14128,
+            "name": "NVIDIA GeForce RTX 4090",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 1,
+            "total_mib": 24564,
+            "used_mib": 10089,
+            "utilization_percent": 90,
+            "uuid": "GPU-a3af3617-5bcd-4c65-a68e-17e716b31edb"
+          },
+          "pid": 3237925,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T14:59:00.394578+00:00"
+        }
+      ],
+      "id": "s4m_2029_train_formal",
+      "last_launch_free_mib": 14128,
+      "last_launch_total_mib": 24564,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-19T14:58:45.228951+00:00",
+      "launch_reservation_mib": 13312,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 11874.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1187.4
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 13312,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__20260919_225902",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T14:59:00.394578+00:00",
+      "state": "SUCCESS",
+      "training_pid": 3238787
+    },
+    {
+      "attempt_count": 1,
+      "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_train_smoke__attempt01__20260919_214511.log",
+      "config": "configs/stage22_37_control/s4m_2029_train_smoke.yaml",
+      "depends_on": [],
+      "finished_at": "2026-09-19T13:47:42.936724+00:00",
+      "gpu": {
+        "effective_free_mib": 14722,
+        "free_mib": 14722,
+        "name": "NVIDIA GeForce RTX 4080",
+        "outstanding_reservation_mib": 0,
+        "physical_index": 0,
+        "total_mib": 16376,
+        "used_mib": 1354,
+        "utilization_percent": 97,
+        "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+      },
+      "history": [
+        {
+          "attempt": 1,
+          "attempt_log": "/mnt/data/zza/code/S4M_MissingForecasting/logs/stage22_37_control/s4m_2029_train_smoke__attempt01__20260919_214511.log",
+          "finished_at": "2026-09-19T13:47:42.936724+00:00",
+          "gpu": {
+            "effective_free_mib": 14722,
+            "free_mib": 14722,
+            "name": "NVIDIA GeForce RTX 4080",
+            "outstanding_reservation_mib": 0,
+            "physical_index": 0,
+            "total_mib": 16376,
+            "used_mib": 1354,
+            "utilization_percent": 97,
+            "uuid": "GPU-c88b779d-77c7-92b9-e031-943bae990121"
+          },
+          "pid": 2024535,
+          "return_code": 0,
+          "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__smoke__20260919_214513",
+          "run_state": "SUCCESS",
+          "started_at": "2026-09-19T13:45:11.872920+00:00"
+        }
+      ],
+      "id": "s4m_2029_train_smoke",
+      "last_launch_free_mib": 14722,
+      "last_launch_total_mib": 16376,
+      "last_oom_time": null,
+      "last_resource_check_at": "2026-09-19T13:44:56.741027+00:00",
+      "launch_reservation_mib": 13312,
+      "memory_estimate_source": {
+        "configuration_unchanged": true,
+        "peak_reserved_mib": 11874.0,
+        "policy": "historical_peak_plus_10pct",
+        "safety_margin_mib": 1187.4
+      },
+      "next_eligible_epoch": 0,
+      "oom_retry_count": 0,
+      "pid": null,
+      "required_memory_estimate_mib": 13312,
+      "run_dir": "/mnt/data/zza/code/S4M_MissingForecasting/runs/s4m_paired_rng__traffic__point__mr0.06__seed2029__smoke__20260919_214513",
+      "runner_status": "SUCCESS",
+      "started_at": "2026-09-19T13:45:11.872920+00:00",
+      "state": "SUCCESS",
+      "training_pid": 2025042
+    }
+  ],
+  "summary": {
+    "cells": {
+      "A_s4m": {
+        "mse": {
+          "mean": 0.5273648612912543,
+          "sample_std": 0.010153591577390207
+        },
+        "mae": {
+          "mean": 0.3221523531808534,
+          "sample_std": 0.006524307845766577
+        }
+      },
+      "B_pg95": {
+        "mse": {
+          "mean": 0.5311362088476542,
+          "sample_std": 0.008663913327751769
+        },
+        "mae": {
+          "mean": 0.32361832588597245,
+          "sample_std": 0.0074980612035520575
+        }
+      },
+      "C_s4m_cnm": {
+        "mse": {
+          "mean": 0.521747015212482,
+          "sample_std": 0.00919683781037565
+        },
+        "mae": {
+          "mean": 0.31913102235222796,
+          "sample_std": 0.005812783061597949
+        }
+      },
+      "D_pg95_cnm": {
+        "mse": {
+          "mean": 0.5245753140070559,
+          "sample_std": 0.008230000336805774
+        },
+        "mae": {
+          "mean": 0.320039126070745,
+          "sample_std": 0.007592837713327912
+        }
+      }
+    },
+    "gains": {
+      "pg95_gain_without_cnm_percent": {
+        "mean": [
+          -0.7209145424887854,
+          -0.46156504775275636
+        ],
+        "sample_std": [
+          0.8190214367268377,
+          1.7811548442714993
+        ],
+        "dual_wins": 1
+      },
+      "pg95_gain_with_cnm_percent": {
+        "mean": [
+          -0.546256654643452,
+          -0.28556794037189137
+        ],
+        "sample_std": [
+          0.7670098950875632,
+          1.6051864384181804
+        ],
+        "dual_wins": 1
+      },
+      "cnm_gain_on_s4m_percent": {
+        "mean": [
+          1.0630336069397124,
+          0.9350192310395724
+        ],
+        "sample_std": [
+          0.2687003201090914,
+          0.2592256100526913
+        ],
+        "dual_wins": 3
+      },
+      "cnm_gain_on_pg95_percent": {
+        "mean": [
+          1.2344136884685233,
+          1.1068382346959362
+        ],
+        "sample_std": [
+          0.22118691300849003,
+          0.05728718383461741
+        ],
+        "dual_wins": 3
+      }
+    },
+    "metric_order": [
+      "mse",
+      "mae"
+    ]
+  },
+  "scientific_conclusion": "PG95_INCREMENT_NOT_CONSISTENT"
+}

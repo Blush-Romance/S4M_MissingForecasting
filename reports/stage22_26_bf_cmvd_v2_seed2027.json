@@ -1,0 +1,59 @@
+{
+  "comparison": {
+    "bf_cmvd_student_validation": {
+      "mae": 0.31763805278010177,
+      "mse": 0.520750270727185
+    },
+    "cnm_se_teacher_validation": {
+      "mae": 0.316191883227654,
+      "mse": 0.517810115072775
+    },
+    "pg95_validation": {
+      "mae": 0.3187816046060131,
+      "mse": 0.5234720035914716
+    },
+    "student_gain_vs_pg95_percent": {
+      "mae": 0.3587257888750175,
+      "mse": 0.5199385727628445
+    },
+    "teacher_gain_retention_fraction": {
+      "mae": 0.44157330416599966,
+      "mse": 0.48071113645188845
+    },
+    "teacher_gain_vs_pg95_percent": {
+      "mae": 0.8123810599296613,
+      "mse": 1.0816029281129045
+    },
+    "validation_gate_pass": false
+  },
+  "decision": "BF_CMVD_SEED2027_STOP_OR_REDESIGN",
+  "formal_mechanism": {
+    "bf_cmvd_beneficial_fraction": 0.18447119406151563,
+    "bf_cmvd_diagnostic_steps": 2996,
+    "bf_cmvd_distill_l1_mean": 0.018131572181528038,
+    "bf_cmvd_teacher_delta_energy_mean": 0.004059734266687766,
+    "mcpr_gradient_norm_max": 0.035107526334359096,
+    "mcpr_residual_energy_mean": 0.0006206421397526305
+  },
+  "formal_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/bf_cmvd_v2_pg95_traffic__traffic__point__mr0.06__seed2027__20260820_212927",
+  "queue_state": "SUCCESS",
+  "scientific_dependency": {
+    "metrics_path": "/mnt/data/zza/code/S4M_MissingForecasting/runs/bf_cmvd_v2_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260820_212726/metrics.json",
+    "passed": true,
+    "reason": "BF-CMVD-v2 token smoke PASS",
+    "source_job": "bf_cmvd_v2_traffic_validation_seed2027_smoke"
+  },
+  "smoke_mechanism": {
+    "bf_cmvd_beneficial_fraction": 0.1910323253388947,
+    "bf_cmvd_beneficial_samples": 916,
+    "bf_cmvd_diagnostic_steps": 4,
+    "bf_cmvd_distill_l1_mean": 0.019975966308265924,
+    "bf_cmvd_teacher_delta_energy_mean": 0.004304962931200862,
+    "bf_cmvd_total_samples": 4795,
+    "mcpr_gradient_norm_max": 0.035107526334359096,
+    "mcpr_residual_energy_mean": 4.0939939026429784e-05
+  },
+  "smoke_run": "/mnt/data/zza/code/S4M_MissingForecasting/runs/bf_cmvd_v2_pg95_traffic__traffic__point__mr0.06__seed2027__smoke__20260820_212726",
+  "step": "22.26",
+  "test_sources_accessed": false
+}
