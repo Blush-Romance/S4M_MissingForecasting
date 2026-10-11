@@ -18,3 +18,14 @@ node_modules/
 *.npy
 *.npz
 *.pkl
+
+# mtsf refactor
+data/raw/
+data/masks/
+runs_mtsf/
+__pycache__/
+third_party/
+data/s4m/
+results_mtsf/
+logs_mtsf/
+logs_queue_*.log

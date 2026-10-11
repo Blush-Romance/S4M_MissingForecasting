@@ -1,0 +1,20 @@
+r1__mars__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=mars
+r1__mars-nomcm__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=mars mcm_rate=0
+r1__mars-novm__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=mars use_var_mix=false
+r1__mars-nogap__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=mars use_gap_tokens=false
+r1__mars-norel__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=mars use_rel_bias=false
+r1__mars-noobsn__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=mars use_obsnorm=false
+r1__patchtst__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=patchtst
+r1__itransformer__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=itransformer
+r1__dlinear__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=dlinear
+r1__mars__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=mars
+r1__mars-nomcm__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=mars mcm_rate=0
+r1__mars-novm__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=mars use_var_mix=false
+r1__mars-nogap__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=mars use_gap_tokens=false
+r1__mars-norel__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=mars use_rel_bias=false
+r1__mars-noobsn__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=mars use_obsnorm=false
+r1__patchtst__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=patchtst
+r1__itransformer__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=itransformer
+r1__dlinear__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=dlinear
+r1__crib__etth1__point__L96 | dataset=etth1 seq_len=96 pattern=point rate=0.06 model=crib lr=0.001
+r1__crib__weather__point__L96 | dataset=weather seq_len=96 pattern=point rate=0.06 model=crib lr=0.001

@@ -1,0 +1,45 @@
+# ---- protocol (S4M, ICLR'25) ----
+data_root: data/raw
+mask_cache: data/masks
+dataset: etth1
+pattern: point          # point | variable
+rate: 0.06              # block start rate r
+block: 5
+mask_seed: 2024
+seq_len: 96
+pred_len: 96
+batch_size: 16
+eval_batch_size: 64
+# ---- optimisation ----
+seed: 2024
+lr: 0.0005
+weight_decay: 0.0
+epochs: 30
+patience: 5
+schedule: cosine        # cosine | constant
+warmup_frac: 0.05
+clip: 1.0
+amp: false
+num_workers: 2
+# ---- model ----
+model: mars
+patch_len: 16
+stride: 8
+d_model: 128
+n_heads: 8
+d_ff: 256
+e_layers: 3
+dropout: 0.2
+head_dropout: 0.1
+# MARS switches
+use_obsnorm: true
+use_gap_tokens: true
+use_rel_bias: true
+use_var_mix: true
+mcm_rate: 0.12
+mcm_prob: 0.5
+rec_weight: 0.5
+# ---- bookkeeping ----
+runs_root: runs_mtsf
+tag: ""
+keep_ckpt: false
