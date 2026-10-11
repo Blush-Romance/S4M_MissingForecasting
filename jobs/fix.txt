@@ -1,0 +1,2 @@
+legacy__mars-recdata__weather__point__L192__s2023 | dataset=weather seq_len=192 pattern=point rate=0.06 mask_file=data/masks/legacy_weather_s2023.npy seed=2023 model=mars rec_space=data
+# rec_space=data: best val 0.53742 vs v1 0.53737 (Weather s2023) -> no gain, kept v1 (rec_space=norm)

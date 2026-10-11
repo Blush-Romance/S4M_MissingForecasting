@@ -40,12 +40,22 @@ LEGACY = {
 PAPER_S4M_L192 = {"etth1": (0.593, 0.574), "weather": (0.225, 0.305), "traffic": (0.687, 0.385)}
 
 
+INTERIM = set()  # (dataset, seed) whose MARS number is an interim checkpoint
+
+
 def ours():
     out = {}
-    for f in glob.glob("results_mtsf/legacy__*.json"):
+    # final results first; interim (still-training) results only fill gaps
+    files = sorted(glob.glob("results_mtsf/legacy__*.json"), key=lambda f: "__interim" in f)
+    for f in files:
         r = json.load(open(f))
         model = os.path.basename(f).split("__")[1]
-        out.setdefault(r["dataset"], {}).setdefault(model, {})[int(r["seed"])] = (r["mse"], r["mae"])
+        d = out.setdefault(r["dataset"], {}).setdefault(model, {})
+        if "__interim" in f:
+            if int(r["seed"]) in d:
+                continue
+            INTERIM.add((r["dataset"], int(r["seed"])))
+        d[int(r["seed"])] = (r["mse"], r["mae"])
     return out
 
 
@@ -95,6 +105,8 @@ def main():
             rel = "—" if name.startswith("**") else f"{(m_mse_ss(mars, ss)[0] / v[:, 0].mean() - 1) * 100:+.1f}%"
             rela = "—" if name.startswith("**") else f"{(m_mse_ss(mars, ss)[1] / v[:, 1].mean() - 1) * 100:+.1f}%"
             note = "" if ss == seeds else f"（仅 seed {ss}）"
+            if name.startswith("**") and any((ds, s) in INTERIM for s in ss):
+                note += "（中途 checkpoint，训练未结束）"
             lines.append(f"| {name}{note} | {mse} | {mae} | {rel} | {rela} |")
         p = PAPER_S4M_L192[ds]
         lines.append(f"| S4M 论文 Table 1（官方未公开 mask，仅供参考） | {p[0]:.3f} | {p[1]:.3f} | "

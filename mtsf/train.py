@@ -59,6 +59,11 @@ def evaluate(model, loader, device, amp_dtype):
 def run(cfg: SimpleNamespace) -> dict:
     set_seed(cfg.seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # On shared GPUs, hard-cap this process (in GiB) so it OOMs itself instead of
+    # squeezing other users' jobs, e.g. MTSF_MAX_GB=3.
+    if device.type == "cuda" and os.environ.get("MTSF_MAX_GB"):
+        total = torch.cuda.get_device_properties(0).total_memory / 2**30
+        torch.cuda.set_per_process_memory_fraction(min(1.0, float(os.environ["MTSF_MAX_GB"]) / total))
     data = MissingForecastData(cfg.data_root, cfg.dataset, cfg.seq_len, cfg.pred_len,
                                cfg.pattern, cfg.rate, cfg.block, cfg.mask_seed, cfg.mask_cache,
                                getattr(cfg, "mask_file", None) or None)
@@ -118,6 +123,9 @@ def run(cfg: SimpleNamespace) -> dict:
             sched.step()
             for k, v in logs.items():
                 acc[k] = acc.get(k, 0.0) + v
+            if cfg.log_every and (it + 1) % cfg.log_every == 0:
+                p(f"  ep {ep + 1} step {it + 1}/{steps_per_epoch} loss={loss.item():.4f} "
+                  f"{(time.time() - te) / (it + 1):.2f}s/it")
         val, vmse, vmae = evaluate(model, loaders["val"], device, amp_dtype)
         msg = " ".join(f"{k}={v / steps_per_epoch:.4f}" for k, v in acc.items())
         p(f"ep {ep + 1} {msg} val_obs={val:.5f} val_true_mse={vmse:.5f} time={time.time() - te:.1f}s")

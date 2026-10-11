@@ -22,6 +22,7 @@ warmup_frac: 0.05
 clip: 1.0
 amp: false
 num_workers: 2
+log_every: 200          # progress line every N steps (0 = off)
 # ---- model ----
 model: mars
 patch_len: 16
@@ -40,6 +41,7 @@ use_var_mix: true
 mcm_rate: 0.12
 mcm_prob: 0.5
 rec_weight: 0.5
+rec_space: norm         # norm (v1) | data (fix for near-constant windows)
 # ---- bookkeeping ----
 runs_root: runs_mtsf
 tag: ""

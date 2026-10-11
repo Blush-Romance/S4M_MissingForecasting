@@ -139,7 +139,12 @@ class MARS(nn.Module):
             m_in = m * keep
             pred, rec, mu, sd = self(x * m_in, m_in, return_aux=True)
             hidden = m * (1 - m_in)
-            target = (x - mu) / sd
+            if getattr(cfg, "rec_space", "norm") == "data":
+                # compare in the globally z-scored data space: avoids exploding targets
+                # when a window is almost constant (tiny instance std), e.g. Weather rain.
+                rec, target = rec * sd + mu, x
+            else:
+                target = (x - mu) / sd
             l_rec = masked_mse(rec, target, hidden) if hidden.sum() > 0 else pred.sum() * 0
         else:
             pred = self(x, m)
