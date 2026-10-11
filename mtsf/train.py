@@ -60,7 +60,8 @@ def run(cfg: SimpleNamespace) -> dict:
     set_seed(cfg.seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     data = MissingForecastData(cfg.data_root, cfg.dataset, cfg.seq_len, cfg.pred_len,
-                               cfg.pattern, cfg.rate, cfg.block, cfg.mask_seed, cfg.mask_cache)
+                               cfg.pattern, cfg.rate, cfg.block, cfg.mask_seed, cfg.mask_cache,
+                               getattr(cfg, "mask_file", None) or None)
     cfg.n_vars = data.n_vars
     loaders = make_loaders(data, cfg.batch_size, cfg.num_workers, cfg.eval_batch_size)
     model = build_model(cfg).to(device)

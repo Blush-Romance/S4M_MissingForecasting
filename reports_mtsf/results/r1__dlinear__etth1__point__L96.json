@@ -1,0 +1,22 @@
+{
+  "model": "dlinear",
+  "dataset": "etth1",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 96,
+  "pred_len": 96,
+  "seed": 2024,
+  "mask_seed": 2024,
+  "mse": 0.5226329892497303,
+  "mae": 0.5009881174913268,
+  "best_val": 0.4205822442312868,
+  "best_epoch": 11,
+  "params": 18624,
+  "train_time_s": 129.4793200492859,
+  "test_time_s": 0.5759997367858887,
+  "peak_mem_mb": 19.88330078125,
+  "realized_missing": 0.2629736065864563,
+  "mask_sha": "05467e40f9467615",
+  "commit": "30aeb9cf3015af0ec305b8e1f0a953510d55466d",
+  "tag": "r1__dlinear__etth1__point__L96"
+}

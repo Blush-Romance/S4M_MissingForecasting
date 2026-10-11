@@ -1,0 +1,22 @@
+{
+  "model": "patchtst",
+  "dataset": "weather",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 192,
+  "pred_len": 96,
+  "seed": 2023,
+  "mask_seed": 2024,
+  "mse": 0.1756106328915823,
+  "mae": 0.23582984213894467,
+  "best_val": 0.5394772838202624,
+  "best_epoch": 4,
+  "params": 694880,
+  "train_time_s": 564.7574837207794,
+  "test_time_s": 4.943621397018433,
+  "peak_mem_mb": 219.708984375,
+  "realized_missing": 0.24698269367218018,
+  "mask_sha": "3fc06a69862e0892",
+  "commit": "30aeb9cf3015af0ec305b8e1f0a953510d55466d",
+  "tag": "legacy__patchtst__weather__point__L192__s2023"
+}

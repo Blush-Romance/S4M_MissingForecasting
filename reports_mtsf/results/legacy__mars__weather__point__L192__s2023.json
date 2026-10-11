@@ -1,0 +1,22 @@
+{
+  "model": "mars",
+  "dataset": "weather",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 192,
+  "pred_len": 96,
+  "seed": 2023,
+  "mask_seed": 2024,
+  "mse": 0.16490600235967615,
+  "mae": 0.20835197465056676,
+  "best_val": 0.5373656141370583,
+  "best_epoch": 2,
+  "params": 1148040,
+  "train_time_s": 608.4970269203186,
+  "test_time_s": 5.574063777923584,
+  "peak_mem_mb": 238.6923828125,
+  "realized_missing": 0.24698269367218018,
+  "mask_sha": "3fc06a69862e0892",
+  "commit": "30aeb9cf3015af0ec305b8e1f0a953510d55466d",
+  "tag": "legacy__mars__weather__point__L192__s2023"
+}

@@ -1,0 +1,22 @@
+{
+  "model": "itransformer",
+  "dataset": "etth1",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 96,
+  "pred_len": 96,
+  "seed": 2024,
+  "mask_seed": 2024,
+  "mse": 0.5370970786059195,
+  "mae": 0.5200772534636965,
+  "best_val": 0.4336012863350958,
+  "best_epoch": 1,
+  "params": 422496,
+  "train_time_s": 109.18231081962585,
+  "test_time_s": 0.7110285758972168,
+  "peak_mem_mb": 27.04345703125,
+  "realized_missing": 0.2629736065864563,
+  "mask_sha": "05467e40f9467615",
+  "commit": "30aeb9cf3015af0ec305b8e1f0a953510d55466d",
+  "tag": "r1__itransformer__etth1__point__L96"
+}

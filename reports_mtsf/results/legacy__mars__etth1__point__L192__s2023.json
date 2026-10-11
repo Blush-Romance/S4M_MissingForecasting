@@ -1,0 +1,22 @@
+{
+  "model": "mars",
+  "dataset": "etth1",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 192,
+  "pred_len": 96,
+  "seed": 2023,
+  "mask_seed": 2024,
+  "mse": 0.44325458207312873,
+  "mae": 0.4648928305192515,
+  "best_val": 0.333843926316107,
+  "best_epoch": 4,
+  "params": 1148040,
+  "train_time_s": 291.9681987762451,
+  "test_time_s": 0.7797176837921143,
+  "peak_mem_mb": 101.263671875,
+  "realized_missing": 0.23088401556015015,
+  "mask_sha": "1e5d7cb371ffcbad",
+  "commit": "30aeb9cf3015af0ec305b8e1f0a953510d55466d",
+  "tag": "legacy__mars__etth1__point__L192__s2023"
+}

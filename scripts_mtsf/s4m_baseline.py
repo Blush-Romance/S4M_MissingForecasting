@@ -77,6 +77,11 @@ def prepare():
           "            _json.dump({'mse_batchavg': float(mse), 'mae_batchavg': float(mae),\n"
           "                        'mse': float(((_P - _T) ** 2).mean()), 'mae': float(np.abs(_P - _T).mean()),\n"
           "                        'n_windows': int(_P.shape[0])}, open(os.environ['S4M_METRICS_OUT'], 'w'))\n")
+    # Bug fix (same as the earlier project's "reprofix"): the public code clears the
+    # prototype bank at every epoch (no_renew=False) but only warms it up in epoch 0,
+    # which crashes in epoch 2 with `repre is None`. Warm up after every renewal.
+    patch(exp, "                if i==0 and epoch==0:\n",
+          "                if i==0 and (epoch==0 or not self.args.no_renew):\n")
     # NumPy-2 compatibility (pure renames, no behavioural change)
     for f in DST.rglob("*.py"):
         t = f.read_text(errors="ignore")

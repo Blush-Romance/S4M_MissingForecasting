@@ -77,7 +77,7 @@ class MissingForecastData:
 
     def __init__(self, root: str, dataset: str, seq_len: int, pred_len: int,
                  pattern: str = "point", rate: float = 0.06, block: int = 5,
-                 mask_seed: int = 2024, cache_dir: str | None = None):
+                 mask_seed: int = 2024, cache_dir: str | None = None, mask_file: str | None = None):
         path = os.path.join(root, DATA_FILES[dataset])
         df = pd.read_csv(path)
         cols = [c for c in df.columns if c != "date"]
@@ -89,14 +89,17 @@ class MissingForecastData:
         self.seq_len, self.pred_len = seq_len, pred_len
 
         mask = None
-        if cache_dir:
+        if mask_file:  # externally fixed mask, e.g. the legacy project masks
+            mask = np.load(mask_file).astype(np.float32)
+            assert mask.shape == (T, D), (mask.shape, (T, D))
+        elif cache_dir:
             os.makedirs(cache_dir, exist_ok=True)
             mpath = os.path.join(cache_dir, f"{dataset}_{pattern}_r{rate}_b{block}_s{mask_seed}.npy")
             if os.path.exists(mpath):
                 mask = np.load(mpath)
         if mask is None:
             mask = make_mask((T, D), pattern, rate, block, mask_seed)
-            if cache_dir:
+            if cache_dir and not mask_file:
                 np.save(mpath, mask)
         self.mask_sha = hashlib.sha256(mask.tobytes()).hexdigest()[:16]
         self.realized_missing = float(1 - mask.mean())

@@ -6,6 +6,7 @@ pattern: point          # point | variable
 rate: 0.06              # block start rate r
 block: 5
 mask_seed: 2024
+mask_file: ""           # optional fixed mask (.npy, 1 = observed), overrides generation
 seq_len: 96
 pred_len: 96
 batch_size: 16

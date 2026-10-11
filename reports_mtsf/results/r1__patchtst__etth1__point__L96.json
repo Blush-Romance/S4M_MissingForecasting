@@ -1,0 +1,22 @@
+{
+  "model": "patchtst",
+  "dataset": "etth1",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 96,
+  "pred_len": 96,
+  "seed": 2024,
+  "mask_seed": 2024,
+  "mse": 0.5124812031889707,
+  "mae": 0.5099904934414474,
+  "best_val": 0.40261481992537335,
+  "best_epoch": 2,
+  "params": 547424,
+  "train_time_s": 347.54170966148376,
+  "test_time_s": 3.0923879146575928,
+  "peak_mem_mb": 62.46484375,
+  "realized_missing": 0.2629736065864563,
+  "mask_sha": "05467e40f9467615",
+  "commit": "30aeb9cf3015af0ec305b8e1f0a953510d55466d",
+  "tag": "r1__patchtst__etth1__point__L96"
+}
