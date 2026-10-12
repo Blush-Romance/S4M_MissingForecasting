@@ -29,6 +29,16 @@ def parse(path):
     return jobs
 
 
+def sync_results(jobs, running):
+    """Copy metrics.json of finished jobs into results_mtsf/."""
+    for name in [j[0] for j in jobs]:
+        src = f"runs_mtsf/{name}/metrics.json"
+        dst = f"{RESULTS}/{name}.json"
+        if os.path.exists(src) and not os.path.exists(dst) and name not in running:
+            with open(src) as f:
+                json.dump(json.load(f), open(dst, "w"), indent=2)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("jobfile")
@@ -52,6 +62,7 @@ def main():
                 else:
                     print(f"[queue] done {name}", flush=True)
         if not todo and not running:
+            sync_results(jobs, running)
             break
         while todo and len(running) < a.workers:
             name, ov = todo.pop(0)
@@ -62,12 +73,7 @@ def main():
             print(f"[queue] start {name}", flush=True)
             running[name] = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT)
         time.sleep(5)
-        for name in [j[0] for j in jobs]:
-            src = f"runs_mtsf/{name}/metrics.json"
-            dst = f"{RESULTS}/{name}.json"
-            if os.path.exists(src) and not os.path.exists(dst) and name not in running:
-                with open(src) as f:
-                    json.dump(json.load(f), open(dst, "w"), indent=2)
+        sync_results(jobs, running)
     print("[queue] all done", flush=True)
 
 

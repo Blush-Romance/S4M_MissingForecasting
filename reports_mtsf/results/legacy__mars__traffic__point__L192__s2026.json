@@ -1,0 +1,22 @@
+{
+  "model": "mars",
+  "dataset": "traffic",
+  "pattern": "point",
+  "rate": 0.06,
+  "seq_len": 192,
+  "pred_len": 96,
+  "seed": 2026,
+  "mask_seed": 2024,
+  "mse": 0.4261146602716076,
+  "mae": 0.2853417926239854,
+  "best_val": 0.373834098269,
+  "best_epoch": 19,
+  "params": 1148040,
+  "train_time_s": 51618.34882903099,
+  "test_time_s": 85.1792402267456,
+  "peak_mem_mb": 5829.94873046875,
+  "realized_missing": 0.25986093282699585,
+  "mask_sha": "6289c385d4651859",
+  "commit": "c28fd10f23208a98e2ec444a81f02ffe24bd462e",
+  "tag": "legacy__mars__traffic__point__L192__s2026"
+}
